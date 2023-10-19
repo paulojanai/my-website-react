@@ -2,8 +2,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 600;
-  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-family: 'Bespoke Serif', serif;
 }
 
 h1 {
@@ -84,6 +84,7 @@ p {
 
   &.span {
     font-size: 1.4rem;
+    text-transform: uppercase;
     font-weight: 600;
     line-height: 100%;
   }

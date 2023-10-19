@@ -1,11 +1,10 @@
-import Footer from '@components/ui/Footer';
+import Footer from '@components/ui/footer';
+import Navbar from '@components/ui/navbar';
 
 function Home() {
   return (
     <div className='home'>
-      <Footer />
-      <h1>Home</h1>
-      <Footer />
+      <Navbar />
       <Footer />
     </div>
   );
