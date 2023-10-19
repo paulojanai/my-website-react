@@ -1,0 +1,126 @@
+footer {
+  background-color: $grayscale-700;
+
+  .grid-container {
+    padding-top: 10rem;
+
+    .top {
+      @include flex(row, center, space-between);
+      margin-bottom: 6rem;
+
+      .content {
+        color: $grayscale-50;
+      }
+
+      .group-links {
+        border: none;
+        padding-bottom: 0rem;
+
+        .span {
+          color: $grayscale-300;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    .group-links {
+      padding-bottom: 4rem;
+      border-bottom: 1px solid $grayscale-500;
+
+      .span {
+        color: $grayscale-300;
+        margin-bottom: 2rem;
+      }
+
+      .links {
+        @include flex(row, flex-start, flex-start);
+        gap: 3.2rem;
+
+        a {
+          @include typography-link();
+
+          &.footer-link {
+            @include flex(row, center, flex-start);
+            gap: 0.8rem;
+
+            img {
+              height: 2rem;
+            }
+
+            span {
+              font-size: 1.6rem;
+              color: $grayscale-50;
+              @include expand_border($grayscale-100);
+            }
+          }
+        }
+
+
+        .left,
+        .right {
+          @include flex(row, center, center);
+          gap: 3.2rem;
+        }
+      }
+    }
+
+    .bottom {
+      @include flex(row, center, space-between);
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+
+      p {
+        color: $grayscale-200;
+        font-size: 1.4rem;
+        line-height: 100%;
+      }
+
+      img {
+        height: 1.6rem;
+      }
+    }
+
+    @include responsive(768px) {
+      padding-top: 6rem;
+
+      .top {
+        @include flex(column, center, center);
+        gap: 4rem;
+        margin-bottom: 4rem;
+
+        a {
+          @include flex(row, center, center);
+          width: 100%;
+        }
+      }
+
+      .group-links {
+        padding-bottom: 4rem;
+
+        .span {
+          text-align: center;
+        }
+
+        .links {
+          gap: 6rem;
+          @include flex(row, center, center);
+
+          .left,
+          .right {
+            @include flex(column, center, center);
+          }
+        }
+      }
+
+      .bottom {
+        @include flex(column, center, center);
+
+        p {
+          &:first-child {
+            margin-bottom: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}
