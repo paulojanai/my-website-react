@@ -1,13 +1,14 @@
 import { Github, Dribbble, Twitter, Linkedin, Instagram } from 'lucide-react';
-import Link from '../../Link';
+import Link from '@components/Link';
+import GridContainer from '@components/Grid';
 
 function Footer() {
   return (
     <footer id='section-contact'>
-      <div className='grid-container'>
+      <GridContainer>
         <div className='top'>
           <div className='content'>
-            <h2>pjanai.m.s@gmail.com</h2>
+            <h3>pjanai.m.s@gmail.com</h3>
           </div>
 
           <div className='group-links'>
@@ -84,7 +85,7 @@ function Footer() {
           <p>© Copyright 2023. All rights reserved.</p>
           <p>Designed and developed: Paulo Janai</p>
         </div>
-      </div>
+      </GridContainer>
     </footer>
   );
 }
