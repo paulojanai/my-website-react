@@ -1,7 +1,11 @@
+import GridContainer from '@components/Grid';
+
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className='page-home'>
+      <GridContainer>
+        <h1>Home</h1>
+      </GridContainer>
     </div>
   );
 }

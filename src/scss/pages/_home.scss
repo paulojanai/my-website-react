@@ -1,0 +1,13 @@
+.page-home {
+  background-color: $grayscale-600;
+
+  .grid-container {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      color: $grayscale-50;
+    }
+  }
+}
