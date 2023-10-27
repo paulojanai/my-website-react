@@ -1,5 +1,6 @@
 .section-hero {
   background-color: $grayscale-700;
+  color: $grayscale-50;
 
   .grid-container {
     padding-top: 10rem;
@@ -10,7 +11,6 @@
     }
 
     h1 {
-      color: $grayscale-50;
       margin-bottom: 6rem;
     }
 
@@ -19,6 +19,24 @@
         color: $grayscale-300;
         padding-bottom: 2.4rem;
       }
+    }
+  }
+}
+
+.section-works {
+  background-color: $grayscale-600;
+  color: $grayscale-50;
+
+  .grid-container {
+    @include padding_section();
+
+    h2 {
+      margin-bottom: 6rem;
+    }
+
+    .listview-works {
+      @include flex(column, center, center);
+      gap: 8rem;
     }
   }
 }

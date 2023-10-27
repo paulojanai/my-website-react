@@ -1,14 +1,21 @@
-@import 'mixins';
-@import 'reset';
-@import 'variables';
-@import 'grid';
-@import 'animate';
-@import 'typography';
+@import "mixins";
+@import "reset";
+@import "variables";
+@import "animate";
+@import "typography";
 //@import 'components';
 //@import 'buttons';
-@import 'header';
 //@import 'hero';
-@import 'footer';
-@import 'pages/home';
-@import 'pages/error';
-@import 'pages/entregou-me-web';
+
+//Components
+@import "components/grid";
+@import "components/header";
+@import "components/footer";
+@import "components/card-work";
+@import "components/button";
+@import "components/separator";
+
+//Pages
+@import "pages/home";
+@import "pages/error";
+@import "pages/entregou-me-web";
