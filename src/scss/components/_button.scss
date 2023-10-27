@@ -1,0 +1,27 @@
+.btn-primary {
+  height: 5.6rem;
+  color: $grayscale-50;
+  @include flex(row, center, center);
+  gap: 1.2rem;
+  padding: 0rem 2.4rem;
+  border: 2px solid $grayscale-50;
+  border-radius: 9rem;
+  transition: all 0.3s;
+
+  p {
+    &.body-m {
+      @include typography-button();
+    }
+  }
+
+  &:hover {
+    background-color: $grayscale-50;
+    color: $grayscale-600;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    color: $grayscale-400;
+    border-color: $grayscale-500;
+  }
+}
