@@ -2,9 +2,17 @@ import GridContainer from '@components/Grid';
 
 function Home() {
   return (
-    <div className='page-home'>
+    <div className='section-hero'>
       <GridContainer>
-        <h1>Home</h1>
+        <h5>Opa, eu sou Paulo Janai 👋🏾</h5>
+        <h1>
+          Product designer e front-end developer com foco na criação e evolução
+          das experiências do usuário através de soluções de design
+        </h1>
+
+        <div className='companies'>
+          <p className='body-l'>Trabalhou em</p>
+        </div>
       </GridContainer>
     </div>
   );

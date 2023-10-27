@@ -1,13 +1,24 @@
-.page-home {
-  background-color: $grayscale-600;
+.section-hero {
+  background-color: $grayscale-700;
 
   .grid-container {
-    height: 20rem;
-    display: flex;
-    align-items: center;
+    padding-top: 10rem;
+
+    h5 {
+      color: $grayscale-300;
+      margin-bottom: 2.4rem;
+    }
 
     h1 {
       color: $grayscale-50;
+      margin-bottom: 6rem;
+    }
+
+    .companies {
+      p.body-l {
+        color: $grayscale-300;
+        padding-bottom: 2.4rem;
+      }
     }
   }
 }

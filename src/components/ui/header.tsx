@@ -1,13 +1,14 @@
 import GridContainer from '@components/Grid';
+import { Link } from 'react-router-dom';
 import Logo from '@assets/logo-dark.svg';
 
 function Header() {
   return (
     <header>
       <GridContainer>
-        <a className='logo' href='https://paulojanai.com'>
+        <Link to='/' className='logo'>
           <img src={Logo} alt='Logo Paulo Janai' />
-        </a>
+        </Link>
 
         <span data-aos='fade-left' className='menu'></span>
       </GridContainer>
