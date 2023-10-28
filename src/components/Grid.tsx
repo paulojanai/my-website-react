@@ -1,7 +1,16 @@
 import React from 'react';
 
-const GridContainer = ({ children }: { children: React.ReactNode }) => {
-  return <div className='grid-container'>{children}</div>;
+type GridContainerProps = {
+  children: React.ReactNode;
+  dataAos?: string;
+};
+
+const GridContainer = ({ children, dataAos }: GridContainerProps) => {
+  return (
+    <div className='grid-container' data-aos={dataAos}>
+      {children}
+    </div>
+  );
 };
 
 export default GridContainer;
