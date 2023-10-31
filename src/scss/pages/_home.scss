@@ -3,7 +3,7 @@
   color: $grayscale-50;
 
   .grid-container {
-    padding-top: 10rem;
+    @include padding_section();
 
     h5 {
       color: $grayscale-300;
@@ -37,6 +37,12 @@
     .listview-works {
       @include flex(column, center, center);
       gap: 8rem;
+    }
+
+    @include responsive (768px) {
+      .listview-works {
+        gap: 6rem;
+      }
     }
   }
 }

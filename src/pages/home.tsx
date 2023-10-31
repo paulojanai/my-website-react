@@ -23,7 +23,7 @@ function Home() {
         </GridContainer>
       </div>
 
-      <div className='section-works'>
+      <div className='section-works' id='section-works'>
         <GridContainer>
           <h2>Trabalhos selecionados</h2>
 
