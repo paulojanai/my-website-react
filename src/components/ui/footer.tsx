@@ -1,5 +1,6 @@
 import Link from '@components/Link';
 import GridContainer from '@components/Grid';
+import Separator from '@components/Separator';
 
 function Footer() {
   return (
@@ -60,6 +61,8 @@ function Footer() {
             </div>
           </div>
         </div>
+
+        <Separator />
 
         <div className='bottom'>
           <p>© Copyright 2023. All rights reserved.</p>

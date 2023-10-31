@@ -1,13 +1,19 @@
 import CardWork from '@components/CardWork';
 import GridContainer from '@components/Grid';
 import Separator from '@components/Separator';
+import CardConcept from '@components/CardConcept';
 
-//images
-import MyReport from '../assets/my-report-online/my_report_online.png';
-import EntregouMeWeb from '../assets/entregoume-white-label/entregou-me-web.png';
-import GrupoBoticario from '../assets/grupo_boticario.png';
-import CasaMagalhaes from '../assets/cm.png';
-import Automacaocom from '../assets/automacao_com.png';
+import Cases from '@data/cases/casesWork';
+
+import MStore from '@assets/personal/mstore/mstore.png';
+import WeatherForecast from '@assets/personal/weather-forecast/weather_forecast.png';
+import GymLife from '@assets/personal/gymlife/gymlife.png';
+import PalleteClickUp from '@assets/personal/palette_colors_clickup.png';
+
+//Logos
+import GrupoBoticario from '@assets/grupo_boticario.png';
+import CasaMagalhaes from '@assets/cm.png';
+import Automacaocom from '@assets/automacao_com.png';
 
 function Home() {
   return (
@@ -36,19 +42,58 @@ function Home() {
           <h2>Trabalhos selecionados</h2>
 
           <div className='listview-works'>
-            <CardWork
-              img={MyReport}
-              roles='UX/UI Designer, UI Designer, User testing'
-              title='Meu relatório online: Plataforma web para ajudar na inspeção predial'
+            {Cases.map((item, index) => {
+              return (
+                <CardWork
+                  key={index}
+                  img={item.image}
+                  roles={item.roles}
+                  title={item.title}
+                  comingSoon={item.comingSoon}
+                />
+              );
+            })}
+          </div>
+        </GridContainer>
+      </div>
+
+      <GridContainer>
+        <Separator />
+      </GridContainer>
+
+      <div className='section-concept'>
+        <GridContainer>
+          <h2>Projetos pessoais e Conceito</h2>
+
+          <div className='listview-concepts'>
+            <CardConcept
+              img={MStore}
+              roles='Auditória de UX, UX/UI Designer'
+              title='MStore: Melhorando interface com uma auditória de UX'
               comingSoon
             />
 
-            <Separator />
+            <CardConcept
+              img={WeatherForecast}
+              roles='UI Designer, Frontend developer'
+              title='Weather Forecast 2.0: Aplicativo para acompanhar a previsão do tempo'
+              linkFigma='#'
+              linkRepo='#'
+            />
 
-            <CardWork
-              img={EntregouMeWeb}
-              roles='UX/UI Designer, UI Designer'
-              title='Automação.com: Experiência do aplicativo de pedidos adaptada para a web'
+            <CardConcept
+              img={GymLife}
+              roles='UI Designer, Frontend developer'
+              title='Gymfile: Página de cadastro para  academias'
+              linkFigma='#'
+              linkRepo='#'
+            />
+
+            <CardConcept
+              img={PalleteClickUp}
+              roles='UI Designer, Styleguide, Design System'
+              title='Resource: Paleta de cores baseada no ClickUp'
+              linkFigma='#'
             />
           </div>
         </GridContainer>

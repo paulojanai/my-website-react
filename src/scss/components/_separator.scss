@@ -2,4 +2,13 @@
   width: 100%;
   max-width: 100%;
   border-bottom: 1px solid $grayscale-500;
+  @include flex(row, center, flex-start);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4%;
+    height: 2px;
+    background-color: $grayscale-50;
+  }
 }

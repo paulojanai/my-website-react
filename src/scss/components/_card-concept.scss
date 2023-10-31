@@ -1,9 +1,11 @@
-.card-work {
+.card-concept {
   @include flex(column, start, center);
+  width: 100%;
+  max-width: 62rem;
   gap: 3.2rem;
 
   .thumb {
-    border-radius: 1.6rem;
+    border-radius: 0.8rem;
     overflow: hidden;
     transition: transform 0.3s;
     background-color: aqua;
@@ -24,5 +26,24 @@
         margin-bottom: 0.8rem;
       }
     }
+  }
+
+  .comingSoon {
+    color: $grayscale-300;
+    @include flex(row, center, center);
+    gap: 0.8rem;
+
+    p {
+      @include typography-link();
+    }
+  }
+
+  .links {
+    @include flex(row, center, center);
+    gap: 4rem;
+  }
+
+  @include responsive(768px) {
+    max-width: 100%;
   }
 }

@@ -11,8 +11,8 @@ function Link({ text, link, nameIcon }: Link) {
 
   return (
     <>
-      <a href={link} target='_blank' className='footer-link'>
-        <LucideIcon color='white' size={18} />
+      <a href={link} target='_blank' className='link'>
+        <LucideIcon color='white' size={16} />
         <span>{text}</span>
       </a>
     </>

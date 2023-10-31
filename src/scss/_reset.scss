@@ -12,6 +12,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: $grayscale-700;
 
   @include responsive(768px) {
     font-size: 56%;

@@ -31,31 +31,10 @@ footer {
 
   .group-links {
     padding-bottom: 4rem;
-    border-bottom: 1px solid $grayscale-500;
 
     .links {
       @include flex(row, flex-start, flex-start);
       gap: 3.2rem;
-
-      a {
-        @include typography-link();
-
-        &.footer-link {
-          @include flex(row, center, flex-start);
-          gap: 0.8rem;
-
-          img {
-            height: 2rem;
-          }
-
-          span {
-            font-size: 1.6rem;
-            color: $grayscale-50;
-            @include expand_border($grayscale-100);
-          }
-        }
-      }
-
 
       .left,
       .right {

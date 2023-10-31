@@ -80,3 +80,30 @@
     }
   }
 }
+
+.section-concept {
+  background-color: $grayscale-600;
+  color: $grayscale-50;
+
+  .grid-container {
+    @include padding_section();
+
+    h2 {
+      margin-bottom: 4rem;
+    }
+
+    .listview-concepts {
+      display: grid;
+      column-gap: 4rem;
+      row-gap: 8rem;
+      grid-template-columns: repeat(2, auto);
+    }
+
+    @include responsive (768px) {
+      .listview-concepts {
+        grid-template-columns: repeat(1, auto);
+        row-gap: 6rem;
+      }
+    }
+  }
+}
