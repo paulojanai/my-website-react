@@ -9,7 +9,8 @@ function Header() {
 
   const actionMenu = () => {
     setOpen(!open);
-    console.log('open menu');
+
+    document.documentElement.classList.toggle('open-menu');
   };
 
   return (
@@ -57,7 +58,7 @@ function Header() {
           <Menu size={32} onClick={actionMenu} />
         </span>
 
-        <div className={`menu-mobile ${open ? 'active open-menu' : ''}`}>
+        <div className={`menu-mobile ${open ? 'active' : ''}`}>
           <div className='header-menu-mobile'>
             <GridContainer>
               <Link to='/' className='logo'>

@@ -5,6 +5,9 @@ import Separator from '@components/Separator';
 //images
 import MyReport from '../assets/my-report-online/my_report_online.png';
 import EntregouMeWeb from '../assets/entregoume-white-label/entregou-me-web.png';
+import GrupoBoticario from '../assets/grupo_boticario.png';
+import CasaMagalhaes from '../assets/cm.png';
+import Automacaocom from '../assets/automacao_com.png';
 
 function Home() {
   return (
@@ -19,11 +22,16 @@ function Home() {
 
           <div className='companies'>
             <p className='body-l'>Trabalhou em</p>
+            <div className='list'>
+              <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
+              <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
+              <img src={Automacaocom} alt='Logo Automação.com' />
+            </div>
           </div>
         </GridContainer>
       </div>
 
-      <div className='section-works' id='section-works'>
+      <div className='section-works'>
         <GridContainer>
           <h2>Trabalhos selecionados</h2>
 

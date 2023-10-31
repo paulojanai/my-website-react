@@ -1,9 +1,11 @@
 .section-hero {
   background-color: $grayscale-700;
   color: $grayscale-50;
+  padding-top: 9rem;
 
   .grid-container {
-    @include padding_section();
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 
     h5 {
       color: $grayscale-300;
@@ -18,6 +20,38 @@
       p.body-l {
         color: $grayscale-300;
         padding-bottom: 2.4rem;
+      }
+
+      .list {
+        @include flex(row, center, flex-start);
+        flex-wrap: wrap;
+        gap: 3.2rem;
+
+        img {
+          height: 4rem;
+
+          &:last-child {
+            height: 28px;
+          }
+
+          &:hover {
+            filter: contrast(49);
+          }
+        }
+      }
+    }
+
+    @include responsive(768px) {
+      .companies {
+        .list {
+          @include flex(row, center, flex-start);
+          flex-wrap: wrap;
+          gap: 3.2rem;
+
+          img {
+            height: 3.2rem;
+          }
+        }
       }
     }
   }
