@@ -2,6 +2,8 @@ import Link from '@components/Link';
 import GridContainer from '@components/Grid';
 import Separator from '@components/Separator';
 
+import NocapStudio from '@assets/NocapStudio.svg';
+
 function Footer() {
   return (
     <footer id='section-contact'>
@@ -66,7 +68,12 @@ function Footer() {
 
         <div className='bottom'>
           <p>© Copyright 2023. All rights reserved.</p>
-          <p>Design e developer por Nocap Studio</p>
+          <div className='development'>
+            <p>Design and development by</p>
+            <a href='https://nocapstudio.com.br' target='_blank'>
+              <img src={NocapStudio} alt='Nocap Studio' />
+            </a>
+          </div>
         </div>
       </GridContainer>
     </footer>

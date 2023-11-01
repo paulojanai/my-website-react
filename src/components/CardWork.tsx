@@ -9,7 +9,7 @@ const CardWork: React.FC<ICase> = ({
   comingSoon,
 }: ICase) => {
   return (
-    <div className='card-work'>
+    <div className='card-work' data-aos='fade-up'>
       <div className='thumb'>
         <img src={image} alt='' />
       </div>

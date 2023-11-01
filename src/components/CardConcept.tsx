@@ -11,7 +11,7 @@ const CardConcept: React.FC<ICaseConcept> = ({
   githubURL,
 }: ICaseConcept) => {
   return (
-    <div className='card-concept'>
+    <div className='card-concept' data-aos='fade-up'>
       <div className='thumb'>
         <img src={image} alt='' />
       </div>

@@ -12,8 +12,7 @@ import PictureAbout from '@assets/picture-about.webp';
 import GrupoBoticario from '@assets/grupo_boticario.png';
 import CasaMagalhaes from '@assets/cm.png';
 import Automacaocom from '@assets/automacao_com.png';
-import Button from '@components/Button';
-import { Code2, FileText, Layers } from 'lucide-react';
+import { Code2, Layers } from 'lucide-react';
 import ButtonIcon from '@components/ButtonIcon';
 
 function Home() {
@@ -40,7 +39,7 @@ function Home() {
 
       <div className='section-works'>
         <GridContainer>
-          <h2>Trabalhos selecionados</h2>
+          <h2 data-aos='fade-up'>Trabalhos selecionados</h2>
 
           <div className='listview-works'>
             {Cases.map((item, index) => {
@@ -64,7 +63,7 @@ function Home() {
 
       <div className='section-concept'>
         <GridContainer>
-          <h2>Projetos pessoais e Conceito</h2>
+          <h2 data-aos='fade-up'>Projetos pessoais e Conceito</h2>
 
           <div className='listview-concepts'>
             {CasesConcept.map((item, index) => {
@@ -86,14 +85,14 @@ function Home() {
 
       <div className='section-how-help'>
         <GridContainer>
-          <h2>Como eu ajudo</h2>
+          <h2 data-aos='fade-up'>Como eu ajudo</h2>
 
-          <p className='body-l-paragraph'>
+          <p className='body-l-paragraph' data-aos='fade-up'>
             Contrate-me se precisar de um designer de produto, visual designer,
             criação e manutenção de design system, desenvolvimento front-end.
           </p>
 
-          <div className='design-developer'>
+          <div className='design-developer' data-aos='fade-up'>
             <div className='card-help'>
               <div className='card-header'>
                 <Layers size={40} color='white' />
@@ -179,11 +178,11 @@ function Home() {
       <div className='section-about'>
         <GridContainer>
           <div className='text-about'>
-            <h2>
+            <h2 data-aos='fade-up'>
               Paulo Janai, Product Designer, Developer, atualmente baseado no
               Brasil
             </h2>
-            <div className='description'>
+            <div className='description' data-aos='fade-up'>
               <p className='body-m'>
                 Meu nome é Paulo Janai Mariano da Silva. Atuo como product
                 designer que mora no Canindé, Brasil. Minha principal área hoje
@@ -208,7 +207,7 @@ function Home() {
               <FileText size={24} />
             </Button> */}
           </div>
-          <div className='image-about'>
+          <div className='image-about' data-aos='fade-up'>
             <img src={PictureAbout} alt='Foto de Paulo Janai' />
             <div className='group-social'>
               <ButtonIcon
