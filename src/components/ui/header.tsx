@@ -23,7 +23,7 @@ function Header() {
         <nav className='nav-default' data-aos='fade-left'>
           <ul>
             <li>
-              <a href='#section-works'>Trabalhos</a>
+              <a href='/#section-works'>Trabalhos</a>
             </li>
             <li>
               <a href='/#section-about'>Como eu ajudo</a>

@@ -203,10 +203,10 @@ function Home() {
                 aplicativos.
               </p>
             </div>
-            <Button className='see-cv'>
+            {/* <Button className='see-cv'>
               <p className='body-m'>Ver currículo</p>
               <FileText size={24} />
-            </Button>
+            </Button> */}
           </div>
           <div className='image-about'>
             <img src={PictureAbout} alt='Foto de Paulo Janai' />

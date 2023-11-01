@@ -1,52 +1,47 @@
-.design-developer {
-  margin-top: 5.6rem;
-  @include flex(row, center, center);
-  gap: 4rem;
+.card-help {
+  width: 100%;
+  max-width: 50%;
+  background-color: $grayscale-600;
+  padding: 4.8rem 4.8rem;
+  border: 1px solid $grayscale-500;
+  border-radius: 1.6rem;
 
-  .card-help {
-    max-width: 50%;
-    background-color: $grayscale-600;
-    padding: 4.8rem 4.8rem;
-    border: 1px solid $grayscale-500;
-    border-radius: 1.6rem;
+  .card-header {
+    margin-bottom: 3.2rem;
 
-    .card-header {
-      margin-bottom: 3.2rem;
-
-      h3 {
-        margin-top: 2.4rem;
-      }
-
-      p {
-        &.body-m {
-          margin-top: 1.2rem;
-          color: $grayscale-300;
-        }
-      }
+    h3 {
+      margin-top: 2.4rem;
     }
 
-    .card-body {
-      margin-top: 3.2rem;
-      @include flex(column, flex-start, flex-start);
-      gap: 3.2rem;
+    p {
+      &.body-m {
+        margin-top: 1.2rem;
+        color: $grayscale-300;
+      }
+    }
+  }
 
-      .group {
-        p {
-          &.body-l {
-            margin-bottom: 1.2rem;
-          }
+  .card-body {
+    margin-top: 3.2rem;
+    @include flex(column, flex-start, flex-start);
+    gap: 3.2rem;
+
+    .group {
+      p {
+        &.body-l {
+          margin-bottom: 1.2rem;
         }
+      }
 
-        ul {
-          &.list {
-            @include flex(row, flex-start, flex-start);
-            flex-wrap: wrap;
-            column-gap: 6%;
-            color: $grayscale-300;
+      ul {
+        &.list {
+          @include flex(row, flex-start, flex-start);
+          flex-wrap: wrap;
+          column-gap: 6%;
+          color: $grayscale-300;
 
-            li {
-              width: 47%;
-            }
+          li {
+            width: 47%;
           }
         }
       }
@@ -54,13 +49,7 @@
   }
 
   @include responsive(768px) {
-    margin-top: 4rem;
-    @include flex(column, center, center);
-    gap: 3.2rem;
-
-    .card-help {
-      max-width: 100%;
-      padding: 4rem 4rem;
-    }
+    max-width: 100%;
+    padding: 4rem 4rem;
   }
 }

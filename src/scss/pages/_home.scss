@@ -93,16 +93,18 @@
     }
 
     .listview-concepts {
-      display: grid;
-      column-gap: 4rem;
+      @include flex(row, flex-start, space-between);
+      flex-wrap: wrap;
       row-gap: 8rem;
-      grid-template-columns: repeat(2, auto);
+      // display: grid;
+      // grid-template-columns: repeat(2, auto);
     }
 
     @include responsive (768px) {
       .listview-concepts {
-        grid-template-columns: repeat(1, auto);
+        // grid-template-columns: repeat(1, auto);
         row-gap: 6rem;
+
       }
     }
   }
@@ -124,8 +126,21 @@
       }
     }
 
+    .design-developer {
+      margin-top: 5.6rem;
+      @include flex(row, flex-start, center);
+      gap: 4rem;
 
-    @include responsive (768px) {}
+    }
+
+
+    @include responsive (768px) {
+      .design-developer {
+        margin-top: 4rem;
+        @include flex(column, center, center);
+        gap: 3.2rem;
+      }
+    }
   }
 }
 
@@ -144,7 +159,7 @@
 
     .text-about {
       width: 100%;
-      max-width: 65.2rem;
+      max-width: 50%;
 
       .description {
         color: $grayscale-300;
@@ -152,17 +167,13 @@
         gap: 1.2rem;
         margin-bottom: 3.2rem;
       }
-
-      .see-cv {
-        max-width: 22rem;
-      }
     }
 
     .image-about {
+      width: 100%;
+      max-width: 50%;
       position: relative;
       overflow: hidden;
-      width: 100%;
-      max-width: 50.8rem;
       border-radius: 0.8rem;
 
       .group-social {
@@ -176,12 +187,14 @@
 
     @include responsive (768px) {
       @include flex(column, flex-start, center);
-      gap: 6rem;
+      gap: 2rem;
 
       .text-about {
-        .see-cv {
-          max-width: 100%;
-        }
+        max-width: 100%;
+      }
+
+      .image-about {
+        max-width: 100%;
       }
     }
   }
