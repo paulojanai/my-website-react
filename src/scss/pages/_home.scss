@@ -114,6 +114,16 @@
   .grid-container {
     @include padding_section();
 
+    h2 {
+      margin-bottom: 1.6rem;
+    }
+
+    p {
+      &.body-l-paragraph {
+        color: $grayscale-300;
+      }
+    }
+
 
     @include responsive (768px) {}
   }
@@ -159,11 +169,20 @@
         @include flex(row, center, center);
         gap: 1.6rem;
         position: absolute;
-        bottom: 3.2rem;
+        top: 3.2rem;
         right: 3.2rem;
       }
     }
 
-    @include responsive (768px) {}
+    @include responsive (768px) {
+      @include flex(column, flex-start, center);
+      gap: 6rem;
+
+      .text-about {
+        .see-cv {
+          max-width: 100%;
+        }
+      }
+    }
   }
 }
