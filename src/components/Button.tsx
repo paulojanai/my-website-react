@@ -1,13 +1,18 @@
-import React from "react";
+import React from 'react';
 
 interface ButtonProps {
   disabled?: boolean;
   children: React.ReactNode;
+  className?: string;
+  href?: string;
 }
 
-const Button = ({ children, disabled }: ButtonProps) => {
+const Button = ({ children, disabled, className = '', href }: ButtonProps) => {
   return (
-    <a href="#" className={`btn-primary ${disabled ? "disabled" : ""}`}>
+    <a
+      href={href}
+      className={`${className} btn-primary ${disabled ? 'disabled' : ''}`}
+    >
       {children}
     </a>
   );

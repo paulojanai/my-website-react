@@ -1,7 +1,7 @@
 import MyReportOnline from '@assets/my-report-online/my_report_online.png';
-import EntregouMeWeb from '@assets/entregoume-app/entregou_me-app-hero.png';
+import EntregouMeWeb from '@assets/entregoume-white-label/entregou_me_web.png';
 
-type ICase = {
+export type ICase = {
   image: string;
   roles: string;
   title: string;
@@ -21,7 +21,7 @@ const Cases: ICase[] = [
     roles: 'UX/UI Designer, UI Designer',
     title:
       'Automação.com: Experiência do aplicativo de pedidos adaptada para a web',
-    comingSoon: false,
+    comingSoon: true,
   },
 ];
 

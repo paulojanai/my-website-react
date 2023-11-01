@@ -1,27 +1,19 @@
 import { Asterisk } from 'lucide-react';
 import Link from './Link';
+import { ICaseConcept } from '@data/cases/casesConcept';
 
-interface CardConceptProps {
-  roles: string;
-  title: string;
-  img: string;
-  linkFigma?: string;
-  linkRepo?: string;
-  comingSoon?: boolean;
-}
-
-const CardConcept = ({
-  img,
+const CardConcept: React.FC<ICaseConcept> = ({
+  image,
   roles,
   title,
-  linkFigma,
-  linkRepo,
   comingSoon,
-}: CardConceptProps) => {
+  figmaURL,
+  githubURL,
+}: ICaseConcept) => {
   return (
     <div className='card-concept'>
       <div className='thumb'>
-        <img src={img} alt='' />
+        <img src={image} alt='' />
       </div>
       <div className='text'>
         <p className='body-m'>{roles}</p>
@@ -35,9 +27,9 @@ const CardConcept = ({
         </div>
       ) : (
         <div className='links'>
-          {linkFigma && <Link link={linkFigma} text='Figma' nameIcon='Figma' />}
-          {linkFigma && (
-            <Link link={linkRepo} text='Repositório' nameIcon='Github' />
+          {figmaURL && <Link link={figmaURL} text='Projeto' nameIcon='Figma' />}
+          {githubURL && (
+            <Link link={githubURL} text='Repositório' nameIcon='Github' />
           )}
         </div>
       )}

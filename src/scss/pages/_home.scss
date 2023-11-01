@@ -107,3 +107,63 @@
     }
   }
 }
+
+.section-how-help {
+  color: $grayscale-50;
+
+  .grid-container {
+    @include padding_section();
+
+
+    @include responsive (768px) {}
+  }
+}
+
+.section-about {
+  background-color: $grayscale-600;
+  color: $grayscale-50;
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  .grid-container {
+    @include padding_section();
+    @include flex(row, flex-start, center);
+    gap: 12rem;
+
+    .text-about {
+      width: 100%;
+      max-width: 65.2rem;
+
+      .description {
+        color: $grayscale-300;
+        @include flex(column, flex-start, flex-start);
+        gap: 1.2rem;
+        margin-bottom: 3.2rem;
+      }
+
+      .see-cv {
+        max-width: 22rem;
+      }
+    }
+
+    .image-about {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 50.8rem;
+      border-radius: 0.8rem;
+
+      .group-social {
+        @include flex(row, center, center);
+        gap: 1.6rem;
+        position: absolute;
+        bottom: 3.2rem;
+        right: 3.2rem;
+      }
+    }
+
+    @include responsive (768px) {}
+  }
+}
