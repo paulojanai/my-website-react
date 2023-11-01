@@ -1,0 +1,28 @@
+.card-work {
+  @include flex(column, start, center);
+  gap: 3.2rem;
+
+  .thumb {
+    border-radius: 1.6rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: aqua;
+
+    img {
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.025);
+      }
+    }
+  }
+
+  .text {
+    p {
+      &.body-m {
+        color: $grayscale-200;
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+a {
+  &.link {
+    @include flex(row, center, flex-start);
+    gap: 0.8rem;
+
+    span {
+
+      @include typography-link();
+      color: $grayscale-50;
+      @include expand_border($grayscale-100);
+    }
+  }
+}

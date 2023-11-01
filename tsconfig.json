@@ -26,6 +26,7 @@
       "@assets/*": ["assets/*"],
       "@scss/*": ["scss/*"],
       "@components/*": ["components/*"],
+      "@data/*": ["data/*"],
       "@pages/*": ["pages/*"],
       "@routes/*": ["routes/*"]
     }

@@ -1,0 +1,49 @@
+.card-concept {
+  @include flex(column, start, center);
+  width: 100%;
+  max-width: 62rem;
+  gap: 3.2rem;
+
+  .thumb {
+    border-radius: 0.8rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: aqua;
+
+    img {
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.025);
+      }
+    }
+  }
+
+  .text {
+    p {
+      &.body-m {
+        color: $grayscale-200;
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+
+  .comingSoon {
+    color: $grayscale-300;
+    @include flex(row, center, center);
+    gap: 0.8rem;
+
+    p {
+      @include typography-link();
+    }
+  }
+
+  .links {
+    @include flex(row, center, center);
+    gap: 4rem;
+  }
+
+  @include responsive(768px) {
+    max-width: 100%;
+  }
+}

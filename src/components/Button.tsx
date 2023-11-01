@@ -1,12 +1,21 @@
 import React from 'react';
 
 interface ButtonProps {
-  disabled: boolean;
+  disabled?: boolean;
   children: React.ReactNode;
+  className?: string;
+  href?: string;
 }
 
-const Button = ({ children, disabled }: ButtonProps) => {
-  return <button className='disable'>{children}</button>;
+const Button = ({ children, disabled, className = '', href }: ButtonProps) => {
+  return (
+    <a
+      href={href}
+      className={`${className} btn-primary ${disabled ? 'disabled' : ''}`}
+    >
+      {children}
+    </a>
+  );
 };
 
 export default Button;

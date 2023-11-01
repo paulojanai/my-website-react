@@ -1,8 +1,11 @@
 .section-hero {
   background-color: $grayscale-700;
+  color: $grayscale-50;
+  padding-top: 9rem;
 
   .grid-container {
-    padding-top: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 
     h5 {
       color: $grayscale-300;
@@ -10,7 +13,6 @@
     }
 
     h1 {
-      color: $grayscale-50;
       margin-bottom: 6rem;
     }
 
@@ -19,6 +21,149 @@
         color: $grayscale-300;
         padding-bottom: 2.4rem;
       }
+
+      .list {
+        @include flex(row, center, flex-start);
+        flex-wrap: wrap;
+        gap: 3.2rem;
+
+        img {
+          height: 4rem;
+
+          &:last-child {
+            height: 28px;
+          }
+
+          &:hover {
+            filter: contrast(49);
+          }
+        }
+      }
     }
+
+    @include responsive(768px) {
+      .companies {
+        .list {
+          @include flex(row, center, flex-start);
+          flex-wrap: wrap;
+          gap: 3.2rem;
+
+          img {
+            height: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-works {
+  background-color: $grayscale-600;
+  color: $grayscale-50;
+
+  .grid-container {
+    @include padding_section();
+
+    h2 {
+      margin-bottom: 6rem;
+    }
+
+    .listview-works {
+      @include flex(column, center, center);
+      gap: 8rem;
+    }
+
+    @include responsive (768px) {
+      .listview-works {
+        gap: 6rem;
+      }
+    }
+  }
+}
+
+.section-concept {
+  background-color: $grayscale-600;
+  color: $grayscale-50;
+
+  .grid-container {
+    @include padding_section();
+
+    h2 {
+      margin-bottom: 4rem;
+    }
+
+    .listview-concepts {
+      display: grid;
+      column-gap: 4rem;
+      row-gap: 8rem;
+      grid-template-columns: repeat(2, auto);
+    }
+
+    @include responsive (768px) {
+      .listview-concepts {
+        grid-template-columns: repeat(1, auto);
+        row-gap: 6rem;
+      }
+    }
+  }
+}
+
+.section-how-help {
+  color: $grayscale-50;
+
+  .grid-container {
+    @include padding_section();
+
+
+    @include responsive (768px) {}
+  }
+}
+
+.section-about {
+  background-color: $grayscale-600;
+  color: $grayscale-50;
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  .grid-container {
+    @include padding_section();
+    @include flex(row, flex-start, center);
+    gap: 12rem;
+
+    .text-about {
+      width: 100%;
+      max-width: 65.2rem;
+
+      .description {
+        color: $grayscale-300;
+        @include flex(column, flex-start, flex-start);
+        gap: 1.2rem;
+        margin-bottom: 3.2rem;
+      }
+
+      .see-cv {
+        max-width: 22rem;
+      }
+    }
+
+    .image-about {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 50.8rem;
+      border-radius: 0.8rem;
+
+      .group-social {
+        @include flex(row, center, center);
+        gap: 1.6rem;
+        position: absolute;
+        bottom: 3.2rem;
+        right: 3.2rem;
+      }
+    }
+
+    @include responsive (768px) {}
   }
 }
