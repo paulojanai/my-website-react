@@ -1,0 +1,77 @@
+.section-hero-case {
+  background-color: $grayscale-700;
+  color: $grayscale-50;
+  padding-top: 9rem;
+
+  .grid-container {
+    @include padding_section();
+
+    p {
+      &.body-xl {
+        color: $grayscale-300;
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    .thumb-hero {
+      margin-top: 6rem;
+      border-radius: 1.6rem;
+      overflow: hidden;
+    }
+  }
+}
+
+.section-overview-case {
+  background-color: $grayscale-600;
+  color: $grayscale-50;
+
+  .grid-container {
+    @include padding_section();
+
+    h2 {
+      margin-bottom: 2.4rem;
+    }
+
+    .text {
+      @include flex (column, flex-start, flex-start);
+      gap: 1.6rem;
+
+      p {
+        &.body-m {
+          color: $grayscale-300;
+
+        }
+      }
+    }
+
+    .details {
+      margin-top: 4rem;
+      @include flex (row, flex-start, space-between);
+      column-gap: 4rem;
+
+      .item {
+        p {
+          &.body-xl {
+            margin-bottom: 1.2rem;
+          }
+        }
+
+        ul {
+          li {
+            &.body-m {
+              color: $grayscale-300;
+            }
+          }
+        }
+      }
+    }
+
+    @include responsive(768px) {
+      .details {
+        @include flex (row, flex-start, space-between);
+        flex-wrap: wrap;
+        row-gap: 3.2rem;
+      }
+    }
+  }
+}

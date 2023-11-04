@@ -3,7 +3,7 @@ import GridContainer from '@components/Grid';
 import Separator from '@components/Separator';
 import CardConcept from '@components/CardConcept';
 
-import Cases from '@data/cases/casesWork';
+import { CasesArray } from '@data/cases/casesWork';
 import CasesConcept from '@data/cases/casesConcept';
 
 import PictureAbout from '@assets/picture-about.webp';
@@ -42,7 +42,7 @@ function Home() {
           <h2 data-aos='fade-up'>Trabalhos selecionados</h2>
 
           <div className='listview-works'>
-            {Cases.map((item, index) => {
+            {CasesArray.map((item, index) => {
               return (
                 <CardWork
                   key={index}

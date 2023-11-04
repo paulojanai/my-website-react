@@ -1,4 +1,4 @@
-import { Copy } from 'lucide-react';
+// import { Copy } from 'lucide-react';
 
 import Link from '@components/Link';
 import GridContainer from '@components/Grid';
@@ -17,9 +17,9 @@ function Footer() {
             <p className='span'>Contato</p>
             <div className='email'>
               <h3>pjanai.m.s@gmail.com</h3>
-              <button className='btn-copy'>
+              {/* <button className='btn-copy'>
                 <Copy />
-              </button>
+              </button> */}
             </div>
           </div>
 
