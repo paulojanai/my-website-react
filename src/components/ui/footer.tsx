@@ -1,6 +1,12 @@
+import { Copy } from 'lucide-react';
+
 import Link from '@components/Link';
 import GridContainer from '@components/Grid';
 import Separator from '@components/Separator';
+
+import CVPDF from '../../../paulojanai-cv.pdf';
+
+import NocapStudio from '@assets/NocapStudio.svg';
 
 function Footer() {
   return (
@@ -9,16 +15,22 @@ function Footer() {
         <div className='top'>
           <div className='content'>
             <p className='span'>Contato</p>
-            <h3>pjanai.m.s@gmail.com</h3>
+            <div className='email'>
+              <h3>pjanai.m.s@gmail.com</h3>
+              <button className='btn-copy'>
+                <Copy />
+              </button>
+            </div>
           </div>
 
           <div className='group-links'>
             <p className='span'>Downloads</p>
             <div className='links'>
               <Link
-                link='./paulojanai-cv.pdf'
-                text='Currículo'
+                link={CVPDF}
+                text='Resume'
                 nameIcon='FileText'
+                download={true}
               />
               {/* <a
                 href='./paulojanai-portfolio.pdf'
@@ -66,7 +78,16 @@ function Footer() {
 
         <div className='bottom'>
           <p>© Copyright 2023. All rights reserved.</p>
-          <p>Design e developer por Nocap Studio</p>
+          <div className='development'>
+            <p>Design and development by</p>
+            <a
+              href='https://nocapstudio.com.br'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={NocapStudio} alt='Nocap Studio' />
+            </a>
+          </div>
         </div>
       </GridContainer>
     </footer>

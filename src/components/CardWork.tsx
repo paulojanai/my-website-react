@@ -6,19 +6,20 @@ const CardWork: React.FC<ICase> = ({
   image,
   roles,
   title,
+  href,
   comingSoon,
 }: ICase) => {
   return (
-    <div className='card-work'>
+    <div className='card-work' data-aos='fade-up'>
       <div className='thumb'>
         <img src={image} alt='' />
       </div>
       <div className='text'>
         <p className='body-m'>{roles}</p>
-        <h3 className=''>{title}</h3>
+        <h3>{title}</h3>
       </div>
 
-      <Button disabled={comingSoon}>
+      <Button disabled={comingSoon} href={href}>
         <p className='body-m'>
           Ver caso de estudo {comingSoon && '(Em breve)'}
         </p>

@@ -12,8 +12,7 @@ import PictureAbout from '@assets/picture-about.webp';
 import GrupoBoticario from '@assets/grupo_boticario.png';
 import CasaMagalhaes from '@assets/cm.png';
 import Automacaocom from '@assets/automacao_com.png';
-import Button from '@components/Button';
-import { FileText } from 'lucide-react';
+import { Code2, Layers } from 'lucide-react';
 import ButtonIcon from '@components/ButtonIcon';
 
 function Home() {
@@ -38,9 +37,9 @@ function Home() {
         </GridContainer>
       </div>
 
-      <div className='section-works'>
+      <div className='section-works' id='section-works'>
         <GridContainer>
-          <h2>Trabalhos selecionados</h2>
+          <h2 data-aos='fade-up'>Trabalhos selecionados</h2>
 
           <div className='listview-works'>
             {Cases.map((item, index) => {
@@ -50,6 +49,7 @@ function Home() {
                   image={item.image}
                   roles={item.roles}
                   title={item.title}
+                  href={item.href}
                   comingSoon={item.comingSoon}
                 />
               );
@@ -64,7 +64,7 @@ function Home() {
 
       <div className='section-concept'>
         <GridContainer>
-          <h2>Projetos pessoais e Conceito</h2>
+          <h2 data-aos='fade-up'>Projetos pessoais e Conceito</h2>
 
           <div className='listview-concepts'>
             {CasesConcept.map((item, index) => {
@@ -84,20 +84,106 @@ function Home() {
         </GridContainer>
       </div>
 
-      <div className='section-how-help'>
+      <div className='section-how-help' id='section-how-help'>
         <GridContainer>
-          <h2>Como eu ajudo</h2>
+          <h2 data-aos='fade-up'>Como eu ajudo</h2>
+
+          <p className='body-l-paragraph' data-aos='fade-up'>
+            Contrate-me se precisar de um designer de produto, visual designer,
+            criação e manutenção de design system, desenvolvimento front-end.
+          </p>
+
+          <div className='design-developer' data-aos='fade-up'>
+            <div className='card-help'>
+              <div className='card-header'>
+                <Layers size={40} color='white' />
+                <h3>Designer</h3>
+                <p className='body-m'>
+                  Pensando estrategicamente e desenhando interfaces
+                  estruturadas, interações inteligentes e utilizando padrões de
+                  UI
+                </p>
+              </div>
+
+              <Separator />
+
+              <div className='card-body'>
+                <div className='group'>
+                  <p className='body-l'>Habilidades</p>
+                  <ul className='list'>
+                    <li className='body-m'>Padrões de UI</li>
+                    <li className='body-m'>Pesquisa de usuários</li>
+                    <li className='body-m'>Análise de competidores</li>
+                    <li className='body-m'>Handoff</li>
+                    <li className='body-m'>Design System</li>
+                    <li className='body-m'>Design de interação</li>
+                    <li className='body-m'>Prototipagem</li>
+                    <li className='body-m'>Teste de usabilidade</li>
+                  </ul>
+                </div>
+
+                <div className='group'>
+                  <p className='body-l'>Ferramentas</p>
+                  <ul className='list'>
+                    <li className='body-m'>Figma & Adobe XD</li>
+                    <li className='body-m'>Papel & Caneta</li>
+                    <li className='body-m'>LottieFiles</li>
+                    <li className='body-m'>SVGator</li>
+                    <li className='body-m'>Maze</li>
+                    <li className='body-m'>Miro</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className='card-help'>
+              <div className='card-header'>
+                <Code2 size={40} color='white' />
+                <h3>Developer</h3>
+                <p className='body-m'>
+                  Curto em codificar as coisas do zero e dá vidas as ideias no
+                  mobile e na web
+                </p>
+              </div>
+
+              <Separator />
+
+              <div className='card-body'>
+                <div className='group'>
+                  <p className='body-l'>Habilidades</p>
+                  <ul className='list'>
+                    <li className='body-m'>Websites</li>
+                    <li className='body-m'>Web Apps</li>
+                    <li className='body-m'>Padrões de UI</li>
+                    <li className='body-m'>Desenvolvimento Cross-Platform</li>
+                    <li className='body-m'>Integração e Deploy</li>
+                  </ul>
+                </div>
+
+                <div className='group'>
+                  <p className='body-l'>Ferramentas</p>
+                  <ul className='list'>
+                    <li className='body-m'>HTML & CSS (Sass)</li>
+                    <li className='body-m'>Javascript</li>
+                    <li className='body-m'>Expo CLI</li>
+                    <li className='body-m'>React JS</li>
+                    <li className='body-m'>Github</li>
+                    <li className='body-m'>VS Code</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </GridContainer>
       </div>
 
       <div className='section-about'>
         <GridContainer>
           <div className='text-about'>
-            <h2>
+            <h2 data-aos='fade-up'>
               Paulo Janai, Product Designer, Developer, atualmente baseado no
               Brasil
             </h2>
-            <div className='description'>
+            <div className='description' data-aos='fade-up'>
               <p className='body-m'>
                 Meu nome é Paulo Janai Mariano da Silva. Atuo como product
                 designer que mora no Canindé, Brasil. Minha principal área hoje
@@ -117,12 +203,12 @@ function Home() {
                 aplicativos.
               </p>
             </div>
-            <Button className='see-cv'>
+            {/* <Button className='see-cv'>
               <p className='body-m'>Ver currículo</p>
               <FileText size={24} />
-            </Button>
+            </Button> */}
           </div>
-          <div className='image-about'>
+          <div className='image-about' data-aos='fade-up'>
             <img src={PictureAbout} alt='Foto de Paulo Janai' />
             <div className='group-social'>
               <ButtonIcon

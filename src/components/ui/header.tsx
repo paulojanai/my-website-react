@@ -1,8 +1,11 @@
-import GridContainer from '@components/Grid';
-import { Link } from 'react-router-dom';
-import Logo from '@assets/logo-dark.svg';
-import { Github, Linkedin, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Github, Linkedin, Menu, X } from 'lucide-react';
+
+import GridContainer from '@components/Grid';
+import Logo from '@assets/logo-dark.svg';
+
+import CVPDF from '../../../paulojanai-cv.pdf';
 
 function Header() {
   const [open, setOpen] = useState<boolean>(false);
@@ -23,16 +26,16 @@ function Header() {
         <nav className='nav-default' data-aos='fade-left'>
           <ul>
             <li>
-              <a href='#section-works'>Trabalhos</a>
+              <a href='/#section-works'>Trabalhos</a>
             </li>
             <li>
-              <a href='/#section-about'>Como eu ajudo</a>
+              <a href='/#section-how-help'>Como eu ajudo</a>
             </li>
             <li>
               <a href='#section-contact'>Sobre</a>
             </li>
             <li>
-              <a href='#cv' target='_blank'>
+              <a href={CVPDF} target='_blank'>
                 CV
               </a>
             </li>
@@ -41,12 +44,17 @@ function Header() {
                 <a
                   href='https://www.linkedin.com/in/paulojanai/'
                   target='_blank'
+                  rel='noopener noreferrer'
                 >
                   <Linkedin size={20} />
                 </a>
               </li>
               <li>
-                <a href='https://github.com/paulojanai' target='_blank'>
+                <a
+                  href='https://github.com/paulojanai'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <Github size={20} />
                 </a>
               </li>
@@ -82,7 +90,7 @@ function Header() {
                 <a href='#section-contact'>Sobre</a>
               </li>
               <li>
-                <a href='#cv' target='_blank'>
+                <a href='' target='_blank'>
                   CV
                 </a>
               </li>
@@ -91,12 +99,17 @@ function Header() {
                   <a
                     href='https://www.linkedin.com/in/paulojanai/'
                     target='_blank'
+                    rel='noopener noreferrer'
                   >
                     <Linkedin size={40} />
                   </a>
                 </li>
                 <li>
-                  <a href='https://github.com/paulojanai' target='_blank'>
+                  <a
+                    href='https://github.com/paulojanai'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <Github size={40} />
                   </a>
                 </li>

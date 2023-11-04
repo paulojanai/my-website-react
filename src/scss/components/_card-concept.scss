@@ -1,14 +1,14 @@
 .card-concept {
   @include flex(column, start, center);
   width: 100%;
-  max-width: 62rem;
-  gap: 3.2rem;
+  max-width: 48.25%;
+  gap: 2.8rem;
 
   .thumb {
+    width: 100%;
     border-radius: 0.8rem;
     overflow: hidden;
     transition: transform 0.3s;
-    background-color: aqua;
 
     img {
       transition: all 0.3s;
@@ -22,7 +22,7 @@
   .text {
     p {
       &.body-m {
-        color: $grayscale-200;
+        color: $grayscale-300;
         margin-bottom: 0.8rem;
       }
     }
