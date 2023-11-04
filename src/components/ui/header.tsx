@@ -32,7 +32,7 @@ function Header() {
               <a href='/#section-how-help'>Como eu ajudo</a>
             </li>
             <li>
-              <a href='#section-contact'>Sobre</a>
+              <a href='/#section-about'>Sobre</a>
             </li>
             <li>
               <a href={CVPDF} target='_blank'>

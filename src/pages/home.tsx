@@ -176,7 +176,7 @@ function Home() {
         </GridContainer>
       </div>
 
-      <div className='section-about'>
+      <div className='section-about' id='section-about'>
         <GridContainer>
           <div className='text-about'>
             <h2 data-aos='fade-up'>
