@@ -5,6 +5,7 @@ export type ICase = {
   image: string;
   roles: string;
   title: string;
+  href?: string;
   comingSoon: boolean;
 };
 
@@ -21,6 +22,7 @@ const Cases: ICase[] = [
     roles: 'UX/UI Designer, UI Designer',
     title:
       'Automação.com: Experiência do aplicativo de pedidos adaptada para a web',
+      href: "cases/entregou-me-web",
     comingSoon: true,
   },
 ];

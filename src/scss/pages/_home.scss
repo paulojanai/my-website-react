@@ -121,6 +121,7 @@
 
     p {
       &.body-l-paragraph {
+        max-width: 79.4rem;
         color: $grayscale-300;
       }
     }
@@ -132,6 +133,13 @@
     }
 
     @include responsive(768px) {
+      p {
+        &.body-l-paragraph {
+          max-width: 100%;
+
+        }
+      }
+
       .design-developer {
         margin-top: 4rem;
         @include flex(column, center, center);

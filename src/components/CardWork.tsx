@@ -6,6 +6,7 @@ const CardWork: React.FC<ICase> = ({
   image,
   roles,
   title,
+  href,
   comingSoon,
 }: ICase) => {
   return (
@@ -15,10 +16,10 @@ const CardWork: React.FC<ICase> = ({
       </div>
       <div className='text'>
         <p className='body-m'>{roles}</p>
-        <h3 className=''>{title}</h3>
+        <h3>{title}</h3>
       </div>
 
-      <Button disabled={comingSoon}>
+      <Button disabled={comingSoon} href={href}>
         <p className='body-m'>
           Ver caso de estudo {comingSoon && '(Em breve)'}
         </p>
