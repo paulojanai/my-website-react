@@ -1,4 +1,5 @@
 import GridContainer from '@components/Grid';
+import CaseSectionHero from '@components/ui/case-section-hero';
 import { CasesObject } from '@data/cases/casesWork';
 
 function EntregouMeWeb() {
@@ -6,19 +7,7 @@ function EntregouMeWeb() {
 
   return (
     <>
-      <div className='section-hero-case'>
-        <GridContainer>
-          <p className='body-xl'>
-            {project?.client}, {project?.date}
-          </p>
-
-          <h1>{project?.title}</h1>
-
-          <div className='thumb-hero'>
-            <img src={project?.image} alt='Thumb' />
-          </div>
-        </GridContainer>
-      </div>
+      <CaseSectionHero project={project} />
 
       <div className='section-overview-case'>
         <GridContainer>

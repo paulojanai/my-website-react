@@ -1,26 +1,3 @@
-.section-hero-case {
-  background-color: $grayscale-700;
-  color: $grayscale-50;
-  padding-top: 9rem;
-
-  .grid-container {
-    @include padding_section();
-
-    p {
-      &.body-xl {
-        color: $grayscale-300;
-        margin-bottom: 0.8rem;
-      }
-    }
-
-    .thumb-hero {
-      margin-top: 6rem;
-      border-radius: 1.6rem;
-      overflow: hidden;
-    }
-  }
-}
-
 .section-overview-case {
   background-color: $grayscale-600;
   color: $grayscale-50;
