@@ -2,6 +2,23 @@
   overflow-y: hidden;
 }
 
+.openToWork {
+  @include flex(row, center, center);
+
+  .signal {
+    width: 3.2rem;
+  }
+
+  p {
+    //styleName: Body/Body M;
+    font-family: Archivo;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    color: $green-500;
+  }
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -15,9 +32,14 @@ header {
   .grid-container {
     @include flex(row, center, space-between);
 
-    .logo {
-      img {
-        height: 2.4rem;
+    .left {
+      @include flex(row, center, center);
+      gap: 1.2rem;
+
+      .logo {
+        img {
+          height: 2.4rem;
+        }
       }
     }
 
@@ -32,6 +54,7 @@ header {
             color: $grayscale-50;
             @include typography-link();
             @include expand_border($grayscale-50);
+            cursor: pointer;
           }
         }
 

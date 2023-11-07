@@ -6,34 +6,38 @@ import GridContainer from '@components/Grid';
 import Logo from '@assets/logo-dark.svg';
 
 import CVPDF from '../../../paulojanai-cv.pdf';
+import OpenToWork from '@components/OpenTowork';
+import { navLinks } from '@data/nav/links';
 
-function Header() {
+export function Header() {
   const [open, setOpen] = useState<boolean>(false);
 
   const actionMenu = () => {
     setOpen(!open);
-
     document.documentElement.classList.toggle('open-menu');
+  };
+
+  const handleClickNav = (link: string) => {
+    console.log(link);
   };
 
   return (
     <header>
       <GridContainer>
-        <Link to='/' className='logo' data-aos='fade-right'>
-          <img src={Logo} alt='Logo Paulo Janai' />
-        </Link>
+        <div className='left' data-aos='fade-right'>
+          <Link to='/' className='logo'>
+            <img src={Logo} alt='Logo Paulo Janai' />
+          </Link>
+          <OpenToWork />
+        </div>
 
         <nav className='nav-default' data-aos='fade-left'>
           <ul>
-            <li>
-              <a href='/#section-works'>Trabalhos</a>
-            </li>
-            <li>
-              <a href='/#section-how-help'>Como eu ajudo</a>
-            </li>
-            <li>
-              <a href='/#section-about'>Sobre</a>
-            </li>
+            {navLinks.map((item, index) => (
+              <li key={index}>
+                <a onClick={() => handleClickNav(item.linkID)}>{item.name}</a>
+              </li>
+            ))}
             <li>
               <a href={CVPDF} target='_blank'>
                 CV
@@ -80,15 +84,11 @@ function Header() {
 
           <nav className='nav-mobile'>
             <ul>
-              <li>
-                <a href='#section-works'>Trabalhos</a>
-              </li>
-              <li>
-                <a href='/#section-about'>Como eu ajudo</a>
-              </li>
-              <li>
-                <a href='#section-contact'>Sobre</a>
-              </li>
+              {navLinks.map((item, index) => (
+                <li key={index}>
+                  <a onClick={() => handleClickNav(item.linkID)}>{item.name}</a>
+                </li>
+              ))}
               <li>
                 <a href='' target='_blank'>
                   CV
@@ -121,5 +121,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
