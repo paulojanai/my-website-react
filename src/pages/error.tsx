@@ -6,7 +6,7 @@ import GridContainer from '@components/Grid';
 
 function Error() {
   return (
-    <div className='page-error'>
+    <section className='page-error'>
       <GridContainer>
         <h1>Oops...</h1>
         <h4>Página não encontrada</h4>
@@ -16,7 +16,7 @@ function Error() {
         </Button>
         <Link to='/'></Link>
       </GridContainer>
-    </div>
+    </section>
   );
 }
 

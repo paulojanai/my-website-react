@@ -10,7 +10,7 @@ function MyReportOnline() {
     <>
       <CaseSectionHero project={project} />
 
-      <div className='section-overview-case'>
+      <section className='section-overview-case'>
         <GridContainer>
           <h2>Visão geral</h2>
           <div className='text'>
@@ -58,7 +58,7 @@ function MyReportOnline() {
             </div>
           </div>
         </GridContainer>
-      </div>
+      </section>
     </>
   );
 }

@@ -9,7 +9,7 @@ function EntregouMeWeb() {
     <>
       <CaseSectionHero project={project} />
 
-      <div className='section-overview-case'>
+      <section className='section-overview-case'>
         <GridContainer>
           <h2>Visão geral</h2>
           <div className='text'>
@@ -48,7 +48,7 @@ function EntregouMeWeb() {
             </div>
           </div>
         </GridContainer>
-      </div>
+      </section>
     </>
   );
 }

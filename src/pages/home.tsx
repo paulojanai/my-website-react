@@ -18,7 +18,7 @@ import ButtonIcon from '@components/ButtonIcon';
 function Home() {
   return (
     <>
-      <div className='section-hero'>
+      <section className='section-hero'>
         <GridContainer dataAos='fade-right'>
           <h5>Opa, eu sou Paulo Janai 👋🏾</h5>
           <h1>
@@ -35,9 +35,9 @@ function Home() {
             </div>
           </div>
         </GridContainer>
-      </div>
+      </section>
 
-      <div className='section-works' id='section-works'>
+      <section className='section-works' id='section-works'>
         <GridContainer>
           <h2 data-aos='fade-up'>Trabalhos selecionados</h2>
 
@@ -56,13 +56,13 @@ function Home() {
             })}
           </div>
         </GridContainer>
-      </div>
+      </section>
 
       <GridContainer>
         <Separator />
       </GridContainer>
 
-      <div className='section-concept'>
+      <section className='section-concept'>
         <GridContainer>
           <h2 data-aos='fade-up'>Projetos pessoais e Conceito</h2>
 
@@ -82,9 +82,9 @@ function Home() {
             })}
           </div>
         </GridContainer>
-      </div>
+      </section>
 
-      <div className='section-how-help' id='section-how-help'>
+      <section className='section-how-help' id='section-how-help'>
         <GridContainer>
           <h2 data-aos='fade-up'>Como eu ajudo</h2>
 
@@ -174,9 +174,9 @@ function Home() {
             </div>
           </div>
         </GridContainer>
-      </div>
+      </section>
 
-      <div className='section-about' id='section-about'>
+      <section className='section-about' id='section-about'>
         <GridContainer>
           <div className='text-about'>
             <h2 data-aos='fade-up'>
@@ -222,7 +222,7 @@ function Home() {
             </div>
           </div>
         </GridContainer>
-      </div>
+      </section>
     </>
   );
 }
