@@ -4,9 +4,10 @@
   @include flex(row, center, center);
   gap: 1.2rem;
   padding: 0rem 2.4rem;
-  border: 2px solid $grayscale-50;
+  border: 2px solid $grayscale-400;
   border-radius: 9rem;
   transition: all 0.3s;
+  cursor: pointer;
 
   p {
     &.body-m {
@@ -17,11 +18,11 @@
   &:hover {
     background-color: $grayscale-50;
     color: $grayscale-600;
+    border-color: $grayscale-50;
   }
 
   &.disabled {
     pointer-events: none;
     color: $grayscale-300;
-    border-color: $grayscale-400;
   }
 }

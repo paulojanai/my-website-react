@@ -153,9 +153,10 @@ function Home() {
                   <ul className='list'>
                     <li className='body-m'>Websites</li>
                     <li className='body-m'>Web Apps</li>
+                    <li className='body-m'>Integração e Deploy</li>
                     <li className='body-m'>Padrões de UI</li>
                     <li className='body-m'>Desenvolvimento Cross-Platform</li>
-                    <li className='body-m'>Integração e Deploy</li>
+                    <li className='body-m'>Responsividade</li>
                   </ul>
                 </div>
 

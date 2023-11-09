@@ -75,12 +75,13 @@ footer {
     }
 
     .development {
-      @include flex(row, center, center);
-      gap: 1.2rem;
+      @include flex(row, center, flex-start);
+      gap: 0.8rem;
 
       a {
         img {
-          height: 1.6rem;
+          margin-top: 0.4rem;
+          height: 1.3rem;
           filter: grayscale(1);
           transition: filter 0.3s;
 

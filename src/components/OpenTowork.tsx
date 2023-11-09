@@ -1956,7 +1956,7 @@ export default function OpenToWork() {
     );
   }, []);
   return (
-    <div className='openToWork'>
+    <div className='open-to-work'>
       <div className='signal'>
         <svg
           id='e6s3ziwt2WH1'
