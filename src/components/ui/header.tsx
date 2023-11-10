@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowLeft, Github, Linkedin, Menu, X } from 'lucide-react';
+import { ArrowLeft, Dribbble, Github, Linkedin, Menu, X } from 'lucide-react';
 
 import GridContainer from '@components/Grid';
 import Logo from '@assets/logo-dark.svg';
@@ -9,6 +9,7 @@ import CVPDF from '../../../paulojanai-cv.pdf';
 import OpenToWork from '@components/OpenTowork';
 import { navLinks } from '@data/nav/links';
 import Button from '@components/Button';
+import { XTwitter } from '@components/Icons';
 
 export function Header() {
   const [open, setOpen] = useState<boolean>(false);
@@ -160,7 +161,7 @@ export function Header() {
                       target='_blank'
                       rel='noopener noreferrer'
                     >
-                      <Linkedin size={40} />
+                      <Linkedin size={32} />
                     </a>
                   </li>
                   <li className='nav-link'>
@@ -169,7 +170,27 @@ export function Header() {
                       target='_blank'
                       rel='noopener noreferrer'
                     >
-                      <Github size={40} />
+                      <Dribbble size={32} />
+                    </a>
+                  </li>
+                  <li className='nav-link'>
+                    <a
+                      href='https://github.com/paulojanai'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <Github size={32} />
+                    </a>
+                  </li>
+                  <li className='nav-link'>
+                    <a
+                      href='https://github.com/paulojanai'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <div className='x-twitter'>
+                        <XTwitter />
+                      </div>
                     </a>
                   </li>
                 </ul>

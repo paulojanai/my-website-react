@@ -49,10 +49,11 @@ function Footer() {
           <div className='links'>
             <div className='left'>
               <Link
-                link='https://github.com/paulojanai'
-                text='Github'
-                nameIcon='Github'
+                link='https://www.linkedin.com/in/paulojanai/'
+                text='Linkedin'
+                nameIcon='Linkedin'
               />
+
               <Link
                 link='https://dribbble.com/paulojanai'
                 text='Dribbble'
@@ -61,9 +62,9 @@ function Footer() {
             </div>
             <div className='right'>
               <Link
-                link='https://www.linkedin.com/in/paulojanai/'
-                text='Linkedin'
-                nameIcon='Linkedin'
+                link='https://github.com/paulojanai'
+                text='Github'
+                nameIcon='Github'
               />
               <Link
                 link='https://twitter.com/paulo_janai'
