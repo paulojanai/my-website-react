@@ -82,7 +82,8 @@ function Footer() {
           <div className='development'>
             <p>Design and development by</p>
             <a
-              href='https://nocapstudio.com.br'
+              // href='https://nocapstudio.com.br'
+              href='https://www.instagram.com/nocappro/'
               target='_blank'
               rel='noopener noreferrer'
             >
