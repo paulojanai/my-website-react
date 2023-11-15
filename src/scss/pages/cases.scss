@@ -4,42 +4,53 @@
 
   .grid-container {
     @include padding_section();
+    @include flex(row, flex-start, space-between);
 
-    h2 {
-      margin-bottom: 2.4rem;
-    }
+    main {
+      max-width: 93.8rem;
 
-    .text {
-      @include flex (column, flex-start, flex-start);
-      gap: 1.6rem;
+      h2 {
+        margin-bottom: 2.4rem;
+      }
 
-      p {
-        &.body-m {
-          color: $grayscale-300;
+      .text {
+        @include flex (column, flex-start, flex-start);
+        gap: 1.6rem;
 
+        p {
+          &.body-m {
+            color: $grayscale-300;
+
+          }
+        }
+      }
+
+      .details {
+        margin-top: 4rem;
+        @include flex (row, flex-start, space-between);
+        column-gap: 4rem;
+
+        .item {
+          p {
+            &.body-xl {
+              margin-bottom: 1.2rem;
+            }
+          }
+
+          ul {
+            li {
+              &.body-m {
+                color: $grayscale-300;
+              }
+            }
+          }
         }
       }
     }
 
-    .details {
-      margin-top: 4rem;
-      @include flex (row, flex-start, space-between);
-      column-gap: 4rem;
-
-      .item {
-        p {
-          &.body-xl {
-            margin-bottom: 1.2rem;
-          }
-        }
-
-        ul {
-          li {
-            &.body-m {
-              color: $grayscale-300;
-            }
-          }
-        }
+    @include responsive(991px) {
+      main {
+        max-width: 100%;
       }
     }
 

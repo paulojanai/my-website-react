@@ -1,0 +1,40 @@
+nav {
+  &.navbar-case {
+    max-width: 24.4rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16rem;
+
+    ul {
+      @include flex(column, flex-start, flex-start);
+      gap: 4rem;
+
+      li {
+        a {
+          h3 {
+            color: $grayscale-400;
+            transition: all 0.3s;
+
+            &.active {
+              color: $grayscale-50;
+            }
+
+            &:hover {
+              cursor: pointer;
+
+              &:not(.active) {
+                color: $grayscale-300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    &.navbar-case {
+      display: none;
+    }
+  }
+}

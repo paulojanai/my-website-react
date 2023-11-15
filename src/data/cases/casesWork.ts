@@ -1,6 +1,11 @@
 import MyReportOnline from '@assets/my-report-online/my_report_online.png';
 import EntregouMeWeb from '@assets/entregoume-white-label/entregou_me_web.png';
 
+export type IItemNavigationCase = {
+  title: string,
+  linkID: string,
+}
+
 export type ICase = {
   client?: string;
   date?: string;
@@ -9,28 +14,53 @@ export type ICase = {
   title: string;
   href?: string;
   comingSoon: boolean;
+  navigation?: IItemNavigationCase[];
 };
 
 const MyReport : ICase = {
   client: "Ceará Inspeção",
-  date: "Ago 2023 - Em andamento",
+  date: "2023 - Em andamento",
   image: MyReportOnline,
   roles: 'Branding, UX/UI Designer, UI Designer, User testing',
   title:
   'Meu relatório online: Plataforma web para ajudar na inspeção predial',
   // href: "cases/my-report-online",
   comingSoon: true,
+  navigation: [{
+    title: "Overview",
+    linkID: "section-overview"
+  },
+  {
+    title: "Entregáveis",
+    linkID: "section-deliverables"
+  },
+  {
+    title: "Visuais",
+    linkID: "section-visuals"
+  }]
 };
 
 const EntregouMe: ICase = {
   client: "Automação.com",
-  date: "Out 2021 - Nov 2021",
+  date: "2021",
   image: EntregouMeWeb,
   roles: 'UX/UI Designer, UI Designer',
   title:
     'Automação.com: Experiência do aplicativo de pedidos adaptada para a web',
     // href: "cases/entregou-me-web",
   comingSoon: true,
+  navigation: [{
+    title: "Overview",
+    linkID: "section-overview"
+  },
+  {
+    title: "Entregáveis",
+    linkID: "section-deliverables"
+  },
+  {
+    title: "Visuais",
+    linkID: "section-visuals"
+  }]
 };
 
 type IProject = {
