@@ -1,16 +1,21 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-weight: 700;
-  font-family: "Bespoke Serif", serif;
+  font-family: 'Sora', sans-serif;
 }
 
 h1 {
   font-size: 6.4rem;
+  line-height: 116%;
+  letter-spacing: -0.005em;
+
 
   @include responsive(600px) {
     font-size: 4rem;
+    line-height: 130%;
   }
 }
 
@@ -39,7 +44,6 @@ h4 {
 }
 
 h5 {
-  font-family: "Archivo", sans-serif;
   font-size: 2.4rem;
   font-weight: 600;
 

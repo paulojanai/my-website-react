@@ -20,10 +20,10 @@ function Home() {
     <>
       <section className='section-hero'>
         <GridContainer dataAos='fade-right'>
-          <h5>Opa, eu sou Paulo Janai 👋🏾</h5>
+          <p className='body-xl'>Opa, eu sou Paulo Janai 👋🏾</p>
           <h1>
-            Product designer e front-end developer com foco na criação e
-            evolução das experiências do usuário através de soluções de design
+            Product designer e developer com foco na criação e evoluçãodas
+            experiências do usuário através de soluções de design
           </h1>
 
           <div className='companies'>
