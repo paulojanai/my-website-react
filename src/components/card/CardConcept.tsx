@@ -1,5 +1,5 @@
 import { Asterisk } from 'lucide-react';
-import Link from './Link';
+import Link from '../Link';
 import { ICaseConcept } from '@data/cases/casesConcept';
 
 const CardConcept: React.FC<ICaseConcept> = ({

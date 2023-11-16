@@ -6,6 +6,19 @@ export type IItemNavigationCase = {
   linkID: string,
 }
 
+export const CaseNavigationItems: IItemNavigationCase[] = [{
+  title: "Overview",
+  linkID: "section-overview"
+},
+{
+  title: "Entregáveis",
+  linkID: "section-deliverables"
+},
+{
+  title: "Visuais",
+  linkID: "section-visuals"
+}]
+
 export type ICase = {
   client?: string;
   date?: string;
@@ -17,7 +30,6 @@ export type ICase = {
   team?: string[];
   href?: string;
   comingSoon: boolean;
-  navigation?: IItemNavigationCase[];
 };
 
 const MyReport : ICase = {
@@ -32,18 +44,6 @@ const MyReport : ICase = {
   products: ['Aplicativo', 'WebApp', 'Template PDF'],
   team: ['Junin, FS Developer e PM','Willamy, Fullstack Developer','(Eu), Product Designer'],  
   comingSoon: true,
-  navigation: [{
-    title: "Overview",
-    linkID: "section-overview"
-  },
-  {
-    title: "Entregáveis",
-    linkID: "section-deliverables"
-  },
-  {
-    title: "Visuais",
-    linkID: "section-visuals"
-  }]
 };
 
 const EntregouMe: ICase = {
@@ -57,19 +57,7 @@ const EntregouMe: ICase = {
     roles: ['UX/UI Designer', 'Visual Design'],
   products: ['Website'],
   team: ['(Eu), Product Designer'],
-  comingSoon: true,
-  navigation: [{
-    title: "Overview",
-    linkID: "section-overview"
-  },
-  {
-    title: "Entregáveis",
-    linkID: "section-deliverables"
-  },
-  {
-    title: "Visuais",
-    linkID: "section-visuals"
-  }]
+  comingSoon: true
 };
 
 type IProject = {

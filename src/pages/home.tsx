@@ -1,7 +1,7 @@
-import CardWork from '@components/CardWork';
+import CardWork from '@components/card/CardWork';
 import GridContainer from '@components/Grid';
-import Separator from '@components/Separator';
-import CardConcept from '@components/CardConcept';
+import Separator from '@components/ui/Separator';
+import CardConcept from '@components/card/CardConcept';
 
 import { CasesArray } from '@data/cases/casesWork';
 import CasesConcept from '@data/cases/casesConcept';
@@ -13,7 +13,7 @@ import GrupoBoticario from '@assets/grupo_boticario.png';
 import CasaMagalhaes from '@assets/cm.png';
 import Automacaocom from '@assets/automacao_com.png';
 import { Code2, Layers } from 'lucide-react';
-import ButtonIcon from '@components/ButtonIcon';
+import ButtonIcon from '@components/button/ButtonIcon';
 
 function Home() {
   return (

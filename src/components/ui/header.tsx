@@ -7,7 +7,7 @@ import Logo from '@assets/logo-dark.svg';
 
 import CVPDF from '../../../paulojanai-cv.pdf';
 import { navLinks } from '@data/nav/links';
-import Button from '@components/Button';
+import Button from '@components/button/Button';
 import { XTwitter } from '@components/Icons';
 import OpenToWork from '@components/OpenToWork';
 

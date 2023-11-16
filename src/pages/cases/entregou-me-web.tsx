@@ -1,8 +1,8 @@
 import GridContainer from '@components/Grid';
 import { NavigationCase } from '@components/ui/NavigationCase';
-import { CaseSectionHero } from '@components/ui/CaseSectionHero';
+import { CaseSectionHero } from '@components/case/CaseSectionHero';
 import { CasesObject } from '@data/cases/casesWork';
-import { CaseSectionItem } from '@components/ui/CaseSectionItem';
+import { CaseSectionItem } from '@components/case/CaseSectionItem';
 import { useNav } from '@hooks/useNav';
 
 function EntregouMeWeb() {

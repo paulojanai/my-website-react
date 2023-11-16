@@ -2,7 +2,7 @@
 
 import Link from '@components/Link';
 import GridContainer from '@components/Grid';
-import Separator from '@components/Separator';
+import Separator from '@components/ui/Separator';
 
 import CVPDF from '../../../paulojanai-cv.pdf';
 

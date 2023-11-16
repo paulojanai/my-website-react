@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
-import Button from '@components/Button';
+import Button from '@components/button/Button';
 import GridContainer from '@components/Grid';
 
 function Error() {

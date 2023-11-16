@@ -1,5 +1,5 @@
 import { ArrowUpRight } from 'lucide-react';
-import Button from './Button';
+import Button from '../button/Button';
 import { ICase } from '@data/cases/casesWork';
 
 const CardWork: React.FC<ICase> = ({

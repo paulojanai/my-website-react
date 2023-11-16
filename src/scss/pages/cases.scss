@@ -9,12 +9,12 @@
     main {
       max-width: 90rem;
       @include flex(column, flex-start, flex-start);
-      gap: 12rem;
+      gap: 16rem;
 
       .section-case {
         .listview {
           @include flex(column, flex-start, flex-start);
-          gap: 12rem;
+          gap: 16rem;
         }
       }
 
