@@ -1,9 +1,14 @@
+import { ArrowUpRight } from 'lucide-react';
+
 import GridContainer from '@components/Grid';
 import { NavigationCase } from '@components/ui/NavigationCase';
 import { CaseSectionHero } from '@components/ui/CaseSectionHero';
 import { CasesObject } from '@data/cases/casesWork';
 import { CaseSectionItem } from '@components/ui/CaseSectionItem';
 import { useNav } from '@hooks/useNav';
+import Button from '@components/Button';
+
+import userFlow from '@assets/entregoume-white-label/user_flow_entregoume-white-label.jpg';
 
 function MyReportOnline() {
   const project = CasesObject['MyReportOnline'];
@@ -27,15 +32,15 @@ function MyReportOnline() {
               id='section-overview'
             >
               <div className='listview'>
-                <CaseSectionItem title='Sobre Entregou.me'>
+                <CaseSectionItem title='Sobre'>
                   <div className='text'>
                     <p className='body-m'>
-                      Inferus é uma infraestrutura web3 que usa links simples,
-                      personalizados e seguros para os usuários adicionarem
-                      facilmente seus endereços de carteira existentes para
-                      enviar e receber criptografia com segurança. Eu
-                      pessoalmente nunca teria entendido o projeto com essa
-                      definição.
+                      Meu relatório online é uma ferramente web que auxilia na
+                      geração de relatórios complexos, personalizados e seguros
+                      para os usuários adicionarem facilmente seus endereços de
+                      carteira existentes para enviar e receber criptografia com
+                      segurança. Eu pessoalmente nunca teria entendido o projeto
+                      com essa definição.
                     </p>
                     <p className='body-m'>
                       Inferus é uma plataforma que visa facilitar o envio e
@@ -124,7 +129,7 @@ function MyReportOnline() {
               id='section-deliverables'
             >
               <div className='listview'>
-                <CaseSectionItem title='Title'>
+                <CaseSectionItem title='User flow'>
                   <div className='text'>
                     <p className='body-m'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -151,6 +156,17 @@ function MyReportOnline() {
                       nulla, lacinia scelerisque dui hendrerit at.
                     </p>
                   </div>
+
+                  <Button>
+                    <p className='body-m'>Ver user flow completo</p>
+                    <ArrowUpRight size={24} />
+                  </Button>
+
+                  <img
+                    className='img-case-section'
+                    src={userFlow}
+                    alt='User Flow'
+                  />
                 </CaseSectionItem>
                 <CaseSectionItem title='Title'>
                   <div className='text'>

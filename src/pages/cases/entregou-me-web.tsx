@@ -2,8 +2,8 @@ import GridContainer from '@components/Grid';
 import { NavigationCase } from '@components/ui/NavigationCase';
 import { CaseSectionHero } from '@components/ui/CaseSectionHero';
 import { CasesObject } from '@data/cases/casesWork';
-import { useNav } from '@hooks/useNav';
 import { CaseSectionItem } from '@components/ui/CaseSectionItem';
+import { useNav } from '@hooks/useNav';
 
 function EntregouMeWeb() {
   const project = CasesObject['EntregouMeWeb'];

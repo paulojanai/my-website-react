@@ -7,7 +7,7 @@
     @include flex(row, flex-start, space-between);
 
     main {
-      max-width: 93.8rem;
+      max-width: 90rem;
       @include flex(column, flex-start, flex-start);
       gap: 12rem;
 

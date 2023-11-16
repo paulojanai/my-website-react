@@ -1,14 +1,12 @@
 .case-section-item {
-  h2 {
-    margin-bottom: 4rem;
-  }
+  @include flex (column, flex-start, flex-start);
+  gap: 3.2rem;
 
   .text {
     @include flex (column, flex-start, flex-start);
     gap: 1.6rem;
 
     p {
-
       &.body-xl {
         color: $grayscale-200;
       }
@@ -16,6 +14,12 @@
       &.body-m {
         color: $grayscale-300;
       }
+    }
+  }
+
+  img {
+    &.img-case-section {
+      border-radius: 1.6rem;
     }
   }
 }
