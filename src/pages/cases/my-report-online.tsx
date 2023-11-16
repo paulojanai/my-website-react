@@ -1,6 +1,6 @@
 import GridContainer from '@components/Grid';
 import { NavigationCase } from '@components/ui/NavigationCase';
-import CaseSectionHero from '@components/ui/case-section-hero';
+import CaseSectionHero from '@components/ui/CaseSectionHero';
 
 import { CasesObject } from '@data/cases/casesWork';
 

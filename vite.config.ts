@@ -12,6 +12,7 @@ export default defineConfig({
       "@scss": `${path.resolve(__dirname, "./src/scss/")}`,
       "@components": `${path.resolve(__dirname, "./src/components/")}`,
       "@data": `${path.resolve(__dirname, "./src/data/")}`,
+      "@hooks": `${path.resolve(__dirname, "./src/hooks/")}`,
       "@pages": `${path.resolve(__dirname, "./src/pages/")}`,
       "@routes": `${path.resolve(__dirname, "./src/routes/")}`,
     },

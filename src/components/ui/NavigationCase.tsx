@@ -9,9 +9,9 @@ export const NavigationCase = ({ items }: NavigationCaseProps) => {
   const [linkActive, setLinkActive] = useState('section-overview');
 
   const handleClickNav = (link: string) => {
-    const initPosition: number = document.getElementById(link)?.offsetTop || 0;
-
     setLinkActive(link);
+
+    const initPosition: number = document.getElementById(link)?.offsetTop || 0;
 
     window.scrollTo({
       top: initPosition - 160,

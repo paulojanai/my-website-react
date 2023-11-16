@@ -8,7 +8,7 @@ import CVPDF from '../../../paulojanai-cv.pdf';
 
 import NocapStudio from '@assets/NocapStudio.svg';
 
-function Footer() {
+export function Footer() {
   return (
     <footer id='section-contact'>
       <GridContainer>
@@ -95,5 +95,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

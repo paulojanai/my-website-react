@@ -27,6 +27,7 @@
       "@scss/*": ["scss/*"],
       "@components/*": ["components/*"],
       "@data/*": ["data/*"],
+      "@hooks/*": ["hooks/*"],
       "@pages/*": ["pages/*"],
       "@routes/*": ["routes/*"]
     }
