@@ -5,7 +5,7 @@ type CaseSectionHeroProps = {
   project?: ICase;
 };
 
-function CaseSectionHero({ project }: CaseSectionHeroProps) {
+export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
   return (
     <div className='section-hero-case'>
       <GridContainer>
@@ -21,6 +21,4 @@ function CaseSectionHero({ project }: CaseSectionHeroProps) {
       </GridContainer>
     </div>
   );
-}
-
-export default CaseSectionHero;
+};

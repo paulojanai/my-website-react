@@ -6,10 +6,10 @@ import GridContainer from '@components/Grid';
 import Logo from '@assets/logo-dark.svg';
 
 import CVPDF from '../../../paulojanai-cv.pdf';
-import OpenToWork from '@components/OpenTowork';
 import { navLinks } from '@data/nav/links';
 import Button from '@components/Button';
 import { XTwitter } from '@components/Icons';
+import OpenToWork from '@components/OpenToWork';
 
 export function Header() {
   const [open, setOpen] = useState<boolean>(false);

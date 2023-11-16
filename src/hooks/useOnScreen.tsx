@@ -5,7 +5,7 @@ export const useOnScreen = (ref: React.RefObject<HTMLElement>) => {
 
   const observer = new IntersectionObserver(
     ([entry]) => {
-      // console.log(entry);
+      setIsOnScreen(entry.isIntersecting);
     },
     {
       threshold: 0.7,

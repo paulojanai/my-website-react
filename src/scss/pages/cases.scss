@@ -9,49 +9,15 @@
     main {
       max-width: 93.8rem;
       @include flex(column, flex-start, flex-start);
-      gap: 14rem;
+      gap: 12rem;
 
-      section {
-        &.section-case {
-          h2 {
-            margin-bottom: 2.4rem;
-          }
-
-          .text {
-            @include flex (column, flex-start, flex-start);
-            gap: 1.6rem;
-
-            p {
-              &.body-m {
-                color: $grayscale-300;
-
-              }
-            }
-          }
-
-          .details {
-            margin-top: 4rem;
-            @include flex (row, flex-start, space-between);
-            column-gap: 4rem;
-
-            .item {
-              p {
-                &.body-xl {
-                  margin-bottom: 1.2rem;
-                }
-              }
-
-              ul {
-                li {
-                  &.body-m {
-                    color: $grayscale-300;
-                  }
-                }
-              }
-            }
-          }
+      .section-case {
+        .listview {
+          @include flex(column, flex-start, flex-start);
+          gap: 12rem;
         }
       }
+
     }
 
     @include responsive(991px) {
