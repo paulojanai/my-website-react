@@ -15,6 +15,45 @@ export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
 
         <h2 data-aos='fade-up'>{project?.title}</h2>
 
+        <div data-aos='fade-up' className='details'>
+          <div className='item'>
+            <p className='body-xl'>O que eu fiz</p>
+            <ul>
+              {project?.roles?.map((item, index) => {
+                return (
+                  <li key={index} className='body-m'>
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className='item'>
+            <p className='body-xl'>Produtos</p>
+            <ul>
+              {project?.products?.map((item, index) => {
+                return (
+                  <li key={index} className='body-m'>
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className='item'>
+            <p className='body-xl'>Equipe</p>
+            <ul>
+              {project?.team?.map((item, index) => {
+                return (
+                  <li key={index} className='body-m'>
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+
         <div data-aos='fade-up' data-aos-duration='2400' className='thumb-hero'>
           <img src={project?.image} alt='Thumb' />
         </div>

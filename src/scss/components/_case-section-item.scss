@@ -8,31 +8,13 @@
     gap: 1.6rem;
 
     p {
+
+      &.body-xl {
+        color: $grayscale-200;
+      }
+
       &.body-m {
         color: $grayscale-300;
-
-      }
-    }
-  }
-
-  .details {
-    margin-top: 4rem;
-    @include flex (row, flex-start, space-between);
-    column-gap: 4rem;
-
-    .item {
-      p {
-        &.body-xl {
-          margin-bottom: 1.2rem;
-        }
-      }
-
-      ul {
-        li {
-          &.body-m {
-            color: $grayscale-300;
-          }
-        }
       }
     }
   }

@@ -20,7 +20,7 @@ export const NavigationCase = ({ items }: NavigationCaseProps) => {
   };
 
   return (
-    <nav className='navbar-case'>
+    <nav data-aos='fade-up' className='navbar-case'>
       <ul>
         {items?.map((item, index) => {
           return (

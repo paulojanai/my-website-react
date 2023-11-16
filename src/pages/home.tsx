@@ -47,7 +47,7 @@ function Home() {
                 <CardWork
                   key={index}
                   image={item.image}
-                  roles={item.roles}
+                  descriptionRoles={item.descriptionRoles}
                   title={item.title}
                   href={item.href}
                   comingSoon={item.comingSoon}
@@ -72,7 +72,7 @@ function Home() {
                 <CardConcept
                   key={index}
                   image={item.image}
-                  roles={item.roles}
+                  descriptionRoles={item.descriptionRoles}
                   title={item.title}
                   comingSoon={item.comingSoon}
                   figmaURL={item.figmaURL}

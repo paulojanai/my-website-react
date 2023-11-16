@@ -13,6 +13,29 @@
       }
     }
 
+    .details {
+      margin-top: 8rem;
+      @include flex (row, flex-start, space-between);
+      column-gap: 4rem;
+
+      .item {
+        p {
+          &.body-xl {
+            color: $grayscale-200;
+            margin-bottom: 1.2rem;
+          }
+        }
+
+        ul {
+          li {
+            &.body-m {
+              color: $grayscale-300;
+            }
+          }
+        }
+      }
+    }
+
     .thumb-hero {
       margin-top: 6rem;
       border-radius: 1.6rem;

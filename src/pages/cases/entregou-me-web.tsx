@@ -101,6 +101,7 @@ function EntregouMeWeb() {
                       sorte de trabalhar com um designer de marca e um
                       pesquisador de UX no projeto.
                     </p>
+                    <span style={{ marginTop: 24 }}></span>
                     <p className='body-xl'>Objetivo de design</p>
                     <p className='body-m'>
                       1. Tornar mais fácil para as pessoas fazerem pagamentos e

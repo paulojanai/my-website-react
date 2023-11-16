@@ -10,8 +10,11 @@ export type ICase = {
   client?: string;
   date?: string;
   image: string;
-  roles: string;
+  descriptionRoles: string;
   title: string;
+  roles?: string[];
+  products?: string[];
+  team?: string[];
   href?: string;
   comingSoon: boolean;
   navigation?: IItemNavigationCase[];
@@ -21,10 +24,13 @@ const MyReport : ICase = {
   client: "Ceará Inspeção",
   date: "2023 - Em andamento",
   image: MyReportOnline,
-  roles: 'Branding, UX/UI Designer, UI Designer, User testing',
+  descriptionRoles: 'Branding, UX/UI Designer, UI Designer, User testing',
   title:
   'Meu relatório online: Plataforma web para ajudar na inspeção predial',
   // href: "cases/my-report-online",
+  roles: ['UX/UI Designer', 'Visual Design', 'Graphic Design', 'Illustrator'],
+  products: ['Aplicativo', 'WebApp', 'Template PDF'],
+  team: ['Junin, FS Developer e PM','Willamy, Fullstack Developer','(Eu), Product Designer'],  
   comingSoon: true,
   navigation: [{
     title: "Overview",
@@ -44,10 +50,13 @@ const EntregouMe: ICase = {
   client: "Automação.com",
   date: "2021",
   image: EntregouMeWeb,
-  roles: 'UX/UI Designer, UI Designer',
+  descriptionRoles: 'UX/UI Designer, UI Designer',
   title:
     'Automação.com: Experiência do aplicativo de pedidos adaptada para a web',
     // href: "cases/entregou-me-web",
+    roles: ['UX/UI Designer', 'Visual Design'],
+  products: ['Website'],
+  team: ['(Eu), Product Designer'],
   comingSoon: true,
   navigation: [{
     title: "Overview",
