@@ -6,14 +6,15 @@
   @include flex(row, center, center);
 
   .signal {
+    @include flex(row, center, center);
     width: 3.2rem;
   }
 
   p {
-    //styleName: Body/Body M;
-    font-family: Archivo;
-    font-size: 1.6rem;
-    font-weight: 600;
+    margin-left: -2px;
+    font-family: "Sora", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
 
     color: $green-500;
   }

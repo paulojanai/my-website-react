@@ -6,10 +6,9 @@ export const useOnScreen = (ref: React.RefObject<HTMLElement>) => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       setIsOnScreen(entry.isIntersecting);
+      // console.log(entry.isIntersecting, entry.target.id);
     },
-    {
-      threshold: 0.7,
-    }
+    { threshold: 0.2 }
   );
 
   useEffect(() => {

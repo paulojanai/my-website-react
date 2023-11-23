@@ -22,7 +22,7 @@ function Home() {
         <GridContainer dataAos='fade-right'>
           <p className='body-xl'>Opa, eu sou Paulo Janai 👋🏾</p>
           <h1>
-            Product designer e developer com foco na criação e evoluçãodas
+            Product designer e developer com foco na criação e evolução das
             experiências do usuário através de soluções de design
           </h1>
 

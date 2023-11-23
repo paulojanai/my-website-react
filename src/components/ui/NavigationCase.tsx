@@ -1,15 +1,16 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import { IItemNavigationCase } from '@data/cases/casesWork';
+import { NavContext } from '@context/NavContext';
 
 type NavigationCaseProps = {
   items?: IItemNavigationCase[];
 };
 
 export const NavigationCase = ({ items }: NavigationCaseProps) => {
-  const [linkActive, setLinkActive] = useState('section-overview');
+  const { activeLinkID, setActiveLinkID } = useContext(NavContext);
 
   const handleClickNav = (link: string) => {
-    setLinkActive(link);
+    setActiveLinkID(link);
 
     const initPosition: number = document.getElementById(link)?.offsetTop || 0;
 
@@ -26,9 +27,9 @@ export const NavigationCase = ({ items }: NavigationCaseProps) => {
           return (
             <li key={index}>
               <a onClick={() => handleClickNav(item.linkID)}>
-                <h3 className={linkActive === item.linkID ? 'active' : ''}>
+                <h4 className={activeLinkID === item.linkID ? 'active' : ''}>
                   {item.title}
-                </h3>
+                </h4>
               </a>
             </li>
           );

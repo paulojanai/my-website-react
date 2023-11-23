@@ -15,9 +15,9 @@ import wireframe from '@assets/entregoume-white-label/wireframe.jpg';
 function MyReportOnline() {
   const project = CasesObject['MyReportOnline'];
 
-  const refOverview = useNav();
-  const refDeliverables = useNav();
-  const refVisuals = useNav();
+  const overviewRef = useNav({ navLinkID: 'section-overview' });
+  const deliverablesRef = useNav({ navLinkID: 'section-deliverables' });
+  const visualsRef = useNav({ navLinkID: 'section-visuals' });
 
   return (
     <>
@@ -29,7 +29,7 @@ function MyReportOnline() {
 
           <main>
             <section
-              ref={refOverview}
+              ref={overviewRef}
               className='section-case'
               id='section-overview'
             >
@@ -126,7 +126,7 @@ function MyReportOnline() {
             </section>
 
             <section
-              ref={refDeliverables}
+              ref={deliverablesRef}
               className='section-case'
               id='section-deliverables'
             >
@@ -201,7 +201,7 @@ function MyReportOnline() {
             </section>
 
             <section
-              ref={refVisuals}
+              ref={visualsRef}
               className='section-case'
               id='section-visuals'
             >

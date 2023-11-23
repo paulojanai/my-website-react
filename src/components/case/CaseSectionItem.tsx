@@ -6,7 +6,7 @@ type CaseSectionItemProps = {
 export const CaseSectionItem = ({ title, children }: CaseSectionItemProps) => {
   return (
     <div data-aos='fade-up' className='case-section-item'>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       {children}
     </div>
   );

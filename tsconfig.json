@@ -25,6 +25,7 @@
     "paths": {
       "@assets/*": ["assets/*"],
       "@scss/*": ["scss/*"],
+      "@context/*": ["context/*"],
       "@components/*": ["components/*"],
       "@data/*": ["data/*"],
       "@hooks/*": ["hooks/*"],
