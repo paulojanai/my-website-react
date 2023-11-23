@@ -301,28 +301,38 @@ function EntregouMeWeb() {
                 <CaseSectionItem title='🚀 Métricas e resultados'>
                   <div className='text'>
                     <p className='body-m'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
-                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
-                      facilisis odio. Aenean sed aliquam massa. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit. Nam fringilla
-                      mauris tellus, eget varius lacus pellentesque non. Donec
-                      porttitor turpis ac nisi efficitur, nec porttitor justo
-                      ultricies. Fusce at leo risus. Morbi euismod, urna
-                      condimentum vehicula auctor, massa tellus iaculis velit,
-                      id tempor nulla nibh non purus. Nunc a mollis sapien.
-                      Suspendisse efficitur ultrices suscipit.
+                      O processo de tracking foi construído com o time de dados,
+                      PM e o meu auxílio, o que contribuiu para podermos medir o
+                      impacto da iniciativa.
                     </p>
                     <p className='body-m'>
-                      Pellentesque at fringilla ante, nec porttitor ligula.
-                      Proin ut mauris sem. Nullam id lobortis ligula. Mauris
-                      varius eleifend mauris at venenatis. Fusce ac elementum
-                      ligula. Sed consequat ligula lorem, facilisis tristique
-                      nibh commodo nec. Maecenas ultricies erat sit amet arcu
-                      mollis, in malesuada nisl rhoncus. Suspendisse fringilla
-                      id tellus vel tincidunt. Etiam eleifend odio urna, at
-                      vulputate dui pretium tincidunt. Fusce fermentum mauris
-                      nulla, lacinia scelerisque dui hendrerit at.
+                      <ul>
+                        <li>
+                          - Ao analisar o período de dezembro a março,{' '}
+                          <span className='highlighted-text'>
+                            com a nova funcionalidade observamos um aumento de
+                            96% em 2023 em comparação 2022
+                          </span>
+                        </li>
+                        <li>
+                          - Por outro lado, nos meses em que o Plurall não
+                          registra picos de acesso, houve um aumento de mais de
+                          180 mil cadastros de responsáveis,
+                          <span className='highlighted-text'>
+                            representando um aumento de aproximadamente 33%
+                          </span>{' '}
+                          em relação aos meses com maior acesso.
+                        </li>
+                        <li>
+                          - Outras iniciativas se intensificaram para gerar
+                          ainda mais valor para os novos usuários.
+                        </li>
+                        <li>
+                          - A comunicação via rede social se intensificou para
+                          incentivar ainda mais os responsáveis a se cadastrarem
+                          e se vincularem aos alunos
+                        </li>
+                      </ul>
                     </p>
                   </div>
                 </CaseSectionItem>

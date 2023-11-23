@@ -27,9 +27,9 @@ export const NavigationCase = ({ items }: NavigationCaseProps) => {
           return (
             <li key={index}>
               <a onClick={() => handleClickNav(item.linkID)}>
-                <h4 className={activeLinkID === item.linkID ? 'active' : ''}>
+                <h3 className={activeLinkID === item.linkID ? 'active' : ''}>
                   {item.title}
-                </h4>
+                </h3>
               </a>
             </li>
           );

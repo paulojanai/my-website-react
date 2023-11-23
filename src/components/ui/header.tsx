@@ -46,11 +46,12 @@ export function Header() {
     <header>
       {modeCase ? (
         <GridContainer className='navbar-mode-case'>
-          <div data-aos='right'>
+          <div className='left' data-aos='right'>
             <Button href='/'>
               <ArrowLeft size={24} />
               <p className='body-m'>Voltar</p>
             </Button>
+            <OpenToWork />
           </div>
 
           <nav className='nav-default-mode-case' data-aos='fade-left'>
