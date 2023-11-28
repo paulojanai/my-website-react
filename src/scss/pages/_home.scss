@@ -7,7 +7,7 @@
     padding-top: 8rem;
     padding-bottom: 8rem;
 
-    h5 {
+    .body-xl {
       color: $grayscale-300;
       margin-bottom: 2.4rem;
     }
@@ -89,7 +89,7 @@
     @include padding_section();
 
     h2 {
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
     }
 
     .listview-concepts {

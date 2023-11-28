@@ -1,0 +1,37 @@
+.about-case {
+  background-color: $grayscale-600;
+  color: $grayscale-50;
+
+  .grid-container {
+    @include padding_section();
+    @include flex(row, flex-start, space-between);
+
+    main {
+      max-width: 90rem;
+      @include flex(column, flex-start, flex-start);
+      gap: 16rem;
+
+      .section-case {
+        .listview {
+          @include flex(column, flex-start, flex-start);
+          gap: 16rem;
+        }
+      }
+
+    }
+
+    @include responsive(991px) {
+      main {
+        max-width: 100%;
+      }
+    }
+
+    @include responsive(768px) {
+      .details {
+        @include flex (row, flex-start, space-between);
+        flex-wrap: wrap;
+        row-gap: 3.2rem;
+      }
+    }
+  }
+}

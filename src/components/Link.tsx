@@ -1,4 +1,5 @@
 import { icons } from 'lucide-react';
+import { XTwitter } from './Icons';
 
 type Link = {
   text: string;
@@ -19,7 +20,13 @@ function Link({ text, link, nameIcon, download }: Link) {
         download={download}
         rel='noopener noreferrer'
       >
-        <LucideIcon color='white' size={16} />
+        {nameIcon === 'Twitter' ? (
+          <div className='x-twitter'>
+            <XTwitter />
+          </div>
+        ) : (
+          <LucideIcon color='white' size={16} />
+        )}
         <span>{text}</span>
       </a>
     </>

@@ -3,23 +3,27 @@
 @import "variables";
 @import "animate";
 @import "typography";
-//@import 'components';
-//@import 'buttons';
-//@import 'hero';
 
 //Components
 @import "components/grid";
-@import "components/header";
-@import "components/footer";
-@import "components/card-work";
-@import "components/card-concept";
-@import "components/card-help";
-@import "components/button";
-@import "components/button-icon";
-@import "components/separator";
 @import "components/link";
+
+@import "components/ui/header";
+@import "components/ui/footer";
+@import "components/ui/navbar-case";
+@import "components/ui/separator";
+
+@import "components/case/case-section-hero";
+@import "components/case/case-section-item";
+
+@import "components/card/card-work";
+@import "components/card/card-concept";
+@import "components/card/card-help";
+
+@import "components/button/button";
+@import "components/button/button-icon";
 
 //Pages
 @import "pages/home";
 @import "pages/error";
-@import "pages/entregou-me-web";
+@import "pages/cases";

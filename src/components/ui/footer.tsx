@@ -1,14 +1,14 @@
-import { Copy } from 'lucide-react';
+// import { Copy } from 'lucide-react';
 
 import Link from '@components/Link';
 import GridContainer from '@components/Grid';
-import Separator from '@components/Separator';
+import Separator from '@components/ui/Separator';
 
 import CVPDF from '../../../paulojanai-cv.pdf';
 
 import NocapStudio from '@assets/NocapStudio.svg';
 
-function Footer() {
+export function Footer() {
   return (
     <footer id='section-contact'>
       <GridContainer>
@@ -17,9 +17,9 @@ function Footer() {
             <p className='span'>Contato</p>
             <div className='email'>
               <h3>pjanai.m.s@gmail.com</h3>
-              <button className='btn-copy'>
+              {/* <button className='btn-copy'>
                 <Copy />
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -49,10 +49,11 @@ function Footer() {
           <div className='links'>
             <div className='left'>
               <Link
-                link='https://github.com/paulojanai'
-                text='Github'
-                nameIcon='Github'
+                link='https://www.linkedin.com/in/paulojanai/'
+                text='Linkedin'
+                nameIcon='Linkedin'
               />
+
               <Link
                 link='https://dribbble.com/paulojanai'
                 text='Dribbble'
@@ -61,9 +62,9 @@ function Footer() {
             </div>
             <div className='right'>
               <Link
-                link='https://www.linkedin.com/in/paulojanai/'
-                text='Linkedin'
-                nameIcon='Linkedin'
+                link='https://github.com/paulojanai'
+                text='Github'
+                nameIcon='Github'
               />
               <Link
                 link='https://twitter.com/paulo_janai'
@@ -81,7 +82,8 @@ function Footer() {
           <div className='development'>
             <p>Design and development by</p>
             <a
-              href='https://nocapstudio.com.br'
+              // href='https://nocapstudio.com.br'
+              href='https://www.instagram.com/nocappro/'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -93,5 +95,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

@@ -1,9 +1,9 @@
-import CardWork from '@components/CardWork';
+import CardWork from '@components/card/CardWork';
 import GridContainer from '@components/Grid';
-import Separator from '@components/Separator';
-import CardConcept from '@components/CardConcept';
+import Separator from '@components/ui/Separator';
+import CardConcept from '@components/card/CardConcept';
 
-import Cases from '@data/cases/casesWork';
+import { CasesArray } from '@data/cases/casesWork';
 import CasesConcept from '@data/cases/casesConcept';
 
 import PictureAbout from '@assets/picture-about.webp';
@@ -13,17 +13,17 @@ import GrupoBoticario from '@assets/grupo_boticario.png';
 import CasaMagalhaes from '@assets/cm.png';
 import Automacaocom from '@assets/automacao_com.png';
 import { Code2, Layers } from 'lucide-react';
-import ButtonIcon from '@components/ButtonIcon';
+import ButtonIcon from '@components/button/ButtonIcon';
 
 function Home() {
   return (
     <>
-      <div className='section-hero'>
+      <section className='section-hero'>
         <GridContainer dataAos='fade-right'>
-          <h5>Opa, eu sou Paulo Janai 👋🏾</h5>
+          <p className='body-xl'>Opa, eu sou Paulo Janai 👋🏾</p>
           <h1>
-            Product designer e front-end developer com foco na criação e
-            evolução das experiências do usuário através de soluções de design
+            Product designer e developer com foco na criação e evolução das
+            experiências do usuário através de soluções de design
           </h1>
 
           <div className='companies'>
@@ -35,19 +35,19 @@ function Home() {
             </div>
           </div>
         </GridContainer>
-      </div>
+      </section>
 
-      <div className='section-works' id='section-works'>
+      <section className='section-works' id='section-works'>
         <GridContainer>
           <h2 data-aos='fade-up'>Trabalhos selecionados</h2>
 
           <div className='listview-works'>
-            {Cases.map((item, index) => {
+            {CasesArray.map((item, index) => {
               return (
                 <CardWork
                   key={index}
                   image={item.image}
-                  roles={item.roles}
+                  descriptionRoles={item.descriptionRoles}
                   title={item.title}
                   href={item.href}
                   comingSoon={item.comingSoon}
@@ -56,13 +56,13 @@ function Home() {
             })}
           </div>
         </GridContainer>
-      </div>
+      </section>
 
       <GridContainer>
         <Separator />
       </GridContainer>
 
-      <div className='section-concept'>
+      <section className='section-concept'>
         <GridContainer>
           <h2 data-aos='fade-up'>Projetos pessoais e Conceito</h2>
 
@@ -72,7 +72,7 @@ function Home() {
                 <CardConcept
                   key={index}
                   image={item.image}
-                  roles={item.roles}
+                  descriptionRoles={item.descriptionRoles}
                   title={item.title}
                   comingSoon={item.comingSoon}
                   figmaURL={item.figmaURL}
@@ -82,9 +82,9 @@ function Home() {
             })}
           </div>
         </GridContainer>
-      </div>
+      </section>
 
-      <div className='section-how-help' id='section-how-help'>
+      <section className='section-how-help' id='section-how-help'>
         <GridContainer>
           <h2 data-aos='fade-up'>Como eu ajudo</h2>
 
@@ -99,9 +99,8 @@ function Home() {
                 <Layers size={40} color='white' />
                 <h3>Designer</h3>
                 <p className='body-m'>
-                  Pensando estrategicamente e desenhando interfaces
-                  estruturadas, interações inteligentes e utilizando padrões de
-                  UI
+                  Pensando estrategicamente e desenhando interfaces estruturadas
+                  e interações inteligentes
                 </p>
               </div>
 
@@ -153,9 +152,10 @@ function Home() {
                   <ul className='list'>
                     <li className='body-m'>Websites</li>
                     <li className='body-m'>Web Apps</li>
+                    <li className='body-m'>Integração e Deploy</li>
                     <li className='body-m'>Padrões de UI</li>
                     <li className='body-m'>Desenvolvimento Cross-Platform</li>
-                    <li className='body-m'>Integração e Deploy</li>
+                    <li className='body-m'>Responsividade</li>
                   </ul>
                 </div>
 
@@ -174,13 +174,13 @@ function Home() {
             </div>
           </div>
         </GridContainer>
-      </div>
+      </section>
 
-      <div className='section-about'>
+      <section className='section-about' id='section-about'>
         <GridContainer>
           <div className='text-about'>
             <h2 data-aos='fade-up'>
-              Paulo Janai, Product Designer, Developer, atualmente baseado no
+              Paulo Janai, Product Designer, Developer, atualmente morando no
               Brasil
             </h2>
             <div className='description' data-aos='fade-up'>
@@ -222,7 +222,7 @@ function Home() {
             </div>
           </div>
         </GridContainer>
-      </div>
+      </section>
     </>
   );
 }

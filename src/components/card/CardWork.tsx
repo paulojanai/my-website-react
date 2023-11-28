@@ -1,10 +1,10 @@
 import { ArrowUpRight } from 'lucide-react';
-import Button from './Button';
+import Button from '../button/Button';
 import { ICase } from '@data/cases/casesWork';
 
 const CardWork: React.FC<ICase> = ({
   image,
-  roles,
+  descriptionRoles,
   title,
   href,
   comingSoon,
@@ -15,7 +15,7 @@ const CardWork: React.FC<ICase> = ({
         <img src={image} alt='' />
       </div>
       <div className='text'>
-        <p className='body-m'>{roles}</p>
+        <p className='body-m'>{descriptionRoles}</p>
         <h3>{title}</h3>
       </div>
 

@@ -1,0 +1,45 @@
+.section-hero-case {
+  background-color: $grayscale-700;
+  color: $grayscale-50;
+  padding-top: 9rem;
+
+  .grid-container {
+    @include padding_section();
+
+    p {
+      &.body-xl {
+        color: $grayscale-300;
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    .details {
+      margin-top: 8rem;
+      @include flex (row, flex-start, space-between);
+      column-gap: 8rem;
+
+      .item {
+        max-width: 37.3rem;
+
+        p {
+          &.body-xl {
+            color: $grayscale-100;
+            margin-bottom: 1.2rem;
+          }
+        }
+
+        p {
+          &.body-m {
+            color: $grayscale-300;
+          }
+        }
+      }
+    }
+
+    .thumb-hero {
+      margin-top: 8rem;
+      border-radius: 1.6rem;
+      overflow: hidden;
+    }
+  }
+}

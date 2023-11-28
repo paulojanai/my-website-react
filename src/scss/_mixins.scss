@@ -20,3 +20,25 @@
     @content;
   }
 }
+
+@mixin nav-link() {
+  ul {
+    @include flex(row, center, space-between);
+    gap: 4.8rem;
+    margin-top: 2px;
+
+    .nav-link {
+      a {
+        color: $grayscale-50;
+        @include typography-link();
+        @include expand_border($grayscale-50);
+        cursor: pointer;
+      }
+    }
+
+    .social {
+      @include flex(row, center, space-between);
+      gap: 3.2rem;
+    }
+  }
+}

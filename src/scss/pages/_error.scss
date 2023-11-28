@@ -1,13 +1,21 @@
 .page-error {
-  background-color: $grayscale-600;
-
   .grid-container {
-    height: 20rem;
-    display: flex;
-    align-items: center;
+    @include flex(column, flex-start, center);
+    height: 100vh;
 
     h1 {
       color: $grayscale-50;
+      margin-bottom: 1.6rem;
+    }
+
+    h4 {
+      color: $grayscale-300;
+      margin-bottom: 4rem;
+    }
+
+    @include responsive(768px) {
+      @include flex(column, center, center);
+      text-align: center;
     }
   }
 }

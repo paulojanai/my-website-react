@@ -1,10 +1,10 @@
 import { Asterisk } from 'lucide-react';
-import Link from './Link';
+import Link from '../Link';
 import { ICaseConcept } from '@data/cases/casesConcept';
 
 const CardConcept: React.FC<ICaseConcept> = ({
   image,
-  roles,
+  descriptionRoles,
   title,
   comingSoon,
   figmaURL,
@@ -16,7 +16,7 @@ const CardConcept: React.FC<ICaseConcept> = ({
         <img src={image} alt='' />
       </div>
       <div className='text'>
-        <p className='body-m'>{roles}</p>
+        <p className='body-m'>{descriptionRoles}</p>
         <h4 className=''>{title}</h4>
       </div>
 
