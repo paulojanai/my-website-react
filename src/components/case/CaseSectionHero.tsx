@@ -18,39 +18,15 @@ export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
         <div data-aos='fade-up' className='details'>
           <div className='item'>
             <p className='body-xl'>O que eu fiz</p>
-            <ul>
-              {project?.roles?.map((item, index) => {
-                return (
-                  <li key={index} className='body-m'>
-                    {item}
-                  </li>
-                );
-              })}
-            </ul>
+            <p className='body-m'>{project?.roles}</p>
           </div>
           <div className='item'>
             <p className='body-xl'>Produtos</p>
-            <ul>
-              {project?.products?.map((item, index) => {
-                return (
-                  <li key={index} className='body-m'>
-                    {item}
-                  </li>
-                );
-              })}
-            </ul>
+            <p className='body-m'>{project?.products}</p>
           </div>
           <div className='item'>
             <p className='body-xl'>Equipe</p>
-            <ul>
-              {project?.team?.map((item, index) => {
-                return (
-                  <li key={index} className='body-m'>
-                    {item}
-                  </li>
-                );
-              })}
-            </ul>
+            <p className='body-m'>{project?.team}</p>
           </div>
         </div>
 

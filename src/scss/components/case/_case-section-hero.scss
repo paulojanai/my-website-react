@@ -16,9 +16,11 @@
     .details {
       margin-top: 8rem;
       @include flex (row, flex-start, space-between);
-      column-gap: 4rem;
+      column-gap: 8rem;
 
       .item {
+        max-width: 37.3rem;
+
         p {
           &.body-xl {
             color: $grayscale-100;
@@ -26,18 +28,16 @@
           }
         }
 
-        ul {
-          li {
-            &.body-m {
-              color: $grayscale-300;
-            }
+        p {
+          &.body-m {
+            color: $grayscale-300;
           }
         }
       }
     }
 
     .thumb-hero {
-      margin-top: 6rem;
+      margin-top: 8rem;
       border-radius: 1.6rem;
       overflow: hidden;
     }

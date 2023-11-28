@@ -26,11 +26,6 @@ img {
   display: block;
 }
 
-html,
-body {
-  // overflow-x: hidden;
-}
-
 button {
   background-color: transparent;
   cursor: pointer;
@@ -38,4 +33,14 @@ button {
 
 .border {
   border: 1px solid red;
+}
+
+::-moz-selection {
+  color: $grayscale-50;
+  background: $grayscale-500;
+}
+
+::selection {
+  color: $grayscale-50;
+  background: $grayscale-500;
 }

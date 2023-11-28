@@ -99,9 +99,8 @@ function Home() {
                 <Layers size={40} color='white' />
                 <h3>Designer</h3>
                 <p className='body-m'>
-                  Pensando estrategicamente e desenhando interfaces
-                  estruturadas, interações inteligentes e utilizando padrões de
-                  UI
+                  Pensando estrategicamente e desenhando interfaces estruturadas
+                  e interações inteligentes
                 </p>
               </div>
 
@@ -181,7 +180,7 @@ function Home() {
         <GridContainer>
           <div className='text-about'>
             <h2 data-aos='fade-up'>
-              Paulo Janai, Product Designer, Developer, atualmente baseado no
+              Paulo Janai, Product Designer, Developer, atualmente morando no
               Brasil
             </h2>
             <div className='description' data-aos='fade-up'>

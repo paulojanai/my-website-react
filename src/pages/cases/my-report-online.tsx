@@ -18,6 +18,7 @@ function MyReportOnline() {
   const overviewRef = useNav({ navLinkID: 'section-overview' });
   const deliverablesRef = useNav({ navLinkID: 'section-deliverables' });
   const visualsRef = useNav({ navLinkID: 'section-visuals' });
+  const resultsRef = useNav({ navLinkID: 'section-results' });
 
   return (
     <>
@@ -287,6 +288,70 @@ function MyReportOnline() {
                       id tellus vel tincidunt. Etiam eleifend odio urna, at
                       vulputate dui pretium tincidunt. Fusce fermentum mauris
                       nulla, lacinia scelerisque dui hendrerit at.
+                    </p>
+                  </div>
+                </CaseSectionItem>
+              </div>
+            </section>
+
+            <section
+              ref={resultsRef}
+              className='section-case'
+              id='section-results'
+            >
+              <div className='listview'>
+                <CaseSectionItem title='🚀 Métricas e resultados'>
+                  <div className='text'>
+                    <p className='body-m'>
+                      O processo de tracking foi construído com o time de dados,
+                      PM e o meu auxílio, o que contribuiu para podermos medir o
+                      impacto da iniciativa.
+                    </p>
+                    <p className='body-m'>
+                      <ul>
+                        <li>
+                          - Ao analisar o período de dezembro a março,{' '}
+                          <span className='highlighted-text'>
+                            com a nova funcionalidade observamos um aumento de
+                            96% em 2023 em comparação 2022
+                          </span>
+                        </li>
+                        <li>
+                          - Por outro lado, nos meses em que o Plurall não
+                          registra picos de acesso, houve um aumento de mais de
+                          180 mil cadastros de responsáveis,
+                          <span className='highlighted-text'>
+                            representando um aumento de aproximadamente 33%
+                          </span>{' '}
+                          em relação aos meses com maior acesso.
+                        </li>
+                        <li>
+                          - Outras iniciativas se intensificaram para gerar
+                          ainda mais valor para os novos usuários.
+                        </li>
+                        <li>
+                          - A comunicação via rede social se intensificou para
+                          incentivar ainda mais os responsáveis a se cadastrarem
+                          e se vincularem aos alunos
+                        </li>
+                      </ul>
+                    </p>
+                  </div>
+                </CaseSectionItem>
+
+                <CaseSectionItem title='🧠 Aprendizados'>
+                  <div className='text'>
+                    <p className='body-m'>
+                      Foi enriquecedor entrar em uma equipe que não tinha muita
+                      experiência com design e, mesmo assim, estava aberta a
+                      mudanças. Houve vários momentos de compartilhamento de
+                      conhecimento de design com os Product Managers, o squad e
+                      os stakeholders, na tentativa de transmitir um pouco mais
+                      sobre nosso trabalho e do nosso dia a dia, colaborando com
+                      todos. No final da iniciativa, todos do time estavam
+                      satisfeitos com o trabalho que tínhamos realizado e
+                      expressaram interesse em participar mais vezes dos
+                      processos de design.
                     </p>
                   </div>
                 </CaseSectionItem>

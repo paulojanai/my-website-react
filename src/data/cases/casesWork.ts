@@ -29,9 +29,9 @@ export type ICase = {
   image: string;
   descriptionRoles: string;
   title: string;
-  roles?: string[];
-  products?: string[];
-  team?: string[];
+  roles?: string;
+  products?: string;
+  team?: string;
   href?: string;
   comingSoon: boolean;
 };
@@ -44,9 +44,9 @@ const MyReport : ICase = {
   title:
   'Meu relatório online: Plataforma web para ajudar na inspeção predial',
   // href: "cases/my-report-online",
-  roles: ['UX/UI Designer', 'Visual Design', 'Graphic Design', 'Illustrator'],
-  products: ['Aplicativo', 'WebApp', 'Template PDF'],
-  team: ['Junin, FS Developer e PM','Willamy, Fullstack Developer','(Eu), Product Designer'],  
+  roles: 'UX/UI Designer, Visual Design, Graphic Design, Illustrator',
+  products: 'Aplicativo, WebApp, Template PDF',
+  team: 'Júnior, Willamy Silva e Eu',  
   comingSoon: true,
 };
 
@@ -58,9 +58,9 @@ const EntregouMe: ICase = {
   title:
     'Automação.com: Experiência do aplicativo de pedidos adaptada para a web',
     // href: "cases/entregou-me-web",
-    roles: ['UX/UI Designer', 'Visual Design'],
-  products: ['Website'],
-  team: ['(Eu), Product Designer'],
+    roles: 'UX/UI Designer, Visual Design',
+  products: 'Website',
+  team: 'Eu',
   comingSoon: true
 };
 
