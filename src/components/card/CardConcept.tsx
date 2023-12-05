@@ -16,7 +16,7 @@ const CardConcept: React.FC<ICaseConcept> = ({
         <img src={image} alt='' />
       </div>
       <div className='text'>
-        <p className='body-m'>{descriptionRoles}</p>
+        <p className='body-sm'>{descriptionRoles}</p>
         <h4 className=''>{title}</h4>
       </div>
 

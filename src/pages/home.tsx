@@ -14,6 +14,13 @@ import CasaMagalhaes from '@assets/cm.png';
 import Automacaocom from '@assets/automacao_com.png';
 import { Code2, Layers } from 'lucide-react';
 import ButtonIcon from '@components/button/ButtonIcon';
+import {
+  AllDesignerExpertises,
+  AllDesignerTools,
+  AllDeveloperExpertises,
+  AllDeveloperTools,
+} from '@data/global';
+import ItemHowHelp from '@components/ItemHowHelp';
 
 function Home() {
   return (
@@ -21,13 +28,21 @@ function Home() {
       <section className='section-hero'>
         <GridContainer dataAos='fade-right'>
           <p className='body-xl'>Opa, eu sou Paulo Janai 👋🏾</p>
-          <h1>
-            Product designer e developer com foco na criação e evolução das
-            experiências do usuário através de soluções de design
-          </h1>
+          <div className='text'>
+            <h1 className='display-lg'>
+              Product designer &{' '}
+              <span className='color-grayscale-300'>
+                <h1 className='display-lg'>frontend developer</h1>
+              </span>
+            </h1>
+            <p className='body-xl paragraph-medium'>
+              Focado na criação e evolução das experiências dos usuários através
+              de soluções de design. Com mais de 4 anos de experiência.
+            </p>
+          </div>
 
           <div className='companies'>
-            <p className='body-l'>Trabalhou em</p>
+            <p className='body-lg'>Trabalhou em</p>
             <div className='list'>
               <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
               <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
@@ -49,6 +64,7 @@ function Home() {
                   image={item.image}
                   descriptionRoles={item.descriptionRoles}
                   title={item.title}
+                  description={item.description}
                   href={item.href}
                   comingSoon={item.comingSoon}
                 />
@@ -88,7 +104,7 @@ function Home() {
         <GridContainer>
           <h2 data-aos='fade-up'>Como eu ajudo</h2>
 
-          <p className='body-l-paragraph' data-aos='fade-up'>
+          <p className='body-lg-paragraph' data-aos='fade-up'>
             Contrate-me se precisar de um designer de produto, visual designer,
             criação e manutenção de design system, desenvolvimento front-end.
           </p>
@@ -98,7 +114,7 @@ function Home() {
               <div className='card-header'>
                 <Layers size={40} color='white' />
                 <h3>Designer</h3>
-                <p className='body-m'>
+                <p className='body-md paragraph-medium'>
                   Pensando estrategicamente e desenhando interfaces estruturadas
                   e interações inteligentes
                 </p>
@@ -108,28 +124,20 @@ function Home() {
 
               <div className='card-body'>
                 <div className='group'>
-                  <p className='body-l'>Habilidades</p>
+                  <p className='body-lg'>Habilidades</p>
                   <ul className='list'>
-                    <li className='body-m'>Padrões de UI</li>
-                    <li className='body-m'>Pesquisa de usuários</li>
-                    <li className='body-m'>Análise de competidores</li>
-                    <li className='body-m'>Handoff</li>
-                    <li className='body-m'>Design System</li>
-                    <li className='body-m'>Design de interação</li>
-                    <li className='body-m'>Prototipagem</li>
-                    <li className='body-m'>Teste de usabilidade</li>
+                    {AllDesignerExpertises.map((item, index) => {
+                      return <ItemHowHelp key={index} label={item} />;
+                    })}
                   </ul>
                 </div>
 
                 <div className='group'>
-                  <p className='body-l'>Ferramentas</p>
+                  <p className='body-lg'>Ferramentas</p>
                   <ul className='list'>
-                    <li className='body-m'>Figma & Adobe XD</li>
-                    <li className='body-m'>Papel & Caneta</li>
-                    <li className='body-m'>LottieFiles</li>
-                    <li className='body-m'>SVGator</li>
-                    <li className='body-m'>Maze</li>
-                    <li className='body-m'>Miro</li>
+                    {AllDesignerTools.map((item, index) => {
+                      return <ItemHowHelp key={index} label={item} />;
+                    })}
                   </ul>
                 </div>
               </div>
@@ -138,7 +146,7 @@ function Home() {
               <div className='card-header'>
                 <Code2 size={40} color='white' />
                 <h3>Developer</h3>
-                <p className='body-m'>
+                <p className='body-md paragraph-medium'>
                   Curto em codificar as coisas do zero e dá vidas as ideias no
                   mobile e na web
                 </p>
@@ -148,26 +156,20 @@ function Home() {
 
               <div className='card-body'>
                 <div className='group'>
-                  <p className='body-l'>Habilidades</p>
+                  <p className='body-lg'>Habilidades</p>
                   <ul className='list'>
-                    <li className='body-m'>Websites</li>
-                    <li className='body-m'>Web Apps</li>
-                    <li className='body-m'>Integração e Deploy</li>
-                    <li className='body-m'>Padrões de UI</li>
-                    <li className='body-m'>Desenvolvimento Cross-Platform</li>
-                    <li className='body-m'>Responsividade</li>
+                    {AllDeveloperExpertises.map((item, index) => {
+                      return <ItemHowHelp key={index} label={item} />;
+                    })}
                   </ul>
                 </div>
 
                 <div className='group'>
-                  <p className='body-l'>Ferramentas</p>
+                  <p className='body-lg'>Ferramentas</p>
                   <ul className='list'>
-                    <li className='body-m'>HTML & CSS (Sass)</li>
-                    <li className='body-m'>Javascript</li>
-                    <li className='body-m'>Expo CLI</li>
-                    <li className='body-m'>React JS</li>
-                    <li className='body-m'>Github</li>
-                    <li className='body-m'>VS Code</li>
+                    {AllDeveloperTools.map((item, index) => {
+                      return <ItemHowHelp key={index} label={item} />;
+                    })}
                   </ul>
                 </div>
               </div>
@@ -184,18 +186,18 @@ function Home() {
               Brasil
             </h2>
             <div className='description' data-aos='fade-up'>
-              <p className='body-m'>
+              <p className='body-md paragraph-medium'>
                 Meu nome é Paulo Janai Mariano da Silva. Atuo como product
                 designer que mora no Canindé, Brasil. Minha principal área hoje
                 é designer de interfaces, sempre estudando e praticando sobre
                 design system.
               </p>
-              <p className='body-m'>
+              <p className='body-md paragraph-medium'>
                 Acreditando que a construção estruturada de interfaces é a
                 melhor maneira de projetar produtos eficientes, intuitivos,
                 consistentes e, principalmente, escaláveis.
               </p>
-              <p className='body-m'>
+              <p className='body-md paragraph-medium'>
                 Além disso, gosto de estudar e codificar as coisas do zero
                 pensando em cada pixel e pequenas interações, como este meu
                 portfolio 😎. Costumo utilizar HTML, Javascript, CSS com Sass e
@@ -204,7 +206,7 @@ function Home() {
               </p>
             </div>
             {/* <Button className='see-cv'>
-              <p className='body-m'>Ver currículo</p>
+              <p className='body-md'>Ver currículo</p>
               <FileText size={24} />
             </Button> */}
           </div>

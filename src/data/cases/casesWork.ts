@@ -29,6 +29,7 @@ export type ICase = {
   image: string;
   descriptionRoles: string;
   title: string;
+  description: string;
   roles?: string;
   products?: string;
   team?: string;
@@ -42,7 +43,8 @@ const MyReport : ICase = {
   image: MyReportOnline,
   descriptionRoles: 'Branding, UX/UI Designer, UI Designer, User testing',
   title:
-  'Meu relatório online: Plataforma web para ajudar na inspeção predial',
+  `Meu relatório \n online`,
+  description: "é uma plataforma web para auxiliar na inspeção predial",
   // href: "cases/my-report-online",
   roles: 'UX/UI Designer, Visual Design, Graphic Design, Illustrator',
   products: 'Aplicativo, WebApp, Template PDF',
@@ -56,7 +58,8 @@ const EntregouMe: ICase = {
   image: EntregouMeWeb,
   descriptionRoles: 'UX/UI Designer, UI Designer',
   title:
-    'Automação.com: Experiência do aplicativo de pedidos adaptada para a web',
+    'Entregou.me',
+    description: "plataforma para gerenciar, realizar e acompanhar pedidos",
     // href: "cases/entregou-me-web",
     roles: 'UX/UI Designer, Visual Design',
   products: 'Website',

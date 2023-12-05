@@ -14,7 +14,7 @@
     }
 
     p {
-      &.body-m {
+      &.body-md {
         margin-top: 1.2rem;
         color: $grayscale-300;
       }
@@ -28,8 +28,10 @@
 
     .group {
       p {
-        &.body-l {
+        &.body-lg {
           margin-bottom: 1.2rem;
+          color: $grayscale-50;
+          font-weight: 600;
         }
       }
 

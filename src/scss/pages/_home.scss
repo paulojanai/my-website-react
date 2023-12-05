@@ -12,12 +12,21 @@
       margin-bottom: 2.4rem;
     }
 
-    h1 {
+    .text {
       margin-bottom: 6rem;
+
+      h1 {
+        margin-bottom: 2.4rem;
+      }
+
+      p.body-xl {
+        max-width: 88rem;
+
+      }
     }
 
     .companies {
-      p.body-l {
+      p.body-lg {
         color: $grayscale-300;
         padding-bottom: 2.4rem;
       }
@@ -120,7 +129,7 @@
     }
 
     p {
-      &.body-l-paragraph {
+      &.body-lg {
         max-width: 79.4rem;
         color: $grayscale-300;
       }
@@ -134,7 +143,7 @@
 
     @include responsive(768px) {
       p {
-        &.body-l-paragraph {
+        &.body-lg {
           max-width: 100%;
 
         }

@@ -13,7 +13,9 @@ export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
           {project?.client} - {project?.date}
         </p>
 
-        <h2 data-aos='fade-up'>{project?.title}</h2>
+        <h1 className='display-l' data-aos='fade-up'>
+          {project?.title}
+        </h1>
 
         <div data-aos='fade-up' className='details'>
           <div className='item'>

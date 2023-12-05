@@ -206,87 +206,33 @@ function EntregouMeWeb() {
               id='section-visuals'
             >
               <div className='listview'>
-                <CaseSectionItem title='Title'>
+                <CaseSectionItem title='Visuais'>
+                  <div className='text'>
+                    <p className='body-m'>
+                      Pellentesque at fringilla ante, nec porttitor ligula.
+                    </p>
+                  </div>
+
+                  <img
+                    className='img-case-section'
+                    src={userFlow}
+                    alt='User Flow'
+                  />
+                </CaseSectionItem>
+                <CaseSectionItem title='Autenticação e cadastro'>
                   <div className='text'>
                     <p className='body-m'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
-                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
-                      facilisis odio. Aenean sed aliquam massa. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit. Nam fringilla
-                      mauris tellus, eget varius lacus pellentesque non. Donec
-                      porttitor turpis ac nisi efficitur, nec porttitor justo
-                      ultricies. Fusce at leo risus. Morbi euismod, urna
-                      condimentum vehicula auctor, massa tellus iaculis velit,
-                      id tempor nulla nibh non purus. Nunc a mollis sapien.
-                      Suspendisse efficitur ultrices suscipit.
-                    </p>
-                    <p className='body-m'>
-                      Pellentesque at fringilla ante, nec porttitor ligula.
-                      Proin ut mauris sem. Nullam id lobortis ligula. Mauris
-                      varius eleifend mauris at venenatis. Fusce ac elementum
-                      ligula. Sed consequat ligula lorem, facilisis tristique
-                      nibh commodo nec. Maecenas ultricies erat sit amet arcu
-                      mollis, in malesuada nisl rhoncus. Suspendisse fringilla
-                      id tellus vel tincidunt. Etiam eleifend odio urna, at
-                      vulputate dui pretium tincidunt. Fusce fermentum mauris
-                      nulla, lacinia scelerisque dui hendrerit at.
+                      Ut euismod dapibus magna sit amet porttitor.
                     </p>
                   </div>
                 </CaseSectionItem>
-                <CaseSectionItem title='Title'>
+                <CaseSectionItem title='Carrinho de compras'>
                   <div className='text'>
                     <p className='body-m'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Ut euismod dapibus magna sit amet porttitor. Ut vehicula
-                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
-                      facilisis odio. Aenean sed aliquam massa. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit. Nam fringilla
-                      mauris tellus, eget varius lacus pellentesque non. Donec
-                      porttitor turpis ac nisi efficitur, nec porttitor justo
-                      ultricies. Fusce at leo risus. Morbi euismod, urna
-                      condimentum vehicula auctor, massa tellus iaculis velit,
-                      id tempor nulla nibh non purus. Nunc a mollis sapien.
-                      Suspendisse efficitur ultrices suscipit.
-                    </p>
-                    <p className='body-m'>
-                      Pellentesque at fringilla ante, nec porttitor ligula.
-                      Proin ut mauris sem. Nullam id lobortis ligula. Mauris
-                      varius eleifend mauris at venenatis. Fusce ac elementum
-                      ligula. Sed consequat ligula lorem, facilisis tristique
-                      nibh commodo nec. Maecenas ultricies erat sit amet arcu
-                      mollis, in malesuada nisl rhoncus. Suspendisse fringilla
-                      id tellus vel tincidunt. Etiam eleifend odio urna, at
-                      vulputate dui pretium tincidunt. Fusce fermentum mauris
-                      nulla, lacinia scelerisque dui hendrerit at.
-                    </p>
-                  </div>
-                </CaseSectionItem>
-                <CaseSectionItem title='Title'>
-                  <div className='text'>
-                    <p className='body-m'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
-                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
-                      facilisis odio. Aenean sed aliquam massa. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit. Nam fringilla
-                      mauris tellus, eget varius lacus pellentesque non. Donec
-                      porttitor turpis ac nisi efficitur, nec porttitor justo
-                      ultricies. Fusce at leo risus. Morbi euismod, urna
-                      condimentum vehicula auctor, massa tellus iaculis velit,
-                      id tempor nulla nibh non purus. Nunc a mollis sapien.
-                      Suspendisse efficitur ultrices suscipit.
-                    </p>
-                    <p className='body-m'>
-                      Pellentesque at fringilla ante, nec porttitor ligula.
-                      Proin ut mauris sem. Nullam id lobortis ligula. Mauris
-                      varius eleifend mauris at venenatis. Fusce ac elementum
-                      ligula. Sed consequat ligula lorem, facilisis tristique
-                      nibh commodo nec. Maecenas ultricies erat sit amet arcu
-                      mollis, in malesuada nisl rhoncus. Suspendisse fringilla
-                      id tellus vel tincidunt. Etiam eleifend odio urna, at
-                      vulputate dui pretium tincidunt. Fusce fermentum mauris
-                      nulla, lacinia scelerisque dui hendrerit at.
+                      eros est, in dictum nibh faucibus id.
                     </p>
                   </div>
                 </CaseSectionItem>
