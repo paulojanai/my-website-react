@@ -10,9 +10,7 @@
   cursor: pointer;
 
   p {
-    &.body-m {
-      @include typography-button();
-    }
+    @include typography-button();
   }
 
   &:hover {

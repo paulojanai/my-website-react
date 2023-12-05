@@ -49,7 +49,7 @@ export function Header() {
           <div className='left' data-aos='right'>
             <Button href='/'>
               <ArrowLeft size={24} />
-              <p className='body-m'>Voltar</p>
+              <p>Voltar</p>
             </Button>
             <OpenToWork />
           </div>
@@ -99,7 +99,7 @@ export function Header() {
               ))}
               <li className='nav-link'>
                 <a href={CVPDF} target='_blank'>
-                  CV
+                  Resume
                 </a>
               </li>
               <ul className='social'>
@@ -152,7 +152,7 @@ export function Header() {
                 ))}
                 <li className='nav-link'>
                   <a href='' target='_blank'>
-                    CV
+                    Resume
                   </a>
                 </li>
                 <ul className='social'>

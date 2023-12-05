@@ -13,20 +13,22 @@ export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
           {project?.client} - {project?.date}
         </p>
 
-        <h2 data-aos='fade-up'>{project?.title}</h2>
+        <h1 className='display-lg' data-aos='fade-up'>
+          {project?.title}
+        </h1>
 
         <div data-aos='fade-up' className='details'>
           <div className='item'>
             <p className='body-xl'>O que eu fiz</p>
-            <p className='body-m'>{project?.roles}</p>
+            <p className='body-md paragraph-medium'>{project?.roles}</p>
           </div>
           <div className='item'>
             <p className='body-xl'>Produtos</p>
-            <p className='body-m'>{project?.products}</p>
+            <p className='body-md paragraph-medium'>{project?.products}</p>
           </div>
           <div className='item'>
             <p className='body-xl'>Equipe</p>
-            <p className='body-m'>{project?.team}</p>
+            <p className='body-md paragraph-medium'>{project?.team}</p>
           </div>
         </div>
 
