@@ -168,12 +168,17 @@
 
   .grid-container {
     @include padding_section();
-    @include flex(row, flex-start, center);
-    gap: 12rem;
+    @include flex(row, flex-start, space-between);
+    gap: 10rem;
+    position: relative;
 
     .text-about {
       width: 100%;
-      max-width: 50%;
+      max-width: 68.2rem;
+
+      h2 {
+        font-size: 4.8rem;
+      }
 
       .description {
         color: $grayscale-300;
@@ -185,8 +190,8 @@
 
     .image-about {
       width: 100%;
-      max-width: 50%;
-      position: relative;
+      max-width: 50.8rem;
+      position: sticky;
       overflow: hidden;
       border-radius: 0.8rem;
 

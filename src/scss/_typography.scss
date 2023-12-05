@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 5.6rem;
   text-transform: uppercase;
   letter-spacing: -0.1rem;
 
@@ -129,7 +129,7 @@ h5 {
 
 .highlighted-text {
   color: $grayscale-50;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @mixin typography-button() {

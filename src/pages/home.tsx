@@ -104,7 +104,7 @@ function Home() {
         <GridContainer>
           <h2 data-aos='fade-up'>Como eu ajudo</h2>
 
-          <p className='body-lg-paragraph' data-aos='fade-up'>
+          <p className='body-lg paragraph-medium' data-aos='fade-up'>
             Contrate-me se precisar de um designer de produto, visual designer,
             criação e manutenção de design system, desenvolvimento front-end.
           </p>
@@ -187,21 +187,37 @@ function Home() {
             </h2>
             <div className='description' data-aos='fade-up'>
               <p className='body-md paragraph-medium'>
-                Meu nome é Paulo Janai Mariano da Silva. Atuo como product
-                designer que mora no Canindé, Brasil. Minha principal área hoje
-                é designer de interfaces, sempre estudando e praticando sobre
-                design system.
+                Meu nome é Paulo Janai Mariano da Silva. Atuo como{' '}
+                <span className='highlighted-text'>product designer</span> que
+                mora no Canindé, Brasil. Minha principal área hoje é{' '}
+                <span className='highlighted-text'>
+                  designer de interfaces, design de interação e design systems.
+                </span>
               </p>
               <p className='body-md paragraph-medium'>
-                Acreditando que a construção estruturada de interfaces é a
-                melhor maneira de projetar produtos eficientes, intuitivos,
-                consistentes e, principalmente, escaláveis.
+                Acreditando que a{' '}
+                <span className='highlighted-text'>
+                  construção estruturada de interfaces
+                </span>{' '}
+                é a melhor maneira de projetar produtos{' '}
+                <span className='highlighted-text'>
+                  eficientes, intuitivos, consistentes e, principalmente,
+                  escaláveis.
+                </span>
               </p>
               <p className='body-md paragraph-medium'>
-                Além disso, gosto de estudar e codificar as coisas do zero
+                Além disso, gosto de{' '}
+                <span className='highlighted-text'>
+                  estudar e codificar as coisas do zero
+                </span>{' '}
                 pensando em cada pixel e pequenas interações, como este meu
-                portfolio 😎. Costumo utilizar HTML, Javascript, CSS com Sass e
-                alguns frameworks como ReactJS para websites e React Native para
+                portfolio 😎. Costumo utilizar{' '}
+                <span className='highlighted-text'>
+                  HTML, Javascript, CSS com Sass
+                </span>{' '}
+                e alguns frameworks como{' '}
+                <span className='highlighted-text'>ReactJS</span> para websites
+                e <span className='highlighted-text'>React Native</span> para
                 aplicativos.
               </p>
             </div>

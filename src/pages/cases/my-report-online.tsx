@@ -8,6 +8,7 @@ import { CaseSectionItem } from '@components/case/CaseSectionItem';
 import { useNav } from '@hooks/useNav';
 import Button from '@components/button/Button';
 
+import screenLogin from '@assets/my-report-online/screen_login.png';
 import userFlow from '@assets/entregoume-white-label/user_flow_entregoume-white-label.jpg';
 import journeyMap from '@assets/entregoume-white-label/journey_map.jpg';
 import wireframe from '@assets/entregoume-white-label/wireframe.jpg';
@@ -207,61 +208,31 @@ function MyReportOnline() {
               id='section-visuals'
             >
               <div className='listview'>
-                <CaseSectionItem title='Title'>
-                  <div className='text'>
-                    <p className='body-md paragraph-high'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
-                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
-                      facilisis odio. Aenean sed aliquam massa. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit. Nam fringilla
-                      mauris tellus, eget varius lacus pellentesque non. Donec
-                      porttitor turpis ac nisi efficitur, nec porttitor justo
-                      ultricies. Fusce at leo risus. Morbi euismod, urna
-                      condimentum vehicula auctor, massa tellus iaculis velit,
-                      id tempor nulla nibh non purus. Nunc a mollis sapien.
-                      Suspendisse efficitur ultrices suscipit.
-                    </p>
-                    <p className='body-md paragraph-high'>
-                      Pellentesque at fringilla ante, nec porttitor ligula.
-                      Proin ut mauris sem. Nullam id lobortis ligula. Mauris
-                      varius eleifend mauris at venenatis. Fusce ac elementum
-                      ligula. Sed consequat ligula lorem, facilisis tristique
-                      nibh commodo nec. Maecenas ultricies erat sit amet arcu
-                      mollis, in malesuada nisl rhoncus. Suspendisse fringilla
-                      id tellus vel tincidunt. Etiam eleifend odio urna, at
-                      vulputate dui pretium tincidunt. Fusce fermentum mauris
-                      nulla, lacinia scelerisque dui hendrerit at.
-                    </p>
-                  </div>
+                <CaseSectionItem title='Visuais'>
+                  <img
+                    className='img-case-section'
+                    src={userFlow}
+                    alt='User Flow'
+                  />
                 </CaseSectionItem>
-                <CaseSectionItem title='Title'>
+                <CaseSectionItem title='Autenticação'>
                   <div className='text'>
                     <p className='body-md paragraph-high'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
-                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
-                      facilisis odio. Aenean sed aliquam massa. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit. Nam fringilla
-                      mauris tellus, eget varius lacus pellentesque non. Donec
-                      porttitor turpis ac nisi efficitur, nec porttitor justo
-                      ultricies. Fusce at leo risus. Morbi euismod, urna
-                      condimentum vehicula auctor, massa tellus iaculis velit,
-                      id tempor nulla nibh non purus. Nunc a mollis sapien.
-                      Suspendisse efficitur ultrices suscipit.
+                      O onboarding da nossa aplicação tem um fluxo direto e
+                      simples, contudo, algumas etapas ainda são manuais.
                     </p>
                     <p className='body-md paragraph-high'>
-                      Pellentesque at fringilla ante, nec porttitor ligula.
-                      Proin ut mauris sem. Nullam id lobortis ligula. Mauris
-                      varius eleifend mauris at venenatis. Fusce ac elementum
-                      ligula. Sed consequat ligula lorem, facilisis tristique
-                      nibh commodo nec. Maecenas ultricies erat sit amet arcu
-                      mollis, in malesuada nisl rhoncus. Suspendisse fringilla
-                      id tellus vel tincidunt. Etiam eleifend odio urna, at
-                      vulputate dui pretium tincidunt. Fusce fermentum mauris
-                      nulla, lacinia scelerisque dui hendrerit at.
+                      Para ter o acesso a plataforma os usuários precisam enviar
+                      um email para a equipe cadastrar manualmente e uma senha é
+                      gerada. Os usuários acessam a plataforma utilizando um
+                      email e a senha que foi gerada.
                     </p>
                   </div>
+                  <img
+                    className='img-case-section'
+                    src={screenLogin}
+                    alt='User Flow'
+                  />
                 </CaseSectionItem>
                 <CaseSectionItem title='Title'>
                   <div className='text'>
