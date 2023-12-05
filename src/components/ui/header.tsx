@@ -49,7 +49,7 @@ export function Header() {
           <div className='left' data-aos='right'>
             <Button href='/'>
               <ArrowLeft size={24} />
-              <p className='body-m'>Voltar</p>
+              <p>Voltar</p>
             </Button>
             <OpenToWork />
           </div>

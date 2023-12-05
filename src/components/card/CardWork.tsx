@@ -23,9 +23,7 @@ const CardWork: React.FC<ICase> = ({
       </div>
 
       <Button disabled={comingSoon} href={href}>
-        <p className='body-m'>
-          Ver caso de estudo {comingSoon && '(Em breve)'}
-        </p>
+        <p>Ver caso de estudo {comingSoon && '(Em breve)'}</p>
         <ArrowUpRight size={24} />
       </Button>
     </div>
