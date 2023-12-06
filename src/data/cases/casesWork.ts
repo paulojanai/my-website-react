@@ -7,7 +7,7 @@ export type IItemNavigationCase = {
 }
 
 export const CaseNavigationItems: IItemNavigationCase[] = [{
-  title: "Overview",
+  title: "Visão geral",
   linkID: "section-overview"
 },
 {
