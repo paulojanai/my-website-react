@@ -83,7 +83,7 @@ export function Footer() {
             <p>Design and development by</p>
             <a
               // href='https://nocapstudio.com.br'
-              href='https://www.instagram.com/nocappro/'
+              href='https://www.nocapstudio.com.br'
               target='_blank'
               rel='noopener noreferrer'
             >

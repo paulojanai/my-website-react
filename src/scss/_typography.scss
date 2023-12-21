@@ -1,13 +1,12 @@
 h1,
 h2 {
-  letter-spacing: 0.1rem;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'PT Serif', sans-serif;
 }
 
 h3,
 h4,
 h5 {
-  font-family: "Sora", sans-serif;
+  font-family: "PT Serif", sans-serif;
   font-weight: 600;
 }
 
@@ -16,9 +15,8 @@ h1 {
   line-height: 116%;
 
   &.display-lg {
-    font-size: 8.8rem;
-    text-transform: uppercase;
-    letter-spacing: -0.15rem;
+    font-size: 11rem;
+    letter-spacing: -0.1rem;
 
   }
 
@@ -34,12 +32,10 @@ h1 {
 }
 
 h2 {
-  font-size: 5.6rem;
-  text-transform: uppercase;
-  letter-spacing: -0.1rem;
+  font-size: 6.4rem;
 
   @include responsive(600px) {
-    font-size: 3.6rem;
+    font-size: 4rem;
   }
 }
 
