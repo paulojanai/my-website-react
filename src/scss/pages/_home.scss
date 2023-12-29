@@ -29,9 +29,9 @@
     }
 
     .companies {
-      p.body-lg {
+      p.span {
         color: $grayscale-300;
-        padding-bottom: 2.4rem;
+        padding-bottom: 3.2rem;
       }
 
       .list {
@@ -39,15 +39,19 @@
         flex-wrap: wrap;
         gap: 3.2rem;
 
-        img {
-          height: 4rem;
+        a {
+          img {
+            height: 4rem;
 
-          &:last-child {
-            height: 28px;
+            &:hover {
+              filter: contrast(60);
+            }
           }
 
-          &:hover {
-            filter: contrast(60);
+          &:last-child {
+            img {
+              height: 3.2rem
+            }
           }
         }
       }

@@ -23,7 +23,7 @@ function About() {
             </h2>
 
             <div className='description' data-aos='fade-up'>
-              <p className='body-md paragraph-medium'>
+              <p className='body-md paragraph-high'>
                 Meu nome é Paulo Janai Mariano da Silva. Atuo como{' '}
                 <span className='highlighted-text'>product designer</span> que
                 mora no Canindé, Brasil. Minha principal área hoje é{' '}
@@ -31,12 +31,12 @@ function About() {
                   designer de interfaces, design de interação e design systems.
                 </span>
               </p>
-              <p className='body-md paragraph-medium'>
+              <p className='body-md paragraph-high'>
                 Acreditando que a construção estruturada de interfaces é a
                 melhor maneira de projetar produtos eficientes, intuitivos,
                 consistentes e, principalmente, escaláveis.
               </p>
-              <p className='body-md paragraph-medium'>
+              <p className='body-md paragraph-high'>
                 Além disso, gosto de estudar e codificar as coisas do zero
                 pensando em cada pixel e pequenas interações, como este meu
                 portfolio 😎. Costumo utilizar HTML, Javascript, CSS com Sass e

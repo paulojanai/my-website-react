@@ -39,11 +39,17 @@ function Home() {
           </div>
 
           <div className='companies'>
-            <p className='body-lg'>Trabalhou em</p>
+            <p className='span'>Trabalhou em</p>
             <div className='list'>
-              <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
-              <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
-              <img src={Automacaocom} alt='Logo Automação.com' />
+              <a href='https://www.grupoboticario.com.br' target='_blank'>
+                <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
+              </a>
+              <a href='https://www.casamagalhaes.com.br' target='_blank'>
+                <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
+              </a>
+              <a href='https://www.sysautomacao.com.br' target='_blank'>
+                <img src={Automacaocom} alt='Logo Automação.com' />
+              </a>
             </div>
           </div>
         </GridContainer>
