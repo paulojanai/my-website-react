@@ -6,14 +6,11 @@ import CardConcept from '@components/card/CardConcept';
 import { CasesArray } from '@data/cases/casesWork';
 import CasesConcept from '@data/cases/casesConcept';
 
-import PictureAbout from '@assets/picture-about.webp';
-
 //Logos
 import GrupoBoticario from '@assets/grupo_boticario.png';
 import CasaMagalhaes from '@assets/cm.png';
 import Automacaocom from '@assets/automacao_com.png';
 import { Code2, Layers } from 'lucide-react';
-import ButtonIcon from '@components/button/ButtonIcon';
 import {
   AllDesignerExpertises,
   AllDesignerTools,
@@ -73,10 +70,6 @@ function Home() {
           </div>
         </GridContainer>
       </section>
-
-      <GridContainer>
-        <Separator />
-      </GridContainer>
 
       <section className='section-concept'>
         <GridContainer>
@@ -173,70 +166,6 @@ function Home() {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </GridContainer>
-      </section>
-
-      <section className='section-about' id='section-about'>
-        <GridContainer>
-          <div className='text-about'>
-            <h2 data-aos='fade-up'>
-              Paulo Janai, Product Designer, Developer, atualmente morando no
-              Brasil
-            </h2>
-            <div className='description' data-aos='fade-up'>
-              <p className='body-md paragraph-medium'>
-                Meu nome é Paulo Janai Mariano da Silva. Atuo como{' '}
-                <span className='highlighted-text'>product designer</span> que
-                mora no Canindé, Brasil. Minha principal área hoje é{' '}
-                <span className='highlighted-text'>
-                  designer de interfaces, design de interação e design systems.
-                </span>
-              </p>
-              <p className='body-md paragraph-medium'>
-                Acreditando que a{' '}
-                <span className='highlighted-text'>
-                  construção estruturada de interfaces
-                </span>{' '}
-                é a melhor maneira de projetar produtos{' '}
-                <span className='highlighted-text'>
-                  eficientes, intuitivos, consistentes e, principalmente,
-                  escaláveis.
-                </span>
-              </p>
-              <p className='body-md paragraph-medium'>
-                Além disso, gosto de{' '}
-                <span className='highlighted-text'>
-                  estudar e codificar as coisas do zero
-                </span>{' '}
-                pensando em cada pixel e pequenas interações, como este meu
-                portfolio 😎. Costumo utilizar{' '}
-                <span className='highlighted-text'>
-                  HTML, Javascript, CSS com Sass
-                </span>{' '}
-                e alguns frameworks como{' '}
-                <span className='highlighted-text'>ReactJS</span> para websites
-                e <span className='highlighted-text'>React Native</span> para
-                aplicativos.
-              </p>
-            </div>
-            {/* <Button className='see-cv'>
-              <p className='body-md'>Ver currículo</p>
-              <FileText size={24} />
-            </Button> */}
-          </div>
-          <div className='image-about' data-aos='fade-up'>
-            <img src={PictureAbout} alt='Foto de Paulo Janai' />
-            <div className='group-social'>
-              <ButtonIcon
-                href='https://www.linkedin.com/in/paulojanai/'
-                nameIcon='Linkedin'
-              />
-              <ButtonIcon
-                href='https://github.com/paulojanai'
-                nameIcon='Github'
-              />
             </div>
           </div>
         </GridContainer>
