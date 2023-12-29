@@ -1,0 +1,7 @@
+.page-about {
+  padding-top: 9rem;
+
+  .grid-container {
+    @include padding-section();
+  }
+}

@@ -97,6 +97,9 @@ export function Header() {
                   <a onClick={() => handleClickNav(item.linkID)}>{item.name}</a>
                 </li>
               ))}
+              <Link to='/about' className='nav-link'>
+                <a>Sobre</a>
+              </Link>
               <li className='nav-link'>
                 <a href={CVPDF} target='_blank'>
                   Resume
@@ -150,6 +153,9 @@ export function Header() {
                     </a>
                   </li>
                 ))}
+                <Link to='/about' className='nav-link'>
+                  <a>Sobre</a>
+                </Link>
                 <li className='nav-link'>
                   <a href='' target='_blank'>
                     Resume
