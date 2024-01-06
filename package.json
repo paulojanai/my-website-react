@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hotjar/browser": "^1.0.9",
     "aos": "^2.3.4",
     "lucide-react": "^0.288.0",
     "module-alias": "^2.2.3",
