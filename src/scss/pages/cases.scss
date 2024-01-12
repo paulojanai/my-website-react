@@ -7,14 +7,14 @@
     @include flex(row, flex-start, space-between);
 
     main {
-      max-width: 90rem;
+      max-width: 100rem;
       @include flex(column, flex-start, flex-start);
       gap: 16rem;
 
       .section-case {
         .listview {
           @include flex(column, flex-start, flex-start);
-          gap: 16rem;
+          gap: 12rem;
         }
       }
 

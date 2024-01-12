@@ -23,4 +23,8 @@
       border-radius: 1.6rem;
     }
   }
+
+  @include responsive (1366px) {
+    max-width: 100%;
+  }
 }

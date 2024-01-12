@@ -3,4 +3,9 @@
   max-width: 130.6rem;
   padding: 0 16px;
   margin: 0 auto;
+
+  @include responsive(1366px) {
+    max-width: 146rem;
+    padding: 0 16px;
+  }
 }
