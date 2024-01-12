@@ -7,7 +7,7 @@ export const AllDesignerTools : string[] = [
 ]
 
 export const AllDeveloperExpertises: string[] = [
-  'Websites','Web Apps','Integração e Deploy','Padrões de UI','Desenvolvimento Cross-Platform','Responsividade'
+  'Websites','Web Apps','Integração e Deploy','Padrões de UI','Desenvolvimento de Apps','Responsividade', 'UI Components'
 ]
 
 export const AllDeveloperTools: string[] = [
