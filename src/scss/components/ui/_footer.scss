@@ -83,14 +83,13 @@ footer {
 
       a {
         img {
-          margin-top: 0.4rem;
-          height: 1.3rem;
-          filter: grayscale(1);
+          height: 1.8rem;
+          // filter: grayscale(1);
           transition: filter 0.3s;
 
-          &:hover {
-            filter: grayscale(0);
-          }
+          // &:hover {
+          //   filter: grayscale(0);
+          // }
         }
       }
     }
