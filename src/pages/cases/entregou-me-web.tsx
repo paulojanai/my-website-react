@@ -36,89 +36,59 @@ function EntregouMeWeb() {
               <div className='listview'>
                 <CaseSectionItem title='Sobre'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
-                      Meu relatório online é uma ferramente web que auxilia na
-                      geração de relatórios complexos, personalizados e seguros
-                      para os usuários adicionarem facilmente seus endereços de
-                      carteira existentes para enviar e receber criptografia com
-                      segurança. Eu pessoalmente nunca teria entendido o projeto
-                      com essa definição.
+                    <p className='body-lg paragraph-medium'>
+                      Entregou.me é uma plataforma que possui dois tipos de
+                      usuários: gestores de loja e consumidores, onde realizam
+                      diferentes tarefas desde configurar a loja até a entrega
+                      final do produto. Diante disso, existem duas frentes onde
+                      os usuários interagem: o gestor web e o aplicativo.
                     </p>
-                    <p className='body-md paragraph-high'>
-                      Inferus é uma plataforma que visa facilitar o envio e
-                      recebimento de criptomoedas pelos usuários, criando links
-                      simples e seguros para seus endereços de carteira
-                      existentes. É isso.
+                    <p className='body-lg paragraph-medium'>
+                      O aplicativo visa facilitar a realização e acompanhamento
+                      de pedidos. Já o gestor web, tem como principal objetivo o
+                      gerenciamento de pedidos e entregas.
                     </p>
                   </div>
                 </CaseSectionItem>
-                <CaseSectionItem title='Deveres e rabiscos'>
+                <CaseSectionItem title='Entendendo o problema'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
-                      Principalmente, fui o designer de UI deste projeto. Tive a
-                      sorte de trabalhar com um designer de marca e um
-                      pesquisador de UX no projeto.
+                    <p className='body-lg paragraph-medium'>
+                      Alguns usuários (gestores) relataram que a maioria dos
+                      seus clientes não usam o aplicativo e preferem utilizar o
+                      whatsapp ou o instagram para realizarem seus pedidos.
                     </p>
-                    <p className='body-md paragraph-high'>
-                      O pesquisador de UX (Ija), que também é gerente de
-                      projeto, fez a pesquisa de usuários, que incluiu
-                      entrevistas online e presenciais, idealização de conceito,
-                      pesquisa de negócios e alinhamento dos principais
-                      interessados nos objetivos e decisões do produto.
+                    <span style={{ marginTop: 24 }}></span>
+                    <p className='body-xl'>
+                      Alguns feedbacks fornecidos pela própria empresa:
                     </p>
-                    <p className='body-md paragraph-high'>
-                      Lidei com a criação de fluxos de usuário, design visual,
-                      prototipagem, testes de usuário, incorporando feedback do
-                      usuário em iterações de design e acompanhando a
-                      implementação do produto para garantir que as escolhas de
-                      design e visuais sejam implementados corretamente.
-                    </p>
-                  </div>
-                </CaseSectionItem>
-                <CaseSectionItem title='Navegando em problemas criptográficos e simplificando soluções'>
-                  <div className='text'>
-                    <p className='body-md paragraph-high'>
-                      A partir do conto que contei acima, você deve ter
-                      descoberto um problema, coisas como inserir incorretamente
-                      o endereço da sua carteira, esquecer qual token vai para
-                      qual carteira ou qual carteira se destina a qual cadeia ou
-                      rede. Você pode facilmente perder fundos e ativos quando
-                      erros como esses são cometidos.
-                    </p>
-                    <p className='body-md paragraph-high'>
-                      No entanto, há mais problemas. É bem sabido que a
-                      indústria de criptomoedas e a Web3 em geral têm sido
-                      vulneráveis a ataques significativos, que vão desde a
-                      tomada de reféns até a infiltração de pontes e hacks de
-                      carteiras.
-                    </p>
-                    <p className='body-md paragraph-high'>
-                      Outro problema do usuário no nível inferior é ter que
-                      copiar endereços de carteira sempre que necessário. Pode
-                      ser cansativo.
+                    <p className='body-lg paragraph-medium'>
+                      1. Preferem utilizar um site do que o aplicativo, como
+                      outras (Anota ai, Plataforma123)
+                      <br />
+                      2. Acham mais prático e não precisa instalar
+                      <br />
+                      3.
                     </p>
                   </div>
                 </CaseSectionItem>
 
-                <CaseSectionItem title='Fundindo visão com estética'>
+                <CaseSectionItem title='Definindo objetivos'>
                   <div className='text'>
                     <p className='body-xl'>Objetivo do negócio</p>
-                    <p className='body-md paragraph-high'>
-                      Principalmente, fui o designer de UI deste projeto. Tive a
-                      sorte de trabalhar com um designer de marca e um
-                      pesquisador de UX no projeto.
+                    <p className='body-lg paragraph-medium'>
+                      O objetivo final do négocio foi fornecer aos clientes
+                      (gestores de loja) mais um meio de comunicação que
+                      possibilitasse realizar e acompanhar pedidos sem precisar
+                      instalar o aplicativo.
                     </p>
                     <span style={{ marginTop: 24 }}></span>
                     <p className='body-xl'>Objetivo de design</p>
-                    <p className='body-md paragraph-high'>
-                      1. Tornar mais fácil para as pessoas fazerem pagamentos e
-                      também receberem pagamentos por meio de criptografia.
+                    <p className='body-lg paragraph-medium'>
+                      1. Tornar mais fácil para as pessoas realizarem e
+                      acompanharem seus pedidos.
                       <br />
-                      2. Projetar uma interface coesa para iniciantes em
-                      criptografia e nativos da web3.
-                      <br />
-                      3. Tornar um produto esteticamente agradável por meio do
-                      uso de cor, formato e formato.
+                      2. Projetar uma interface atendendo o estilo visual dos
+                      outros produtos (Gestor web e aplicativo)
                     </p>
                   </div>
                 </CaseSectionItem>
@@ -131,13 +101,12 @@ function EntregouMeWeb() {
               id='section-deliverables'
             >
               <div className='listview'>
-                <CaseSectionItem title='User flow'>
+                <CaseSectionItem title='Styleguide'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
-                      Inicialmente, colaborei com nosso pesquisador de UX para
-                      criar um fluxo de usuário aproximado que todos pudéssemos
-                      entender. Depois disso, fui mais fundo e usei o FigJam
-                      para criar uma visualização detalhada do fluxo do usuário.
+                    <p className='body-lg paragraph-medium'>
+                      Inicialmente, utilizei os tokens e alguns components dos
+                      outros produtos existentes. De acordo com a necessidade
+                      fui adicionando novos componentes.
                     </p>
                   </div>
 
@@ -154,7 +123,7 @@ function EntregouMeWeb() {
                 </CaseSectionItem>
                 <CaseSectionItem title='Jornada do usuário'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
+                    <p className='body-lg paragraph-medium'>
                       Para compreender totalmente e ter empatia com as
                       experiências dos usuários, criei uma jornada de usuário
                       detalhada para o projeto, descrevendo seus objetivos,
@@ -175,7 +144,7 @@ function EntregouMeWeb() {
                 </CaseSectionItem>
                 <CaseSectionItem title='Wireframe'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
+                    <p className='body-lg paragraph-medium'>
                       Trabalhando em estreita colaboração com o pesquisador de
                       UX, Ija, focamos nos elementos centrais do projeto e
                       criamos um wireframe parcial de baixa fidelidade no Figma.
@@ -208,7 +177,7 @@ function EntregouMeWeb() {
               <div className='listview'>
                 <CaseSectionItem title='Visuais'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
+                    <p className='body-lg paragraph-medium'>
                       Pellentesque at fringilla ante, nec porttitor ligula.
                     </p>
                   </div>
@@ -221,7 +190,7 @@ function EntregouMeWeb() {
                 </CaseSectionItem>
                 <CaseSectionItem title='Autenticação e cadastro'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
+                    <p className='body-lg paragraph-medium'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Ut euismod dapibus magna sit amet porttitor.
                     </p>
@@ -229,7 +198,7 @@ function EntregouMeWeb() {
                 </CaseSectionItem>
                 <CaseSectionItem title='Carrinho de compras'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
+                    <p className='body-lg paragraph-medium'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Ut euismod dapibus magna sit amet porttitor. Ut vehicula
                       eros est, in dictum nibh faucibus id.
@@ -246,12 +215,12 @@ function EntregouMeWeb() {
               <div className='listview'>
                 <CaseSectionItem title='🚀 Métricas e resultados'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
+                    <p className='body-lg paragraph-medium'>
                       O processo de tracking foi construído com o time de dados,
                       PM e o meu auxílio, o que contribuiu para podermos medir o
                       impacto da iniciativa.
                     </p>
-                    <p className='body-md paragraph-high'>
+                    <p className='body-lg paragraph-medium'>
                       <ul>
                         <li>
                           - Ao analisar o período de dezembro a março,{' '}
@@ -285,7 +254,7 @@ function EntregouMeWeb() {
 
                 <CaseSectionItem title='🧠 Aprendizados'>
                   <div className='text'>
-                    <p className='body-md paragraph-high'>
+                    <p className='body-lg paragraph-medium'>
                       Foi enriquecedor entrar em uma equipe que não tinha muita
                       experiência com design e, mesmo assim, estava aberta a
                       mudanças. Houve vários momentos de compartilhamento de

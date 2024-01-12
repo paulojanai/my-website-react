@@ -1,5 +1,8 @@
 footer {
-  background-color: $grayscale-700;
+  background-image: url("../assets/background-image.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   .grid-container {
     padding-top: 10rem;
@@ -49,7 +52,7 @@ footer {
   }
 
   .group-links {
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
 
     .links {
       @include flex(row, flex-start, flex-start);
@@ -80,14 +83,13 @@ footer {
 
       a {
         img {
-          margin-top: 0.4rem;
-          height: 1.3rem;
-          filter: grayscale(1);
+          height: 1.8rem;
+          // filter: grayscale(1);
           transition: filter 0.3s;
 
-          &:hover {
-            filter: grayscale(0);
-          }
+          // &:hover {
+          //   filter: grayscale(0);
+          // }
         }
       }
     }

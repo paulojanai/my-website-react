@@ -14,7 +14,7 @@ export function Footer() {
       <GridContainer>
         <div className='top'>
           <div className='content'>
-            <p className='span'>Contato</p>
+            <p className='span'>Vamos conversar</p>
             <div className='email'>
               <h3>pjanai.m.s@gmail.com</h3>
               {/* <button className='btn-copy'>
@@ -45,7 +45,7 @@ export function Footer() {
         </div>
 
         <div className='group-links'>
-          <p className='span'>Siga-me</p>
+          <p className='span'>Redes sociais</p>
           <div className='links'>
             <div className='left'>
               <Link
@@ -78,12 +78,12 @@ export function Footer() {
         <Separator />
 
         <div className='bottom'>
-          <p>© Copyright 2023. All rights reserved.</p>
+          <p>© Copyright 2024. Todos os direitos reservados.</p>
           <div className='development'>
             <p>Design and development by</p>
             <a
               // href='https://nocapstudio.com.br'
-              href='https://www.instagram.com/nocappro/'
+              href='https://www.nocapstudio.com.br'
               target='_blank'
               rel='noopener noreferrer'
             >

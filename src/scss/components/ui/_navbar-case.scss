@@ -14,11 +14,8 @@ nav {
           span {
             color: $grayscale-400;
             transition: all 0.3s;
-            font-size: 3.4rem;
-            letter-spacing: -0.1rem;
-            text-transform: uppercase;
-            font-family: "Archivo Black", sans-serif;
-            font-weight: 400;
+            font-size: 4rem;
+            font-weight: 700;
 
             &.active {
               color: $grayscale-50;

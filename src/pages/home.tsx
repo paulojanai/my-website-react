@@ -1,3 +1,5 @@
+import { gsap } from 'gsap';
+
 import CardWork from '@components/card/CardWork';
 import GridContainer from '@components/Grid';
 import Separator from '@components/ui/Separator';
@@ -6,14 +8,11 @@ import CardConcept from '@components/card/CardConcept';
 import { CasesArray } from '@data/cases/casesWork';
 import CasesConcept from '@data/cases/casesConcept';
 
-import PictureAbout from '@assets/picture-about.webp';
-
 //Logos
 import GrupoBoticario from '@assets/grupo_boticario.png';
 import CasaMagalhaes from '@assets/cm.png';
 import Automacaocom from '@assets/automacao_com.png';
 import { Code2, Layers } from 'lucide-react';
-import ButtonIcon from '@components/button/ButtonIcon';
 import {
   AllDesignerExpertises,
   AllDesignerTools,
@@ -21,16 +20,60 @@ import {
   AllDeveloperTools,
 } from '@data/global';
 import ItemHowHelp from '@components/ItemHowHelp';
+import HandHello from '@assets/hand-hello.png';
+
+import TagDS from '@assets/tag_design_system.svg';
+import TagUI from '@assets/tag_interface_design.svg';
+import TagMD from '@assets/tag_mobile_developer.svg';
+import TagMI from '@assets/tag_microinteractions.svg';
+import TagFD from '@assets/tag_frontend_developer.svg';
+import TagPT from '@assets/tag_prototyping.svg';
+import { useEffect } from 'react';
 
 function Home() {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      repeat: -1,
+      repeatRefresh: true,
+      defaults: { opacity: 1, ease: 'circ', duration: 2 },
+    });
+    tl.to('.tag-ui', {
+      x: 'random(160, 520)',
+      y: 'random(0, 250)',
+    })
+      .to('.tag-ds', {
+        x: 'random(160, 520)',
+        y: 'random(240, 400)',
+      })
+      .to('.tag-md', {
+        x: 'random(0, 520)',
+        y: 'random(430, 520)',
+      })
+      .to('.tag-fd', {
+        x: 'random(0, 520)',
+        y: 'random(430, 520)',
+      });
+  });
+
   return (
     <>
       <section className='section-hero'>
+        <div className='tags border'>
+          <img src={TagUI} alt='Tag Interface Design' className='tag-ui' />
+          <img src={TagDS} alt='Tag Design System' className='tag-ds' />
+          <img src={TagMD} alt='Tag Mobile Developer' className='tag-md' />
+          <img src={TagFD} alt='Tag Frontend Developer' className='tag-fd' />
+          <img src={TagPT} alt='Tag Prototyping' className='tag-pt' />
+          <img src={TagMI} alt='Tag Microinteractions' className='tag-mi' />
+        </div>
         <GridContainer dataAos='fade-right'>
-          <p className='body-xl'>Opa, eu sou Paulo Janai 👋🏾</p>
+          <div className='hello'>
+            <p className='body-xl'>Opa, eu sou Paulo Janai</p>
+            <img src={HandHello} alt='Hand hello' className='hand-hello' />
+          </div>
           <div className='text'>
             <h1 className='display-lg'>
-              Product designer &{' '}
+              Product designer e{' '}
               <span className='color-grayscale-300'>
                 <h1 className='display-lg'>frontend developer</h1>
               </span>
@@ -42,11 +85,17 @@ function Home() {
           </div>
 
           <div className='companies'>
-            <p className='body-lg'>Trabalhou em</p>
+            <p className='span'>Trabalhou em</p>
             <div className='list'>
-              <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
-              <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
-              <img src={Automacaocom} alt='Logo Automação.com' />
+              <a href='https://www.grupoboticario.com.br' target='_blank'>
+                <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
+              </a>
+              <a href='https://www.casamagalhaes.com.br' target='_blank'>
+                <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
+              </a>
+              <a href='https://www.sysautomacao.com.br' target='_blank'>
+                <img src={Automacaocom} alt='Logo Automação.com' />
+              </a>
             </div>
           </div>
         </GridContainer>
@@ -73,10 +122,6 @@ function Home() {
           </div>
         </GridContainer>
       </section>
-
-      <GridContainer>
-        <Separator />
-      </GridContainer>
 
       <section className='section-concept'>
         <GridContainer>
@@ -173,70 +218,6 @@ function Home() {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </GridContainer>
-      </section>
-
-      <section className='section-about' id='section-about'>
-        <GridContainer>
-          <div className='text-about'>
-            <h2 data-aos='fade-up'>
-              Paulo Janai, Product Designer, Developer, atualmente morando no
-              Brasil
-            </h2>
-            <div className='description' data-aos='fade-up'>
-              <p className='body-md paragraph-medium'>
-                Meu nome é Paulo Janai Mariano da Silva. Atuo como{' '}
-                <span className='highlighted-text'>product designer</span> que
-                mora no Canindé, Brasil. Minha principal área hoje é{' '}
-                <span className='highlighted-text'>
-                  designer de interfaces, design de interação e design systems.
-                </span>
-              </p>
-              <p className='body-md paragraph-medium'>
-                Acreditando que a{' '}
-                <span className='highlighted-text'>
-                  construção estruturada de interfaces
-                </span>{' '}
-                é a melhor maneira de projetar produtos{' '}
-                <span className='highlighted-text'>
-                  eficientes, intuitivos, consistentes e, principalmente,
-                  escaláveis.
-                </span>
-              </p>
-              <p className='body-md paragraph-medium'>
-                Além disso, gosto de{' '}
-                <span className='highlighted-text'>
-                  estudar e codificar as coisas do zero
-                </span>{' '}
-                pensando em cada pixel e pequenas interações, como este meu
-                portfolio 😎. Costumo utilizar{' '}
-                <span className='highlighted-text'>
-                  HTML, Javascript, CSS com Sass
-                </span>{' '}
-                e alguns frameworks como{' '}
-                <span className='highlighted-text'>ReactJS</span> para websites
-                e <span className='highlighted-text'>React Native</span> para
-                aplicativos.
-              </p>
-            </div>
-            {/* <Button className='see-cv'>
-              <p className='body-md'>Ver currículo</p>
-              <FileText size={24} />
-            </Button> */}
-          </div>
-          <div className='image-about' data-aos='fade-up'>
-            <img src={PictureAbout} alt='Foto de Paulo Janai' />
-            <div className='group-social'>
-              <ButtonIcon
-                href='https://www.linkedin.com/in/paulojanai/'
-                nameIcon='Linkedin'
-              />
-              <ButtonIcon
-                href='https://github.com/paulojanai'
-                nameIcon='Github'
-              />
             </div>
           </div>
         </GridContainer>
