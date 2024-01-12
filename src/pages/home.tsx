@@ -80,7 +80,7 @@ function Home() {
             </h1>
             <p className='body-xl paragraph-medium'>
               Focado na criação e evolução das experiências dos usuários através
-              de soluções de design. Com mais de 4 anos de experiência.
+              de soluções de design. Com mais de 5 anos de experiência.
             </p>
           </div>
 
@@ -159,7 +159,7 @@ function Home() {
               <div className='card-header'>
                 <Layers size={40} color='white' />
                 <h3>Designer</h3>
-                <p className='body-md paragraph-medium'>
+                <p className='body-sm paragraph-medium'>
                   Pensando estrategicamente e desenhando interfaces estruturadas
                   e interações inteligentes
                 </p>
@@ -191,7 +191,7 @@ function Home() {
               <div className='card-header'>
                 <Code2 size={40} color='white' />
                 <h3>Developer</h3>
-                <p className='body-md paragraph-medium'>
+                <p className='body-sm paragraph-medium'>
                   Curto em codificar as coisas do zero e dá vidas as ideias no
                   mobile e na web
                 </p>

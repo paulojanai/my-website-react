@@ -143,7 +143,7 @@ function MyReportOnline() {
                     </p>
                   </div>
 
-                  <Button>
+                  <Button size='medium'>
                     <p>Ver user flow completo</p>
                     <ArrowUpRight size={24} />
                   </Button>
@@ -164,7 +164,7 @@ function MyReportOnline() {
                     </p>
                   </div>
 
-                  <Button>
+                  <Button size='medium'>
                     <p>Ver mapa da jornada do usuário</p>
                     <ArrowUpRight size={24} />
                   </Button>
@@ -188,7 +188,7 @@ function MyReportOnline() {
                     </p>
                   </div>
 
-                  <Button>
+                  <Button size='medium'>
                     <p>Ver wireframe completo</p>
                     <ArrowUpRight size={24} />
                   </Button>
