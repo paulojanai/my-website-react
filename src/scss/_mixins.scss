@@ -24,7 +24,7 @@
 @mixin nav-link() {
   ul {
     @include flex(row, center, space-between);
-    gap: 4.8rem;
+    gap: 3.2rem;
     margin-top: 2px;
 
     .nav-link {

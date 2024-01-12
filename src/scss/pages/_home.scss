@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   color: $grayscale-50;
-  padding-top: 9rem;
+  padding-top: 8rem;
   position: relative;
 
   .tags {
@@ -74,7 +74,6 @@
 
       p.body-xl {
         max-width: 88rem;
-
       }
     }
 
@@ -100,7 +99,7 @@
 
           &:last-child {
             img {
-              height: 3.2rem
+              height: 3.2rem;
             }
           }
         }
@@ -202,7 +201,6 @@
       p {
         &.body-lg {
           max-width: 100%;
-
         }
       }
 
