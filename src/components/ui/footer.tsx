@@ -78,7 +78,7 @@ export function Footer() {
         <Separator />
 
         <div className='bottom'>
-          <p>© Copyright 2023. Todos os direitos reservados.</p>
+          <p>© Copyright 2024. Todos os direitos reservados.</p>
           <div className='development'>
             <p>Design and development by</p>
             <a

@@ -5,14 +5,64 @@
   background-position: center;
   color: $grayscale-50;
   padding-top: 9rem;
+  position: relative;
+
+  .tags {
+    height: 65.9rem;
+    width: 67.4rem;
+    position: absolute;
+    top: 12.4rem;
+    right: 26rem;
+  }
+
+  .tag-ds,
+  .tag-ui,
+  .tag-md,
+  .tag-fd,
+  .tag-pt,
+  .tag-mi {
+    position: absolute;
+    opacity: 0;
+  }
+
+  // .tag-ui {
+  //   top: 0rem;
+  //   right: 0rem;
+  // }
+
+  // .tag-ds {
+  //   top: 30rem;
+  //   right: 17rem;
+  // }
+
+  // .tag-md {
+  //   top: 45rem;
+  //   right: 44rem;
+  // }
 
   .grid-container {
     padding-top: 10rem;
     padding-bottom: 10rem;
 
-    .body-xl {
-      color: $grayscale-300;
+    .hello {
+      @include flex(row, center, flex-start);
       margin-bottom: 2.4rem;
+      gap: 1.2rem;
+
+      .body-xl {
+        color: $grayscale-300;
+      }
+
+      img {
+        &.hand-hello {
+          height: 3.2rem;
+
+          animation: balanceHand 0.3s 3;
+          animation-delay: 1.2s;
+        }
+
+        @include animation_balance_hand();
+      }
     }
 
     .text {

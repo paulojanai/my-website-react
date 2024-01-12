@@ -46,7 +46,7 @@ export function Header() {
     <header>
       {modeCase ? (
         <GridContainer className='navbar-mode-case'>
-          <div className='left' data-aos='right'>
+          <div className='left' data-aos='fade-down'>
             <Button href='/'>
               <ArrowLeft size={24} />
               <p>Voltar</p>
@@ -54,7 +54,7 @@ export function Header() {
             <OpenToWork />
           </div>
 
-          <nav className='nav-default-mode-case' data-aos='fade-left'>
+          <nav className='nav-default-mode-case' data-aos='fade-down'>
             <ul>
               <ul className='social'>
                 <li className='nav-link'>
@@ -81,7 +81,7 @@ export function Header() {
         </GridContainer>
       ) : (
         <GridContainer>
-          <div className='left' data-aos='fade-right'>
+          <div className='left' data-aos='fade-down'>
             <Link to='/' className='logo'>
               <img src={Logo} alt='Logo Paulo Janai' />
             </Link>
@@ -90,7 +90,7 @@ export function Header() {
             </div>
           </div>
 
-          <nav className='nav-default' data-aos='fade-left'>
+          <nav className='nav-default' data-aos='fade-down'>
             <ul>
               {navLinks.map((item, index) => (
                 <li className='nav-link' key={index}>
