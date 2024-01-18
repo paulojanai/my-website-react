@@ -7,38 +7,29 @@
   padding-top: 7.2rem;
   position: relative;
 
-  .tags {
+  .animation {
     height: 65.9rem;
     width: 67.4rem;
     position: absolute;
     top: 12.4rem;
     right: 26rem;
+    @include flex(column, center, center);
+  }
+
+  .tags {
+    height: 1rem;
+    width: 1rem;
+
   }
 
   .tag-ds,
   .tag-ui,
-  .tag-md,
+  .tag-ut,
   .tag-fd,
   .tag-pt,
   .tag-mi {
     position: absolute;
-    opacity: 0;
   }
-
-  // .tag-ui {
-  //   top: 0rem;
-  //   right: 0rem;
-  // }
-
-  // .tag-ds {
-  //   top: 30rem;
-  //   right: 17rem;
-  // }
-
-  // .tag-md {
-  //   top: 45rem;
-  //   right: 44rem;
-  // }
 
   .grid-container {
     padding-top: 10rem;

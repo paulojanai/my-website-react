@@ -24,7 +24,7 @@ import HandHello from '@assets/hand-hello.png';
 
 import TagDS from '@assets/tag_design_system.svg';
 import TagUI from '@assets/tag_interface_design.svg';
-import TagMD from '@assets/tag_mobile_developer.svg';
+import TagUT from '@assets/tag_usability_test.svg';
 import TagMI from '@assets/tag_microinteractions.svg';
 import TagFD from '@assets/tag_frontend_developer.svg';
 import TagPT from '@assets/tag_prototyping.svg';
@@ -32,39 +32,56 @@ import { useEffect } from 'react';
 
 function Home() {
   useEffect(() => {
-    const tl = gsap.timeline({
+    // const tl = gsap.timeline({
+    //   repeat: -1,
+    //   repeatRefresh: true,
+    //   defaults: { opacity: 1, ease: 'circ', duration: 2 },
+    // });
+    gsap.defaults({
+      opacity: 1,
+      ease: 'sine',
+      duration: 7,
       repeat: -1,
       repeatRefresh: true,
-      defaults: { opacity: 1, ease: 'circ', duration: 2 },
     });
-    tl.to('.tag-ui', {
-      x: 'random(160, 520)',
-      y: 'random(0, 250)',
-    })
-      .to('.tag-ds', {
-        x: 'random(160, 520)',
-        y: 'random(240, 400)',
-      })
-      .to('.tag-md', {
-        x: 'random(0, 520)',
-        y: 'random(430, 520)',
-      })
-      .to('.tag-fd', {
-        x: 'random(0, 520)',
-        y: 'random(430, 520)',
-      });
+    gsap.to('.tag-ui', {
+      x: 'random(-330, 330)',
+      y: 'random(-300, 300)',
+    });
+    gsap.to('.tag-ds', {
+      x: 'random(-330, 330)',
+      y: 'random(-300, 300)',
+    });
+    gsap.to('.tag-ut', {
+      x: 'random(-330, 330)',
+      y: 'random(-300, 300)',
+    });
+    gsap.to('.tag-fd', {
+      x: 'random(-330, 330)',
+      y: 'random(-300, 300)',
+    });
+    gsap.to('.tag-pt', {
+      x: 'random(-330, 330)',
+      y: 'random(-300, 300)',
+    });
+    gsap.to('.tag-mi', {
+      x: 'random(-330, 330)',
+      y: 'random(-300, 300)',
+    });
   });
 
   return (
     <>
       <section className='section-hero'>
-        <div className='tags border'>
-          <img src={TagUI} alt='Tag Interface Design' className='tag-ui' />
-          <img src={TagDS} alt='Tag Design System' className='tag-ds' />
-          <img src={TagMD} alt='Tag Mobile Developer' className='tag-md' />
-          <img src={TagFD} alt='Tag Frontend Developer' className='tag-fd' />
-          <img src={TagPT} alt='Tag Prototyping' className='tag-pt' />
-          <img src={TagMI} alt='Tag Microinteractions' className='tag-mi' />
+        <div className='animation'>
+          <div className='tags'>
+            <img src={TagUI} alt='Tag Interface Design' className='tag-ui' />
+            <img src={TagDS} alt='Tag Design System' className='tag-ds' />
+            <img src={TagUT} alt='Tag Usability Test' className='tag-ut' />
+            <img src={TagFD} alt='Tag Frontend Developer' className='tag-fd' />
+            <img src={TagPT} alt='Tag Prototyping' className='tag-pt' />
+            <img src={TagMI} alt='Tag Microinteractions' className='tag-mi' />
+          </div>
         </div>
         <GridContainer dataAos='fade-right'>
           <div className='hello'>
