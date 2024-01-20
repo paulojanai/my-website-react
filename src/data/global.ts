@@ -1,5 +1,5 @@
 export const AllDesignerExpertises : string[] = [
-'Design Patterns', 'Análise de competidores', 'Design System', 'Prototipagem', 'Pesquisa de usuários', 'Handoff', 'Design de interação', 'Teste de usabilidade', 'Microinteractions'
+'Design Patterns', 'Design System', 'Prototipagem', 'Pesquisa de usuários', 'Handoff', 'Design de interação', 'Teste de usabilidade', 'Microinteractions'
 ]
 
 export const AllDesignerTools : string[] = [
