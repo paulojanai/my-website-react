@@ -19,7 +19,6 @@
   .tags {
     height: 1rem;
     width: 1rem;
-
   }
 
   .tag-ds,
@@ -109,6 +108,15 @@
           }
         }
       }
+    }
+  }
+
+  @include responsive(1366px) {
+    .animation {
+      height: 50rem;
+      width: 50rem;
+      top: 20rem;
+      right: 5rem;
     }
   }
 }

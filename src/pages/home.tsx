@@ -1,34 +1,34 @@
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
 
-import CardWork from '@components/card/CardWork';
-import GridContainer from '@components/Grid';
-import Separator from '@components/ui/Separator';
-import CardConcept from '@components/card/CardConcept';
+import CardWork from "@components/card/CardWork";
+import GridContainer from "@components/Grid";
+import Separator from "@components/ui/Separator";
+import CardConcept from "@components/card/CardConcept";
 
-import { CasesArray } from '@data/cases/casesWork';
-import CasesConcept from '@data/cases/casesConcept';
+import { CasesArray } from "@data/cases/casesWork";
+import CasesConcept from "@data/cases/casesConcept";
 
 //Logos
-import GrupoBoticario from '@assets/grupo_boticario.png';
-import CasaMagalhaes from '@assets/cm.png';
-import Automacaocom from '@assets/automacao_com.png';
-import { Code2, Layers } from 'lucide-react';
+import GrupoBoticario from "@assets/grupo_boticario.png";
+import CasaMagalhaes from "@assets/cm.png";
+import Automacaocom from "@assets/automacao_com.png";
+import { Code2, Layers } from "lucide-react";
 import {
   AllDesignerExpertises,
   AllDesignerTools,
   AllDeveloperExpertises,
   AllDeveloperTools,
-} from '@data/global';
-import ItemHowHelp from '@components/ItemHowHelp';
-import HandHello from '@assets/hand-hello.png';
+} from "@data/global";
+import ItemHowHelp from "@components/ItemHowHelp";
+import HandHello from "@assets/hand-hello.png";
 
-import TagDS from '@assets/tag_design_system.svg';
-import TagUI from '@assets/tag_interface_design.svg';
-import TagUT from '@assets/tag_usability_test.svg';
-import TagMI from '@assets/tag_microinteractions.svg';
-import TagFD from '@assets/tag_frontend_developer.svg';
-import TagPT from '@assets/tag_prototyping.svg';
-import { useEffect } from 'react';
+import TagDS from "@assets/tag_design_system.svg";
+import TagUI from "@assets/tag_interface_design.svg";
+import TagUT from "@assets/tag_usability_test.svg";
+import TagMI from "@assets/tag_microinteractions.svg";
+import TagFD from "@assets/tag_frontend_developer.svg";
+import TagPT from "@assets/tag_prototyping.svg";
+import { useEffect } from "react";
 
 function Home() {
   useEffect(() => {
@@ -39,90 +39,90 @@ function Home() {
     // });
     gsap.defaults({
       opacity: 1,
-      ease: 'sine',
+      ease: "sine",
       duration: 7,
       repeat: -1,
       repeatRefresh: true,
     });
-    gsap.to('.tag-ui', {
-      x: 'random(-330, 330)',
-      y: 'random(-300, 300)',
+    gsap.to(".tag-ui", {
+      x: "random(-330, 330)",
+      y: "random(-300, 300)",
     });
-    gsap.to('.tag-ds', {
-      x: 'random(-330, 330)',
-      y: 'random(-300, 300)',
+    gsap.to(".tag-ds", {
+      x: "random(-330, 330)",
+      y: "random(-300, 300)",
     });
-    gsap.to('.tag-ut', {
-      x: 'random(-330, 330)',
-      y: 'random(-300, 300)',
+    gsap.to(".tag-ut", {
+      x: "random(-330, 330)",
+      y: "random(-300, 300)",
     });
-    gsap.to('.tag-fd', {
-      x: 'random(-330, 330)',
-      y: 'random(-300, 300)',
+    gsap.to(".tag-fd", {
+      x: "random(-330, 330)",
+      y: "random(-300, 300)",
     });
-    gsap.to('.tag-pt', {
-      x: 'random(-330, 330)',
-      y: 'random(-300, 300)',
+    gsap.to(".tag-pt", {
+      x: "random(-330, 330)",
+      y: "random(-300, 300)",
     });
-    gsap.to('.tag-mi', {
-      x: 'random(-330, 330)',
-      y: 'random(-300, 300)',
+    gsap.to(".tag-mi", {
+      x: "random(-330, 330)",
+      y: "random(-300, 300)",
     });
   });
 
   return (
     <>
-      <section className='section-hero'>
-        <div className='animation'>
-          <div className='tags'>
-            <img src={TagUI} alt='Tag Interface Design' className='tag-ui' />
-            <img src={TagDS} alt='Tag Design System' className='tag-ds' />
-            <img src={TagUT} alt='Tag Usability Test' className='tag-ut' />
-            <img src={TagFD} alt='Tag Frontend Developer' className='tag-fd' />
-            <img src={TagPT} alt='Tag Prototyping' className='tag-pt' />
-            <img src={TagMI} alt='Tag Microinteractions' className='tag-mi' />
+      <section className="section-hero">
+        <div className="animation border">
+          <div className="tags border">
+            <img src={TagUI} alt="Tag Interface Design" className="tag-ui" />
+            <img src={TagDS} alt="Tag Design System" className="tag-ds" />
+            <img src={TagUT} alt="Tag Usability Test" className="tag-ut" />
+            <img src={TagFD} alt="Tag Frontend Developer" className="tag-fd" />
+            <img src={TagPT} alt="Tag Prototyping" className="tag-pt" />
+            <img src={TagMI} alt="Tag Microinteractions" className="tag-mi" />
           </div>
         </div>
-        <GridContainer dataAos='fade-right'>
-          <div className='hello'>
-            <p className='body-xl'>Opa, eu sou Paulo Janai</p>
-            <img src={HandHello} alt='Hand hello' className='hand-hello' />
+        <GridContainer dataAos="fade-right">
+          <div className="hello">
+            <p className="body-xl">Opa, eu sou Paulo Janai</p>
+            <img src={HandHello} alt="Hand hello" className="hand-hello" />
           </div>
-          <div className='text'>
-            <h1 className='display-lg'>
-              Product designer e{' '}
-              <span className='color-grayscale-300'>
-                <h1 className='display-lg'>frontend developer</h1>
+          <div className="text">
+            <h1 className="display-lg">
+              Product designer e{" "}
+              <span className="color-grayscale-300">
+                <h1 className="display-lg">frontend developer</h1>
               </span>
             </h1>
-            <p className='body-xl paragraph-medium'>
+            <p className="body-xl paragraph-medium">
               Focado na criação e evolução das experiências dos usuários através
               de soluções de design. Com mais de 5 anos de experiência.
             </p>
           </div>
 
-          <div className='companies'>
-            <p className='span'>Trabalhou em</p>
-            <div className='list'>
-              <a href='https://www.grupoboticario.com.br' target='_blank'>
-                <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
+          <div className="companies">
+            <p className="span">Trabalhou em</p>
+            <div className="list">
+              <a href="https://www.grupoboticario.com.br" target="_blank">
+                <img src={GrupoBoticario} alt="Logo Grupo Boticário" />
               </a>
-              <a href='https://www.casamagalhaes.com.br' target='_blank'>
-                <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
+              <a href="https://www.casamagalhaes.com.br" target="_blank">
+                <img src={CasaMagalhaes} alt="Logo Casa Magalahães" />
               </a>
-              <a href='https://www.sysautomacao.com.br' target='_blank'>
-                <img src={Automacaocom} alt='Logo Automação.com' />
+              <a href="https://www.sysautomacao.com.br" target="_blank">
+                <img src={Automacaocom} alt="Logo Automação.com" />
               </a>
             </div>
           </div>
         </GridContainer>
       </section>
 
-      <section className='section-works' id='section-works'>
+      <section className="section-works" id="section-works">
         <GridContainer>
-          <h2 data-aos='fade-up'>Trabalhos selecionados</h2>
+          <h2 data-aos="fade-up">Trabalhos selecionados</h2>
 
-          <div className='listview-works'>
+          <div className="listview-works">
             {CasesArray.map((item, index) => {
               return (
                 <CardWork
@@ -140,11 +140,11 @@ function Home() {
         </GridContainer>
       </section>
 
-      <section className='section-concept'>
+      <section className="section-concept">
         <GridContainer>
-          <h2 data-aos='fade-up'>Projetos pessoais e Conceito</h2>
+          <h2 data-aos="fade-up">Projetos pessoais e Conceito</h2>
 
-          <div className='listview-concepts'>
+          <div className="listview-concepts">
             {CasesConcept.map((item, index) => {
               return (
                 <CardConcept
@@ -162,21 +162,21 @@ function Home() {
         </GridContainer>
       </section>
 
-      <section className='section-how-help' id='section-how-help'>
+      <section className="section-how-help" id="section-how-help">
         <GridContainer>
-          <h2 data-aos='fade-up'>Como eu ajudo</h2>
+          <h2 data-aos="fade-up">Como eu ajudo</h2>
 
-          <p className='body-lg paragraph-medium' data-aos='fade-up'>
+          <p className="body-lg paragraph-medium" data-aos="fade-up">
             Contrate-me se precisar de um designer de produto, visual designer,
             criação e manutenção de design system, desenvolvimento front-end.
           </p>
 
-          <div className='design-developer' data-aos='fade-up'>
-            <div className='card-help'>
-              <div className='card-header'>
-                <Layers size={40} color='white' />
+          <div className="design-developer" data-aos="fade-up">
+            <div className="card-help">
+              <div className="card-header">
+                <Layers size={40} color="white" />
                 <h3>Designer</h3>
-                <p className='body-sm paragraph-medium'>
+                <p className="body-sm paragraph-medium">
                   Pensando estrategicamente e desenhando interfaces estruturadas
                   e interações inteligentes
                 </p>
@@ -184,19 +184,19 @@ function Home() {
 
               <Separator />
 
-              <div className='card-body'>
-                <div className='group'>
-                  <p className='body-lg'>Habilidades</p>
-                  <ul className='list'>
+              <div className="card-body">
+                <div className="group">
+                  <p className="body-lg">Habilidades</p>
+                  <ul className="list">
                     {AllDesignerExpertises.map((item, index) => {
                       return <ItemHowHelp key={index} label={item} />;
                     })}
                   </ul>
                 </div>
 
-                <div className='group'>
-                  <p className='body-lg'>Ferramentas</p>
-                  <ul className='list'>
+                <div className="group">
+                  <p className="body-lg">Ferramentas</p>
+                  <ul className="list">
                     {AllDesignerTools.map((item, index) => {
                       return <ItemHowHelp key={index} label={item} />;
                     })}
@@ -204,11 +204,11 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className='card-help'>
-              <div className='card-header'>
-                <Code2 size={40} color='white' />
+            <div className="card-help">
+              <div className="card-header">
+                <Code2 size={40} color="white" />
                 <h3>Developer</h3>
-                <p className='body-sm paragraph-medium'>
+                <p className="body-sm paragraph-medium">
                   Curto em codificar as coisas do zero e dá vidas as ideias no
                   mobile e na web
                 </p>
@@ -216,19 +216,19 @@ function Home() {
 
               <Separator />
 
-              <div className='card-body'>
-                <div className='group'>
-                  <p className='body-lg'>Habilidades</p>
-                  <ul className='list'>
+              <div className="card-body">
+                <div className="group">
+                  <p className="body-lg">Habilidades</p>
+                  <ul className="list">
                     {AllDeveloperExpertises.map((item, index) => {
                       return <ItemHowHelp key={index} label={item} />;
                     })}
                   </ul>
                 </div>
 
-                <div className='group'>
-                  <p className='body-lg'>Ferramentas</p>
-                  <ul className='list'>
+                <div className="group">
+                  <p className="body-lg">Ferramentas</p>
+                  <ul className="list">
                     {AllDeveloperTools.map((item, index) => {
                       return <ItemHowHelp key={index} label={item} />;
                     })}
