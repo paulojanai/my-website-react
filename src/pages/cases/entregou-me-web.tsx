@@ -7,9 +7,7 @@ import { CaseNavigationItems, CasesObject } from '@data/cases/casesWork';
 import { useNav } from '@hooks/useNav';
 import { ArrowUpRight } from 'lucide-react';
 
-import userFlow from '@assets/entregoume-white-label/user_flow_entregoume-white-label.jpg';
-import journeyMap from '@assets/entregoume-white-label/journey_map.jpg';
-import wireframe from '@assets/entregoume-white-label/wireframe.jpg';
+import imageDefault from '@assets/image.png';
 
 function EntregouMeWeb() {
   const project = CasesObject['EntregouMeWeb'];
@@ -110,14 +108,14 @@ function EntregouMeWeb() {
                     </p>
                   </div>
 
-                  <Button>
+                  <Button size='medium'>
                     <p>Ver user flow completo</p>
                     <ArrowUpRight size={24} />
                   </Button>
 
                   <img
                     className='img-case-section'
-                    src={userFlow}
+                    src={imageDefault}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
@@ -131,14 +129,14 @@ function EntregouMeWeb() {
                     </p>
                   </div>
 
-                  <Button>
+                  <Button size='medium'>
                     <p>Ver mapa da jornada do usuário</p>
                     <ArrowUpRight size={24} />
                   </Button>
 
                   <img
                     className='img-case-section'
-                    src={journeyMap}
+                    src={imageDefault}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
@@ -155,14 +153,14 @@ function EntregouMeWeb() {
                     </p>
                   </div>
 
-                  <Button>
+                  <Button size='medium'>
                     <p>Ver wireframe completo</p>
                     <ArrowUpRight size={24} />
                   </Button>
 
                   <img
                     className='img-case-section'
-                    src={wireframe}
+                    src={imageDefault}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
@@ -184,7 +182,7 @@ function EntregouMeWeb() {
 
                   <img
                     className='img-case-section'
-                    src={userFlow}
+                    src={imageDefault}
                     alt='User Flow'
                   />
                 </CaseSectionItem>

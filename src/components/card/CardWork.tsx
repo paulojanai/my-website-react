@@ -12,20 +12,19 @@ const CardWork: React.FC<ICase> = ({
 }: ICase) => {
   return (
     <div className='card-work' data-aos='fade-up'>
-      <div className='thumb'>
-        <img src={image} alt='' />
-      </div>
       <div className='text'>
         <p className='body-sm'>{descriptionRoles}</p>
         <h3>
           {title}: {description}
         </h3>
       </div>
-
       <Button size='medium' disabled={comingSoon} href={href}>
         <p>Ver caso de estudo {comingSoon && '(Em breve)'}</p>
         <ArrowUpRight size={24} />
       </Button>
+      <div className='thumb'>
+        <img src={image} alt='' />
+      </div>
     </div>
   );
 };

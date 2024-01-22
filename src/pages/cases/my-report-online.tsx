@@ -9,9 +9,7 @@ import { useNav } from '@hooks/useNav';
 import Button from '@components/button/Button';
 
 import screenLogin from '@assets/my-report-online/screen_login.png';
-import userFlow from '@assets/entregoume-white-label/user_flow_entregoume-white-label.jpg';
-import journeyMap from '@assets/entregoume-white-label/journey_map.jpg';
-import wireframe from '@assets/entregoume-white-label/wireframe.jpg';
+import imageDefault from '@assets/image.png';
 
 function MyReportOnline() {
   const project = CasesObject['MyReportOnline'];
@@ -77,30 +75,6 @@ function MyReportOnline() {
                     </p>
                   </div>
                 </CaseSectionItem>
-                <CaseSectionItem title='Navegando em problemas criptográficos e simplificando soluções'>
-                  <div className='text'>
-                    <p className='body-lg paragraph-medium'>
-                      A partir do conto que contei acima, você deve ter
-                      descoberto um problema, coisas como inserir incorretamente
-                      o endereço da sua carteira, esquecer qual token vai para
-                      qual carteira ou qual carteira se destina a qual cadeia ou
-                      rede. Você pode facilmente perder fundos e ativos quando
-                      erros como esses são cometidos.
-                    </p>
-                    <p className='body-lg paragraph-medium'>
-                      No entanto, há mais problemas. É bem sabido que a
-                      indústria de criptomoedas e a Web3 em geral têm sido
-                      vulneráveis a ataques significativos, que vão desde a
-                      tomada de reféns até a infiltração de pontes e hacks de
-                      carteiras.
-                    </p>
-                    <p className='body-lg paragraph-medium'>
-                      Outro problema do usuário no nível inferior é ter que
-                      copiar endereços de carteira sempre que necessário. Pode
-                      ser cansativo.
-                    </p>
-                  </div>
-                </CaseSectionItem>
 
                 <CaseSectionItem title='Fundindo visão com estética'>
                   <div className='text'>
@@ -150,7 +124,7 @@ function MyReportOnline() {
 
                   <img
                     className='img-case-section'
-                    src={userFlow}
+                    src={imageDefault}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
@@ -171,7 +145,7 @@ function MyReportOnline() {
 
                   <img
                     className='img-case-section'
-                    src={journeyMap}
+                    src={imageDefault}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
@@ -195,7 +169,7 @@ function MyReportOnline() {
 
                   <img
                     className='img-case-section'
-                    src={wireframe}
+                    src={imageDefault}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
@@ -211,7 +185,7 @@ function MyReportOnline() {
                 <CaseSectionItem title='Visuais'>
                   <img
                     className='img-case-section'
-                    src={userFlow}
+                    src={imageDefault}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
@@ -271,58 +245,56 @@ function MyReportOnline() {
               id='section-results'
             >
               <div className='listview'>
-                <CaseSectionItem title='🚀 Métricas e resultados'>
+                <CaseSectionItem title='Métricas e resultados'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
-                      O processo de tracking foi construído com o time de dados,
-                      PM e o meu auxílio, o que contribuiu para podermos medir o
-                      impacto da iniciativa.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
+                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
+                      facilisis odio.
                     </p>
                     <p className='body-lg paragraph-medium'>
                       <ul>
                         <li>
-                          - Ao analisar o período de dezembro a março,{' '}
+                          - Aenean sed aliquam massa. Lorem ipsum dolor sit
+                          amet, consectetur adipiscing elit.
+                        </li>
+                        <li>
+                          - Nam fringilla mauris tellus, eget varius lacus
+                          pellentesque non.{' '}
                           <span className='highlighted-text'>
-                            com a nova funcionalidade observamos um aumento de
-                            96% em 2023 em comparação 2022
+                            Donec porttitor turpis ac nisi efficitur
                           </span>
+                          , nec porttitor justo ultricies. Fusce at leo risus.
                         </li>
                         <li>
-                          - Por outro lado, nos meses em que o Plurall não
-                          registra picos de acesso, houve um aumento de mais de
-                          180 mil cadastros de responsáveis,
-                          <span className='highlighted-text'>
-                            representando um aumento de aproximadamente 33%
-                          </span>{' '}
-                          em relação aos meses com maior acesso.
+                          - Morbi euismod, urna condimentum vehicula auctor,
+                          massa tellus iaculis velit, id tempor nulla nibh non
+                          purus.
                         </li>
                         <li>
-                          - Outras iniciativas se intensificaram para gerar
-                          ainda mais valor para os novos usuários.
-                        </li>
-                        <li>
-                          - A comunicação via rede social se intensificou para
-                          incentivar ainda mais os responsáveis a se cadastrarem
-                          e se vincularem aos alunos
+                          - Nunc a mollis sapien. Suspendisse efficitur ultrices
+                          suscipit.
                         </li>
                       </ul>
                     </p>
                   </div>
                 </CaseSectionItem>
 
-                <CaseSectionItem title='🧠 Aprendizados'>
+                <CaseSectionItem title='Aprendizados'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
-                      Foi enriquecedor entrar em uma equipe que não tinha muita
-                      experiência com design e, mesmo assim, estava aberta a
-                      mudanças. Houve vários momentos de compartilhamento de
-                      conhecimento de design com os Product Managers, o squad e
-                      os stakeholders, na tentativa de transmitir um pouco mais
-                      sobre nosso trabalho e do nosso dia a dia, colaborando com
-                      todos. No final da iniciativa, todos do time estavam
-                      satisfeitos com o trabalho que tínhamos realizado e
-                      expressaram interesse em participar mais vezes dos
-                      processos de design.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
+                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
+                      facilisis odio. Aenean sed aliquam massa. Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit. Nam fringilla
+                      mauris tellus, eget varius lacus pellentesque non. Donec
+                      porttitor turpis ac nisi efficitur, nec porttitor justo
+                      ultricies. Fusce at leo risus. Morbi euismod, urna
+                      condimentum vehicula auctor, massa tellus iaculis velit,
+                      id tempor nulla nibh non purus. Nunc a mollis sapien.
+                      Suspendisse efficitur ultrices suscipit.
                     </p>
                   </div>
                 </CaseSectionItem>

@@ -46,8 +46,8 @@ const MyReport : ICase = {
   `Meu relatório`,
   description: "aplicativo e webapp para auxiliar na inspeção predial",
   // href: "cases/my-report-online",
-  roles: 'UX/UI Designer, Visual Design, Graphic Design, Illustrator',
-  products: 'Aplicativo, WebApp, Template PDF',
+  roles: 'UX/UI Designer, Visual Design, Graphic Design, Illustrations',
+  products: 'WebApp, App Android e Template PDF',
   team: 'Júnior, Willamy Silva e Eu',  
   comingSoon: true,
 };
