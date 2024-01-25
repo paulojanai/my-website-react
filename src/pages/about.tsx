@@ -1,14 +1,126 @@
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+
 import GridContainer from '@components/Grid';
 import ButtonIcon from '@components/button/ButtonIcon';
 
+import imgProfile from '@assets/about/profile.png';
+import imgPaisagem from '@assets/about/paisagem.png';
+import imgMoto from '@assets/about/moto.png';
+import imgKeyboard from '@assets/about/keyboard.png';
+import imgPC from '@assets/about/pc.png';
+import imgColors from '@assets/about/colors.png';
+import imgApp from '@assets/about/app.png';
+import imgVolleyAttack from '@assets/about/volleyball_attack.png';
+import imgVolleyBack from '@assets/about/volleyball_back.png';
+import imgFont1 from '@assets/about/font_sentient.svg';
+import imgFont2 from '@assets/about/font_sora.svg';
+
 function About() {
+  const triggerRef: React.RefObject<HTMLDivElement> = useRef(null);
+  const photoRef: React.RefObject<HTMLDivElement> = useRef(null);
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    const sTotalWidth = triggerRef.current?.scrollWidth;
+    const windowWidthScreen = window.innerWidth;
+
+    const finalTranslateX = sTotalWidth - windowWidthScreen;
+
+    console.log(finalTranslateX);
+
+    const pin = gsap.to(photoRef.current, {
+      translateX: -finalTranslateX,
+      ease: 'none',
+      duration: 1,
+      scrollTrigger: {
+        trigger: triggerRef.current,
+        start: '28.75 100',
+        end: '2000 bottom',
+        scrub: 0.5,
+        pin: true,
+
+        markers: {
+          startColor: 'green',
+          endColor: 'red',
+          fontSize: '18px',
+          fontWeight: 'bold',
+          indent: 20,
+        },
+      },
+    });
+
+    return () => {
+      pin.kill();
+    };
+  }, []);
+
   return (
     <>
       <section className='section-gallery'>
-        <GridContainer>
-          <h1>Gallety</h1>
-        </GridContainer>
+        <div ref={triggerRef} className='container-scroll-wheel'>
+          <div ref={photoRef} className='photos-container'>
+            <img
+              src={imgProfile}
+              alt='Imagem de perfil'
+              className='img-about img-profile'
+            />
+            <img
+              src={imgPaisagem}
+              alt='Uma paisagem'
+              className='img-about img-paisagem'
+            />
+            <img
+              src={imgMoto}
+              alt='Imagem Moto'
+              className='img-about img-moto'
+            />
+            <img
+              src={imgKeyboard}
+              alt='Imagem de um teclado'
+              className='img-about img-keyboard'
+            />
+            <img
+              src={imgPC}
+              alt='Imagem do meu PC'
+              className='img-about img-pc'
+            />
+            <img
+              src={imgColors}
+              alt='Um design de uma cor'
+              className='img-about img-colors'
+            />
+            <img
+              src={imgApp}
+              alt='Telas de um app'
+              className='img-about img-app'
+            />
+            <img
+              src={imgVolleyAttack}
+              alt='Eu jogando'
+              className='img-about img-volley-attack'
+            />
+            <img
+              src={imgVolleyBack}
+              alt='Eu jogando'
+              className='img-about img-volley-back'
+            />
+            <img
+              src={imgFont1}
+              alt='Eu jogando'
+              className='img-font img-font-1'
+            />
+            <img
+              src={imgFont2}
+              alt='Eu jogando'
+              className='img-font img-font-2'
+            />
+          </div>
+        </div>
       </section>
+
       <section className='section-about'>
         <GridContainer>
           <div className='text-about'>
@@ -18,8 +130,8 @@ function About() {
             </div>
 
             <h2 data-aos='fade-up'>
-              Paulo Janai, Product Designer, Developer, atualmente morando no
-              Brasil
+              Paulo Janai, Product Designer, Developer, Freelancer, atualmente
+              morando no Brasil
             </h2>
 
             <div className='description' data-aos='fade-up'>
@@ -88,37 +200,38 @@ function About() {
           </div>
         </GridContainer>
       </section>
+
       <section className='section-career'>
         <GridContainer>
-          <h2>Carreira - até aqui</h2>
+          <h2 data-aos='fade-up'>Carreira - até aqui</h2>
 
-          <div className='listview-experiences'>
+          <div className='listview-experiences' data-aos='fade-up'>
             <div className='past-experiences'>
               <p className='title'>EXPERIÊNCIAS PASSADAS</p>
               <ul>
                 <li className='experience'>
-                  <p className='body-lg'>Product Designer</p>
+                  <p className='body-md'>Product Designer</p>
                   <p className='body-xl'>Grupo Boticário</p>
-                  <p className='body-lg'>
+                  <p className='body-md'>
                     Jul 2022 - Mar 2023, Brasil (Remote)
                   </p>
                 </li>
                 <li className='experience'>
-                  <p className='body-lg'>UX/UI Designer</p>
+                  <p className='body-md'>UX/UI Designer</p>
                   <p className='body-xl'>Casa Magalhães</p>
-                  <p className='body-lg'>
+                  <p className='body-md'>
                     Mar 2021 - Ago 2022, (Brasil) Remoto
                   </p>
                 </li>
                 <li className='experience'>
-                  <p className='body-lg'>Mobile Developer & UI Designer</p>
+                  <p className='body-md'>Mobile Developer & UI Designer</p>
                   <p className='body-xl'>Automação.com</p>
-                  <p className='body-lg'>Fev 2020 - Fev 2021, Canindé-CE</p>
+                  <p className='body-md'>Fev 2020 - Fev 2021, Canindé-CE</p>
                 </li>
                 <li className='experience'>
-                  <p className='body-lg'>UX/UI Designer & Frontend Developer</p>
+                  <p className='body-md'>UX/UI Designer & Frontend Developer</p>
                   <p className='body-xl'>CET Tecnologia</p>
-                  <p className='body-lg'>Mar 2019 - Nov 2019, Remoto</p>
+                  <p className='body-md'>Mar 2019 - Nov 2019, Remoto</p>
                 </li>
               </ul>
             </div>
@@ -127,9 +240,9 @@ function About() {
               <p className='title'>PRESENTE</p>
               <ul>
                 <li className='experience'>
-                  <p className='body-lg'>Product Designer & Partner</p>
+                  <p className='body-md'>Product Designer & Partner</p>
                   <p className='body-xl'>Nocap Studio</p>
-                  <p className='body-lg'>Set 2023 - Present, (Brasil) Remoto</p>
+                  <p className='body-md'>Set 2023 - Present, (Brasil) Remoto</p>
                 </li>
               </ul>
             </div>

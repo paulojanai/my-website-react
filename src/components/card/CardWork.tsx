@@ -19,7 +19,7 @@ const CardWork: React.FC<ICase> = ({
         </h3>
       </div>
       <Button size='medium' disabled={comingSoon} href={href}>
-        <p>Ver caso de estudo {comingSoon && '(Em breve)'}</p>
+        <p>Ver caso {comingSoon && '(Construindo)'}</p>
         <ArrowUpRight size={24} />
       </Button>
       <div className='thumb'>

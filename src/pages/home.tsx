@@ -75,38 +75,43 @@ function Home() {
     <>
       <section className='section-hero'>
         <div className='tags-container'>
-          <div className='zone-tag-ui'>
+          <div className='zone-tag-ui' data-aos='zoom-in'>
             <img src={TagUI} alt='Tag Interface Design' className='tag-ui' />
           </div>
-          <div className='zone-tag-ds'>
+          <div className='zone-tag-ds' data-aos='zoom-in'>
             <img src={TagDS} alt='Tag Design System' className='tag-ds' />
           </div>
 
-          <div className='zone-tag-bs'>
+          <div className='zone-tag-bs' data-aos='zoom-in'>
             <img src={TagBS} alt='Tag Business' className='tag-bs' />
           </div>
 
-          <div className='zone-tag-fd'>
+          <div className='zone-tag-fd' data-aos='zoom-in'>
             <img src={TagFD} alt='Tag Frontend Developer' className='tag-fd' />
           </div>
 
-          <div className='zone-tag-pt'>
+          <div className='zone-tag-pt' data-aos='zoom-in'>
             <img src={TagPT} alt='Tag Prototyping' className='tag-pt' />
           </div>
 
-          <div className='zone-tag-mi'>
+          <div className='zone-tag-mi' data-aos='zoom-in'>
             <img src={TagMI} alt='Tag Microinteractions' className='tag-mi' />
           </div>
         </div>
         <GridContainer dataAos='fade-right'>
           <div className='hello'>
-            <p className='body-xl'>Opa, eu sou Paulo Janai</p>
+            <p className='body-xl'>
+              Opa, eu sou <span className='color-white'>Paulo Janai</span>
+            </p>
             <img src={HandHello} alt='Hand hello' className='hand-hello' />
           </div>
           <div className='text'>
             <h1 className='display-lg'>
-              Product Designer,
-              <h1 className='display-lg'>Developer & Freelancer</h1>
+              Product <span className='italic'>Designer</span>,
+              <h1 className='display-lg'>
+                <span className='italic'>Developer</span> &{' '}
+                <span className='italic'>Freelancer</span>
+              </h1>
             </h1>
             <p className='body-xl paragraph-medium'>
               Focado na criação e evolução das experiências dos usuários através

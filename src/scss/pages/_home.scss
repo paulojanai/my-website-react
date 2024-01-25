@@ -11,6 +11,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    user-select: none;
   }
 
   .borders {
@@ -123,6 +124,7 @@
       }
 
       p.body-xl {
+        color: $grayscale-300;
         max-width: 88rem;
       }
     }
@@ -232,6 +234,11 @@
     }
 
     @include responsive(768px) {
+
+      h2 {
+        margin-bottom: 4rem;
+      }
+
       .listview-works {
         gap: 6rem;
       }
@@ -258,6 +265,10 @@
     }
 
     @include responsive(768px) {
+      h2 {
+        margin-bottom: 4rem;
+      }
+
       .listview-concepts {
         // grid-template-columns: repeat(1, auto);
         row-gap: 6rem;
