@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface ButtonProps {
+  size: 'small' | 'medium';
   disabled?: boolean;
   children: React.ReactNode;
   className?: string;
@@ -10,6 +11,7 @@ interface ButtonProps {
 
 const Button = ({
   children,
+  size,
   disabled,
   className = '',
   href,
@@ -19,7 +21,9 @@ const Button = ({
     <a
       onClick={onClick}
       href={href}
-      className={`${className} btn-primary ${disabled ? 'disabled' : ''}`}
+      className={`${className} btn-primary ${
+        disabled ? 'disabled' : ''
+      } btn-${size}`}
     >
       {children}
     </a>

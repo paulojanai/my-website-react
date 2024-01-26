@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { gsap } from 'gsap';
 
 import CardWork from '@components/card/CardWork';
@@ -24,63 +25,97 @@ import HandHello from '@assets/hand-hello.png';
 
 import TagDS from '@assets/tag_design_system.svg';
 import TagUI from '@assets/tag_interface_design.svg';
-import TagMD from '@assets/tag_mobile_developer.svg';
+import TagBS from '@assets/tag_business.svg';
 import TagMI from '@assets/tag_microinteractions.svg';
 import TagFD from '@assets/tag_frontend_developer.svg';
 import TagPT from '@assets/tag_prototyping.svg';
-import { useEffect } from 'react';
 
 function Home() {
   useEffect(() => {
-    const tl = gsap.timeline({
+    gsap.defaults({
+      opacity: 1,
       repeat: -1,
+      ease: 'circ',
       repeatRefresh: true,
-      defaults: { opacity: 1, ease: 'circ', duration: 2 },
     });
-    tl.to('.tag-ui', {
-      x: 'random(160, 520)',
-      y: 'random(0, 250)',
-    })
-      .to('.tag-ds', {
-        x: 'random(160, 520)',
-        y: 'random(240, 400)',
-      })
-      .to('.tag-md', {
-        x: 'random(0, 520)',
-        y: 'random(430, 520)',
-      })
-      .to('.tag-fd', {
-        x: 'random(0, 520)',
-        y: 'random(430, 520)',
-      });
+
+    gsap.to('.tag-ui', {
+      x: 'random(0, 390)',
+      y: 'random(0, 495)',
+      duration: 3.5,
+    });
+    gsap.to('.tag-ds', {
+      x: 'random(0, 260)',
+      y: 'random(0, 195)',
+      duration: 4.5,
+    });
+    gsap.to('.tag-bs', {
+      x: 'random(0, 495)',
+      y: 'random(0, 195)',
+      duration: 5.5,
+    });
+    gsap.to('.tag-fd', {
+      x: 'random(0, 315)',
+      y: 'random(0, 195)',
+      duration: 5,
+    });
+    gsap.to('.tag-pt', {
+      x: 'random(0, 370)',
+      y: 'random(0, 195)',
+      duration: 4,
+    });
+    gsap.to('.tag-mi', {
+      x: 'random(0, 825)',
+      y: 'random(0, 195)',
+      duration: 3,
+    });
   });
 
   return (
     <>
       <section className='section-hero'>
-        <div className='tags border'>
-          <img src={TagUI} alt='Tag Interface Design' className='tag-ui' />
-          <img src={TagDS} alt='Tag Design System' className='tag-ds' />
-          <img src={TagMD} alt='Tag Mobile Developer' className='tag-md' />
-          <img src={TagFD} alt='Tag Frontend Developer' className='tag-fd' />
-          <img src={TagPT} alt='Tag Prototyping' className='tag-pt' />
-          <img src={TagMI} alt='Tag Microinteractions' className='tag-mi' />
+        <div className='tags-container'>
+          <div className='zone-tag-ui' data-aos='zoom-in'>
+            <img src={TagUI} alt='Tag Interface Design' className='tag-ui' />
+          </div>
+          <div className='zone-tag-ds' data-aos='zoom-in'>
+            <img src={TagDS} alt='Tag Design System' className='tag-ds' />
+          </div>
+
+          <div className='zone-tag-bs' data-aos='zoom-in'>
+            <img src={TagBS} alt='Tag Business' className='tag-bs' />
+          </div>
+
+          <div className='zone-tag-fd' data-aos='zoom-in'>
+            <img src={TagFD} alt='Tag Frontend Developer' className='tag-fd' />
+          </div>
+
+          <div className='zone-tag-pt' data-aos='zoom-in'>
+            <img src={TagPT} alt='Tag Prototyping' className='tag-pt' />
+          </div>
+
+          <div className='zone-tag-mi' data-aos='zoom-in'>
+            <img src={TagMI} alt='Tag Microinteractions' className='tag-mi' />
+          </div>
         </div>
         <GridContainer dataAos='fade-right'>
           <div className='hello'>
-            <p className='body-xl'>Opa, eu sou Paulo Janai</p>
+            <p className='body-xl'>
+              Opa, eu sou <span className='color-white'>Paulo Janai</span>
+            </p>
             <img src={HandHello} alt='Hand hello' className='hand-hello' />
           </div>
           <div className='text'>
             <h1 className='display-lg'>
-              Product designer e{' '}
-              <span className='color-grayscale-300'>
-                <h1 className='display-lg'>frontend developer</h1>
-              </span>
+              Product <span className='italic'>Designer</span>,
+              <h1 className='display-lg'>
+                <span className='italic'>Developer</span> &{' '}
+                <span className='italic'>Freelancer</span>
+              </h1>
             </h1>
             <p className='body-xl paragraph-medium'>
               Focado na criação e evolução das experiências dos usuários através
-              de soluções de design. Com mais de 4 anos de experiência.
+              de soluções de design. Com mais de 5 anos de experiência.
             </p>
           </div>
 
@@ -159,7 +194,7 @@ function Home() {
               <div className='card-header'>
                 <Layers size={40} color='white' />
                 <h3>Designer</h3>
-                <p className='body-md paragraph-medium'>
+                <p className='body-sm paragraph-medium'>
                   Pensando estrategicamente e desenhando interfaces estruturadas
                   e interações inteligentes
                 </p>
@@ -191,7 +226,7 @@ function Home() {
               <div className='card-header'>
                 <Code2 size={40} color='white' />
                 <h3>Developer</h3>
-                <p className='body-md paragraph-medium'>
+                <p className='body-sm paragraph-medium'>
                   Curto em codificar as coisas do zero e dá vidas as ideias no
                   mobile e na web
                 </p>

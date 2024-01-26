@@ -1,7 +1,7 @@
 .case-section-item {
   @include flex (column, flex-start, flex-start);
   gap: 3.2rem;
-  max-width: 86rem;
+  max-width: 90rem;
 
   .text {
     @include flex (column, flex-start, flex-start);
@@ -22,5 +22,9 @@
     &.img-case-section {
       border-radius: 1.6rem;
     }
+  }
+
+  @include responsive (1366px) {
+    max-width: 100%;
   }
 }

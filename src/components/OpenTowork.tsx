@@ -5,7 +5,7 @@ export default function OpenToWork() {
         <span className='wave'></span>
         <span className='circle'></span>
       </div>
-      <p>Disponível para trabalho</p>
+      <p>Available for work</p>
     </div>
   );
 }

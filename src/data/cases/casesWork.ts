@@ -1,5 +1,5 @@
 import MyReportOnline from '@assets/my-report-online/my_report_online.png';
-import EntregouMeWeb from '@assets/entregoume-white-label/entregou_me_web.png';
+import EntregouMeWeb from '@assets/entregoume-white-label/entregou_me_client.png';
 
 export type IItemNavigationCase = {
   title: string,
@@ -43,11 +43,11 @@ const MyReport : ICase = {
   image: MyReportOnline,
   descriptionRoles: 'Branding, UX/UI Designer, UI Designer, User testing',
   title:
-  `Meu relatório \n online`,
-  description: "é uma plataforma web para auxiliar na inspeção predial",
+  `Meu relatório`,
+  description: "aplicativo e webapp para auxiliar na inspeção predial",
   // href: "cases/my-report-online",
-  roles: 'UX/UI Designer, Visual Design, Graphic Design, Illustrator',
-  products: 'Aplicativo, WebApp, Template PDF',
+  roles: 'UX/UI Designer, Visual Design, Graphic Design, Illustrations',
+  products: 'WebApp, App Android e Template PDF',
   team: 'Júnior, Willamy Silva e Eu',  
   comingSoon: true,
 };

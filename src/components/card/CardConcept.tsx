@@ -12,9 +12,6 @@ const CardConcept: React.FC<ICaseConcept> = ({
 }: ICaseConcept) => {
   return (
     <div className='card-concept' data-aos='fade-up'>
-      <div className='thumb'>
-        <img src={image} alt='' />
-      </div>
       <div className='text'>
         <p className='body-sm'>{descriptionRoles}</p>
         <h4 className=''>{title}</h4>
@@ -33,6 +30,10 @@ const CardConcept: React.FC<ICaseConcept> = ({
           )}
         </div>
       )}
+
+      <div className='thumb'>
+        <img src={image} alt='' />
+      </div>
     </div>
   );
 };

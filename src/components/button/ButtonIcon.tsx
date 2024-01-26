@@ -2,7 +2,7 @@ import { XTwitter } from '@components/Icons';
 import { icons } from 'lucide-react';
 
 interface ButtonIconProps {
-  nameIcon: string;
+  nameIcon: keyof typeof icons;
   href?: string;
 }
 

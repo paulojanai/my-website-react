@@ -1,12 +1,12 @@
 h1,
 h2 {
-  font-family: 'Sentient', serif;
+  font-family: "Sentient", serif;
 }
 
 h3,
 h4,
 h5 {
-  font-family: 'Sentient', serif;
+  font-family: "Sentient", serif;
   font-weight: 600;
 }
 
@@ -17,24 +17,22 @@ h1 {
   &.display-lg {
     font-size: 10rem;
     letter-spacing: -0.1rem;
-
   }
 
-  @include responsive(600px) {
+  @include responsive(768px) {
     font-size: 4rem;
     line-height: 130%;
 
     &.display-lg {
-      font-size: 4.8rem;
+      font-size: 5.6rem;
     }
   }
-
 }
 
 h2 {
-  font-size: 5.7rem;
+  font-size: 6.4rem;
 
-  @include responsive(600px) {
+  @include responsive(768px) {
     font-size: 4rem;
   }
 }
@@ -42,7 +40,7 @@ h2 {
 h3 {
   font-size: 4.2rem;
 
-  @include responsive(600px) {
+  @include responsive(768px) {
     font-size: 3.2rem;
   }
 }
@@ -50,7 +48,7 @@ h3 {
 h4 {
   font-size: 3.2rem;
 
-  @include responsive(600px) {
+  @include responsive(768px) {
     font-size: 2.4rem;
   }
 }
@@ -58,9 +56,15 @@ h4 {
 h5 {
   font-size: 2.4rem;
 
-  @include responsive(600px) {
+  @include responsive(768px) {
     font-size: 2rem;
   }
+}
+
+.italic {
+  font-family: 'Sentient';
+  font-weight: 500;
+  font-style: italic;
 }
 
 .paragraph-default {
@@ -83,7 +87,7 @@ h5 {
   font-size: 2.4rem;
   font-weight: 600;
 
-  @include responsive(600px) {
+  @include responsive(768px) {
     font-size: 2rem;
   }
 }
@@ -92,8 +96,8 @@ h5 {
   font-size: 2rem;
   font-weight: 500;
 
-  @include responsive(600px) {
-    font-size: 1.6rem;
+  @include responsive(768px) {
+    font-size: 1.8rem;
   }
 }
 
@@ -101,26 +105,38 @@ h5 {
   font-size: 2rem;
   font-weight: 400;
 
-  @include responsive(600px) {
-    font-size: 1.6rem;
+  @include responsive(768px) {
+    font-size: 1.8rem;
   }
 }
 
 .body-md {
   font-size: 1.8rem;
   font-weight: 400;
+
+  @include responsive(768px) {
+    font-size: 1.6rem;
+  }
 }
 
 .body-sm {
   font-size: 1.6rem;
   font-weight: 400;
+
+  @include responsive(768px) {
+    font-size: 1.4rem;
+  }
 }
 
 .span {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 600;
   line-height: 100%;
+
+  @include responsive(768px) {
+    font-size: 1.2rem;
+  }
 }
 
 .highlighted-text {
@@ -134,6 +150,6 @@ h5 {
 }
 
 @mixin typography-link() {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }

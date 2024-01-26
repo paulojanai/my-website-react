@@ -47,11 +47,13 @@ export function Header() {
       {modeCase ? (
         <GridContainer className='navbar-mode-case'>
           <div className='left' data-aos='fade-down'>
-            <Button href='/'>
+            <Button href='/' size='small'>
               <ArrowLeft size={24} />
               <p>Voltar</p>
             </Button>
-            <OpenToWork />
+            <div className='open-to-work-visible'>
+              <OpenToWork />
+            </div>
           </div>
 
           <nav className='nav-default-mode-case' data-aos='fade-down'>
@@ -128,16 +130,16 @@ export function Header() {
             </ul>
           </nav>
 
-          <span data-aos='fade-left' className='menu-icon'>
+          <span data-aos='fade-down' className='menu-icon'>
             <Menu size={32} onClick={actionMenu} />
           </span>
 
           <div className={`menu-mobile ${open ? 'active' : ''}`}>
             <div className='header-menu-mobile'>
               <GridContainer>
-                <Link to='/' className='logo'>
+                {/* <Link to='/' className='logo'>
                   <img src={Logo} alt='Logo Paulo Janai' />
-                </Link>
+                </Link> */}
                 <span className='close'>
                   <X className='menu-bar' size={32} onClick={actionMenu} />
                 </span>
@@ -157,7 +159,7 @@ export function Header() {
                   <a href='/about'>Sobre</a>
                 </li>
                 <li className='nav-link'>
-                  <a href='' target='_blank'>
+                  <a href={CVPDF} target='_blank'>
                     Resume
                   </a>
                 </li>

@@ -1,13 +1,147 @@
 .section-gallery {
-  padding-top: 9rem;
+  // background-image: url("../assets/background-image.svg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  overflow: hidden;
+  padding-top: 7.2rem;
+
+  .container-scroll-wheel {
+    height: 90rem;
+    width: 440rem;
+    overflow: hidden;
+    @include flex(row, center, flex-start);
+
+
+    .photos-container {
+      height: 100%;
+      width: 100%;
+      @include flex(row, center, flex-start);
+      gap: 6rem;
+
+      .img-about {
+        position: absolute;
+        border: 5px solid $grayscale-50;
+      }
+
+      .img-font {
+        position: absolute;
+        border: 5px solid $grayscale-50;
+      }
+
+      .img-profile {
+        width: 24.4rem;
+        transform: rotate(11deg);
+        left: 6rem;
+        top: 8rem;
+      }
+
+      .img-paisagem {
+        width: 30rem;
+        transform: rotate(-5deg);
+        bottom: 7rem;
+        left: 33rem;
+      }
+
+      .img-moto {
+        width: 24rem;
+        transform: rotate(5deg);
+        left: 60rem;
+        bottom: 5rem;
+      }
+
+      .img-pc {
+        width: 32rem;
+        top: 8rem;
+        left: 116rem;
+      }
+
+      .img-keyboard {
+        width: 27rem;
+        transform: rotate(-5deg);
+        top: 28rem;
+        left: 92rem;
+        z-index: 1000;
+      }
+
+      .img-colors {
+        width: 21.2rem;
+        transform: rotate(-5deg);
+        top: 9.7rem;
+        right: 13.6rem;
+      }
+
+      .img-app {
+        width: 16.1rem;
+        transform: rotate(5deg);
+        top: 14.9rem;
+        right: 1rem;
+      }
+
+      .img-volley-attack {
+        width: 32.4rem;
+        transform: rotate(8deg);
+        top: 51.6rem;
+        left: 0;
+        right: 6rem;
+        margin: 0 auto;
+      }
+
+      .img-volley-back {
+        width: 25.3rem;
+        transform: rotate(-5deg);
+        bottom: 7.6rem;
+        left: 0;
+        right: 50rem;
+        margin: 0 auto;
+      }
+
+      .img-font-1 {
+        width: 22.9rem;
+        transform: rotate(-7deg);
+        bottom: 10.3rem;
+        right: 18rem;
+        z-index: 1000;
+      }
+
+      .img-font-2 {
+        width: 22.9rem;
+        transform: rotate(5deg);
+        bottom: 8.8rem;
+        right: 1rem;
+      }
+
+      // .photo-about {
+      //   max-width: 40rem;
+      //   border: 5px solid $grayscale-50;
+
+      //   &:last-child {
+      //     filter: grayscale(10);
+      //   }
+
+      //   &:first-child {
+      //     filter: grayscale(10);
+
+      //     // margin-left: 40rem;
+      //   }
+      // }
+    }
+  }
+
 
   .grid-container {
-    @include padding-section();
+    position: relative;
+    height: 84.6rem;
+    overflow: hidden;
+
+    @include responsive(1080px) {
+      // display: none;
+    }
   }
 }
 
 .section-about {
-  background-color: $grayscale-600;
+  background-color: $grayscale-700;
   color: $grayscale-50;
 
   h2 {
@@ -30,7 +164,7 @@
 
     .text-about {
       width: 100%;
-      max-width: 84rem;
+      max-width: 88rem;
 
       .description {
         color: $grayscale-300;
@@ -48,7 +182,7 @@
 
       .group-social {
         @include flex(row, flex-start, flex-start);
-        gap: 1.6rem
+        gap: 1.6rem;
       }
     }
 
@@ -62,6 +196,63 @@
 
       .plataforms {
         max-width: 100%;
+      }
+    }
+  }
+}
+
+.section-career {
+  background-color: $grayscale-800;
+  color: $grayscale-50;
+
+  .grid-container {
+    @include padding_section();
+
+    ul {
+      @include flex(column, flex-start, flex-start);
+      gap: 4rem;
+
+      li.experience {
+        @include flex(column, flex-start, flex-start);
+        gap: 0.8rem;
+
+        p.body-md {
+          color: $grayscale-300;
+        }
+      }
+    }
+
+    .listview-experiences {
+      @include flex(row, flex-start, flex-start);
+      gap: 6rem;
+      margin-top: 5.6rem;
+
+      .title {
+        color: $grayscale-300;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 4rem;
+      }
+
+      .past-experiences {
+        width: 100%;
+        max-width: 59.6rem;
+        border-right: 1px solid $grayscale-500;
+      }
+
+      .current {
+        width: 100%;
+      }
+    }
+
+    @include responsive(768px) {
+      .listview-experiences {
+        @include flex(column, flex-start, flex-start);
+
+        .past-experiences {
+          max-width: 100%;
+          border-right: none;
+        }
       }
     }
   }

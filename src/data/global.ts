@@ -1,13 +1,13 @@
 export const AllDesignerExpertises : string[] = [
-'Padrões de UI', 'Análise de competidores', 'Design System', 'Prototipagem', 'Pesquisa de usuários', 'Handoff', 'Design de interação', 'Teste de usabilidade'
+'Design Patterns', 'Design System', 'Prototipagem', 'Pesquisa de usuários', 'Handoff', 'Design de interação', 'Teste de usabilidade', 'Microinteractions'
 ]
 
 export const AllDesignerTools : string[] = [
-'Papel & Caneta', 'SVGator', 'Miro', 'Figma & Adobe XD', 'LottieFiles', 'Maze'
+'Papel & Caneta', 'SVGator', 'Miro', 'Figma', 'LottieFiles', 'Maze'
 ]
 
 export const AllDeveloperExpertises: string[] = [
-  'Websites','Web Apps','Integração e Deploy','Padrões de UI','Desenvolvimento Cross-Platform','Responsividade'
+  'Websites','Web Apps','Integração e Deploy','Padrões de UI','Desenvolvimento de Apps','Responsividade', 'UI Components'
 ]
 
 export const AllDeveloperTools: string[] = [

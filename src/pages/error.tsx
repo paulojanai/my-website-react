@@ -10,7 +10,7 @@ function Error() {
       <GridContainer>
         <h1>Oops...</h1>
         <h4>Página não encontrada</h4>
-        <Button href='/'>
+        <Button size='medium' href='/'>
           <ArrowLeft size={24} />
           <p className='body-m'>Voltar a página inicial</p>
         </Button>
