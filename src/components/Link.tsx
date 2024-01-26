@@ -4,7 +4,7 @@ import { XTwitter } from './Icons';
 type Link = {
   text: string;
   link?: string;
-  nameIcon: string;
+  nameIcon: keyof typeof icons;
   download?: boolean;
 };
 

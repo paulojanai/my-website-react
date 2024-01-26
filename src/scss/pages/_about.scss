@@ -40,31 +40,27 @@
         width: 30rem;
         transform: rotate(-5deg);
         bottom: 7rem;
-        left: 40rem;
+        left: 33rem;
       }
 
       .img-moto {
         width: 24rem;
         transform: rotate(5deg);
-        left: 66rem;
+        left: 60rem;
         bottom: 5rem;
       }
 
       .img-pc {
-        width: 22rem;
-        top: 7rem;
-        left: 0;
-        right: -10rem;
-        margin: 0 auto;
+        width: 32rem;
+        top: 8rem;
+        left: 116rem;
       }
 
       .img-keyboard {
-        width: 17.2rem;
-        transform: rotate(3.15deg);
-        top: 21rem;
-        left: 0;
-        right: 25rem;
-        margin: 0 auto;
+        width: 27rem;
+        transform: rotate(-5deg);
+        top: 28rem;
+        left: 92rem;
         z-index: 1000;
       }
 
@@ -145,7 +141,7 @@
 }
 
 .section-about {
-  background-color: $grayscale-600;
+  background-color: $grayscale-700;
   color: $grayscale-50;
 
   h2 {
@@ -206,7 +202,7 @@
 }
 
 .section-career {
-  background-color: $grayscale-700;
+  background-color: $grayscale-800;
   color: $grayscale-50;
 
   .grid-container {

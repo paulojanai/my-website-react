@@ -27,7 +27,7 @@ function About() {
     const sTotalWidth = triggerRef.current?.scrollWidth;
     const windowWidthScreen = window.innerWidth;
 
-    const finalTranslateX = sTotalWidth - windowWidthScreen;
+    const finalTranslateX = (sTotalWidth ?? 0) - windowWidthScreen;
 
     console.log(finalTranslateX);
 
