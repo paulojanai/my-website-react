@@ -10,6 +10,7 @@ import { navLinks } from '@data/nav/links';
 import Button from '@components/button/Button';
 import { XTwitter } from '@components/Icons';
 import OpenToWork from '@components/OpenToWork';
+/* Open to Work */
 
 export function Header() {
   const [open, setOpen] = useState<boolean>(false);
