@@ -1,14 +1,14 @@
 .separator {
   width: 100%;
   max-width: 100%;
-  border-bottom: 1px solid $grayscale-500;
+  border-bottom: 1px solid $grayscale-500-opacity-50;
   @include flex(row, center, flex-start);
 
   &::before {
     content: "";
     position: absolute;
     width: 4%;
-    height: 2px;
+    height: 1px;
     background-color: $grayscale-50;
   }
 }

@@ -22,7 +22,7 @@
 
   .card-body {
     margin-top: 3.2rem;
-    @include flex(column, flex-start, flex-start);
+    @include flex(row, flex-start, flex-start);
     gap: 3.2rem;
 
     .group {
@@ -39,12 +39,9 @@
 
       ul {
         &.list {
-          @include flex(row, flex-start, flex-start);
-          flex-wrap: wrap;
           color: $grayscale-300;
 
           li {
-            width: 47%;
             max-width: 100%;
           }
         }
@@ -54,6 +51,6 @@
 
   @include responsive(768px) {
     max-width: 100%;
-    padding: 4rem 4rem;
+    padding: 2.4rem 2.4rem;
   }
 }

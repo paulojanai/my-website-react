@@ -210,6 +210,13 @@
       display: none;
     }
   }
+
+  @include responsive(768px) {
+    .grid-container {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
 }
 
 .section-works {
@@ -228,7 +235,7 @@
       gap: 10rem;
 
       .card-work:not(:last-child) {
-        border-bottom: 1px solid $grayscale-500;
+        border-bottom: 1px solid $grayscale-500-opacity-50;
         padding-bottom: 6rem;
       }
     }
@@ -274,7 +281,7 @@
         row-gap: 6rem;
 
         .card-concept:not(:last-child) {
-          border-bottom: 1px solid $grayscale-500;
+          border-bottom: 1px solid $grayscale-500-opacity-50;
           padding-bottom: 6rem;
         }
       }
