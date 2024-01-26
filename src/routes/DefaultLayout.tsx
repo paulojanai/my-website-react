@@ -1,9 +1,6 @@
-import { Header } from '@components/ui/Header';
+import { Header } from '@components/ui/hHeader';
 import { Outlet } from 'react-router-dom';
-import { Footer } from '@components/ui/Footer';
-{
-  /* Open to Work */
-}
+import { Footer } from '@components/ui/fFooter';
 
 function DefaultLayout() {
   return (
