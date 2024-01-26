@@ -16,7 +16,7 @@ export function Footer() {
           <div className='content'>
             <p className='span'>Vamos conversar</p>
             <div className='email'>
-              <h3>pjanai.m.s@gmail.com</h3>
+              <h4>pjanai.m.s@gmail.com</h4>
               {/* <button className='btn-copy'>
                 <Copy />
               </button> */}
