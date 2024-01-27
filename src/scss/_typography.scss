@@ -144,6 +144,14 @@ h5 {
   font-weight: 500;
 }
 
+@mixin text-image-about() {
+  z-index: 500;
+  color: $grayscale-50;
+  font-family: "Mynerve", sans-serif;
+  font-size: 2rem;
+  line-height: 150%;
+}
+
 @mixin typography-button() {
   font-size: 1.8rem;
   font-weight: 600;

@@ -7,7 +7,7 @@ import ButtonIcon from '@components/button/ButtonIcon';
 
 import imgProfile from '@assets/about/profile.png';
 import imgPaisagem from '@assets/about/paisagem.png';
-import imgMoto from '@assets/about/moto.png';
+import imgLove from '@assets/about/love.webp';
 import imgKeyboard from '@assets/about/keyboard.png';
 import imgPC from '@assets/about/pc.png';
 import imgColors from '@assets/about/colors.png';
@@ -42,13 +42,13 @@ function About() {
         scrub: 0.5,
         pin: true,
 
-        markers: {
-          startColor: 'green',
-          endColor: 'red',
-          fontSize: '18px',
-          fontWeight: 'bold',
-          indent: 20,
-        },
+        // markers: {
+        //   startColor: 'green',
+        //   endColor: 'red',
+        //   fontSize: '18px',
+        //   fontWeight: 'bold',
+        //   indent: 20,
+        // },
       },
     });
 
@@ -72,61 +72,104 @@ function About() {
       <section className='section-gallery'>
         <div ref={triggerRef} className='container-scroll-wheel'>
           <div ref={photoRef} className='photos-container'>
-            <img
-              src={imgProfile}
-              alt='Imagem de perfil'
-              className='img-about img-profile'
-            />
-            <img
-              src={imgPaisagem}
-              alt='Uma paisagem'
-              className='img-about img-paisagem'
-            />
-            <img
-              src={imgMoto}
-              alt='Imagem Moto'
-              className='img-about img-moto'
-            />
-            <img
-              src={imgKeyboard}
-              alt='Imagem de um teclado'
-              className='img-about img-keyboard'
-            />
-            <img
-              src={imgPC}
-              alt='Imagem do meu PC'
-              className='img-about img-pc'
-            />
-            <img
-              src={imgColors}
-              alt='Um design de uma cor'
-              className='img-about img-colors'
-            />
-            <img
-              src={imgApp}
-              alt='Telas de um app'
-              className='img-about img-app'
-            />
-            <img
-              src={imgVolleyAttack}
-              alt='Eu jogando'
-              className='img-about img-volley-attack'
-            />
-            <img
-              src={imgVolleyBack}
-              alt='Eu jogando'
-              className='img-about img-volley-back'
-            />
-            <img
-              src={imgFont1}
-              alt='Eu jogando'
-              className='img-font img-font-1'
-            />
-            <img
-              src={imgFont2}
-              alt='Eu jogando'
-              className='img-font img-font-2'
-            />
+            <div className='me'>
+              <img
+                src={imgProfile}
+                alt='Imagem de perfil'
+                className='img-about img-profile'
+              />
+            </div>
+            <div className='traveling'>
+              <p className='text-traveling'>
+                Viagem com a esposa para <br />a serra de Guaramiranga
+              </p>
+              <img
+                src={imgPaisagem}
+                alt='Uma paisagem'
+                className='img-about img-paisagem'
+              />
+              <img
+                src={imgLove}
+                alt='Imagem com meu amor'
+                className='img-about img-love'
+              />
+            </div>
+            <div className='my-setup'>
+              <p className='text-setup-1'>
+                - Mouse logitech MX master 3 <br />- Keyboard logitech MX Keys
+              </p>
+              <p className='text-setup-2'>
+                - 1TB SSD e 32GB RAM
+                <br />
+                - processador i5-12400F
+                <br />
+                - GPU Radeon RX 6600
+                <br />
+                - fonte Corsair CX750M
+                <br />
+                - case montech Sky 2<br />
+              </p>
+              <img
+                src={imgKeyboard}
+                alt='Imagem de um teclado'
+                className='img-about img-keyboard'
+              />
+              <img
+                src={imgPC}
+                alt='Imagem do meu PC'
+                className='img-about img-pc'
+              />
+            </div>
+            <div className='ui-design'>
+              <p className='text-colors'>
+                Paleta de cores e 9 variables <br />
+                baseada no sistema ClickUP
+              </p>
+
+              <p className='text-app'>
+                App projetado para o <br />
+                programa de dev.academy
+              </p>
+              <img
+                src={imgColors}
+                alt='Um design de uma cor'
+                className='img-about img-colors'
+              />
+              <img
+                src={imgApp}
+                alt='Telas de um app'
+                className='img-about img-app'
+              />
+            </div>
+            <div className='volleyball'>
+              <p className='text-volleyball'>
+                Jogando na cidade de Itapiúna. <br />
+                Jogo pela fase de grupos da Copa <br />
+                Sertão Maciço de Voleibol 2023
+              </p>
+              <img
+                src={imgVolleyAttack}
+                alt='Eu jogando'
+                className='img-about img-volley-attack'
+              />
+              <img
+                src={imgVolleyBack}
+                alt='Eu jogando'
+                className='img-about img-volley-back'
+              />
+            </div>
+            <div className='fonts'>
+              <img
+                src={imgFont1}
+                alt='Eu jogando'
+                className='img-font img-font-1'
+              />
+              <img
+                src={imgFont2}
+                alt='Eu jogando'
+                className='img-font img-font-2'
+              />
+            </div>
           </div>
         </div>
       </section>
