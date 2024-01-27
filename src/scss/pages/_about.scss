@@ -26,9 +26,8 @@
       .ui-design,
       .volleyball,
       .fonts {
-        height: 100%;
+        height: 100dvh;
         position: relative;
-        height: 100%;
         flex-shrink: 0;
       }
 
@@ -36,10 +35,10 @@
         width: 41rem;
 
         .img-profile {
-          width: 18rem;
+          width: 50%;
           transform: rotate(11deg);
-          left: 11rem;
-          top: 25rem;
+          left: 25%;
+          top: 30%;
         }
       }
 
@@ -49,8 +48,8 @@
         .text-traveling {
           @include text-image-about();
           position: absolute;
-          left: 20rem;
-          top: 18rem;
+          left: 28%;
+          top: 18%;
 
           &::before {
             position: absolute;
@@ -62,17 +61,17 @@
         }
 
         .img-paisagem {
-          width: 27rem;
+          width: 42%;
           transform: rotate(-5deg);
-          top: 30rem;
-          left: 8rem;
+          top: 33%;
+          left: 10%;
         }
 
         .img-love {
-          width: 21.9rem;
+          width: 37%;
           transform: rotate(5deg);
-          right: 8rem;
-          top: 40rem;
+          right: 14%;
+          top: 43%;
         }
       }
 
@@ -86,8 +85,8 @@
         }
 
         .text-setup-1 {
-          top: 15rem;
-          left: 0rem;
+          top: 17%;
+          left: -2%;
 
           &::before {
             position: absolute;
@@ -99,29 +98,31 @@
         }
 
         .text-setup-2 {
-          top: 57rem;
-          right: 24rem;
+          top: 70%;
+          right: 38%;
 
           &::before {
             position: absolute;
             content: url('../assets/about/arrow_setup_2.svg');
             display: block;
-            top: -4rem;
-            right: -8rem;
+            top: -2rem;
+            right: -11rem;
           }
         }
 
         .img-pc {
-          width: 25rem;
-          top: 15rem;
-          right: 8rem;
+          width: 37%;
+          transform: rotate(7deg);
+
+          top: 19%;
+          right: 13%;
         }
 
         .img-keyboard {
-          width: 23rem;
+          width: 33%;
           transform: rotate(-5deg);
-          top: 26rem;
-          left: 19rem;
+          top: 32%;
+          left: 19%;
           z-index: 1000;
         }
       }
@@ -136,8 +137,8 @@
         }
 
         .text-colors {
-          top: 61rem;
-          left: 30rem;
+          top: 74%;
+          left: 45%;
 
           &::before {
             position: absolute;
@@ -149,8 +150,8 @@
         }
 
         .text-app {
-          top: 15rem;
-          right: 7rem;
+          top: 15%;
+          right: 9%;
 
           &::before {
             position: absolute;
@@ -162,17 +163,17 @@
         }
 
         .img-colors {
-          width: 25rem;
+          width: 39%;
           transform: rotate(-5deg);
-          top: 25rem;
-          left: 11rem;
+          top: 27%;
+          left: 17%;
         }
 
         .img-app {
-          width: 20rem;
+          width: 32%;
           transform: rotate(5deg);
-          top: 30rem;
-          right: 11rem;
+          top: 33%;
+          right: 16%;
         }
       }
 
@@ -182,8 +183,8 @@
         .text-volleyball {
           position: absolute;
           @include text-image-about();
-          top: 55rem;
-          left: 18rem;
+          top: 68%;
+          left: 24%;
 
           &::before {
             position: absolute;
@@ -195,19 +196,17 @@
         }
 
         .img-volley-attack {
-          width: 38em;
+          width: 52%;
           transform: rotate(8deg);
-          top: 18rem;
-          right: 6rem;
-          margin: 0 auto;
+          top: 22%;
+          right: 9%;
         }
 
         .img-volley-back {
-          width: 29rem;
+          width: 41%;
           transform: rotate(-5deg);
-          top: 26rem;
-          left: 6rem;
-          margin: 0 auto;
+          top: 29%;
+          left: 8%;
         }
       }
 
@@ -215,18 +214,18 @@
         width: 73rem;
 
         .img-font-1 {
-          width: 28rem;
+          width: 39%;
           transform: rotate(7deg);
-          top: 27rem;
-          left: 10rem;
+          top: 30%;
+          left: 12%;
           z-index: 1000;
         }
 
         .img-font-2 {
-          width: 28rem;
+          width: 39%;
           transform: rotate(-5deg);
-          top: 23rem;
-          right: 10rem;
+          top: 26%;
+          right: 12%;
         }
       }
     }
@@ -341,7 +340,7 @@
       .past-experiences {
         width: 100%;
         max-width: 59.6rem;
-        border-right: 1px solid $grayscale-500;
+        border-right: 1px solid $grayscale-500-opacity-50;
       }
 
       .current {

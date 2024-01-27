@@ -67,6 +67,12 @@ function About() {
     };
   }, []);
 
+  useEffect(() => {
+    const heightDevice = photoRef.current?.offsetHeight;
+
+    console.log(heightDevice);
+  }, []);
+
   return (
     <>
       <section className='section-gallery'>
@@ -104,8 +110,6 @@ function About() {
                 - processador i5-12400F
                 <br />
                 - GPU Radeon RX 6600
-                <br />
-                - fonte Corsair CX750M
                 <br />
                 - case montech Sky 2<br />
               </p>

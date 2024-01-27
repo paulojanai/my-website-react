@@ -150,6 +150,10 @@ h5 {
   font-family: "Mynerve", sans-serif;
   font-size: 2rem;
   line-height: 150%;
+
+  @include responsive(768px) {
+    font-size: 1.7rem;
+  }
 }
 
 @mixin typography-button() {
