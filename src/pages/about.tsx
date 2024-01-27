@@ -39,7 +39,7 @@ function About() {
         trigger: triggerRef.current,
         start: '28.75 100',
         end: '2000 bottom',
-        scrub: 0.5,
+        scrub: 1,
         pin: true,
 
         // markers: {
@@ -67,11 +67,11 @@ function About() {
     };
   }, []);
 
-  useEffect(() => {
-    const heightDevice = photoRef.current?.offsetHeight;
+  // useEffect(() => {
+  //   const heightDevice = photoRef.current?.offsetHeight;
 
-    console.log(heightDevice);
-  }, []);
+  //   console.log(heightDevice);
+  // }, []);
 
   return (
     <>

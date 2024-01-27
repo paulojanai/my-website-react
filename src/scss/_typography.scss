@@ -33,7 +33,7 @@ h2 {
   font-size: 6.4rem;
 
   @include responsive(768px) {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -41,7 +41,7 @@ h3 {
   font-size: 4.2rem;
 
   @include responsive(768px) {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -49,7 +49,7 @@ h4 {
   font-size: 3.2rem;
 
   @include responsive(768px) {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 }
 

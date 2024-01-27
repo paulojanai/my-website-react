@@ -35,7 +35,8 @@
         width: 41rem;
 
         .img-profile {
-          width: 50%;
+          // width: 50%;
+          height: 26.8%;
           transform: rotate(11deg);
           left: 25%;
           top: 30%;
@@ -48,30 +49,32 @@
         .text-traveling {
           @include text-image-about();
           position: absolute;
-          left: 28%;
-          top: 18%;
+          top: 15%;
+          left: 32%;
 
           &::before {
             position: absolute;
             content: url('../assets/about/arrow_traveling.svg');
-            display: block;
+            display: inline-block;
             top: 2rem;
             left: -7rem;
           }
         }
 
         .img-paisagem {
-          width: 42%;
+          // width: 42%;
+          height: 39.2%;
           transform: rotate(-5deg);
-          top: 33%;
-          left: 10%;
+          top: 29%;
+          right: 48%;
         }
 
         .img-love {
-          width: 37%;
+          // width: 37%;
+          height: 33.1%;
           transform: rotate(5deg);
-          right: 14%;
-          top: 43%;
+          top: 39%;
+          left: 47%;
         }
       }
 
@@ -85,8 +88,8 @@
         }
 
         .text-setup-1 {
-          top: 17%;
-          left: -2%;
+          top: 15%;
+          left: 0%;
 
           &::before {
             position: absolute;
@@ -98,8 +101,8 @@
         }
 
         .text-setup-2 {
-          top: 70%;
-          right: 38%;
+          top: 67%;
+          right: 42%;
 
           &::before {
             position: absolute;
@@ -111,18 +114,19 @@
         }
 
         .img-pc {
-          width: 37%;
+          // width: 37%;
+          height: 40.5%;
           transform: rotate(7deg);
-
-          top: 19%;
-          right: 13%;
+          top: 16%;
+          left: 50%;
         }
 
         .img-keyboard {
-          width: 33%;
+          // width: 33%;
+          height: 31%;
           transform: rotate(-5deg);
-          top: 32%;
-          left: 19%;
+          top: 29%;
+          right: 48%;
           z-index: 1000;
         }
       }
@@ -137,7 +141,7 @@
         }
 
         .text-colors {
-          top: 74%;
+          top: 68%;
           left: 45%;
 
           &::before {
@@ -150,30 +154,32 @@
         }
 
         .text-app {
-          top: 15%;
-          right: 9%;
+          top: 12%;
+          right: 11%;
 
           &::before {
             position: absolute;
             content: url('../assets/about/arrow_app.svg');
             display: block;
-            top: 8rem;
+            top: 7rem;
             right: 13rem;
           }
         }
 
         .img-colors {
-          width: 39%;
+          // width: 39%;
+          height: 35%;
           transform: rotate(-5deg);
-          top: 27%;
-          left: 17%;
+          top: 24%;
+          right: 45%;
         }
 
         .img-app {
-          width: 32%;
+          // width: 32%;
+          height: 26%;
           transform: rotate(5deg);
-          top: 33%;
-          right: 16%;
+          top: 29%;
+          left: 50%;
         }
       }
 
@@ -183,7 +189,7 @@
         .text-volleyball {
           position: absolute;
           @include text-image-about();
-          top: 68%;
+          top: 60%;
           left: 24%;
 
           &::before {
@@ -196,17 +202,19 @@
         }
 
         .img-volley-attack {
-          width: 52%;
+          // width: 52%;
+          height: 29%;
           transform: rotate(8deg);
-          top: 22%;
-          right: 9%;
+          top: 18%;
+          left: 37%;
         }
 
         .img-volley-back {
-          width: 41%;
+          // width: 41%;
+          height: 25%;
           transform: rotate(-5deg);
-          top: 29%;
-          left: 8%;
+          top: 25%;
+          right: 50%;
         }
       }
 
@@ -214,18 +222,20 @@
         width: 73rem;
 
         .img-font-1 {
-          width: 39%;
+          // width: 39%;
+          height: 34%;
           transform: rotate(7deg);
-          top: 30%;
-          left: 12%;
+          top: 26%;
+          right: 46%;
           z-index: 1000;
         }
 
         .img-font-2 {
-          width: 39%;
+          // width: 39%;
+          height: 34%;
           transform: rotate(-5deg);
-          top: 26%;
-          right: 12%;
+          top: 22%;
+          left: 48%;
         }
       }
     }
