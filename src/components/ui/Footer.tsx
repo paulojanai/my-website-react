@@ -1,5 +1,3 @@
-// import { Copy } from 'lucide-react';
-
 import Link from '@components/Link';
 import GridContainer from '@components/Grid';
 import Separator from '@components/ui/Separator';
@@ -7,6 +5,7 @@ import Separator from '@components/ui/Separator';
 import CVPDF from '../../../paulojanai-cv.pdf';
 
 import NocapStudio from '@assets/NocapStudio.svg';
+import EmailClipboard from '@components/EmailClipboard';
 
 export function Footer() {
   return (
@@ -15,12 +14,7 @@ export function Footer() {
         <div className='top'>
           <div className='content'>
             <p className='span'>Vamos conversar</p>
-            <div className='email'>
-              <h4>pjanai.m.s@gmail.com</h4>
-              {/* <button className='btn-copy'>
-                <Copy />
-              </button> */}
-            </div>
+            <EmailClipboard />
           </div>
 
           <div className='group-links'>
