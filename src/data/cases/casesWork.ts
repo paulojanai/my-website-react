@@ -41,7 +41,7 @@ const MyReport : ICase = {
   client: "Ceará Inspeção",
   date: "2023 - Em andamento",
   image: MyReportOnline,
-  descriptionRoles: 'Branding, UX/UI Designer, UI Designer, User testing',
+  descriptionRoles: 'Branding, Research, UX/UI Designer, UI Designer',
   title:
   `Meu relatório`,
   description: "aplicativo e webapp para auxiliar na inspeção predial",

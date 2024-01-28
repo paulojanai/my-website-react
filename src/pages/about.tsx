@@ -87,7 +87,7 @@ function About() {
             </div>
             <div className='traveling'>
               <p className='text-traveling'>
-                Viagem com a esposa para <br />a serra de Guaramiranga
+                Viagem com a esposa para <br />a serra de Guaramiranga ❤️
               </p>
               <img
                 src={imgPaisagem}

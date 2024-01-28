@@ -137,9 +137,9 @@ export function Header() {
           <div className={`menu-mobile ${open ? 'active' : ''}`}>
             <div className='header-menu-mobile'>
               <GridContainer>
-                {/* <Link to='/' className='logo'>
+                <Link to='/' className='logo'>
                   <img src={Logo} alt='Logo Paulo Janai' />
-                </Link> */}
+                </Link>
                 <span className='close'>
                   <X className='menu-bar' size={32} onClick={actionMenu} />
                 </span>

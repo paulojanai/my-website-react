@@ -36,7 +36,7 @@
 
         .img-profile {
           // width: 50%;
-          height: 26.8%;
+          height: 30%;
           transform: rotate(11deg);
           left: 25%;
           top: 30%;
@@ -79,7 +79,7 @@
       }
 
       .my-setup {
-        width: 73rem;
+        width: 71rem;
 
         .text-setup-1,
         .text-setup-2 {
@@ -89,7 +89,7 @@
 
         .text-setup-1 {
           top: 15%;
-          left: 0%;
+          left: -4%;
 
           &::before {
             position: absolute;
@@ -132,7 +132,7 @@
       }
 
       .ui-design {
-        width: 66rem;
+        width: 68rem;
 
         .text-colors,
         .text-app {
@@ -184,7 +184,7 @@
       }
 
       .volleyball {
-        width: 72rem;
+        width: 74rem;
 
         .text-volleyball {
           position: absolute;
@@ -219,7 +219,7 @@
       }
 
       .fonts {
-        width: 73rem;
+        width: 74rem;
 
         .img-font-1 {
           // width: 39%;
@@ -236,6 +236,58 @@
           transform: rotate(-5deg);
           top: 22%;
           left: 48%;
+        }
+      }
+
+      @include responsive(1366px) {
+        .me {
+          width: 38rem;
+        }
+
+        .traveling {
+          width: 58rem;
+        }
+
+        .my-setup {
+          width: 65rem;
+        }
+
+        .ui-design {
+          width: 60rem;
+        }
+
+        .volleyball {
+          width: 66rem;
+        }
+
+        .fonts {
+          width: 66rem;
+        }
+      }
+
+      @include responsive(768px) {
+        .me {
+          width: 35rem;
+        }
+
+        .traveling {
+          width: 52rem;
+        }
+
+        .my-setup {
+          width: 56rem;
+        }
+
+        .ui-design {
+          width: 50rem;
+        }
+
+        .volleyball {
+          width: 58rem;
+        }
+
+        .fonts {
+          width: 58rem;
         }
       }
     }

@@ -24,7 +24,7 @@ h1 {
     line-height: 130%;
 
     &.display-lg {
-      font-size: 5.6rem;
+      font-size: 6.2rem;
     }
   }
 }
@@ -41,7 +41,7 @@ h3 {
   font-size: 4.2rem;
 
   @include responsive(768px) {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -159,6 +159,10 @@ h5 {
 @mixin typography-button() {
   font-size: 1.8rem;
   font-weight: 600;
+
+  @include responsive(768px) {
+    font-size: 1.6rem;
+  }
 }
 
 @mixin typography-link() {
