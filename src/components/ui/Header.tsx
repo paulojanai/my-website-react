@@ -84,7 +84,7 @@ export function Header() {
       ) : (
         <GridContainer>
           <div className='left' data-aos='fade-down'>
-            <Link to='/' className='logo'>
+            <Link to='https://paulojanai.com/' className='logo'>
               <img src={Logo} alt='Logo Paulo Janai' />
             </Link>
             <div className='open-to-work-visible'>
