@@ -31,7 +31,7 @@
       a {
         color: $grayscale-50;
         @include typography-link();
-        @include expand_border($grayscale-50);
+        @include expand_border_link_header($grayscale-50);
         cursor: pointer;
       }
     }

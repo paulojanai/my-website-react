@@ -138,7 +138,7 @@ header {
               font-size: 4rem;
               font-weight: 600;
               color: $grayscale-50;
-              @include expand_border($grayscale-50);
+              // @include expand_border($grayscale-50);
 
               .x-twitter svg {
                 fill: $grayscale-50;

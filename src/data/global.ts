@@ -3,7 +3,7 @@ export const AllDesignerExpertises : string[] = [
 ]
 
 export const AllDesignerTools : string[] = [
-'Papel & Caneta', 'SVGator', 'Miro', 'Figma', 'LottieFiles', 'Maze'
+'Papel & Caneta', 'SVGator', 'Miro', 'Figma', 'LottieFiles', 'Maze', 'Hotjar'
 ]
 
 export const AllDeveloperExpertises: string[] = [

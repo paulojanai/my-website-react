@@ -7,7 +7,7 @@ a {
 
       @include typography-link();
       color: $grayscale-50;
-      @include expand_border($grayscale-100);
+      @include expand_border_link($grayscale-50);
     }
   }
 }

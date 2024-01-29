@@ -1,8 +1,8 @@
-@mixin expand_border ($border_color) {
+@mixin expand_border_link_header ($border_color) {
   &:after {
     display: block;
     content: '';
-    border-bottom: solid 2px $border_color;
+    border-bottom: solid 1px $border_color;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
     transform-origin: 0% 50%;
@@ -12,6 +12,17 @@
     &:after {
       transform: scaleX(1);
     }
+  }
+}
+
+@mixin expand_border_link ($border_color) {
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px $border_color;
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 0% 50%;
   }
 }
 
