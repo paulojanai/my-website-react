@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowLeft, Dribbble, Github, Linkedin, Menu, X } from 'lucide-react';
+import { ChevronLeft, Dribbble, Github, Linkedin, Menu, X } from 'lucide-react';
 
 import GridContainer from '@components/Grid';
 import Logo from '@assets/logo-dark.svg';
@@ -9,6 +9,7 @@ import CVPDF from '../../../paulojanai-cv.pdf';
 import { navLinks } from '@data/nav/links';
 import Button from '@components/button/Button';
 import { XTwitter } from '@components/Icons';
+
 import OpenToWork from '@components/OpenToWork';
 
 export function Header() {
@@ -45,10 +46,10 @@ export function Header() {
   return (
     <header>
       {modeCase ? (
-        <GridContainer className='navbar-mode-case'>
+        <GridContainer>
           <div className='left' data-aos='fade-down'>
             <Button href='/' size='small'>
-              <ArrowLeft size={24} />
+              <ChevronLeft size={24} />
               <p>Voltar</p>
             </Button>
             <div className='open-to-work-visible'>

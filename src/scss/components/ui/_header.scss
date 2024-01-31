@@ -60,9 +60,18 @@ header {
       @include flex(row, center, center);
       gap: 0.8rem;
 
+      //Only mode default
       .logo {
         img {
           height: 2.4rem;
+        }
+      }
+
+      //Only mode case (BUtton back)
+      a {
+        svg {
+          margin-left: -0.8rem;
+          margin-right: -0.4rem;
         }
       }
     }
