@@ -104,7 +104,7 @@ export function Header() {
               </li>
               <li className='nav-link'>
                 <a href={CVPDF} target='_blank'>
-                  Resume
+                  CV
                 </a>
               </li>
               <ul className='social'>

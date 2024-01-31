@@ -4,7 +4,6 @@ import Separator from '@components/ui/Separator';
 
 import CVPDF from '../../../paulojanai-cv.pdf';
 
-import NocapStudio from '@assets/NocapStudio.svg';
 import EmailClipboard from '@components/EmailClipboard';
 
 export function Footer() {
@@ -74,15 +73,7 @@ export function Footer() {
         <div className='bottom'>
           <p>© Copyright 2024. Todos os direitos reservados.</p>
           <div className='development'>
-            <p>Design and development by</p>
-            <a
-              // href='https://nocapstudio.com.br'
-              href='https://www.nocapstudio.com.br'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <img src={NocapStudio} alt='Nocap Studio' />
-            </a>
+            <p>Design and development por Paulo Janai</p>
           </div>
         </div>
       </GridContainer>

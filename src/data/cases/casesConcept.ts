@@ -21,7 +21,7 @@ const CasesConcept: ICaseConcept[] = [
   },
   {
     image: WeatherForecast,
-    descriptionRoles: 'UI Designer, Frontend developer',
+    descriptionRoles: 'UI Designer',
     title: 'Weather Forecast: app para acompanhar a previsão do tempo',
     figmaURL: 'https://www.figma.com/file/o4Be8mHxRE3UbIzdDZvCqL/Weather-Forecast?type=design&node-id=0%3A1&mode=design&t=DaRVFmOPPO3Di5qO-1',
     comingSoon: false,

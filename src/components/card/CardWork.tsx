@@ -22,9 +22,9 @@ const CardWork: React.FC<ICase> = ({
         <p>Ver caso {comingSoon && '(Construindo)'}</p>
         <ArrowUpRight size={24} />
       </Button>
-      <div className='thumb'>
+      <a href={href} className={`thumb ${!comingSoon ? 'cursor-active' : ''}`}>
         <img src={image} alt='' />
-      </div>
+      </a>
     </div>
   );
 };

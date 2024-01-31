@@ -58,12 +58,12 @@ const EntregouMe: ICase = {
   image: EntregouMeWeb,
   descriptionRoles: 'UX/UI Designer, UI Designer',
   title:
-    'Entregou.me',
+    'Entregou.me Client',
     description: "plataforma para gerenciar, realizar e acompanhar pedidos",
     // href: "cases/entregou-me-web",
     roles: 'UX/UI Designer, Visual Design',
   products: 'Website',
-  team: 'Eu',
+  team: 'Neto, Talia e Eu',
   comingSoon: true
 };
 

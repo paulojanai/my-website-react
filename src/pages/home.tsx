@@ -107,11 +107,8 @@ function Home() {
           </div>
           <div className='text'>
             <h1 className='display-lg'>
-              Product <span className='italic'>Designer</span>,
-              <h1 className='display-lg'>
-                <span className='italic'>Developer</span> &{' '}
-                <span className='italic'>Freelancer</span>
-              </h1>
+              Product <span className='italic'>Designer</span> &
+              <span className='italic'> Developer</span>
             </h1>
             <p className='body-xl paragraph-medium'>
               Focado na criação e evolução das experiências dos usuários através
