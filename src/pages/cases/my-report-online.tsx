@@ -10,6 +10,7 @@ import Button from '@components/button/Button';
 
 import screenLogin from '@assets/my-report-online/screen_login.png';
 import imageDefault from '@assets/image.png';
+import imageBranding from '@assets/my-report-online/brand.png';
 
 function MyReportOnline() {
   const project = CasesObject['MyReportOnline'];
@@ -17,7 +18,6 @@ function MyReportOnline() {
   const overviewRef = useNav({ navLinkID: 'section-overview' });
   const deliverablesRef = useNav({ navLinkID: 'section-deliverables' });
   const visualsRef = useNav({ navLinkID: 'section-visuals' });
-  const resultsRef = useNav({ navLinkID: 'section-results' });
 
   return (
     <>
@@ -107,24 +107,18 @@ function MyReportOnline() {
               id='section-deliverables'
             >
               <div className='listview'>
-                <CaseSectionItem title='User flow'>
+                <CaseSectionItem title='Branding'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
-                      Inicialmente, colaborei com nosso pesquisador de UX para
-                      criar um fluxo de usuário aproximado que todos pudéssemos
-                      entender. Depois disso, fui mais fundo e usei o FigJam
-                      para criar uma visualização detalhada do fluxo do usuário.
+                      Foi feito uma pesquisa visando as características do
+                      produto e com base na ideia do cliente. Desenvolvi algo
+                      simples e objetivo.
                     </p>
                   </div>
 
-                  <Button size='medium'>
-                    <p>Ver user flow completo</p>
-                    <ArrowUpRight size={24} />
-                  </Button>
-
                   <img
                     className='img-case-section'
-                    src={imageDefault}
+                    src={imageBranding}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
@@ -233,68 +227,6 @@ function MyReportOnline() {
                       id tellus vel tincidunt. Etiam eleifend odio urna, at
                       vulputate dui pretium tincidunt. Fusce fermentum mauris
                       nulla, lacinia scelerisque dui hendrerit at.
-                    </p>
-                  </div>
-                </CaseSectionItem>
-              </div>
-            </section>
-
-            <section
-              ref={resultsRef}
-              className='section-case'
-              id='section-results'
-            >
-              <div className='listview'>
-                <CaseSectionItem title='Métricas e resultados'>
-                  <div className='text'>
-                    <p className='body-lg paragraph-medium'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
-                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
-                      facilisis odio.
-                    </p>
-                    <p className='body-lg paragraph-medium'>
-                      <ul>
-                        <li>
-                          - Aenean sed aliquam massa. Lorem ipsum dolor sit
-                          amet, consectetur adipiscing elit.
-                        </li>
-                        <li>
-                          - Nam fringilla mauris tellus, eget varius lacus
-                          pellentesque non.{' '}
-                          <span className='highlighted-text'>
-                            Donec porttitor turpis ac nisi efficitur
-                          </span>
-                          , nec porttitor justo ultricies. Fusce at leo risus.
-                        </li>
-                        <li>
-                          - Morbi euismod, urna condimentum vehicula auctor,
-                          massa tellus iaculis velit, id tempor nulla nibh non
-                          purus.
-                        </li>
-                        <li>
-                          - Nunc a mollis sapien. Suspendisse efficitur ultrices
-                          suscipit.
-                        </li>
-                      </ul>
-                    </p>
-                  </div>
-                </CaseSectionItem>
-
-                <CaseSectionItem title='Aprendizados'>
-                  <div className='text'>
-                    <p className='body-lg paragraph-medium'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
-                      eros est, in dictum nibh faucibus id. Nulla ullamcorper
-                      facilisis odio. Aenean sed aliquam massa. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit. Nam fringilla
-                      mauris tellus, eget varius lacus pellentesque non. Donec
-                      porttitor turpis ac nisi efficitur, nec porttitor justo
-                      ultricies. Fusce at leo risus. Morbi euismod, urna
-                      condimentum vehicula auctor, massa tellus iaculis velit,
-                      id tempor nulla nibh non purus. Nunc a mollis sapien.
-                      Suspendisse efficitur ultrices suscipit.
                     </p>
                   </div>
                 </CaseSectionItem>

@@ -8,6 +8,8 @@ import { useNav } from '@hooks/useNav';
 import { ArrowUpRight } from 'lucide-react';
 
 import imageDefault from '@assets/image.png';
+import imageWirefameHigh from '@assets/entregoume-white-label/wireframe_high.png';
+import imageStyleguide from '@assets/entregoume-white-label/styleguide.png';
 
 function EntregouMeWeb() {
   const project = CasesObject['EntregouMeWeb'];
@@ -15,7 +17,7 @@ function EntregouMeWeb() {
   const overviewRef = useNav({ navLinkID: 'section-overview' });
   const deliverablesRef = useNav({ navLinkID: 'section-deliverables' });
   const visualsRef = useNav({ navLinkID: 'section-visuals' });
-  const resultsRef = useNav({ navLinkID: 'section-results' });
+  // const resultsRef = useNav({ navLinkID: 'section-results' });
 
   return (
     <>
@@ -35,19 +37,40 @@ function EntregouMeWeb() {
                 <CaseSectionItem title='Sobre'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
-                      Entregou.me é uma plataforma que possui dois tipos de
-                      usuários: gestores de loja e consumidores, onde realizam
-                      diferentes tarefas desde configurar a loja até a entrega
-                      final do produto. Diante disso, existem duas frentes onde
-                      os usuários interagem: o gestor web e o aplicativo.
+                      <span className='highlighted-text'>Entregou.me</span> é um
+                      produto digital que permite pequenos negócios criarem e
+                      gerenciarem seu negócio onde os clientes têm acesso para
+                      realizarem e acompanharem seus pedidos. Este produto
+                      possui duas frentes:{' '}
+                      <span className='highlighted-text'>
+                        entregou.me gestor
+                      </span>{' '}
+                      e{' '}
+                      <span className='highlighted-text'>
+                        entregou.me client
+                      </span>
+                      . O gestor é uma plataforma web e o client é um
+                      aplicativo.
                     </p>
                     <p className='body-lg paragraph-medium'>
-                      O aplicativo visa facilitar a realização e acompanhamento
-                      de pedidos. Já o gestor web, tem como principal objetivo o
-                      gerenciamento de pedidos e entregas.
+                      O objetivo deste projeto é proporcionar ao cliente final
+                      (usuário do client) realizar e acompanhar seus pedidos
+                      através do navegador e assim aumentar as vendas dos
+                      gestores.
                     </p>
                   </div>
                 </CaseSectionItem>
+
+                <CaseSectionItem title='Magia do design solo'>
+                  <div className='text'>
+                    <p className='body-lg paragraph-medium'>
+                      Trabalhei como o único designer no projeto. Minhas
+                      responsabilidades incluíam pesquisa, wireframing, design
+                      de interface e prototipagem.
+                    </p>
+                  </div>
+                </CaseSectionItem>
+
                 <CaseSectionItem title='Entendendo o problema'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
@@ -55,17 +78,16 @@ function EntregouMeWeb() {
                       seus clientes não usam o aplicativo e preferem utilizar o
                       whatsapp ou o instagram para realizarem seus pedidos.
                     </p>
-                    <span style={{ marginTop: 24 }}></span>
+                    <span style={{ marginTop: 16 }}></span>
                     <p className='body-xl'>
-                      Alguns feedbacks fornecidos pela própria empresa:
+                      Alguns feedbacks fornecidos pelo cliente:
                     </p>
                     <p className='body-lg paragraph-medium'>
                       1. Preferem utilizar um site do que o aplicativo, como
-                      outras (Anota ai, Plataforma123)
+                      outros (Anota ai, Plataforma123)
                       <br />
-                      2. Acham mais prático e não precisa instalar
-                      <br />
-                      3.
+                      2. Acham mais prático e não precisam instalar nenhum
+                      recurso
                     </p>
                   </div>
                 </CaseSectionItem>
@@ -102,41 +124,40 @@ function EntregouMeWeb() {
                 <CaseSectionItem title='Styleguide'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
-                      Inicialmente, utilizei os tokens e alguns components dos
-                      outros produtos existentes. De acordo com a necessidade
-                      fui adicionando novos componentes.
+                      Utilizei a base de tokens e componentes dos produtos
+                      Gestor e Client . Todo o material do Entregou.me estava no
+                      software adobe XD, foi sugerido começar um processo de
+                      migração para o figma, os tokens, componentes e patterns
+                      foram migrados para o figma de acordo com sua necessidade.
                     </p>
                   </div>
 
                   <Button size='medium'>
-                    <p>Ver user flow completo</p>
+                    <p>Ver styleguide completo</p>
                     <ArrowUpRight size={24} />
                   </Button>
 
                   <img
                     className='img-case-section'
-                    src={imageDefault}
+                    src={imageStyleguide}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
-                <CaseSectionItem title='Jornada do usuário'>
+                <CaseSectionItem title='Alta fidelidade'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
-                      Para compreender totalmente e ter empatia com as
-                      experiências dos usuários, criei uma jornada de usuário
-                      detalhada para o projeto, descrevendo seus objetivos,
-                      desafios e pontos problemáticos em cada etapa.
+                      Visão geral? Simples e limpo ✨
                     </p>
                   </div>
 
                   <Button size='medium'>
-                    <p>Ver mapa da jornada do usuário</p>
+                    <p>Ver completo</p>
                     <ArrowUpRight size={24} />
                   </Button>
 
                   <img
                     className='img-case-section'
-                    src={imageDefault}
+                    src={imageWirefameHigh}
                     alt='User Flow'
                   />
                 </CaseSectionItem>
@@ -200,69 +221,6 @@ function EntregouMeWeb() {
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Ut euismod dapibus magna sit amet porttitor. Ut vehicula
                       eros est, in dictum nibh faucibus id.
-                    </p>
-                  </div>
-                </CaseSectionItem>
-              </div>
-            </section>
-            <section
-              ref={resultsRef}
-              className='section-case'
-              id='section-results'
-            >
-              <div className='listview'>
-                <CaseSectionItem title='🚀 Métricas e resultados'>
-                  <div className='text'>
-                    <p className='body-lg paragraph-medium'>
-                      O processo de tracking foi construído com o time de dados,
-                      PM e o meu auxílio, o que contribuiu para podermos medir o
-                      impacto da iniciativa.
-                    </p>
-                    <p className='body-lg paragraph-medium'>
-                      <ul>
-                        <li>
-                          - Ao analisar o período de dezembro a março,{' '}
-                          <span className='highlighted-text'>
-                            com a nova funcionalidade observamos um aumento de
-                            96% em 2023 em comparação 2022
-                          </span>
-                        </li>
-                        <li>
-                          - Por outro lado, nos meses em que o Plurall não
-                          registra picos de acesso, houve um aumento de mais de
-                          180 mil cadastros de responsáveis,
-                          <span className='highlighted-text'>
-                            representando um aumento de aproximadamente 33%
-                          </span>{' '}
-                          em relação aos meses com maior acesso.
-                        </li>
-                        <li>
-                          - Outras iniciativas se intensificaram para gerar
-                          ainda mais valor para os novos usuários.
-                        </li>
-                        <li>
-                          - A comunicação via rede social se intensificou para
-                          incentivar ainda mais os responsáveis a se cadastrarem
-                          e se vincularem aos alunos
-                        </li>
-                      </ul>
-                    </p>
-                  </div>
-                </CaseSectionItem>
-
-                <CaseSectionItem title='🧠 Aprendizados'>
-                  <div className='text'>
-                    <p className='body-lg paragraph-medium'>
-                      Foi enriquecedor entrar em uma equipe que não tinha muita
-                      experiência com design e, mesmo assim, estava aberta a
-                      mudanças. Houve vários momentos de compartilhamento de
-                      conhecimento de design com os Product Managers, o squad e
-                      os stakeholders, na tentativa de transmitir um pouco mais
-                      sobre nosso trabalho e do nosso dia a dia, colaborando com
-                      todos. No final da iniciativa, todos do time estavam
-                      satisfeitos com o trabalho que tínhamos realizado e
-                      expressaram interesse em participar mais vezes dos
-                      processos de design.
                     </p>
                   </div>
                 </CaseSectionItem>
