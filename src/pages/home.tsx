@@ -76,26 +76,38 @@ function Home() {
       <section className='section-hero'>
         <div className='tags-container'>
           <div className='zone-tag-ui' data-aos='zoom-in'>
-            <img src={TagUI} alt='Tag Interface Design' className='tag-ui' />
+            <img
+              src={TagUI}
+              alt='Tag Interface Design'
+              className='tags tag-ui'
+            />
           </div>
           <div className='zone-tag-ds' data-aos='zoom-in'>
-            <img src={TagDS} alt='Tag Design System' className='tag-ds' />
+            <img src={TagDS} alt='Tag Design System' className='tags tag-ds' />
           </div>
 
           <div className='zone-tag-bs' data-aos='zoom-in'>
-            <img src={TagBS} alt='Tag Business' className='tag-bs' />
+            <img src={TagBS} alt='Tag Business' className='tags tag-bs' />
           </div>
 
           <div className='zone-tag-fd' data-aos='zoom-in'>
-            <img src={TagFD} alt='Tag Frontend Developer' className='tag-fd' />
+            <img
+              src={TagFD}
+              alt='Tag Frontend Developer'
+              className='tags tag-fd'
+            />
           </div>
 
           <div className='zone-tag-pt' data-aos='zoom-in'>
-            <img src={TagPT} alt='Tag Prototyping' className='tag-pt' />
+            <img src={TagPT} alt='Tag Prototyping' className='tags tag-pt' />
           </div>
 
           <div className='zone-tag-mi' data-aos='zoom-in'>
-            <img src={TagMI} alt='Tag Microinteractions' className='tag-mi' />
+            <img
+              src={TagMI}
+              alt='Tag Microinteractions'
+              className='tags tag-mi'
+            />
           </div>
         </div>
         <GridContainer dataAos='fade-right'>
