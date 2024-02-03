@@ -7,9 +7,15 @@ import { CaseNavigationItems, CasesObject } from '@data/cases/casesWork';
 import { useNav } from '@hooks/useNav';
 import { ArrowUpRight } from 'lucide-react';
 
-import imageDefault from '@assets/image.png';
+// import imageDefault from '@assets/image.png';
 import imageWirefameHigh from '@assets/entregoume-white-label/wireframe_high.png';
 import imageStyleguide from '@assets/entregoume-white-label/styleguide.png';
+import imageVisuals from '@assets/entregoume-white-label/visuals.png';
+import imageSignIn from '@assets/entregoume-white-label/auth_1.png';
+import imageSignUp from '@assets/entregoume-white-label/auth_2.png';
+import imageHome from '@assets/entregoume-white-label/home.png';
+import imageCheckout from '@assets/entregoume-white-label/preview_checkout.png';
+import imageProductDetails from '@assets/entregoume-white-label/details_product.png';
 
 function EntregouMeWeb() {
   const project = CasesObject['EntregouMeWeb'];
@@ -172,32 +178,94 @@ function EntregouMeWeb() {
             >
               <div className='listview'>
                 <CaseSectionItem title='Uma jornada visual'>
+                  <img
+                    className='img-case-section'
+                    src={imageVisuals}
+                    alt='User Flow'
+                  />
+                </CaseSectionItem>
+
+                <CaseSectionItem title='Mais a fundo'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
-                      Pellentesque at fringilla ante, nec porttitor ligula.
+                      Os usuários tem acesso direto a página principal da loja.
+                      Portanto, neste caso, a página de login ou cadastro é
+                      necessária quando os usuários vão finalizar o seu pedido.
                     </p>
                   </div>
 
                   <img
                     className='img-case-section'
-                    src={imageDefault}
-                    alt='User Flow'
+                    src={imageSignIn}
+                    alt='Sign in'
+                  />
+
+                  <img
+                    className='img-case-section'
+                    src={imageSignUp}
+                    alt='Sign up'
                   />
                 </CaseSectionItem>
-                <CaseSectionItem title='Autenticação e cadastro'>
+
+                <CaseSectionItem title='Home e muito mais 🚀'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut euismod dapibus magna sit amet porttitor.
+                      Na página inicial, os usuários tem acesso as ofertas do
+                      dia, mais vendidos, várias categorias, formas de
+                      pagamento, informações da loja e podem checar o carrinho
+                      de forma rápida.
                     </p>
                   </div>
+
+                  <img
+                    className='img-case-section'
+                    src={imageHome}
+                    alt='Sign in'
+                  />
+
+                  <img
+                    className='img-case-section'
+                    src={imageCheckout}
+                    alt='Sign up'
+                  />
                 </CaseSectionItem>
+
+                <CaseSectionItem title='Detalhes do produto'>
+                  <div className='text'>
+                    <p className='body-lg paragraph-medium'>
+                      Nesta página, os usuários podem visualizar todas as
+                      informações de um produto e produtos relacionados.
+                    </p>
+                  </div>
+
+                  <img
+                    className='img-case-section'
+                    src={imageProductDetails}
+                    alt='Sign in'
+                  />
+                </CaseSectionItem>
+
                 <CaseSectionItem title='Carrinho de compras'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut euismod dapibus magna sit amet porttitor. Ut vehicula
-                      eros est, in dictum nibh faucibus id.
+                      [Brief description...]
+                    </p>
+                  </div>
+
+                  <img
+                    className='img-case-section'
+                    src={imageProductDetails}
+                    alt='Sign in'
+                  />
+                </CaseSectionItem>
+
+                <CaseSectionItem title='Conclusão'>
+                  <div className='text'>
+                    <p className='body-lg paragraph-medium'>
+                      [Brief description...]
+                    </p>
+                    <p className='body-lg paragraph-medium'>
+                      [Brief description...]
                     </p>
                   </div>
                 </CaseSectionItem>

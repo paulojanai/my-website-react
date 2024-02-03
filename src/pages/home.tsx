@@ -112,7 +112,7 @@ function Home() {
             </h1>
             <p className='body-xl paragraph-medium'>
               Focado na criação e evolução das experiências dos usuários através
-              de soluções de design. Com mais de 5 anos de experiência.
+              de soluções de design. Com mais de 4 anos de experiência.
             </p>
           </div>
 
