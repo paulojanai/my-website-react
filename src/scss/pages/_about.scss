@@ -12,12 +12,14 @@
 
       .img-about {
         position: absolute;
-        border: 0.5rem solid $grayscale-50;
+        border: 0.4rem solid $grayscale-500;
+        border-radius: 0.4rem;
       }
 
       .img-font {
         position: absolute;
-        border: 0.5rem solid $grayscale-50;
+        border: 0.4rem solid $grayscale-500;
+        border-radius: 0.4rem;
       }
 
       .me,
