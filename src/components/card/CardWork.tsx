@@ -17,6 +17,7 @@ const CardWork: React.FC<ICase> = ({
         <h3>
           {title}: {description}
         </h3>
+        {/* <p className='body-md paragraph-medium'>{description}</p> */}
       </div>
       <Button size='medium' disabled={comingSoon} href={href}>
         <p>Ver caso {comingSoon && '(Construindo)'}</p>

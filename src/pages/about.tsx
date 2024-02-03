@@ -126,13 +126,14 @@ function About() {
             </div>
             <div className='ui-design'>
               <p className='text-colors'>
-                Paleta de cores e 9 variables <br />
+                Paleta de cores com 9 variables <br />
                 baseada no sistema ClickUP
               </p>
 
               <p className='text-app'>
-                App projetado para o <br />
-                programa de dev.academy
+                App projetado para o programa
+                <br />
+                de seleção dev.academy
               </p>
               <img
                 src={imgColors}

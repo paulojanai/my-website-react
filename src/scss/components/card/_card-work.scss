@@ -2,6 +2,29 @@
   @include flex(column, start, center);
   gap: 3.2rem;
 
+  .text {
+    p {
+      &.body-sm {
+        color: $grayscale-300;
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    h3 {
+      width: 100%;
+      max-width: 110rem;
+    }
+
+    p {
+      &.body-md {
+        width: 100%;
+        max-width: 72rem;
+        margin-top: 1.2rem;
+        color: $grayscale-300;
+      }
+    }
+  }
+
   a {
     &.thumb {
       border-radius: 1.6rem;
@@ -18,15 +41,6 @@
 
       &.cursor-active {
         cursor: url("../assets/cursor.svg"), auto;
-      }
-    }
-  }
-
-  .text {
-    p {
-      &.body-sm {
-        color: $grayscale-300;
-        margin-bottom: 0.8rem;
       }
     }
   }
