@@ -187,8 +187,8 @@ function About() {
             </div>
 
             <h2 data-aos='fade-up'>
-              Paulo Janai, Product Designer, Developer, Freelancer, atualmente
-              morando no Brasil
+              Paulo Janai, Product Designer, Developer, atualmente morando no
+              Brasil
             </h2>
 
             <div className='description' data-aos='fade-up'>

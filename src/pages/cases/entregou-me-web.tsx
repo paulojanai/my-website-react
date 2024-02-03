@@ -143,6 +143,7 @@ function EntregouMeWeb() {
                     alt='User Flow'
                   />
                 </CaseSectionItem>
+
                 <CaseSectionItem title='Alta fidelidade'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
@@ -161,30 +162,6 @@ function EntregouMeWeb() {
                     alt='User Flow'
                   />
                 </CaseSectionItem>
-                <CaseSectionItem title='Wireframe'>
-                  <div className='text'>
-                    <p className='body-lg paragraph-medium'>
-                      Trabalhando em estreita colaboração com o pesquisador de
-                      UX, Ija, focamos nos elementos centrais do projeto e
-                      criamos um wireframe parcial de baixa fidelidade no Figma.
-                      Este wireframe serviu de base para o resto do design,
-                      permitindo-nos garantir que os elementos mais importantes
-                      foram abordados antes de prosseguir com o resto do
-                      projeto.
-                    </p>
-                  </div>
-
-                  <Button size='medium'>
-                    <p>Ver wireframe completo</p>
-                    <ArrowUpRight size={24} />
-                  </Button>
-
-                  <img
-                    className='img-case-section'
-                    src={imageDefault}
-                    alt='User Flow'
-                  />
-                </CaseSectionItem>
               </div>
             </section>
 
@@ -194,7 +171,7 @@ function EntregouMeWeb() {
               id='section-visuals'
             >
               <div className='listview'>
-                <CaseSectionItem title='Visuais'>
+                <CaseSectionItem title='Uma jornada visual'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
                       Pellentesque at fringilla ante, nec porttitor ligula.

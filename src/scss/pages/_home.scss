@@ -208,7 +208,7 @@
 
   @include responsive(1150px) {
     .tags-container {
-      display: none;
+      transform: scale(0.85);
     }
   }
 
@@ -216,6 +216,40 @@
     .grid-container {
       padding-top: 6rem;
       padding-bottom: 6rem;
+    }
+
+    .tags-container {
+      transform: scale(0.8);
+    }
+
+    .zone-tag-ui {
+      top: -15rem;
+      right: -15rem;
+    }
+
+    .zone-tag-ds {
+      top: -5rem;
+      right: -4rem;
+    }
+
+    .zone-tag-bs {
+      top: 40rem;
+      right: -15rem;
+    }
+
+    .zone-tag-fd {
+      top: 16rem;
+      left: 0rem;
+    }
+
+    .zone-tag-pt {
+      top: 25rem;
+      right: 0rem;
+    }
+
+    .zone-tag-mi {
+      top: 45rem;
+      right: -15rem;
     }
   }
 }
