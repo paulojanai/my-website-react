@@ -176,7 +176,7 @@ export function Header() {
                   </li>
                   <li className='nav-link'>
                     <a
-                      href='https://github.com/paulojanai'
+                      href='https://dribbble.com/paulojanai'
                       target='_blank'
                       rel='noopener noreferrer'
                     >
@@ -194,7 +194,7 @@ export function Header() {
                   </li>
                   <li className='nav-link'>
                     <a
-                      href='https://github.com/paulojanai'
+                      href='https://twitter.com/paulo_janai'
                       target='_blank'
                       rel='noopener noreferrer'
                     >
