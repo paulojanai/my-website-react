@@ -204,7 +204,7 @@ function Home() {
                 <Layers size={40} color='white' />
                 <h3>Designer</h3>
                 <p className='body-sm paragraph-medium'>
-                  Pensando estrategicamente e desenhando interfaces estruturadas
+                  Pensando estrategicamente, desenhando interfaces estruturadas
                   e interações inteligentes
                 </p>
               </div>
@@ -236,8 +236,8 @@ function Home() {
                 <Code2 size={40} color='white' />
                 <h3>Developer</h3>
                 <p className='body-sm paragraph-medium'>
-                  Curto em codificar as coisas do zero e dá vidas as ideias no
-                  mobile e na web
+                  Curto em codificar as coisas do zero e dá vidas as ideias na
+                  forma de aplicativos ou websites
                 </p>
               </div>
 
