@@ -3,21 +3,31 @@ import { ArrowUpRight } from 'lucide-react';
 import GridContainer from '@components/Grid';
 import { NavigationCase } from '@components/ui/NavigationCase';
 import { CaseSectionHero } from '@components/case/CaseSectionHero';
-import { CaseNavigationItems, CasesObject } from '@data/cases/casesWork';
+import { CasesObject, IItemNavigationCase } from '@data/cases/casesWork';
 import { CaseSectionItem } from '@components/case/CaseSectionItem';
-import { useNav } from '@hooks/useNav';
 import Button from '@components/button/Button';
 
 import screenLogin from '@assets/my-report-online/screen_login.png';
 import imageDefault from '@assets/image.png';
 import imageBranding from '@assets/my-report-online/brand.png';
 
+const CaseNavigationItems: IItemNavigationCase[] = [
+  {
+    title: 'Visão geral',
+    linkID: 'section-overview',
+  },
+  {
+    title: 'Entregáveis',
+    linkID: 'section-deliverables',
+  },
+  {
+    title: 'Visuais',
+    linkID: 'section-visuals',
+  },
+];
+
 function MyReportOnline() {
   const project = CasesObject['MyReportOnline'];
-
-  const overviewRef = useNav({ navLinkID: 'section-overview' });
-  const deliverablesRef = useNav({ navLinkID: 'section-deliverables' });
-  const visualsRef = useNav({ navLinkID: 'section-visuals' });
 
   return (
     <>
@@ -28,11 +38,7 @@ function MyReportOnline() {
           <NavigationCase items={CaseNavigationItems} />
 
           <main>
-            <section
-              ref={overviewRef}
-              className='section-case'
-              id='section-overview'
-            >
+            <section className='section-case' id='section-overview'>
               <div className='listview'>
                 <CaseSectionItem title='Sobre'>
                   <div className='text'>
@@ -101,11 +107,7 @@ function MyReportOnline() {
               </div>
             </section>
 
-            <section
-              ref={deliverablesRef}
-              className='section-case'
-              id='section-deliverables'
-            >
+            <section className='section-case' id='section-deliverables'>
               <div className='listview'>
                 <CaseSectionItem title='Branding'>
                   <div className='text'>
@@ -170,11 +172,7 @@ function MyReportOnline() {
               </div>
             </section>
 
-            <section
-              ref={visualsRef}
-              className='section-case'
-              id='section-visuals'
-            >
+            <section className='section-case' id='section-visuals'>
               <div className='listview'>
                 <CaseSectionItem title='Visuais'>
                   <img

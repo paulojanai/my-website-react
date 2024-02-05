@@ -11,22 +11,20 @@ nav {
 
       li {
         a {
-          span {
-            color: $grayscale-400;
-            transition: all 0.3s;
-            font-size: 4rem;
-            font-weight: 700;
+          color: $grayscale-400;
+          transition: all 0.3s;
+          font-size: 4rem;
+          font-weight: 700;
 
-            &.active {
-              color: $grayscale-50;
-            }
+          &.active {
+            color: $grayscale-50;
+          }
 
-            &:hover {
-              cursor: pointer;
+          &:hover {
+            cursor: pointer;
 
-              &:not(.active) {
-                color: $grayscale-300;
-              }
+            &:not(.active) {
+              color: $grayscale-300;
             }
           }
         }

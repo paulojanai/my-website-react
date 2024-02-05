@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import GridContainer from '@components/Grid';
 import ButtonIcon from '@components/button/ButtonIcon';

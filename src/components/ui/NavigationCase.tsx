@@ -1,24 +1,53 @@
-import { useContext } from 'react';
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import { IItemNavigationCase } from '@data/cases/casesWork';
-import { NavContext } from '@context/NavContext';
 
 type NavigationCaseProps = {
   items?: IItemNavigationCase[];
 };
 
 export const NavigationCase = ({ items }: NavigationCaseProps) => {
-  const { activeLinkID, setActiveLinkID } = useContext(NavContext);
+  gsap.registerPlugin(ScrollTrigger);
 
-  const handleClickNav = (link: string) => {
-    setActiveLinkID(link);
+  useEffect(() => {
+    items?.forEach((item) => {
+      const section = document.getElementById(item.linkID);
+      const element: HTMLAnchorElement | null = document.querySelector(
+        `[href='#${item.linkID}']`
+      );
 
-    const initPosition: number = document.getElementById(link)?.offsetTop || 0;
+      const linkST = ScrollTrigger.create({
+        trigger: section,
+        start: 'top top',
+      });
 
-    window.scrollTo({
-      top: initPosition - 160,
-      behavior: 'smooth',
+      ScrollTrigger.create({
+        trigger: section,
+        start: 'top center',
+        end: 'bottom center',
+        onToggle: (self) => self.isActive && setActive(),
+      });
+
+      element?.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: linkST.start - 140,
+          behavior: 'smooth',
+        });
+      });
+
+      const setActive = () => {
+        items.forEach((item) => {
+          document
+            .querySelector(`[href='#${item.linkID}']`)
+            ?.classList.remove('active');
+        });
+        element?.classList.add('active');
+      };
     });
-  };
+  });
 
   return (
     <nav data-aos='fade-up' className='navbar-case'>
@@ -26,10 +55,8 @@ export const NavigationCase = ({ items }: NavigationCaseProps) => {
         {items?.map((item, index) => {
           return (
             <li key={index}>
-              <a onClick={() => handleClickNav(item.linkID)}>
-                <span className={activeLinkID === item.linkID ? 'active' : ''}>
-                  {item.title}
-                </span>
+              <a className='item-nav-case' href={`#${item.linkID}`}>
+                {item.title}
               </a>
             </li>
           );

@@ -1,29 +1,40 @@
-import GridContainer from '@components/Grid';
-import { NavigationCase } from '@components/ui/NavigationCase';
-import { CaseSectionHero } from '@components/case/CaseSectionHero';
-import Button from '@components/button/Button';
-import { CaseSectionItem } from '@components/case/CaseSectionItem';
-import { CaseNavigationItems, CasesObject } from '@data/cases/casesWork';
-import { useNav } from '@hooks/useNav';
 import { ArrowUpRight } from 'lucide-react';
 
-// import imageDefault from '@assets/image.png';
-import imageWirefameHigh from '@assets/entregoume-white-label/wireframe_high.png';
-import imageStyleguide from '@assets/entregoume-white-label/styleguide.png';
-import imageVisuals from '@assets/entregoume-white-label/visuals.png';
-import imageSignIn from '@assets/entregoume-white-label/auth_1.png';
-import imageSignUp from '@assets/entregoume-white-label/auth_2.png';
-import imageHome from '@assets/entregoume-white-label/home.png';
-import imageCheckout from '@assets/entregoume-white-label/preview_checkout.png';
-import imageProductDetails from '@assets/entregoume-white-label/details_product.png';
+import { CaseSectionHero } from '@components/case/CaseSectionHero';
+import GridContainer from '@components/Grid';
+import Button from '@components/button/Button';
+import { CaseSectionItem } from '@components/case/CaseSectionItem';
+import { NavigationCase } from '@components/ui/NavigationCase';
+
+import { CasesObject, IItemNavigationCase } from '@data/cases/casesWork';
+
+import imageWirefameHigh from '@assets/entregoume-client/wireframe_high.png';
+import imageStyleguide from '@assets/entregoume-client/styleguide.png';
+import imageVisuals from '@assets/entregoume-client/visuals.png';
+import imageSignIn from '@assets/entregoume-client/auth_1.png';
+import imageSignUp from '@assets/entregoume-client/auth_2.png';
+import imageHome from '@assets/entregoume-client/home.png';
+import imagePreviewCheckout from '@assets/entregoume-client/preview_checkout.png';
+import imageProductDetails from '@assets/entregoume-client/details_product.png';
+import imageCheckout from '@assets/entregoume-client/checkout.png';
+
+const CaseNavigationItems: IItemNavigationCase[] = [
+  {
+    title: 'Visão geral',
+    linkID: 'section-overview',
+  },
+  {
+    title: 'Entregáveis',
+    linkID: 'section-deliverables',
+  },
+  {
+    title: 'Visuais',
+    linkID: 'section-visuals',
+  },
+];
 
 function EntregouMeWeb() {
   const project = CasesObject['EntregouMeWeb'];
-
-  const overviewRef = useNav({ navLinkID: 'section-overview' });
-  const deliverablesRef = useNav({ navLinkID: 'section-deliverables' });
-  const visualsRef = useNav({ navLinkID: 'section-visuals' });
-  // const resultsRef = useNav({ navLinkID: 'section-results' });
 
   return (
     <>
@@ -34,11 +45,7 @@ function EntregouMeWeb() {
           <NavigationCase items={CaseNavigationItems} />
 
           <main>
-            <section
-              ref={overviewRef}
-              className='section-case'
-              id='section-overview'
-            >
+            <section className='section-case' id='section-overview'>
               <div className='listview'>
                 <CaseSectionItem title='Sobre'>
                   <div className='text'>
@@ -121,11 +128,7 @@ function EntregouMeWeb() {
               </div>
             </section>
 
-            <section
-              ref={deliverablesRef}
-              className='section-case'
-              id='section-deliverables'
-            >
+            <section className='section-case' id='section-deliverables'>
               <div className='listview'>
                 <CaseSectionItem title='Styleguide'>
                   <div className='text'>
@@ -171,11 +174,7 @@ function EntregouMeWeb() {
               </div>
             </section>
 
-            <section
-              ref={visualsRef}
-              className='section-case'
-              id='section-visuals'
-            >
+            <section className='section-case' id='section-visuals'>
               <div className='listview'>
                 <CaseSectionItem title='Uma jornada visual'>
                   <img
@@ -207,7 +206,7 @@ function EntregouMeWeb() {
                   />
                 </CaseSectionItem>
 
-                <CaseSectionItem title='Home e muito mais 🚀'>
+                <CaseSectionItem title='Início e muito mais 🚀'>
                   <div className='text'>
                     <p className='body-lg paragraph-medium'>
                       Na página inicial, os usuários tem acesso as ofertas do
@@ -225,7 +224,7 @@ function EntregouMeWeb() {
 
                   <img
                     className='img-case-section'
-                    src={imageCheckout}
+                    src={imagePreviewCheckout}
                     alt='Sign up'
                   />
                 </CaseSectionItem>
@@ -254,7 +253,7 @@ function EntregouMeWeb() {
 
                   <img
                     className='img-case-section'
-                    src={imageProductDetails}
+                    src={imageCheckout}
                     alt='Sign in'
                   />
                 </CaseSectionItem>

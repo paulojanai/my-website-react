@@ -1,28 +1,10 @@
 import MyReportOnline from '@assets/my-report-online/my_report_online.png';
-import EntregouMeWeb from '@assets/entregoume-white-label/entregou_me_client.png';
+import EntregouMeWeb from '@assets/entregoume-client/entregou_me_client.png';
 
 export type IItemNavigationCase = {
   title: string,
   linkID: string,
 }
-
-export const CaseNavigationItems: IItemNavigationCase[] = [{
-  title: "Visão geral",
-  linkID: "section-overview"
-},
-{
-  title: "Entregáveis",
-  linkID: "section-deliverables"
-},
-{
-  title: "Visuais",
-  linkID: "section-visuals"
-}
-// {
-//   title: "Resultados",
-//   linkID: "section-results"
-// }
-]
 
 export type ICase = {
   client?: string;
