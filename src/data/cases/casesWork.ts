@@ -40,7 +40,7 @@ const EntregouMe: ICase = {
   title:
     'Entregou.me',
     description: "website para os usuários realizarem compras e acompanhar seus pedidos",
-    href: "cases/entregoume-client",
+    // href: "cases/entregoume-client",
     roles: 'UX/UI Designer, Visual Design',
   products: 'Website',
   keyDeliverables: 'Styleguide, Wireframes e Protótipo',
