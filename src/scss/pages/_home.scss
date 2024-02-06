@@ -13,83 +13,87 @@
     width: 100%;
     height: 100%;
     user-select: none;
-  }
 
-  .borders {
-    border-width: 1px;
-    border-style: solid;
-  }
+    .tags {
+      height: 4.6rem;
+    }
 
-  .border-ui {
-    border-color: #A54CFE;
-  }
+    .borders {
+      border-width: 1px;
+      border-style: solid;
+    }
 
-  .border-ds {
-    border-color: #FF3377;
-  }
+    .border-ui {
+      border-color: #A54CFE;
+    }
 
-  .border-bs {
-    border-color: #00AAFF;
-  }
+    .border-ds {
+      border-color: #FF3377;
+    }
 
-  .border-fd {
-    border-color: #00E599;
-  }
+    .border-bs {
+      border-color: #00AAFF;
+    }
 
-  .border-pt {
-    border-color: #FF7733;
-  }
+    .border-fd {
+      border-color: #00E599;
+    }
 
-  .border-mi {
-    border-color: #FFD91A;
-  }
+    .border-pt {
+      border-color: #FF7733;
+    }
 
-  .zone-tag-ui {
-    position: absolute;
-    width: 55rem;
-    height: 55rem;
-    top: 10rem;
-    right: 30rem;
-  }
+    .border-mi {
+      border-color: #FFD91A;
+    }
 
-  .zone-tag-ds {
-    position: absolute;
-    width: 40rem;
-    height: 25rem;
-    top: 2rem;
-    right: 60rem;
-  }
+    .zone-tag-ui {
+      position: absolute;
+      width: 55rem;
+      height: 55rem;
+      top: 10rem;
+      right: 24rem;
+    }
 
-  .zone-tag-bs {
-    position: absolute;
-    width: 60rem;
-    height: 25rem;
-    top: 30rem;
-    right: 40rem;
-  }
+    .zone-tag-ds {
+      position: absolute;
+      width: 40rem;
+      height: 25rem;
+      top: 15rem;
+      right: 50rem;
+    }
 
-  .zone-tag-fd {
-    position: absolute;
-    width: 50rem;
-    height: 25rem;
-    top: 20rem;
-    left: 35rem;
-  }
+    .zone-tag-bs {
+      position: absolute;
+      width: 60rem;
+      height: 25rem;
+      top: 30rem;
+      right: 30rem;
+    }
 
-  .zone-tag-pt {
-    position: absolute;
-    width: 50rem;
-    height: 25rem;
-    top: 5rem;
-    right: 75rem;
-  }
+    .zone-tag-fd {
+      position: absolute;
+      width: 50rem;
+      height: 25rem;
+      top: 20rem;
+      left: 45rem;
+    }
 
-  .zone-tag-mi {
-    position: absolute;
-    width: 100rem;
-    height: 25rem;
-    top: 45rem;
-    right: 30rem;
+    .zone-tag-pt {
+      position: absolute;
+      width: 50rem;
+      height: 25rem;
+      top: 5rem;
+      right: 60rem;
+    }
+
+    .zone-tag-mi {
+      position: absolute;
+      width: 100rem;
+      height: 25rem;
+      top: 45rem;
+      right: 25rem;
+    }
   }
 
   .grid-container {
@@ -170,40 +174,44 @@
   }
 
   @include responsive(1366px) {
-    .zone-tag-ui {
-      top: 8rem;
-      right: 5rem;
-    }
+    .tags-container {
+      .zone-tag-ui {
+        top: 8rem;
+        right: 5rem;
+      }
 
-    .zone-tag-ds {
-      top: 4rem;
-      right: 30rem;
-    }
+      .zone-tag-ds {
+        top: 4rem;
+        right: 30rem;
+      }
 
-    .zone-tag-bs {
-      top: 30rem;
-      right: 10rem;
-    }
+      .zone-tag-bs {
+        top: 30rem;
+        right: 10rem;
+      }
 
-    .zone-tag-fd {
-      top: 16rem;
-      left: 2rem;
-    }
+      .zone-tag-fd {
+        top: 16rem;
+        left: 2rem;
+      }
 
-    .zone-tag-pt {
-      top: 5rem;
-      right: 75rem;
-    }
+      .zone-tag-pt {
+        top: 5rem;
+        right: 75rem;
+      }
 
-    .zone-tag-mi {
-      top: 45rem;
-      right: 5rem;
+      .zone-tag-mi {
+        top: 45rem;
+        right: 5rem;
+      }
     }
   }
 
   @include responsive(1150px) {
-    .tags {
-      transform: scale(0.85);
+    .tags-container {
+      .tags {
+        transform: scale(0.85);
+      }
     }
   }
 
@@ -213,38 +221,40 @@
       padding-bottom: 6rem;
     }
 
-    .tags {
-      transform: scale(0.8);
-    }
+    .tags-container {
+      .tags {
+        transform: scale(0.8);
+      }
 
-    .zone-tag-ui {
-      top: -15rem;
-      right: -15rem;
-    }
+      .zone-tag-ui {
+        top: -15rem;
+        right: -15rem;
+      }
 
-    .zone-tag-ds {
-      top: -5rem;
-      right: -4rem;
-    }
+      .zone-tag-ds {
+        top: -5rem;
+        right: -4rem;
+      }
 
-    .zone-tag-bs {
-      top: 40rem;
-      right: -15rem;
-    }
+      .zone-tag-bs {
+        top: 40rem;
+        right: -15rem;
+      }
 
-    .zone-tag-fd {
-      top: 16rem;
-      left: 0rem;
-    }
+      .zone-tag-fd {
+        top: 16rem;
+        left: 0rem;
+      }
 
-    .zone-tag-pt {
-      top: 25rem;
-      right: 0rem;
-    }
+      .zone-tag-pt {
+        top: 25rem;
+        right: 0rem;
+      }
 
-    .zone-tag-mi {
-      top: 45rem;
-      right: -15rem;
+      .zone-tag-mi {
+        top: 45rem;
+        right: -15rem;
+      }
     }
   }
 }
