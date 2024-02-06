@@ -157,11 +157,11 @@ h5 {
 }
 
 @mixin typography-button() {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 600;
 
   @include responsive(768px) {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 

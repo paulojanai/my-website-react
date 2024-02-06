@@ -4,7 +4,6 @@ a {
     gap: 0.8rem;
 
     span {
-
       @include typography-link();
       color: $grayscale-50;
       @include expand_border_link($grayscale-50);
