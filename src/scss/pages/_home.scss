@@ -262,11 +262,11 @@
 
     .listview-works {
       @include flex(column, center, center);
-      gap: 10rem;
+      gap: 8rem;
 
       .card-work:not(:last-child) {
         border-bottom: 1px solid $grayscale-500-opacity-50;
-        padding-bottom: 6rem;
+        padding-bottom: 8rem;
       }
     }
 
@@ -278,6 +278,10 @@
 
       .listview-works {
         gap: 6rem;
+
+        .card-work:not(:last-child) {
+          padding-bottom: 6rem;
+        }
       }
     }
   }

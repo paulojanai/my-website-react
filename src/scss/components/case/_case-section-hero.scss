@@ -22,15 +22,15 @@
         width: 100%;
 
         p {
-          &.body-xl {
-            color: $grayscale-100;
+          &.body-md {
+            color: $grayscale-300;
             margin-bottom: 1.2rem;
           }
         }
 
         p {
-          &.body-md {
-            color: $grayscale-300;
+          &.body-lg-strong {
+            color: $grayscale-100;
           }
         }
       }

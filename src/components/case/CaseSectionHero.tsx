@@ -13,26 +13,34 @@ export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
           {project?.client} - {project?.date}
         </p>
 
-        <h1 className='display-lg' data-aos='fade-up'>
-          {project?.title}
+        <h1 className='display-xl' data-aos='fade-up'>
+          {project?.title}: {project?.description}
         </h1>
 
         <div data-aos='fade-up' className='details'>
           <div className='item'>
-            <p className='body-xl'>O que eu fiz</p>
-            <p className='body-md paragraph-medium'>{project?.roles}</p>
+            <p className='body-md'>O que eu fiz</p>
+            <p className='body-lg-strong paragraph-medium'>{project?.roles}</p>
           </div>
           <div className='item'>
-            <p className='body-xl'>Produtos</p>
-            <p className='body-md paragraph-medium'>{project?.products}</p>
+            <p className='body-md'>Produtos</p>
+            <p className='body-lg-strong paragraph-medium'>
+              {project?.products}
+            </p>
           </div>
           <div className='item'>
-            <p className='body-xl'>Equipe</p>
-            <p className='body-md paragraph-medium'>{project?.team}</p>
+            <p className='body-md'>Principais entregas</p>
+            <p className='body-lg-strong paragraph-medium'>
+              {project?.keyDeliverables}
+            </p>
           </div>
         </div>
 
-        <div data-aos='fade-up' data-aos-duration='2400' className='thumb-hero'>
+        <div
+          data-aos='zoom-in-up'
+          data-aos-duration='1500'
+          className='thumb-hero'
+        >
           <img src={project?.image} alt='Thumb' />
         </div>
       </GridContainer>

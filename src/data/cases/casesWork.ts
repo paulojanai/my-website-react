@@ -10,28 +10,26 @@ export type ICase = {
   client?: string;
   date?: string;
   image: string;
-  descriptionRoles: string;
   title: string;
   description: string;
   roles?: string;
   products?: string;
-  team?: string;
+  keyDeliverables?: string;
   href?: string;
   comingSoon: boolean;
 };
 
 const MyReport : ICase = {
   client: "Ceará Inspeção",
-  date: "2023 - Em andamento",
+  date: "2023",
   image: MyReportOnline,
-  descriptionRoles: 'Branding, Research, UX/UI Designer, UI Designer',
   title:
   `Meu relatório`,
   description: "aplicativo e webapp para auxiliar na inspeção predial",
   // href: "cases/my-report-online",
   roles: 'UX/UI Designer, Visual Design, Graphic Design, Illustrations',
   products: 'WebApp, App Android e Template PDF',
-  team: 'Júnior, Willamy Silva e Eu',  
+  keyDeliverables: 'Brand, Components, Wireframes e Protótipo',  
   comingSoon: true,
 };
 
@@ -39,14 +37,13 @@ const EntregouMe: ICase = {
   client: "Automação.com",
   date: "2021",
   image: EntregouMeWeb,
-  descriptionRoles: 'UX/UI Designer, UI Designer',
   title:
-    'Entregou.me Client',
+    'Entregou.me',
     description: "website para os usuários realizarem compras e acompanhar seus pedidos",
-    // href: "cases/entregou-me-web",
+    href: "cases/entregoume-client",
     roles: 'UX/UI Designer, Visual Design',
   products: 'Website',
-  team: 'Neto, Talia e Eu',
+  keyDeliverables: 'Styleguide, Wireframes e Protótipo',
   comingSoon: true
 };
 
@@ -56,8 +53,8 @@ type IProject = {
 }
 
 export const CasesArray: ICase[] = [
-  MyReport,
-  EntregouMe
+  EntregouMe,
+  MyReport
 ];
 
 export const CasesObject: IProject = {

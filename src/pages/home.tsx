@@ -157,8 +157,9 @@ function Home() {
               return (
                 <CardWork
                   key={index}
+                  client={item.client}
+                  date={item.date}
                   image={item.image}
-                  descriptionRoles={item.descriptionRoles}
                   title={item.title}
                   description={item.description}
                   href={item.href}
@@ -203,7 +204,13 @@ function Home() {
               front-end.
             </p>
 
-            <img className='image-stars' src={imageStars} alt='' />
+            <img
+              className='image-stars'
+              src={imageStars}
+              alt=''
+              data-aos='fade-down'
+              data-aos-duration='3000'
+            />
           </div>
 
           <div className='design-developer' data-aos='fade-up'>

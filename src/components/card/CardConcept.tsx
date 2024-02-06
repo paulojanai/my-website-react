@@ -19,7 +19,7 @@ const CardConcept: React.FC<ICaseConcept> = ({
 
       {comingSoon ? (
         <div className='comingSoon'>
-          <Asterisk size={16} />
+          <Asterisk size={18} />
           <p>Em breve</p>
         </div>
       ) : (
@@ -31,7 +31,7 @@ const CardConcept: React.FC<ICaseConcept> = ({
         </div>
       )}
 
-      <div className='thumb'>
+      <div className='thumb' data-aos='fade-up' data-aos-duration='1500'>
         <img src={image} alt='' />
       </div>
     </div>

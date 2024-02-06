@@ -1,29 +1,45 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Button from '../button/Button';
 import { ICase } from '@data/cases/casesWork';
 
 const CardWork: React.FC<ICase> = ({
   image,
-  descriptionRoles,
+  client,
+  date,
   title,
   description,
   href,
   comingSoon,
 }: ICase) => {
+  const screenWidth = screen.width;
+
   return (
     <div className='card-work' data-aos='fade-up'>
       <div className='text'>
-        <p className='body-sm'>{descriptionRoles}</p>
+        <p className='body-lg-strong'>
+          {client} - {date}
+        </p>
         <h3>
           {title}: {description}
         </h3>
         {/* <p className='body-md paragraph-medium'>{description}</p> */}
       </div>
       <Button size='medium' disabled={comingSoon} href={href}>
-        <p>Ver caso {comingSoon && '(Construindo)'}</p>
-        <ArrowUpRight size={24} />
+        <p>Ver caso {comingSoon && screenWidth <= 768 ? '(Em breve)' : ''}</p>
+        <ArrowRight size={24} />
       </Button>
-      <a href={href} className={`thumb ${!comingSoon ? 'cursor-active' : ''}`}>
+      <a
+        href={href}
+        className={`thumb ${!comingSoon ? 'cursor-active' : ''}`}
+        data-aos='zoom-in-up'
+        data-aos-duration='1500'
+      >
+        {comingSoon && (
+          <div className='coming-soon'>
+            {/* <Clock size={24} />
+            <p className='body-xl'>Em breve</p> */}
+          </div>
+        )}
         <img src={image} alt='' />
       </a>
     </div>
