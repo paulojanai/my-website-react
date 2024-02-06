@@ -27,7 +27,7 @@ const MyReport : ICase = {
   descriptionRoles: 'Branding, Research, UX/UI Designer, UI Designer',
   title:
   `Meu relatório`,
-  description: "Aplicativo e webapp para auxiliar na inspeção predial",
+  description: "aplicativo e webapp para auxiliar na inspeção predial",
   // href: "cases/my-report-online",
   roles: 'UX/UI Designer, Visual Design, Graphic Design, Illustrations',
   products: 'WebApp, App Android e Template PDF',
@@ -42,7 +42,7 @@ const EntregouMe: ICase = {
   descriptionRoles: 'UX/UI Designer, UI Designer',
   title:
     'Entregou.me Client',
-    description: "Plataforma para gerenciar lojas, realizar e acompanhar pedidos.",
+    description: "website para os usuários realizarem compras e acompanhar seus pedidos",
     // href: "cases/entregou-me-web",
     roles: 'UX/UI Designer, Visual Design',
   products: 'Website',
