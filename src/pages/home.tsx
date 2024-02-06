@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
+import { Code2, Layers } from 'lucide-react';
 
 import CardWork from '@components/card/CardWork';
 import GridContainer from '@components/Grid';
@@ -13,7 +14,7 @@ import CasesConcept from '@data/cases/casesConcept';
 import GrupoBoticario from '@assets/grupo_boticario.png';
 import CasaMagalhaes from '@assets/cm.png';
 import Automacaocom from '@assets/automacao_com.png';
-import { Code2, Layers } from 'lucide-react';
+
 import {
   AllDesignerExpertises,
   AllDesignerTools,
@@ -29,6 +30,8 @@ import TagBS from '@assets/tag_business.svg';
 import TagMI from '@assets/tag_microinteractions.svg';
 import TagFD from '@assets/tag_frontend_developer.svg';
 import TagPT from '@assets/tag_prototyping.svg';
+
+import imageStars from '@assets/starts.svg';
 
 function Home() {
   useEffect(() => {
@@ -191,12 +194,17 @@ function Home() {
 
       <section className='section-how-help' id='section-how-help'>
         <GridContainer>
-          <h2 data-aos='fade-up'>Como eu ajudo</h2>
+          <div className='title'>
+            <h2 data-aos='fade-up'>Como eu ajudo</h2>
 
-          <p className='body-lg paragraph-medium' data-aos='fade-up'>
-            Contrate-me se precisar de um designer de produto, visual designer,
-            criação e manutenção de design system, desenvolvimento front-end.
-          </p>
+            <p className='body-lg paragraph-medium' data-aos='fade-up'>
+              Contrate-me se precisar de um designer de produto, visual
+              designer, criação e manutenção de design system, desenvolvimento
+              front-end.
+            </p>
+
+            <img className='image-stars' src={imageStars} alt='' />
+          </div>
 
           <div className='design-developer' data-aos='fade-up'>
             <div className='card-help'>

@@ -1,9 +1,10 @@
 .card-help {
   width: 100%;
   max-width: 50%;
-  background-color: $grayscale-600;
+  background-color: $grayscale-700;
   padding: 4.8rem 4.8rem;
   border-radius: 1.6rem;
+  border: 1px solid $grayscale-500-opacity-50;
 
   .card-header {
     margin-bottom: 3.2rem;

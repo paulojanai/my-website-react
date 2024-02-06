@@ -115,16 +115,16 @@ h5 {
   font-weight: 400;
 
   @include responsive(768px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 
 .body-sm {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
 
   @include responsive(768px) {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 

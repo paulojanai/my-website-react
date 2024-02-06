@@ -326,14 +326,33 @@
   .grid-container {
     @include padding_section();
 
-    h2 {
-      margin-bottom: 1.6rem;
-    }
+    .title {
+      position: relative;
 
-    p {
-      &.body-lg {
-        max-width: 79.4rem;
-        color: $grayscale-300;
+      h2 {
+        margin-bottom: 1.6rem;
+      }
+
+      p {
+        &.body-lg {
+          max-width: 79.4rem;
+          color: $grayscale-300;
+        }
+      }
+
+      img {
+        &.image-stars {
+          position: absolute;
+          right: 10rem;
+          bottom: -8rem;
+        }
+
+        @include responsive (768px) {
+          &.image-stars {
+            right: 5rem;
+            bottom: -8rem;
+          }
+        }
       }
     }
 
