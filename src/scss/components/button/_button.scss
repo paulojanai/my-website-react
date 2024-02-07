@@ -3,7 +3,7 @@
   @include flex(row, center, center);
   gap: 1.2rem;
   padding: 0rem 2.4rem;
-  border: 2px solid $grayscale-400;
+  border: 2px solid $grayscale-500;
   border-radius: 1.6rem;
   transition: all 0.3s;
   cursor: pointer;
@@ -21,6 +21,7 @@
   &.disabled {
     pointer-events: none;
     color: $grayscale-300;
+    border-color: $grayscale-500-opacity-50;
   }
 
   @include responsive(768px) {

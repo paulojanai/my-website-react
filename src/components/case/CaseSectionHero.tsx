@@ -19,18 +19,16 @@ export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
 
         <div data-aos='fade-up' className='details'>
           <div className='item'>
-            <p className='body-md'>O que eu fiz</p>
-            <p className='body-lg-strong paragraph-medium'>{project?.roles}</p>
+            <p className='body-sm'>O que eu fiz</p>
+            <p className='body-md paragraph-medium'>{project?.roles}</p>
           </div>
           <div className='item'>
-            <p className='body-md'>Produtos</p>
-            <p className='body-lg-strong paragraph-medium'>
-              {project?.products}
-            </p>
+            <p className='body-sm'>Produtos</p>
+            <p className='body-md paragraph-medium'>{project?.products}</p>
           </div>
           <div className='item'>
-            <p className='body-md'>Principais entregas</p>
-            <p className='body-lg-strong paragraph-medium'>
+            <p className='body-sm'>Principais entregas</p>
+            <p className='body-md paragraph-medium'>
               {project?.keyDeliverables}
             </p>
           </div>

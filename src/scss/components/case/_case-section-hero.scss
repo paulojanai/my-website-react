@@ -15,22 +15,29 @@
 
     .details {
       margin-top: 8rem;
-      @include flex (row, flex-start, space-between);
-      gap: 3.2rem;
+      border: 1.75px solid $grayscale-500-opacity-50;
+      border-radius: 1.6rem;
+      @include flex (row, stretch, space-between);
 
       .item {
+        padding: 3.2rem 3.2rem;
         width: 100%;
 
+        &:not(:last-child) {
+          border-right: 1.75px solid $grayscale-500-opacity-50;
+        }
+
         p {
-          &.body-md {
+          &.body-sm {
             color: $grayscale-300;
             margin-bottom: 1.2rem;
           }
         }
 
         p {
-          &.body-lg-strong {
-            color: $grayscale-100;
+          &.body-md {
+            font-weight: 500;
+            color: $grayscale-50;
           }
         }
       }
@@ -47,9 +54,15 @@
     .grid-container {
       .details {
         @include flex (column, flex-start, flex-start);
+        margin-top: 6rem;
 
         .item {
           max-width: 100%;
+
+          &:not(:last-child) {
+            border-right: none;
+            border-bottom: 1.75px solid $grayscale-500-opacity-50;
+          }
         }
       }
     }

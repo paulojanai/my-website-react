@@ -1,4 +1,6 @@
 @mixin expand_border_link_header ($border_color) {
+  cursor: pointer;
+
   &:after {
     display: block;
     content: '';
@@ -16,6 +18,8 @@
 }
 
 @mixin expand_border_link ($border_color) {
+  cursor: pointer;
+
   &:after {
     display: block;
     content: '';

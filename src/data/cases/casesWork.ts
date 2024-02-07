@@ -19,6 +19,20 @@ export type ICase = {
   comingSoon: boolean;
 };
 
+const EntregouMe: ICase = {
+  client: "Automação.com",
+  date: "2021",
+  image: EntregouMeWeb,
+  title:
+    'Entregou.me',
+    description: "website para os usuários realizarem compras e acompanhar seus pedidos",
+    // href: "cases/entregoume-client",
+    roles: 'UX/UI Designer, Visual Design',
+  products: 'Website',
+  keyDeliverables: 'Styleguide, Wireframes e Protótipo',
+  comingSoon: true
+};
+
 const MyReport : ICase = {
   client: "Ceará Inspeção",
   date: "2023",
@@ -33,19 +47,6 @@ const MyReport : ICase = {
   comingSoon: true,
 };
 
-const EntregouMe: ICase = {
-  client: "Automação.com",
-  date: "2021",
-  image: EntregouMeWeb,
-  title:
-    'Entregou.me',
-    description: "website para os usuários realizarem compras e acompanhar seus pedidos",
-    // href: "cases/entregoume-client",
-    roles: 'UX/UI Designer, Visual Design',
-  products: 'Website',
-  keyDeliverables: 'Styleguide, Wireframes e Protótipo',
-  comingSoon: true
-};
 
 type IProject = {
   MyReportOnline?: ICase;

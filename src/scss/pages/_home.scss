@@ -59,8 +59,8 @@
       position: absolute;
       width: 40rem;
       height: 25rem;
-      top: 15rem;
-      right: 50rem;
+      top: 2rem;
+      right: 35rem;
     }
 
     .zone-tag-bs {
@@ -76,15 +76,15 @@
       width: 50rem;
       height: 25rem;
       top: 20rem;
-      left: 45rem;
+      left: 55rem;
     }
 
     .zone-tag-pt {
       position: absolute;
       width: 50rem;
       height: 25rem;
-      top: 5rem;
-      right: 60rem;
+      top: 8rem;
+      right: 45rem;
     }
 
     .zone-tag-mi {
@@ -92,7 +92,7 @@
       width: 100rem;
       height: 25rem;
       top: 45rem;
-      right: 25rem;
+      right: 18rem;
     }
   }
 
@@ -173,7 +173,7 @@
     }
   }
 
-  @include responsive(1366px) {
+  @include responsive(1440px) {
     .tags-container {
       .zone-tag-ui {
         top: 8rem;
@@ -181,8 +181,8 @@
       }
 
       .zone-tag-ds {
-        top: 4rem;
-        right: 30rem;
+        top: 2rem;
+        right: 10rem;
       }
 
       .zone-tag-bs {
@@ -191,13 +191,13 @@
       }
 
       .zone-tag-fd {
-        top: 16rem;
-        left: 2rem;
+        top: 25rem;
+        left: 30rem;
       }
 
       .zone-tag-pt {
         top: 5rem;
-        right: 75rem;
+        right: 30rem;
       }
 
       .zone-tag-mi {
@@ -222,6 +222,8 @@
     }
 
     .tags-container {
+      display: none;
+
       .tags {
         transform: scale(0.8);
       }
@@ -370,10 +372,18 @@
       }
     }
 
-    .design-developer {
+    .designer-developer {
       margin-top: 5.6rem;
       @include flex(row, flex-start, center);
       gap: 4rem;
+
+      .designer {
+        cursor: url("../assets/tags/tag_designer.svg"), auto;
+      }
+
+      .developer {
+        cursor: url("../assets/tags/tag_developer.svg"), auto;
+      }
     }
 
     @include responsive(768px) {
@@ -383,7 +393,7 @@
         }
       }
 
-      .design-developer {
+      .designer-developer {
         margin-top: 4rem;
         @include flex(column, center, center);
         gap: 3.2rem;

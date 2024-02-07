@@ -39,7 +39,7 @@
         height: 100%;
         @include flex(row, center, center);
         gap: 0.8rem;
-        background-color: $grayscale-800-opacity-50;
+        background-color: $grayscale-800-opacity-40;
       }
 
       img {
@@ -47,7 +47,7 @@
       }
 
       &.cursor-active {
-        cursor: url("../assets/cursor.svg"), auto;
+        cursor: url("../assets/cursor_read_case.svg"), auto;
 
         img {
           &:hover {

@@ -26,7 +26,7 @@ const CardWork: React.FC<ICase> = ({
       </div>
       <Button size='medium' disabled={comingSoon} href={href}>
         <p>Ver caso {comingSoon && screenWidth <= 768 ? '(Em breve)' : ''}</p>
-        <ArrowRight size={24} />
+        <ArrowRight size={20} />
       </Button>
       <a
         href={href}
@@ -34,12 +34,7 @@ const CardWork: React.FC<ICase> = ({
         data-aos='zoom-in-up'
         data-aos-duration='1500'
       >
-        {comingSoon && (
-          <div className='coming-soon'>
-            {/* <Clock size={24} />
-            <p className='body-xl'>Em breve</p> */}
-          </div>
-        )}
+        {comingSoon && <span className='coming-soon'></span>}
         <img src={image} alt='' />
       </a>
     </div>
