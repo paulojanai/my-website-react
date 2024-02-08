@@ -113,7 +113,7 @@ function Home() {
             />
           </div>
         </div>
-        <GridContainer dataAos='fade-right'>
+        <GridContainer dataAos='fade-up'>
           <div className='hello'>
             <p className='body-xl'>
               Opa, eu sou <span className='color-white'>Paulo Janai</span>

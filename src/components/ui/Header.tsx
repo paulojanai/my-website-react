@@ -44,10 +44,10 @@ export function Header() {
   };
 
   return (
-    <header>
+    <header data-aos='fade-down'>
       {modeCase ? (
         <GridContainer>
-          <div className='left' data-aos='fade-down'>
+          <div className='left'>
             <Button href='/' size='small'>
               <ChevronLeft size={24} />
               <p>Voltar</p>
