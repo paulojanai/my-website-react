@@ -150,7 +150,7 @@ function Home() {
 
       <section className='section-works' id='section-works'>
         <GridContainer>
-          <h2 data-aos='fade-up'>Trabalhos selecionados</h2>
+          <h2 data-aos='fade-up'>Trabalhos</h2>
 
           <div className='listview-works'>
             {CasesArray.map((item, index) => {
@@ -173,7 +173,7 @@ function Home() {
 
       <section className='section-concept'>
         <GridContainer>
-          <h2 data-aos='fade-up'>Projetos pessoais e Conceito</h2>
+          <h2 data-aos='fade-up'>Pessoais e conceito</h2>
 
           <div className='listview-concepts'>
             {CasesConcept.map((item, index) => {
