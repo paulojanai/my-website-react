@@ -68,7 +68,7 @@ function Home() {
       duration: 4,
     });
     gsap.to('.tag-mi', {
-      x: 'random(0, 825)',
+      x: 'random(0, 495)',
       y: 'random(0, 195)',
       duration: 3,
     });
@@ -114,25 +114,24 @@ function Home() {
           </div>
         </div>
         <GridContainer dataAos='fade-up'>
-          <div className='hello'>
-            <p className='body-xl'>
-              Opa, eu sou <span className='color-white'>Paulo Janai</span>
-            </p>
-            <img src={HandHello} alt='Hand hello' className='hand-hello' />
-          </div>
           <div className='text'>
-            <h1 className='display-lg'>
-              Product <span className='italic'>Designer</span> &
-              <span className='italic'> Developer</span>
-            </h1>
-            <p className='body-xl paragraph-medium'>
-              Focado na criação e evolução das experiências dos usuários através
-              de soluções de design. Com mais de 4 anos de experiência.
-            </p>
+            <div className='hello'>
+              <h3>Opa,</h3>
+              <img src={HandHello} alt='Hand hello' className='hand-hello' />
+            </div>
+
+            <h1 className='display-lg'>Paulo Janai</h1>
+            <p className='body-2xl'>Product Designer & Developer</p>
           </div>
+          <p className='body-lg paragraph-medium'>
+            Com mais de 4 anos de experiência. Continuamente colaborando com
+            negócio, designers e desenvolvedores para aprimorar as experiências
+            dos usuários desde a criação e evolução, através de soluções de
+            design e desenvolvimento.
+          </p>
 
           <div className='companies'>
-            <p className='span'>Trabalhou em</p>
+            <p className='span'>Trabalhou com</p>
             <div className='list'>
               <a href='https://www.grupoboticario.com.br' target='_blank'>
                 <img src={GrupoBoticario} alt='Logo Grupo Boticário' />

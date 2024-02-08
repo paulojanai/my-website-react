@@ -83,6 +83,15 @@ h5 {
   line-height: 200%;
 }
 
+.body-2xl {
+  font-size: 2.8rem;
+  font-weight: 500;
+
+  @include responsive(768px) {
+    font-size: 2.1rem;
+  }
+}
+
 .body-xl {
   font-size: 2.2rem;
   font-weight: 500;

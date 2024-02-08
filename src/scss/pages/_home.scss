@@ -76,7 +76,7 @@
       width: 50rem;
       height: 25rem;
       top: 20rem;
-      left: 55rem;
+      right: 50rem;
     }
 
     .zone-tag-pt {
@@ -89,10 +89,10 @@
 
     .zone-tag-mi {
       position: absolute;
-      width: 100rem;
+      width: 60rem;
       height: 25rem;
       top: 45rem;
-      right: 18rem;
+      right: 35rem;
     }
   }
 
@@ -100,39 +100,44 @@
     padding-top: 10rem;
     padding-bottom: 10rem;
 
-    .hello {
-      @include flex(row, center, flex-start);
-      margin-bottom: 2.4rem;
-      gap: 1.2rem;
-
-      .body-xl {
-        color: $grayscale-300;
-      }
-
-      img {
-        &.hand-hello {
-          height: 3.2rem;
-
-          animation: balanceHand 0.3s 3;
-          animation-delay: 1.2s;
-        }
-
-        @include animation_balance_hand();
-      }
-    }
-
     .text {
       margin-bottom: 6rem;
       max-width: 102.3rem;
+      @include flex(column, flex-start, flex-start);
+      gap: 1.6rem;
 
-      h1 {
-        margin-bottom: 2.4rem;
+      .hello {
+        @include flex(row, center, flex-start);
+        gap: 1.2rem;
+
+        h3 {
+          color: $grayscale-300;
+        }
+
+        img {
+          &.hand-hello {
+            height: 3.6rem;
+
+            animation: balanceHand 0.3s 3;
+            animation-delay: 1.2s;
+          }
+
+          @include animation_balance_hand();
+        }
       }
 
-      p.body-xl {
-        color: $grayscale-300;
-        max-width: 88rem;
+      p {
+        &.body-2xl {
+          color: $grayscale-300;
+        }
       }
+    }
+
+    p.body-lg {
+      width: 100%;
+      max-width: 72rem;
+      color: $grayscale-300;
+      margin-bottom: 6rem;
     }
 
     .companies {
@@ -164,6 +169,10 @@
     }
 
     @include responsive(768px) {
+      .text {
+        gap: 1.2rem;
+      }
+
       .companies {
         .list {
           @include flex(row, center, flex-start);
@@ -192,7 +201,7 @@
 
       .zone-tag-fd {
         top: 25rem;
-        left: 30rem;
+        right: 10rem;
       }
 
       .zone-tag-pt {
