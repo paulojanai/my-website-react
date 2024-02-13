@@ -31,12 +31,16 @@ import TagMI from '@assets/tags/tag_microinteractions.svg';
 import TagFD from '@assets/tags/tag_frontend_developer.svg';
 import TagPT from '@assets/tags/tag_prototyping.svg';
 
+import imageMePhoto from '@assets/about/my_photo.png';
+
 import imageStars from '@assets/starts.svg';
 
 function Home() {
+  const isMobile: boolean = window.innerWidth < 768;
+
   useEffect(() => {
     gsap.defaults({
-      opacity: 1,
+      opacity: 0,
       repeat: -1,
       ease: 'circ',
       repeatRefresh: true,
@@ -46,102 +50,137 @@ function Home() {
       x: 'random(0, 390)',
       y: 'random(0, 495)',
       duration: 3.5,
+      opacity: 1,
     });
     gsap.to('.tag-ds', {
       x: 'random(0, 260)',
       y: 'random(0, 195)',
       duration: 4.5,
+      opacity: 1,
     });
     gsap.to('.tag-bs', {
       x: 'random(0, 495)',
       y: 'random(0, 195)',
       duration: 5.5,
+      opacity: 1,
     });
     gsap.to('.tag-fd', {
       x: 'random(0, 315)',
       y: 'random(0, 195)',
       duration: 5,
+      opacity: 1,
     });
     gsap.to('.tag-pt', {
       x: 'random(0, 370)',
       y: 'random(0, 195)',
       duration: 4,
+      opacity: 1,
     });
     gsap.to('.tag-mi', {
       x: 'random(0, 495)',
       y: 'random(0, 195)',
       duration: 3,
+      opacity: 1,
     });
   });
 
   return (
-    <>
+    <div className='homepage'>
       <section className='section-hero'>
-        <div className='tags-container'>
-          <div className='zone-tag-ui' data-aos='zoom-in'>
-            <img
-              src={TagUI}
-              alt='Tag Interface Design'
-              className='tags tag-ui'
-            />
-          </div>
-          <div className='zone-tag-ds' data-aos='zoom-in'>
-            <img src={TagDS} alt='Tag Design System' className='tags tag-ds' />
-          </div>
-
-          <div className='zone-tag-bs' data-aos='zoom-in'>
-            <img src={TagBS} alt='Tag Business' className='tags tag-bs' />
-          </div>
-
-          <div className='zone-tag-fd' data-aos='zoom-in'>
-            <img
-              src={TagFD}
-              alt='Tag Frontend Developer'
-              className='tags tag-fd'
-            />
-          </div>
-
-          <div className='zone-tag-pt' data-aos='zoom-in'>
-            <img src={TagPT} alt='Tag Prototyping' className='tags tag-pt' />
-          </div>
-
-          <div className='zone-tag-mi' data-aos='zoom-in'>
-            <img
-              src={TagMI}
-              alt='Tag Microinteractions'
-              className='tags tag-mi'
-            />
-          </div>
-        </div>
         <GridContainer dataAos='fade-up'>
           <div className='text'>
-            <div className='hello'>
-              <h3>Opa,</h3>
-              <img src={HandHello} alt='Hand hello' className='hand-hello' />
+            <div className='header'>
+              <div className='title'>
+                <div className='hello'>
+                  <h3>Opa,</h3>
+                  <img
+                    src={HandHello}
+                    alt='Hand hello'
+                    className='hand-hello'
+                  />
+                </div>
+
+                <h1 className='display-lg'>Paulo Janai</h1>
+                <div className='current-company'>
+                  <p className='body-2xl'>Product Designer na&nbsp;</p>
+                  <a
+                    href='https://www.instagram.com/nocappro'
+                    className='company body-2xl'
+                    target='_blank'
+                  >
+                    Nocap Studio
+                  </a>
+                </div>
+              </div>
+              <p className='body-lg paragraph-medium'>
+                Com mais de 4 anos de experiência. Continuamente colaborando com
+                negócio, designers e desenvolvedores para aprimorar as
+                experiências dos usuários desde a criação e evolução, através de
+                soluções de design e desenvolvimento.
+              </p>
             </div>
 
-            <h1 className='display-lg'>Paulo Janai</h1>
-            <p className='body-2xl'>Product Designer & Developer</p>
+            <div className='companies'>
+              <p className='span'>Trabalhou com</p>
+              <div className='list'>
+                <a href='https://www.grupoboticario.com.br' target='_blank'>
+                  <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
+                </a>
+                <a href='https://www.casamagalhaes.com.br' target='_blank'>
+                  <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
+                </a>
+                <a href='https://www.sysautomacao.com.br' target='_blank'>
+                  <img src={Automacaocom} alt='Logo Automação.com' />
+                </a>
+              </div>
+            </div>
           </div>
-          <p className='body-lg paragraph-medium'>
-            Com mais de 4 anos de experiência. Continuamente colaborando com
-            negócio, designers e desenvolvedores para aprimorar as experiências
-            dos usuários desde a criação e evolução, através de soluções de
-            design e desenvolvimento.
-          </p>
 
-          <div className='companies'>
-            <p className='span'>Trabalhou com</p>
-            <div className='list'>
-              <a href='https://www.grupoboticario.com.br' target='_blank'>
-                <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
-              </a>
-              <a href='https://www.casamagalhaes.com.br' target='_blank'>
-                <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
-              </a>
-              <a href='https://www.sysautomacao.com.br' target='_blank'>
-                <img src={Automacaocom} alt='Logo Automação.com' />
-              </a>
+          <div className='box-picture'>
+            <img src={imageMePhoto} alt='Minha foto' />
+            <div className='tags-container'>
+              <div className='zone-tag-ui borders border-ui' data-aos='zoom-in'>
+                <img
+                  src={TagUI}
+                  alt='Tag Interface Design'
+                  className='tags tag-ui'
+                />
+              </div>
+              <div className='zone-tag-ds borders border-ds' data-aos='zoom-in'>
+                <img
+                  src={TagDS}
+                  alt='Tag Design System'
+                  className='tags tag-ds'
+                />
+              </div>
+
+              <div className='zone-tag-bs borders border-bs' data-aos='zoom-in'>
+                <img src={TagBS} alt='Tag Business' className='tags tag-bs' />
+              </div>
+
+              <div className='zone-tag-fd borders border-fd' data-aos='zoom-in'>
+                <img
+                  src={TagFD}
+                  alt='Tag Frontend Developer'
+                  className='tags tag-fd'
+                />
+              </div>
+
+              <div className='zone-tag-pt borders border-pt' data-aos='zoom-in'>
+                <img
+                  src={TagPT}
+                  alt='Tag Prototyping'
+                  className='tags tag-pt'
+                />
+              </div>
+
+              <div className='zone-tag-mi borders border-mi' data-aos='zoom-in'>
+                <img
+                  src={TagMI}
+                  alt='Tag Microinteractions'
+                  className='tags tag-mi'
+                />
+              </div>
             </div>
           </div>
         </GridContainer>
@@ -215,7 +254,7 @@ function Home() {
           <div className='designer-developer' data-aos='fade-up'>
             <div className='card-help designer'>
               <div className='card-header'>
-                <Layers size={40} color='white' />
+                <Layers size={isMobile ? 28 : 40} color='white' />
                 <h3>Designer</h3>
                 <p className='body-sm paragraph-medium'>
                   Pensando estrategicamente, desenhando interfaces estruturadas
@@ -247,7 +286,7 @@ function Home() {
             </div>
             <div className='card-help developer'>
               <div className='card-header'>
-                <Code2 size={40} color='white' />
+                <Code2 size={isMobile ? 28 : 40} color='white' />
                 <h3>Developer</h3>
                 <p className='body-sm paragraph-medium'>
                   Curto em codificar as coisas do zero e dá vidas as ideias na
@@ -280,7 +319,7 @@ function Home() {
           </div>
         </GridContainer>
       </section>
-    </>
+    </div>
   );
 }
 

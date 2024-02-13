@@ -16,6 +16,8 @@ import imgVolleyAttack from '@assets/about/volleyball_attack.png';
 import imgVolleyBack from '@assets/about/volleyball_back.png';
 import imgFont1 from '@assets/about/font_sentient.svg';
 import imgFont2 from '@assets/about/font_sora.svg';
+import Button from '@components/button/Button';
+import { FileText } from 'lucide-react';
 
 function About() {
   const triggerRef: React.RefObject<HTMLDivElement> = useRef(null);
@@ -66,12 +68,6 @@ function About() {
       pin.kill();
     };
   }, []);
-
-  // useEffect(() => {
-  //   const heightDevice = photoRef.current?.offsetHeight;
-
-  //   console.log(heightDevice);
-  // }, []);
 
   return (
     <>
@@ -225,11 +221,8 @@ function About() {
                 de tabuleiro) e minha esposa.
               </p>
             </div>
-            {/* <Button className='see-cv'>
-              <p className='body-md'>Ver currículo</p>
-              <FileText size={24} />
-            </Button> */}
           </div>
+
           <div className='plataforms' data-aos='fade-up'>
             <div className='text-caption'>
               <p className='body-lg-strong'>Em plataformas</p>

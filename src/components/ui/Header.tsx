@@ -10,7 +10,7 @@ import { navLinks } from '@data/nav/links';
 import Button from '@components/button/Button';
 import { XTwitter } from '@components/Icons';
 
-import OpenToWork from '@components/OpenToWork';
+// import OpenToWork from '@components/OpenToWork';
 
 export function Header() {
   const [open, setOpen] = useState<boolean>(false);
@@ -52,9 +52,9 @@ export function Header() {
               <ChevronLeft size={24} />
               <p>Voltar</p>
             </Button>
-            <div className='open-to-work-visible'>
+            {/* <div className='open-to-work-visible'>
               <OpenToWork />
-            </div>
+            </div> */}
           </div>
 
           <nav className='nav-default-mode-case' data-aos='fade-down'>
@@ -88,9 +88,9 @@ export function Header() {
             <Link to='https://paulojanai.com/' className='logo'>
               <img src={Logo} alt='Logo Paulo Janai' />
             </Link>
-            <div className='open-to-work-visible'>
+            {/* <div className='open-to-work-visible'>
               <OpenToWork />
-            </div>
+            </div> */}
           </div>
 
           <nav className='nav-default' data-aos='fade-down'>

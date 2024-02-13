@@ -344,8 +344,8 @@
     .plataforms {
       width: 100%;
       max-width: 32rem;
+      top: 11rem;
       position: sticky;
-      overflow: hidden;
 
       .group-social {
         @include flex(row, flex-start, flex-start);

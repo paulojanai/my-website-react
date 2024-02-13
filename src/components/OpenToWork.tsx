@@ -5,7 +5,7 @@ export default function OpenToWork() {
         <span className='wave'></span>
         <span className='circle'></span>
       </div>
-      <p> Open to Opportunities</p>
+      <p> Open to Work</p>
     </div>
   );
 }

@@ -93,7 +93,7 @@ function EntregouMeWeb() {
                     </p>
                     <span style={{ marginTop: 16 }}></span>
                     <p className='body-xl'>
-                      Alguns feedbacks fornecidos pelo cliente:
+                      Alguns feedbacks fornecidos pelo stackholder:
                     </p>
                     <p className='body-lg paragraph-medium'>
                       1. Preferem utilizar um site do que o aplicativo, como
