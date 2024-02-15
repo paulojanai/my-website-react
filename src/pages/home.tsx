@@ -155,7 +155,7 @@ function Home() {
           </div>
 
           <div className='box-picture'>
-            <img src={imageMePhoto} alt='Minha foto' className='my-picture' />
+            <img src={imageMePhoto} className='my-picture' alt='Minha foto' />
             <div className='tags-container'>
               <img
                 src={TagUI}
