@@ -39,49 +39,67 @@ function Home() {
   const isMobile: boolean = window.innerWidth < 768;
 
   useEffect(() => {
-    gsap.defaults({
-      opacity: 0,
+    const tl = gsap.timeline({
       repeat: -1,
       ease: 'circ',
       repeatRefresh: true,
+      delay: 1.2,
     });
 
-    gsap.to('.tag-ui', {
-      x: 'random(0, 390)',
-      y: 'random(0, 495)',
-      duration: 3.5,
+    tl.to('.tag-ui', {
+      duration: 1,
       opacity: 1,
-    });
-    gsap.to('.tag-ds', {
-      x: 'random(0, 260)',
-      y: 'random(0, 195)',
-      duration: 4.5,
-      opacity: 1,
-    });
-    gsap.to('.tag-bs', {
-      x: 'random(0, 495)',
-      y: 'random(0, 195)',
-      duration: 5.5,
-      opacity: 1,
-    });
-    gsap.to('.tag-fd', {
-      x: 'random(0, 315)',
-      y: 'random(0, 195)',
-      duration: 5,
-      opacity: 1,
-    });
-    gsap.to('.tag-pt', {
-      x: 'random(0, 370)',
-      y: 'random(0, 195)',
-      duration: 4,
-      opacity: 1,
-    });
-    gsap.to('.tag-mi', {
-      x: 'random(0, 495)',
-      y: 'random(0, 195)',
-      duration: 3,
-      opacity: 1,
-    });
+    })
+      .to('.tag-ui', {
+        delay: 2.5,
+        duration: 0.5,
+        opacity: 0,
+      })
+      .to('.tag-ds', {
+        duration: 1,
+        opacity: 1,
+      })
+      .to('.tag-ds', {
+        delay: 2.5,
+        duration: 0.5,
+        opacity: 0,
+      })
+      .to('.tag-bs', {
+        duration: 1,
+        opacity: 1,
+      })
+      .to('.tag-bs', {
+        delay: 2.5,
+        duration: 0.5,
+        opacity: 0,
+      })
+      .to('.tag-fd', {
+        duration: 1,
+        opacity: 1,
+      })
+      .to('.tag-fd', {
+        delay: 2.5,
+        duration: 0.5,
+        opacity: 0,
+      })
+      .to('.tag-pt', {
+        duration: 1,
+        opacity: 1,
+      })
+      .to('.tag-pt', {
+        delay: 2.5,
+        duration: 0.5,
+        opacity: 0,
+      })
+      .to('.tag-mi', {
+        duration: 1,
+        opacity: 1,
+      })
+      .to('.tag-mi', {
+        delay: 2.5,
+        duration: 0.5,
+        opacity: 0,
+      });
   });
 
   return (
@@ -104,7 +122,7 @@ function Home() {
                 <div className='current-company'>
                   <p className='body-2xl'>Product Designer na&nbsp;</p>
                   <a
-                    href='https://www.instagram.com/nocappro'
+                    href='https://www.instagram.com/nocapsttudio/'
                     className='company body-2xl'
                     target='_blank'
                   >
@@ -137,50 +155,35 @@ function Home() {
           </div>
 
           <div className='box-picture'>
-            <img src={imageMePhoto} alt='Minha foto' />
+            <img src={imageMePhoto} alt='Minha foto' className='my-picture' />
             <div className='tags-container'>
-              <div className='zone-tag-ui borders border-ui' data-aos='zoom-in'>
-                <img
-                  src={TagUI}
-                  alt='Tag Interface Design'
-                  className='tags tag-ui'
-                />
-              </div>
-              <div className='zone-tag-ds borders border-ds' data-aos='zoom-in'>
-                <img
-                  src={TagDS}
-                  alt='Tag Design System'
-                  className='tags tag-ds'
-                />
-              </div>
+              <img
+                src={TagUI}
+                alt='Tag Interface Design'
+                className='tags tag-ui'
+              />
 
-              <div className='zone-tag-bs borders border-bs' data-aos='zoom-in'>
-                <img src={TagBS} alt='Tag Business' className='tags tag-bs' />
-              </div>
+              <img
+                src={TagDS}
+                alt='Tag Design System'
+                className='tags tag-ds'
+              />
 
-              <div className='zone-tag-fd borders border-fd' data-aos='zoom-in'>
-                <img
-                  src={TagFD}
-                  alt='Tag Frontend Developer'
-                  className='tags tag-fd'
-                />
-              </div>
+              <img src={TagBS} alt='Tag Business' className='tags tag-bs' />
 
-              <div className='zone-tag-pt borders border-pt' data-aos='zoom-in'>
-                <img
-                  src={TagPT}
-                  alt='Tag Prototyping'
-                  className='tags tag-pt'
-                />
-              </div>
+              <img
+                src={TagFD}
+                alt='Tag Frontend Developer'
+                className='tags tag-fd'
+              />
 
-              <div className='zone-tag-mi borders border-mi' data-aos='zoom-in'>
-                <img
-                  src={TagMI}
-                  alt='Tag Microinteractions'
-                  className='tags tag-mi'
-                />
-              </div>
+              <img src={TagPT} alt='Tag Prototyping' className='tags tag-pt' />
+
+              <img
+                src={TagMI}
+                alt='Tag Microinteractions'
+                className='tags tag-mi'
+              />
             </div>
           </div>
         </GridContainer>

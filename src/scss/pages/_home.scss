@@ -110,9 +110,11 @@
         width: 100%;
 
         img {
-          width: 100%;
-          max-width: 43.6rem;
-          border-radius: 1.6rem;
+          &.my-picture {
+            width: 100%;
+            max-width: 43.6rem;
+            border-radius: 1.6rem;
+          }
         }
 
         .tags-container {
@@ -122,120 +124,39 @@
           user-select: none;
 
           .tags {
-            height: 4rem;
-          }
-
-          .borders {
-            border-width: 1px;
-            border-style: solid;
-          }
-
-          .border-ui {
-            border-color: #A54CFE50;
-          }
-
-          .border-ds {
-            border-color: #FF337750;
-          }
-
-          .border-bs {
-            border-color: #00AAFF50;
-          }
-
-          .border-fd {
-            border-color: #00E59950;
-          }
-
-          .border-pt {
-            border-color: #FF773350;
-          }
-
-          .border-mi {
-            border-color: #FFD91A50;
-          }
-
-          .zone-tag-ui {
             position: absolute;
-            width: 55rem;
-            height: 55rem;
-            top: 10rem;
-            right: 0rem;
+            height: 4.8rem;
+            opacity: 0;
           }
 
-          .zone-tag-ds {
-            position: absolute;
-            width: 50%;
-            height: 50%;
-            top: 0rem;
-            left: 0rem;
+          .tag-ui {
+            top: 7%;
+            right: 21%;
           }
 
-          .zone-tag-bs {
-            position: absolute;
-            width: 60rem;
-            height: 25rem;
-            top: 30rem;
-            right: 0rem;
+          .tag-ds {
+            top: 2%;
+            left: 10%;
           }
 
-          .zone-tag-fd {
-            position: absolute;
-            width: 50rem;
-            height: 25rem;
-            top: 20rem;
-            right: 0rem;
+          .tag-bs {
+            bottom: 15%;
+            right: 28%;
           }
 
-          .zone-tag-pt {
-            position: absolute;
-            width: 50rem;
-            height: 25rem;
-            top: 8rem;
-            right: 0rem;
+          .tag-fd {
+            bottom: 35%;
+            left: 4%;
           }
 
-          .zone-tag-mi {
-            position: absolute;
-            width: 60rem;
-            height: 25rem;
-            top: 45rem;
-            right: 0rem;
+          .tag-pt {
+            bottom: 38%;
+            right: 15%;
           }
-        }
-      }
 
-      @include responsive(1440px) {
-        .box-picture {
-          .tags-container {
-            .zone-tag-ui {
-              top: 8rem;
-              right: 5rem;
-            }
-
-            .zone-tag-ds {
-              top: 2rem;
-              right: 10rem;
-            }
-
-            .zone-tag-bs {
-              top: 30rem;
-              right: 10rem;
-            }
-
-            .zone-tag-fd {
-              top: 25rem;
-              right: 10rem;
-            }
-
-            .zone-tag-pt {
-              top: 5rem;
-              right: 30rem;
-            }
-
-            .zone-tag-mi {
-              top: 45rem;
-              right: 5rem;
-            }
+          .tag-mi {
+            bottom: 5%;
+            left: 10%;
           }
         }
       }
@@ -289,42 +210,9 @@
         }
 
         .box-picture {
-
           .tags-container {
-            display: none;
-
             .tags {
               transform: scale(0.8);
-            }
-
-            .zone-tag-ui {
-              top: -15rem;
-              right: -15rem;
-            }
-
-            .zone-tag-ds {
-              top: -5rem;
-              right: -4rem;
-            }
-
-            .zone-tag-bs {
-              top: 40rem;
-              right: -15rem;
-            }
-
-            .zone-tag-fd {
-              top: 16rem;
-              left: 0rem;
-            }
-
-            .zone-tag-pt {
-              top: 25rem;
-              right: 0rem;
-            }
-
-            .zone-tag-mi {
-              top: 45rem;
-              right: -15rem;
             }
           }
         }
@@ -449,14 +337,6 @@
         border: 1px solid $grayscale-500-opacity-50;
         margin-top: 5.6rem;
         @include flex(row, flex-start, center);
-
-        .designer {
-          cursor: url("../assets/tags/tag_designer.svg"), auto;
-        }
-
-        .developer {
-          cursor: url("../assets/tags/tag_developer.svg"), auto;
-        }
 
         .card-help {
           &:not(:last-child) {
