@@ -1,4 +1,3 @@
-import MStore from '@assets/personal/mstore/mstore.png';
 import WeatherForecast from '@assets/personal/weather-forecast/weather_forecast.png';
 import GymLife from '@assets/personal/gymlife/gymlife.png';
 import PalleteClickUp from '@assets/personal/palette_colors_clickup.png';

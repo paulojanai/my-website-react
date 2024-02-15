@@ -16,8 +16,6 @@ import imgVolleyAttack from '@assets/about/volleyball_attack.png';
 import imgVolleyBack from '@assets/about/volleyball_back.png';
 import imgFont1 from '@assets/about/font_sentient.svg';
 import imgFont2 from '@assets/about/font_sora.svg';
-import Button from '@components/button/Button';
-import { FileText } from 'lucide-react';
 
 function About() {
   const triggerRef: React.RefObject<HTMLDivElement> = useRef(null);
