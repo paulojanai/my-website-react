@@ -3,7 +3,7 @@ type IItemHowHelp = {
 };
 
 const ItemHowHelp = ({ label }: IItemHowHelp) => {
-  return <li className='body-sm paragraph-medium'>{label}</li>;
+  return <li className='body-md paragraph-medium'>{label}</li>;
 };
 
 export default ItemHowHelp;

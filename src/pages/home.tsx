@@ -259,7 +259,7 @@ function Home() {
               <div className='card-header'>
                 <Layers size={isMobile ? 28 : 40} color='white' />
                 <h3>Designer</h3>
-                <p className='body-sm paragraph-medium'>
+                <p className='body-md paragraph-medium'>
                   Pensando estrategicamente, desenhando interfaces estruturadas
                   e interações inteligentes
                 </p>
@@ -291,7 +291,7 @@ function Home() {
               <div className='card-header'>
                 <Code2 size={isMobile ? 28 : 40} color='white' />
                 <h3>Developer</h3>
-                <p className='body-sm paragraph-medium'>
+                <p className='body-md paragraph-medium'>
                   Curto em codificar as coisas do zero e dá vidas as ideias na
                   forma de aplicativos ou websites
                 </p>

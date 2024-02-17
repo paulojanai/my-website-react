@@ -73,10 +73,8 @@ footer {
     padding-top: 4rem;
     padding-bottom: 4rem;
 
-    p {
+    .body-sm {
       color: $grayscale-200;
-      font-size: 1.4rem;
-      line-height: 100%;
     }
 
     .development {
@@ -135,7 +133,7 @@ footer {
       @include flex(column, center, center);
 
       .development {
-        margin-top: 1.6rem;
+        margin-top: 1.2rem;
       }
     }
   }
