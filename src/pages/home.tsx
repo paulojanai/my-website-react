@@ -120,14 +120,14 @@ function Home() {
 
                 <h1 className='display-lg'>Paulo Janai</h1>
                 <div className='current-company'>
-                  <p className='body-2xl'>Product Designer na&nbsp;</p>
-                  <a
+                  <p className='body-2xl'>Product Designer e Developer</p>
+                  {/* <a&nbsp;
                     href='https://www.instagram.com/nocapsttudio/'
                     className='company body-2xl'
                     target='_blank'
                   >
                     Nocap Studio
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <p className='body-lg paragraph-medium'>

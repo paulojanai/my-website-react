@@ -193,7 +193,7 @@ function About() {
                 explorar essa área de programação e design, em 2013, aos 15
                 anos, comecei a estudar profundamente sobre essas áreas
                 juntamente com a minha grade escolar comum. Isso marca o início
-                da minha carreira como desenvolver e designer.
+                da minha carreira como desenvolvedor e designer.
               </p>
               <p className='body-md paragraph-high'>
                 Moro em Canindé, Brasil - atualmente, atuo como product designer
@@ -214,7 +214,7 @@ function About() {
               <p className='body-md paragraph-high'>
                 Quando não estou na frente do computador, amo treinar e
                 participar de competições de voleibol. Gosto de música e sou
-                apaixona em tocar contra-baixo e violão. Além disso, gosto de
+                apaixonado em tocar contra-baixo e violão. Além disso, gosto de
                 está bastante com minha família, amigos (jogando vôlei e jogos
                 de tabuleiro) e minha esposa.
               </p>
@@ -289,7 +289,7 @@ function About() {
               <p className='title'>PRESENTE</p>
               <ul>
                 <li className='experience'>
-                  <p className='body-md'>Product Designer & Partner</p>
+                  <p className='body-md'>Partner & Product Designer</p>
                   <p className='body-xl'>Nocap Studio</p>
                   <p className='body-md'>Set 2023 - Present, (Brasil) Remoto</p>
                 </li>
