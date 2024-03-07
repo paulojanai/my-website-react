@@ -120,7 +120,9 @@ function Home() {
 
                 <h1 className='display-lg'>Paulo Janai</h1>
                 <div className='current-company'>
-                  <p className='body-2xl'>Product Designer e Developer</p>
+                  <p className='body-2xl'>
+                    Product Designer e Frontend Developer
+                  </p>
                   {/* <a&nbsp;
                     href='https://www.instagram.com/nocapsttudio/'
                     className='company body-2xl'

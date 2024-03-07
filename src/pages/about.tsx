@@ -182,8 +182,8 @@ function About() {
             </div>
 
             <h2 data-aos='fade-up'>
-              Paulo Janai, Product Designer, Developer, atualmente morando no
-              Brasil
+              Paulo Janai, Product Designer, Frontend Developer, atualmente
+              morando no Brasil
             </h2>
 
             <div className='description' data-aos='fade-up'>
@@ -197,12 +197,12 @@ function About() {
               </p>
               <p className='body-md paragraph-high'>
                 Moro em Canindé, Brasil - atualmente, atuo como product designer
-                na Nocap Studio e como desenvolvedor frontend de vez em quando.
-                Minha principal área hoje é designer de interfaces, sempre
-                estudando e praticando sobre design system. Acreditando que a
-                construção estruturada de interfaces é a melhor maneira de
-                projetar produtos eficientes, intuitivos, consistentes e,
-                principalmente, escaláveis.
+                na Nocap Studio e como desenvolvedor frontend. Minha principal
+                área hoje é designer de interfaces, sempre estudando e
+                praticando sobre design system. Acreditando que a construção
+                estruturada de interfaces é a melhor maneira de projetar
+                produtos eficientes, intuitivos, consistentes e, principalmente,
+                escaláveis.
               </p>
               <p className='body-md paragraph-high'>
                 Além disso, gosto de estudar e codificar as coisas do zero
