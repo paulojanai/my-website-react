@@ -10,6 +10,8 @@ import { navLinks } from '@data/nav/links';
 import Button from '@components/button/Button';
 import { XTwitter } from '@components/Icons';
 
+import MyProfile from '@assets/my_photo_hero.png';
+
 // import OpenToWork from '@components/OpenToWork';
 
 export function Header() {
@@ -88,9 +90,6 @@ export function Header() {
             <Link to='https://paulojanai.com/' className='logo'>
               <img src={Logo} alt='Logo Paulo Janai' />
             </Link>
-            {/* <div className='open-to-work-visible'>
-              <OpenToWork />
-            </div> */}
           </div>
 
           <nav className='nav-default' data-aos='fade-down'>

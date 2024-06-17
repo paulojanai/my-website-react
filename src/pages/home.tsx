@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
 import { Code2, Layers } from 'lucide-react';
 
 import CardWork from '@components/card/CardWork';
@@ -22,125 +20,46 @@ import {
   AllDeveloperTools,
 } from '@data/global';
 import ItemHowHelp from '@components/ItemHowHelp';
-import HandHello from '@assets/hand-hello.png';
-
-import TagDS from '@assets/tags/tag_design_system.svg';
-import TagUI from '@assets/tags/tag_interface_design.svg';
-import TagBS from '@assets/tags/tag_business.svg';
-import TagMI from '@assets/tags/tag_microinteractions.svg';
-import TagFD from '@assets/tags/tag_frontend_developer.svg';
-import TagPT from '@assets/tags/tag_prototyping.svg';
-
-import imageMePhoto from '@assets/about/my_photo.png';
 
 import imageStars from '@assets/starts.svg';
+import MyProfile from '@assets/my_photo_hero.png';
 
 function Home() {
   const isMobile: boolean = window.innerWidth < 768;
 
-  useEffect(() => {
-    const tl = gsap.timeline({
-      repeat: -1,
-      ease: 'circ',
-      repeatRefresh: true,
-      delay: 1.2,
-    });
-
-    tl.to('.tag-ui', {
-      duration: 1,
-      opacity: 1,
-    })
-      .to('.tag-ui', {
-        delay: 2.5,
-        duration: 0.5,
-        opacity: 0,
-      })
-      .to('.tag-ds', {
-        duration: 1,
-        opacity: 1,
-      })
-      .to('.tag-ds', {
-        delay: 2.5,
-        duration: 0.5,
-        opacity: 0,
-      })
-      .to('.tag-bs', {
-        duration: 1,
-        opacity: 1,
-      })
-      .to('.tag-bs', {
-        delay: 2.5,
-        duration: 0.5,
-        opacity: 0,
-      })
-      .to('.tag-fd', {
-        duration: 1,
-        opacity: 1,
-      })
-      .to('.tag-fd', {
-        delay: 2.5,
-        duration: 0.5,
-        opacity: 0,
-      })
-      .to('.tag-pt', {
-        duration: 1,
-        opacity: 1,
-      })
-      .to('.tag-pt', {
-        delay: 2.5,
-        duration: 0.5,
-        opacity: 0,
-      })
-      .to('.tag-mi', {
-        duration: 1,
-        opacity: 1,
-      })
-      .to('.tag-mi', {
-        delay: 2.5,
-        duration: 0.5,
-        opacity: 0,
-      });
-  });
-
   return (
     <div className='homepage'>
       <section className='section-hero'>
-        <GridContainer dataAos='fade-up'>
+        <GridContainer>
           <div className='text'>
             <div className='header'>
-              <div className='title'>
-                <div className='hello'>
-                  <h3>Opa,</h3>
+              <div className='title' data-aos='fade-up'>
+                <p className='body-2xl'>Com mais de 4 anos de experiência</p>
+                <div className='container-title'>
+                  <h1 className='display-lg'>Product Designer</h1>
                   <img
-                    src={HandHello}
-                    alt='Hand hello'
-                    className='hand-hello'
+                    className='image-profile-hero'
+                    src={MyProfile}
+                    alt='Minha imagem de perfil'
                   />
                 </div>
-
-                <h1 className='display-lg'>Paulo Janai</h1>
-                <div className='current-company'>
-                  <p className='body-2xl'>
-                    Product Designer e Frontend Developer
-                  </p>
-                  {/* <a&nbsp;
-                    href='https://www.instagram.com/nocapsttudio/'
-                    className='company body-2xl'
-                    target='_blank'
-                  >
-                    Nocap Studio
-                  </a> */}
-                </div>
+                <span className='display-lg color-grayscale-300'>
+                  & Frontend Developer
+                </span>
               </div>
-              <p className='body-lg paragraph-medium'>
-                Com mais de 4 anos de experiência. Continuamente colaborando com
-                negócio, designers e desenvolvedores para aprimorar as
-                experiências dos usuários desde a criação e evolução, através de
-                soluções de design e desenvolvimento.
+              <p
+                className='body-lg paragraph-high'
+                data-aos='fade-up'
+                data-aos-delay='300'
+              >
+                Continuamente colaborando com negócio, designers e
+                desenvolvedores para aprimorar as experiências dos usuários
+                desde a criação e evolução, através de soluções de design e
+                desenvolvimento.
               </p>
             </div>
 
-            <div className='companies'>
+            <div className='companies' data-aos='fade-up' data-aos-delay='600'>
               <p className='span'>Trabalhou com</p>
               <div className='list'>
                 <a href='https://www.grupoboticario.com.br' target='_blank'>
@@ -153,39 +72,6 @@ function Home() {
                   <img src={Automacaocom} alt='Logo Automação.com' />
                 </a>
               </div>
-            </div>
-          </div>
-
-          <div className='box-picture'>
-            <img src={imageMePhoto} className='my-picture' alt='Minha foto' />
-            <div className='tags-container'>
-              <img
-                src={TagUI}
-                alt='Tag Interface Design'
-                className='tags tag-ui'
-              />
-
-              <img
-                src={TagDS}
-                alt='Tag Design System'
-                className='tags tag-ds'
-              />
-
-              <img src={TagBS} alt='Tag Business' className='tags tag-bs' />
-
-              <img
-                src={TagFD}
-                alt='Tag Frontend Developer'
-                className='tags tag-fd'
-              />
-
-              <img src={TagPT} alt='Tag Prototyping' className='tags tag-pt' />
-
-              <img
-                src={TagMI}
-                alt='Tag Microinteractions'
-                className='tags tag-mi'
-              />
             </div>
           </div>
         </GridContainer>

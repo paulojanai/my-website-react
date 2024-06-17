@@ -18,8 +18,6 @@
       .text {
         @include flex(column, flex-start, flex-start);
         width: 100%;
-        max-width: 76rem;
-        min-width: 64rem;
         gap: 6rem;
 
         .header {
@@ -27,43 +25,22 @@
           gap: 4rem;
 
           .title {
-            max-width: 102.3rem;
             @include flex(column, flex-start, flex-start);
             gap: 1.6rem;
 
-            .hello {
-              @include flex(row, center, flex-start);
-              gap: 1.2rem;
-
-              h3 {
+            p {
+              &.body-2xl {
                 color: $grayscale-300;
-              }
-
-              img {
-                &.hand-hello {
-                  height: 3.6rem;
-                  animation: balanceHand 0.3s 3;
-                  animation-delay: 1.2s;
-                }
-
-                @include animation_balance_hand();
+                margin-bottom: 1.2rem;
               }
             }
 
-            .current-company {
-              @include flex(row, flex-start, flex-start);
+            .container-title {
+              @include flex(row, center, flex-start);
+              gap: 4rem;
 
-              p {
-                &.body-2xl {
-                  color: $grayscale-200;
-                }
-              }
-
-              a {
-                &.body-2xl {
-                  color: $grayscale-50;
-                  @include expand_border_link_header($grayscale-50);
-                }
+              .image-profile-hero {
+                max-width: 10rem;
               }
             }
           }
@@ -104,63 +81,6 @@
         }
       }
 
-      .box-picture {
-        position: relative;
-        @include flex(row, center, center);
-        width: 100%;
-
-        img {
-          &.my-picture {
-            width: 100%;
-            max-width: 43.6rem;
-            border-radius: 1.6rem;
-          }
-        }
-
-        .tags-container {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          user-select: none;
-
-          .tags {
-            position: absolute;
-            height: 4.8rem;
-            opacity: 0;
-          }
-
-          .tag-ui {
-            top: 7%;
-            right: 21%;
-          }
-
-          .tag-ds {
-            top: 2%;
-            left: 10%;
-          }
-
-          .tag-bs {
-            bottom: 15%;
-            right: 28%;
-          }
-
-          .tag-fd {
-            bottom: 35%;
-            left: 4%;
-          }
-
-          .tag-pt {
-            bottom: 38%;
-            right: 15%;
-          }
-
-          .tag-mi {
-            bottom: 5%;
-            left: 10%;
-          }
-        }
-      }
-
       @include responsive(1024px) {
         @include flex(column, flex-start, flex-start);
         max-width: 100%;
@@ -172,14 +92,6 @@
           min-width: 100%;
           gap: 4rem;
         }
-
-        .box-picture {
-          img {
-            &.my-picture {
-              max-width: 80%;
-            }
-          }
-        }
       }
 
       @include responsive(768px) {
@@ -190,6 +102,13 @@
             .title {
               max-width: 100%;
               gap: 1rem;
+
+              .container-title {
+
+                .image-profile-hero {
+                  display: none
+                }
+              }
             }
           }
 
@@ -197,50 +116,6 @@
             .list {
               @include flex(row, center, flex-start);
               gap: 1.8rem;
-            }
-          }
-        }
-
-        .box-picture {
-          img {
-            &.my-picture {
-              max-width: 100%;
-            }
-          }
-
-          .tags-container {
-            .tags {
-              transform: scale(0.9);
-            }
-
-            .tag-ui {
-              top: 8%;
-              right: 1%;
-            }
-
-            .tag-ds {
-              top: 2%;
-              left: -4%;
-            }
-
-            .tag-bs {
-              bottom: 10%;
-              right: 10%;
-            }
-
-            .tag-fd {
-              bottom: 25%;
-              left: 1%;
-            }
-
-            .tag-pt {
-              bottom: 38%;
-              right: 5%;
-            }
-
-            .tag-mi {
-              bottom: -2%;
-              left: 10%;
             }
           }
         }

@@ -63,7 +63,15 @@ header {
 
       //Only mode default
       .logo {
+        @include flex(row, center, center);
+
         img {
+          &.img-profile-hero-mobile {
+            display: none;
+            height: 4.2rem;
+            margin-left: 1.6rem;
+          }
+
           height: 3rem;
         }
       }
@@ -169,6 +177,16 @@ header {
     }
 
     @include responsive(768px) {
+      .left {
+        .logo {
+          img {
+            &.img-profile-hero-mobile {
+              display: block;
+            }
+          }
+        }
+      }
+
       .open-to-work-visible {
         display: none;
       }
