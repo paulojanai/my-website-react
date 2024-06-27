@@ -16,6 +16,7 @@
       gap: 4rem;
 
       .text {
+        position: relative;
         @include flex(column, flex-start, flex-start);
         width: 100%;
         gap: 6rem;
@@ -35,13 +36,8 @@
               }
             }
 
-            .container-title {
-              @include flex(row, center, flex-start);
-              gap: 4rem;
-
-              .image-profile-hero {
-                max-width: 10rem;
-              }
+            .display-lg {
+              max-width: 100%;
             }
           }
 
@@ -89,8 +85,44 @@
 
         .text {
           max-width: 100%;
-          min-width: 100%;
           gap: 4rem;
+
+          .header {
+            width: 100%;
+
+            .title {
+              width: 100%;
+              @include flex(column, center, center);
+
+              p {
+                &.body-2xl {
+                  text-align: center;
+                }
+              }
+
+              .display-lg {
+                text-align: center;
+              }
+            }
+
+            p.body-lg {
+              max-width: 100%;
+              text-align: center;
+            }
+          }
+
+          .companies {
+            width: 100%;
+
+            p.span {
+              text-align: center;
+            }
+
+            .list {
+              @include flex(row, center, center);
+              gap: 1.8rem;
+            }
+          }
         }
       }
 
@@ -102,20 +134,6 @@
             .title {
               max-width: 100%;
               gap: 1rem;
-
-              .container-title {
-
-                .image-profile-hero {
-                  display: none
-                }
-              }
-            }
-          }
-
-          .companies {
-            .list {
-              @include flex(row, center, flex-start);
-              gap: 1.8rem;
             }
           }
         }

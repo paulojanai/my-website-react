@@ -10,10 +10,6 @@ import { navLinks } from '@data/nav/links';
 import Button from '@components/button/Button';
 import { XTwitter } from '@components/Icons';
 
-import MyProfile from '@assets/my_photo_hero.png';
-
-// import OpenToWork from '@components/OpenToWork';
-
 export function Header() {
   const [open, setOpen] = useState<boolean>(false);
   const [modeCase, setModeCase] = useState<boolean>(false);

@@ -19,6 +19,12 @@ h5 {
   letter-spacing: -0.1rem;
 }
 
+@include responsive(1024px) {
+  .display-lg {
+    font-size: 7.2rem;
+  }
+}
+
 @include responsive(768px) {
   .display-lg {
     font-size: 5.6rem;
@@ -94,7 +100,7 @@ h5 {
   font-weight: 500;
 
   @include responsive(768px) {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 }
 

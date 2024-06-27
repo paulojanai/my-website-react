@@ -1,0 +1,48 @@
+.all-images {
+  @include flex(row, center, center);
+  position: absolute;
+  top: 7rem;
+  right: 24rem;
+
+  .box-image {
+    position: relative;
+    @include flex(column, center, center);
+
+    .description {
+      z-index: -20;
+      position: absolute;
+      top: -9rem;
+      @include flex(column, center, center);
+      gap: 0.8rem;
+      width: 16rem;
+
+      p.body-md {
+        color: $grayscale-300;
+        text-align: center;
+      }
+    }
+
+    @for $i from 0 through 2 {
+      &:nth-child(#{$i}) {
+        z-index: #{2 - $i};
+      }
+    }
+
+    .image-hero {
+      max-width: 10rem;
+    }
+
+    &:nth-child(n):not(:last-child) {
+      transition: all 0.4s ease-out;
+      margin-right: -4rem;
+    }
+  }
+
+  &:hover {
+    .box-image {
+      &:nth-child(n):not(:last-child) {
+        margin-right: 0.8rem;
+      }
+    }
+  }
+}

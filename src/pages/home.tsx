@@ -1,4 +1,4 @@
-import { Code2, Layers } from 'lucide-react';
+import { Code2, Layers, MoveUp } from 'lucide-react';
 
 import CardWork from '@components/card/CardWork';
 import GridContainer from '@components/Grid';
@@ -23,26 +23,47 @@ import ItemHowHelp from '@components/ItemHowHelp';
 
 import imageStars from '@assets/starts.svg';
 import MyProfile from '@assets/my_photo_hero.png';
+import MyStudio from '@assets/my_studio.png';
+
+const AllImages = () => {
+  return (
+    <div className='all-images border'>
+      <div className='box-image' data-aos='fade-left'>
+        <img
+          className='image-hero'
+          src={MyProfile}
+          alt='Minha imagem de perfil'
+        />
+      </div>
+      <div className='box-image' data-aos='fade-left'>
+        <div className='description' data-aos='fade-up' data-aos-delay='600'>
+          <p className='body-md'>Co-fundador do estúdio Nocap</p>
+          <MoveUp color='#4E5256' size={24} />
+        </div>
+        <img
+          className='image-hero'
+          src={MyStudio}
+          alt='Meu estúdio de design e tecnologia'
+        />
+      </div>
+    </div>
+  );
+};
 
 function Home() {
-  const isMobile: boolean = window.innerWidth < 768;
+  const widthScreen = window.innerWidth;
+  const isMobile: boolean = widthScreen < 768;
 
   return (
     <div className='homepage'>
       <section className='section-hero'>
         <GridContainer>
-          <div className='text'>
+          <div className='text border'>
             <div className='header'>
               <div className='title' data-aos='fade-up'>
-                <p className='body-2xl'>Com mais de 4 anos de experiência</p>
-                <div className='container-title'>
-                  <h1 className='display-lg'>Product Designer</h1>
-                  <img
-                    className='image-profile-hero'
-                    src={MyProfile}
-                    alt='Minha imagem de perfil'
-                  />
-                </div>
+                <AllImages />
+                <p className='body-2xl'>Com +5 anos de experiência</p>
+                <h1 className='display-lg'>Product Designer</h1>
                 <span className='display-lg color-grayscale-300'>
                   & Frontend Developer
                 </span>
@@ -79,7 +100,7 @@ function Home() {
 
       <section className='section-works' id='section-works'>
         <GridContainer>
-          <h2 data-aos='fade-up'>Trabalhos</h2>
+          {/* <h2 data-aos='fade-up'>Trabalhos</h2> */}
 
           <div className='listview-works'>
             {CasesArray.map((item, index) => {
@@ -102,7 +123,7 @@ function Home() {
 
       <section className='section-concept'>
         <GridContainer>
-          <h2 data-aos='fade-up'>Pessoais e conceito</h2>
+          <h2 data-aos='fade-up'>O que ando construindo</h2>
 
           <div className='listview-concepts'>
             {CasesConcept.map((item, index) => {
