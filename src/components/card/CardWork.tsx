@@ -1,41 +1,33 @@
-import { ArrowRight } from 'lucide-react';
-import Button from '../button/Button';
-import { ICase } from '@data/cases/casesWork';
+import { ICase } from "@data/cases/casesWork";
 
 const CardWork: React.FC<ICase> = ({
-  image,
+  images,
   client,
   date,
+  role,
   title,
   description,
   href,
   comingSoon,
 }: ICase) => {
-  const screenWidth = screen.width;
-
   return (
-    <div className='card-work' data-aos='fade-up'>
-      <div className='text'>
-        <p className='body-lg-strong'>
-          {client} - {date}
+    <div className="card-work" data-aos="fade-up">
+      <div className="text">
+        <p className="body-lg-strong">{client}</p>
+        <h4>{title}</h4>
+        <p className="body-md">
+          {role}, {date}
         </p>
-        <h3>
-          {title}: {description}
-        </h3>
-        {/* <p className='body-md paragraph-medium'>{description}</p> */}
+        <p className="body-md paragraph-medium">{description}</p>
       </div>
-      <Button size='medium' disabled={comingSoon} href={href}>
-        <p>Ver caso {comingSoon && screenWidth <= 768 ? '(Em breve)' : ''}</p>
-        <ArrowRight size={20} />
-      </Button>
       <a
         href={href}
-        className={`thumb ${!comingSoon ? 'cursor-active' : ''}`}
-        data-aos='zoom-in-up'
-        data-aos-duration='1500'
+        className={`thumb ${!comingSoon ? "cursor-active" : ""}`}
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
       >
-        {comingSoon && <span className='coming-soon'></span>}
-        <img src={image} alt='' />
+        {comingSoon && <span className="coming-soon"></span>}
+        <img src={images[0]} alt="" />
       </a>
     </div>
   );
