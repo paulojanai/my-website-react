@@ -1,8 +1,5 @@
 .all-images {
   @include flex(row, center, center);
-  position: absolute;
-  top: 7rem;
-  right: 24rem;
 
   .box-image {
     position: relative;
@@ -44,5 +41,29 @@
         margin-right: 0.8rem;
       }
     }
+  }
+
+  @include responsive(1200px) {
+    display: none;
+  }
+
+  @include responsive(1024px) {
+    display: flex;
+    position: absolute;
+    top: -12rem;
+    margin: auto 0;
+    transform: scale(0.9);
+
+    .box-image {
+      .description {
+        // display: none;
+        top: -8.2rem;
+      }
+    }
+  }
+
+  @include responsive(768px) {
+    top: -11rem;
+    transform: scale(0.8);
   }
 }

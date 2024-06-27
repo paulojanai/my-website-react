@@ -27,7 +27,7 @@ import MyStudio from '@assets/my_studio.png';
 
 const AllImages = () => {
   return (
-    <div className='all-images border'>
+    <div className='all-images'>
       <div className='box-image' data-aos='fade-left'>
         <img
           className='image-hero'
@@ -58,12 +58,14 @@ function Home() {
     <div className='homepage'>
       <section className='section-hero'>
         <GridContainer>
-          <div className='text border'>
+          <div className='text'>
             <div className='header'>
               <div className='title' data-aos='fade-up'>
-                <AllImages />
                 <p className='body-2xl'>Com +5 anos de experiência</p>
-                <h1 className='display-lg'>Product Designer</h1>
+                <div className='text-product-designer'>
+                  <h1 className='display-lg'>Product Designer</h1>
+                  <AllImages />
+                </div>
                 <span className='display-lg color-grayscale-300'>
                   & Frontend Developer
                 </span>

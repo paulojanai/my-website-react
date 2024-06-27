@@ -29,6 +29,11 @@
             @include flex(column, flex-start, flex-start);
             gap: 1.6rem;
 
+            .text-product-designer {
+              @include flex(row, center, center);
+              gap: 3.2rem;
+            }
+
             p {
               &.body-2xl {
                 color: $grayscale-300;
@@ -84,6 +89,7 @@
         padding-bottom: 6rem;
 
         .text {
+          margin-top: 16rem;
           max-width: 100%;
           gap: 4rem;
 
@@ -128,6 +134,8 @@
 
       @include responsive(768px) {
         .text {
+          margin-top: 13rem;
+
           .header {
             gap: 2.4rem;
 
