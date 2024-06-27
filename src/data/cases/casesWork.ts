@@ -1,5 +1,7 @@
-import ThumbMRO from "@assets/my-report-online/thumb.png";
-import ThumbEMW from "@assets/entregoume-client/thumb.png";
+import ThumbMRO from '@assets/my-report-online/thumb.png';
+import ThumbEMW from '@assets/entregoume-client/thumb.png';
+import AutomacaoCom from '@assets/companies/automacao.com.svg';
+import InspecaoCeara from '@assets/companies/inspecao_ceara.svg';
 
 export type IItemNavigationCase = {
   title: string;
@@ -12,42 +14,37 @@ export type ICompany = {
 };
 
 export type ICase = {
-  client?: string;
+  client: ICompany;
   date?: string;
   images: string[];
   title: string;
   description: string;
   role?: string;
-  products?: string;
-  keyDeliverables?: string;
   href?: string;
   comingSoon: boolean;
 };
 
 const EntregouMe: ICase = {
-  client: "Automação.com",
-  date: "2021",
+  client: { name: 'Automação.com', logo: AutomacaoCom },
+  date: '2021',
   images: [ThumbEMW],
-  title: "Entregou.me",
+  title: 'Adaptando e melhorando experiência do aplicativo para o navegador',
   description:
-    "website para os usuários realizarem compras e acompanharem seus pedidos",
+    'Projetei a plataforma baseado na experiência e decisões de negócio do aplicativo. Projetei recursos como listagem de produtos, carrinho de compras, ilustrações para estados vazios, detalhes do produto, login e cadastro.',
   // href: "cases/entregoume-client",
-  role: "UI Design",
-  products: "Website",
-  keyDeliverables: "Styleguide, Wireframes e Protótipo",
+  role: 'UI Design',
   comingSoon: true,
 };
 
 const MyReport: ICase = {
-  client: "Ceará Inspeção",
-  date: "2023",
+  client: { name: 'Inspeção Ceará', logo: InspecaoCeara },
+  date: '2023 - Presente',
   images: [ThumbMRO],
-  title: `Meu relatório`,
-  description: "aplicativo e webapp para auxiliar na inspeção predial",
+  title: `Construindo uma ferramenta de produtividade completa do zero`,
+  description:
+    'Meu relatório online é uma ferramenta que tem um aplicativo e possui um sistema com acesso através de navegadores. Essa ferramenta auxilia na geração e gerenciamento de relatórios prediais complexos.',
   // href: "cases/my-report-online",
-  role: "Product Designer",
-  products: "WebApp, App Android e Template PDF",
-  keyDeliverables: "Brand, Components, Wireframes e Protótipo",
+  role: 'Product Designer',
   comingSoon: true,
 };
 

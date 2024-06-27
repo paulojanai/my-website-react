@@ -162,12 +162,7 @@
 
       .listview-works {
         @include flex(column, center, center);
-        gap: 8rem;
-
-        .card-work:not(:last-child) {
-          border-bottom: 1px solid $grayscale-500-opacity-50;
-          padding-bottom: 8rem;
-        }
+        gap: 20rem;
       }
 
       @include responsive(768px) {
