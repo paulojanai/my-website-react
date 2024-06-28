@@ -195,7 +195,7 @@
       .listview-concepts {
         @include flex(row, flex-start, space-between);
         flex-wrap: wrap;
-        row-gap: 10rem;
+        row-gap: 8rem;
         // display: grid;
         // grid-template-columns: repeat(2, auto);
       }
@@ -207,11 +207,11 @@
 
         .listview-concepts {
           // grid-template-columns: repeat(1, auto);
-          row-gap: 6rem;
+          row-gap: 4rem;
 
           .card-concept:not(:last-child) {
-            border-bottom: 1px solid $grayscale-500-opacity-50;
-            padding-bottom: 6rem;
+            // border-bottom: 1px solid $grayscale-500-opacity-50;
+            padding-bottom: 4rem;
           }
         }
       }

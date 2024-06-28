@@ -2,13 +2,13 @@
   @include flex(column, start, center);
   width: 100%;
   max-width: 48.25%;
-  gap: 2.8rem;
 
   .thumb {
     width: 100%;
     border-radius: 1.6rem;
     overflow: hidden;
     transition: transform 0.3s;
+    margin-bottom: 2.4rem;
 
     img {
       transition: all 0.3s;
@@ -20,6 +20,8 @@
   }
 
   .text {
+    margin-bottom: 1.6rem;
+
     p {
       &.body-sm {
         color: $grayscale-300;

@@ -18,7 +18,7 @@ const CardConcept: React.FC<ICaseConcept> = ({
 
       <div className='text' data-aos='fade-up'>
         <p className='body-sm'>{descriptionRoles}</p>
-        <h4 className=''>{title}</h4>
+        <h4 className='title'>{title}</h4>
       </div>
 
       {comingSoon ? (

@@ -82,6 +82,8 @@ footer {
       gap: 0.8rem;
 
       a {
+        pointer-events: none;
+
         img {
           height: 1.8rem;
           filter: grayscale(1);
