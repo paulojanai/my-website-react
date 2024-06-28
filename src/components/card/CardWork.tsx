@@ -44,12 +44,31 @@ const CardWork: React.FC<ICase> = ({
 
       <a
         href={href}
-        className='thumb cursor-active'
-        data-aos='zoom-in-up'
+        className='thumb'
+        data-aos='fade-up'
         data-aos-duration='1500'
       >
-        <img src={images[0]} alt='' />
+        <img className='cursor-active' src={images[0]} alt='' />
       </a>
+
+      <div className='row-images'>
+        <a
+          href={href}
+          className='thumb'
+          data-aos='fade-up'
+          data-aos-duration='1500'
+        >
+          <img src={images[1]} alt='' />
+        </a>
+        <a
+          href={href}
+          className='thumb'
+          data-aos='fade-up'
+          data-aos-duration='1500'
+        >
+          <img src={images[2]} alt='' />
+        </a>
+      </div>
     </div>
   );
 };

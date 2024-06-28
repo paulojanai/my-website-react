@@ -42,29 +42,54 @@
         margin-bottom: 1.6rem;
       }
     }
-
-
   }
 
   a {
     &.thumb {
-      position: relative;
-      border-radius: 1.6rem;
+      border-radius: 1.2rem;
       overflow: hidden;
-      transition: transform 0.3s;
 
       img {
         transition: all 0.3s;
-      }
 
-      &.cursor-active {
-        img {
-          &:hover {
-            transform: scale(1.025);
-          }
+        &:hover {
+          transform: scale(1.02);
         }
       }
     }
   }
 
+  .row-images {
+    @include flex(row, start, center);
+    gap: 3.2rem;
+  }
+
+  @include responsive(800px) {
+    gap: 1.6rem;
+
+    .container-header {
+
+      .client {
+        margin-bottom: 1.6rem;
+
+        .tag-coming-soon {
+          height: 3.2rem;
+        }
+      }
+
+      .descrition-work {
+        @include flex(column, start, center);
+        gap: 3.2rem;
+
+        .description {
+          display: none;
+        }
+      }
+    }
+
+    .row-images {
+      @include flex(column, start, center);
+      gap: 1.6rem;
+    }
+  }
 }
