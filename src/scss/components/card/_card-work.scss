@@ -2,59 +2,94 @@
   @include flex(column, start, center);
   gap: 3.2rem;
 
-  .text {
-    p {
-      &.body-sm {
-        color: $grayscale-300;
-        margin-bottom: 0.8rem;
+  .container-header {
+    .client {
+      @include flex(row, center, flex-start);
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+
+      .img-logo-client {
+        width: 3.2rem;
+        border-radius: 0.8rem;
+      }
+
+      .tag-coming-soon {
+        height: 3.6rem;
       }
     }
 
-    h3 {
-      width: 100%;
-      max-width: 110rem;
-    }
+    .descrition-work {
+      @include flex(row, start, center);
+      gap: 5.6rem;
 
-    p {
-      &.body-lg-strong {
+      .title {
         width: 100%;
-        max-width: 72rem;
-        margin-bottom: 1.2rem;
-        color: $grayscale-300;
+      }
+
+      p {
+
+        &.body-lg,
+        &.body-lg-strong {
+          color: $grayscale-300;
+        }
+      }
+
+      .description {
+        width: 100%;
+      }
+
+      h4 {
+        margin-bottom: 1.6rem;
       }
     }
   }
 
   a {
     &.thumb {
-      position: relative;
-      border-radius: 1.6rem;
+      border-radius: 1.2rem;
       overflow: hidden;
-      transition: transform 0.3s;
-
-      .coming-soon {
-        cursor: url("../assets/cursor_coming_soon.svg"), auto;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        @include flex(row, center, center);
-        gap: 0.8rem;
-        background-color: $grayscale-800-opacity-40;
-      }
 
       img {
         transition: all 0.3s;
-      }
 
-      &.cursor-active {
-        cursor: url("../assets/cursor_read_case.svg"), auto;
-
-        img {
-          &:hover {
-            transform: scale(1.025);
-          }
+        &:hover {
+          transform: scale(1.02);
         }
       }
+    }
+  }
+
+  .row-images {
+    @include flex(row, start, center);
+    gap: 3.2rem;
+  }
+
+  @include responsive(800px) {
+    gap: 1.6rem;
+
+    .container-header {
+
+      .client {
+        margin-bottom: 1.6rem;
+
+        .tag-coming-soon {
+          height: 3.2rem;
+        }
+      }
+
+      .descrition-work {
+        @include flex(column, start, center);
+        gap: 3.2rem;
+
+        .description {
+          display: none;
+        }
+      }
+    }
+
+    .row-images {
+      @include flex(column, start, center);
+      gap: 1.6rem;
     }
   }
 }

@@ -1,42 +1,74 @@
-import { ArrowRight } from 'lucide-react';
-import Button from '../button/Button';
 import { ICase } from '@data/cases/casesWork';
+import TagComingSoon from '@assets/tag_coming_soon.svg';
 
 const CardWork: React.FC<ICase> = ({
-  image,
+  images,
   client,
   date,
+  role,
   title,
   description,
   href,
   comingSoon,
 }: ICase) => {
-  const screenWidth = screen.width;
-
   return (
     <div className='card-work' data-aos='fade-up'>
-      <div className='text'>
-        <p className='body-lg-strong'>
-          {client} - {date}
-        </p>
-        <h3>
-          {title}: {description}
-        </h3>
-        {/* <p className='body-md paragraph-medium'>{description}</p> */}
+      <div className='container-header'>
+        <div className='client'>
+          <img
+            className='img-logo-client'
+            src={client.logo}
+            alt='Logo do cliente'
+          />
+          <p className='body-lg-strong'>{client.name}</p>
+          {comingSoon && (
+            <img
+              className='tag-coming-soon'
+              src={TagComingSoon}
+              alt='Tag de em breve'
+            />
+          )}
+        </div>
+        <div className='descrition-work'>
+          <div className='title'>
+            <h4>{title}</h4>
+            <p className='body-lg-strong'>
+              {role}, {date}
+            </p>
+          </div>
+          <div className='description '>
+            <p className='body-lg paragraph-medium'>{description}</p>
+          </div>
+        </div>
       </div>
-      <Button size='medium' disabled={comingSoon} href={href}>
-        <p>Ver caso {comingSoon && screenWidth <= 768 ? '(Em breve)' : ''}</p>
-        <ArrowRight size={20} />
-      </Button>
+
       <a
         href={href}
-        className={`thumb ${!comingSoon ? 'cursor-active' : ''}`}
-        data-aos='zoom-in-up'
+        className='thumb'
+        data-aos='fade-up'
         data-aos-duration='1500'
       >
-        {comingSoon && <span className='coming-soon'></span>}
-        <img src={image} alt='' />
+        <img className='cursor-active' src={images[0]} alt='' />
       </a>
+
+      <div className='row-images'>
+        <a
+          href={href}
+          className='thumb'
+          data-aos='fade-up'
+          data-aos-duration='1500'
+        >
+          <img src={images[1]} alt='' />
+        </a>
+        <a
+          href={href}
+          className='thumb'
+          data-aos='fade-up'
+          data-aos-duration='1500'
+        >
+          <img src={images[2]} alt='' />
+        </a>
+      </div>
     </div>
   );
 };

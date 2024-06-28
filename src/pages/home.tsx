@@ -1,49 +1,49 @@
-import { Code2, Layers, MoveUp } from 'lucide-react';
+import { Code2, Layers, MoveUp } from "lucide-react";
 
-import CardWork from '@components/card/CardWork';
-import GridContainer from '@components/Grid';
-import Separator from '@components/ui/Separator';
-import CardConcept from '@components/card/CardConcept';
+import CardWork from "@components/card/CardWork";
+import GridContainer from "@components/Grid";
+import Separator from "@components/ui/Separator";
+import CardConcept from "@components/card/CardConcept";
 
-import { CasesArray } from '@data/cases/casesWork';
-import CasesConcept from '@data/cases/casesConcept';
+import { CasesArray } from "@data/cases/casesWork";
+import CasesConcept from "@data/cases/casesConcept";
 
 //Logos
-import GrupoBoticario from '@assets/grupo_boticario.png';
-import CasaMagalhaes from '@assets/cm.png';
-import Automacaocom from '@assets/automacao_com.png';
+import GrupoBoticario from "@assets/grupo_boticario.png";
+import CasaMagalhaes from "@assets/cm.png";
+import Automacaocom from "@assets/automacao_com.png";
 
 import {
   AllDesignerExpertises,
   AllDesignerTools,
   AllDeveloperExpertises,
   AllDeveloperTools,
-} from '@data/global';
-import ItemHowHelp from '@components/ItemHowHelp';
+} from "@data/global";
+import ItemHowHelp from "@components/ItemHowHelp";
 
-import imageStars from '@assets/starts.svg';
-import MyProfile from '@assets/my_photo_hero.png';
-import MyStudio from '@assets/my_studio.png';
+import imageStars from "@assets/starts.svg";
+import MyProfile from "@assets/my_photo_hero.png";
+import MyStudio from "@assets/my_studio.png";
 
 const AllImages = () => {
   return (
-    <div className='all-images'>
-      <div className='box-image' data-aos='fade-left'>
+    <div className="all-images">
+      <div className="box-image" data-aos="fade-left">
         <img
-          className='image-hero'
+          className="image-hero"
           src={MyProfile}
-          alt='Minha imagem de perfil'
+          alt="Minha imagem de perfil"
         />
       </div>
-      <div className='box-image' data-aos='fade-left'>
-        <div className='description' data-aos='fade-up' data-aos-delay='600'>
-          <p className='body-md'>Co-fundador do estúdio Nocap</p>
-          <MoveUp color='#4E5256' size={24} />
+      <div className="box-image" data-aos="fade-left">
+        <div className="description" data-aos="fade-up" data-aos-delay="600">
+          <p className="body-md">Co-fundador do estúdio Nocap</p>
+          <MoveUp color="#4E5256" size={24} />
         </div>
         <img
-          className='image-hero'
+          className="image-hero"
           src={MyStudio}
-          alt='Meu estúdio de design e tecnologia'
+          alt="Meu estúdio de design e tecnologia"
         />
       </div>
     </div>
@@ -55,25 +55,25 @@ function Home() {
   const isMobile: boolean = widthScreen < 768;
 
   return (
-    <div className='homepage'>
-      <section className='section-hero'>
+    <div className="homepage">
+      <section className="section-hero">
         <GridContainer>
-          <div className='text'>
-            <div className='header'>
-              <div className='title' data-aos='fade-up'>
-                <p className='body-2xl'>Com +5 anos de experiência</p>
-                <div className='text-product-designer'>
-                  <h1 className='display-lg'>Product Designer</h1>
+          <div className="text">
+            <div className="header">
+              <div className="title" data-aos="fade-up">
+                <p className="body-2xl">Com +5 anos de experiência</p>
+                <div className="text-product-designer">
+                  <h1 className="display-lg">Product Designer</h1>
                   <AllImages />
                 </div>
-                <span className='display-lg color-grayscale-300'>
+                <span className="display-lg color-grayscale-300">
                   & Frontend Developer
                 </span>
               </div>
               <p
-                className='body-lg paragraph-high'
-                data-aos='fade-up'
-                data-aos-delay='300'
+                className="body-lg paragraph-high"
+                data-aos="fade-up"
+                data-aos-delay="300"
               >
                 Continuamente colaborando com negócio, designers e
                 desenvolvedores para aprimorar as experiências dos usuários
@@ -82,17 +82,17 @@ function Home() {
               </p>
             </div>
 
-            <div className='companies' data-aos='fade-up' data-aos-delay='600'>
-              <p className='span'>Trabalhou com</p>
-              <div className='list'>
-                <a href='https://www.grupoboticario.com.br' target='_blank'>
-                  <img src={GrupoBoticario} alt='Logo Grupo Boticário' />
+            <div className="companies" data-aos="fade-up" data-aos-delay="600">
+              <p className="span">Trabalhou com</p>
+              <div className="list">
+                <a href="https://www.grupoboticario.com.br" target="_blank">
+                  <img src={GrupoBoticario} alt="Logo Grupo Boticário" />
                 </a>
-                <a href='https://www.casamagalhaes.com.br' target='_blank'>
-                  <img src={CasaMagalhaes} alt='Logo Casa Magalahães' />
+                <a href="https://www.casamagalhaes.com.br" target="_blank">
+                  <img src={CasaMagalhaes} alt="Logo Casa Magalahães" />
                 </a>
-                <a href='https://www.sysautomacao.com.br' target='_blank'>
-                  <img src={Automacaocom} alt='Logo Automação.com' />
+                <a href="https://www.sysautomacao.com.br" target="_blank">
+                  <img src={Automacaocom} alt="Logo Automação.com" />
                 </a>
               </div>
             </div>
@@ -100,19 +100,20 @@ function Home() {
         </GridContainer>
       </section>
 
-      <section className='section-works' id='section-works'>
+      <section className="section-works" id="section-works">
         <GridContainer>
           {/* <h2 data-aos='fade-up'>Trabalhos</h2> */}
 
-          <div className='listview-works'>
+          <div className="listview-works">
             {CasesArray.map((item, index) => {
               return (
                 <CardWork
                   key={index}
                   client={item.client}
                   date={item.date}
-                  image={item.image}
+                  images={item.images}
                   title={item.title}
+                  role={item.role}
                   description={item.description}
                   href={item.href}
                   comingSoon={item.comingSoon}
@@ -123,11 +124,11 @@ function Home() {
         </GridContainer>
       </section>
 
-      <section className='section-concept'>
+      <section className="section-concept">
         <GridContainer>
-          <h2 data-aos='fade-up'>O que ando construindo</h2>
+          <h2 data-aos="fade-up">O que ando construindo</h2>
 
-          <div className='listview-concepts'>
+          <div className="listview-concepts">
             {CasesConcept.map((item, index) => {
               return (
                 <CardConcept
@@ -145,32 +146,32 @@ function Home() {
         </GridContainer>
       </section>
 
-      <section className='section-how-help' id='section-how-help'>
+      <section className="section-how-help" id="section-how-help">
         <GridContainer>
-          <div className='title'>
-            <h2 data-aos='fade-up'>Como eu ajudo</h2>
+          <div className="title">
+            <h2 data-aos="fade-up">Como eu ajudo</h2>
 
-            <p className='body-lg paragraph-medium' data-aos='fade-up'>
+            <p className="body-lg paragraph-medium" data-aos="fade-up">
               Contrate-me se precisar de um designer de produto, visual
               designer, criação e manutenção de design system, desenvolvimento
               front-end.
             </p>
 
             <img
-              className='image-stars'
+              className="image-stars"
               src={imageStars}
-              alt=''
-              data-aos='fade-down'
-              data-aos-duration='3000'
+              alt=""
+              data-aos="fade-down"
+              data-aos-duration="3000"
             />
           </div>
 
-          <div className='designer-developer' data-aos='fade-up'>
-            <div className='card-help designer'>
-              <div className='card-header'>
-                <Layers size={isMobile ? 28 : 40} color='white' />
+          <div className="designer-developer" data-aos="fade-up">
+            <div className="card-help designer">
+              <div className="card-header">
+                <Layers size={isMobile ? 28 : 40} color="white" />
                 <h3>Designer</h3>
-                <p className='body-md paragraph-medium'>
+                <p className="body-md paragraph-medium">
                   Pensando estrategicamente, desenhando interfaces estruturadas
                   e interações inteligentes
                 </p>
@@ -178,19 +179,19 @@ function Home() {
 
               <Separator />
 
-              <div className='card-body'>
-                <div className='group'>
-                  <p className='body-lg'>Habilidades</p>
-                  <ul className='list'>
+              <div className="card-body">
+                <div className="group">
+                  <p className="body-lg">Habilidades</p>
+                  <ul className="list">
                     {AllDesignerExpertises.map((item, index) => {
                       return <ItemHowHelp key={index} label={item} />;
                     })}
                   </ul>
                 </div>
 
-                <div className='group'>
-                  <p className='body-lg'>Ferramentas</p>
-                  <ul className='list'>
+                <div className="group">
+                  <p className="body-lg">Ferramentas</p>
+                  <ul className="list">
                     {AllDesignerTools.map((item, index) => {
                       return <ItemHowHelp key={index} label={item} />;
                     })}
@@ -198,11 +199,11 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className='card-help developer'>
-              <div className='card-header'>
-                <Code2 size={isMobile ? 28 : 40} color='white' />
+            <div className="card-help developer">
+              <div className="card-header">
+                <Code2 size={isMobile ? 28 : 40} color="white" />
                 <h3>Developer</h3>
-                <p className='body-md paragraph-medium'>
+                <p className="body-md paragraph-medium">
                   Curto em codificar as coisas do zero e dá vidas as ideias na
                   forma de aplicativos ou websites
                 </p>
@@ -210,19 +211,19 @@ function Home() {
 
               <Separator />
 
-              <div className='card-body'>
-                <div className='group'>
-                  <p className='body-lg'>Habilidades</p>
-                  <ul className='list'>
+              <div className="card-body">
+                <div className="group">
+                  <p className="body-lg">Habilidades</p>
+                  <ul className="list">
                     {AllDeveloperExpertises.map((item, index) => {
                       return <ItemHowHelp key={index} label={item} />;
                     })}
                   </ul>
                 </div>
 
-                <div className='group'>
-                  <p className='body-lg'>Ferramentas</p>
-                  <ul className='list'>
+                <div className="group">
+                  <p className="body-lg">Ferramentas</p>
+                  <ul className="list">
                     {AllDeveloperTools.map((item, index) => {
                       return <ItemHowHelp key={index} label={item} />;
                     })}
