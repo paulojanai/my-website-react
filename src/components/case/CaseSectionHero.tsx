@@ -10,7 +10,7 @@ export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
     <div className='section-hero-case'>
       <GridContainer>
         <p data-aos='fade-up' className='body-xl'>
-          {project?.client} - {project?.date}
+          {project?.client.name} - {project?.date}
         </p>
 
         <h1 className='display-xl' data-aos='fade-up'>
@@ -20,17 +20,15 @@ export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
         <div data-aos='fade-up' className='details'>
           <div className='item'>
             <p className='body-sm'>O que eu fiz</p>
-            <p className='body-md paragraph-medium'>{project?.roles}</p>
+            <p className='body-md paragraph-medium'></p>
           </div>
           <div className='item'>
             <p className='body-sm'>Produtos</p>
-            <p className='body-md paragraph-medium'>{project?.products}</p>
+            <p className='body-md paragraph-medium'></p>
           </div>
           <div className='item'>
             <p className='body-sm'>Principais entregas</p>
-            <p className='body-md paragraph-medium'>
-              {project?.keyDeliverables}
-            </p>
+            <p className='body-md paragraph-medium'></p>
           </div>
         </div>
 
@@ -39,7 +37,7 @@ export const CaseSectionHero = ({ project }: CaseSectionHeroProps) => {
           data-aos-duration='1500'
           className='thumb-hero'
         >
-          <img src={project?.image} alt='Thumb' />
+          <img src={project?.images[0]} alt='Thumb' />
         </div>
       </GridContainer>
     </div>
