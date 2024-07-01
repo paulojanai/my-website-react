@@ -55,13 +55,13 @@ const MyReport: ICase = {
 };
 
 type IProject = {
-  MyReportOnline?: ICase;
   EntregouMeWeb?: ICase;
+  MyReportOnline?: ICase;
 };
 
-export const CasesArray: ICase[] = [EntregouMe, MyReport];
+export const CasesArray: ICase[] = [MyReport, EntregouMe];
 
 export const CasesObject: IProject = {
-  MyReportOnline: MyReport,
   EntregouMeWeb: EntregouMe,
+  MyReportOnline: MyReport,
 };

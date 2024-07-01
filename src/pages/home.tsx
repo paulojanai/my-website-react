@@ -61,7 +61,7 @@ function Home() {
           <div className='text'>
             <div className='header'>
               <div className='title' data-aos='fade-up'>
-                <p className='body-2xl'>Com +5 anos de experiência</p>
+                <p className='body-2xl'>Com +4 anos de experiência</p>
                 <div className='text-product-designer'>
                   <h1 className='display-lg'>Product Designer</h1>
                   <AllImages />

@@ -14,7 +14,7 @@
     }
 
     .details {
-      margin-top: 8rem;
+      margin-top: 6rem;
       border: 1.75px solid $grayscale-500-opacity-50;
       border-radius: 1.6rem;
       @include flex (row, stretch, space-between);
@@ -28,15 +28,14 @@
         }
 
         p {
-          &.body-sm {
+          &.body-md {
             color: $grayscale-300;
             margin-bottom: 1.2rem;
           }
         }
 
         p {
-          &.body-md {
-            font-weight: 500;
+          &.body-lg {
             color: $grayscale-50;
           }
         }
@@ -44,7 +43,7 @@
     }
 
     .thumb-hero {
-      margin-top: 8rem;
+      margin-top: 6rem;
       border-radius: 1.6rem;
       overflow: hidden;
     }
@@ -54,16 +53,21 @@
     .grid-container {
       .details {
         @include flex (column, flex-start, flex-start);
-        margin-top: 6rem;
+        margin-top: 4rem;
 
         .item {
           max-width: 100%;
+          padding: 2.4rem 2.4rem;
 
           &:not(:last-child) {
             border-right: none;
             border-bottom: 1.75px solid $grayscale-500-opacity-50;
           }
         }
+      }
+
+      .thumb-hero {
+        margin-top: 4rem;
       }
     }
   }

@@ -3,7 +3,7 @@ import GridContainer from '@components/Grid';
 import Separator from '@components/ui/Separator';
 
 import CVPDF from '../../../paulojanai-cv.pdf';
-import NocapStudio from '@assets/nocap_studio.svg';
+import PauloJanai from '@assets/logo-dark.svg';
 
 import EmailClipboard from '@components/EmailClipboard';
 
@@ -78,7 +78,7 @@ export function Footer() {
           <div className='development body-sm'>
             <p>Construído por</p>
             <a href=''>
-              <img src={NocapStudio} alt='Logo da empresa Nocap Studio' />
+              <img src={PauloJanai} alt='Minha logo' />
             </a>
           </div>
         </div>
