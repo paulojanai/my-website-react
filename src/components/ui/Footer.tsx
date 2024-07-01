@@ -3,6 +3,7 @@ import GridContainer from '@components/Grid';
 import Separator from '@components/ui/Separator';
 
 import CVPDF from '../../../paulojanai-cv.pdf';
+import PauloJanai from '@assets/logo-dark.svg';
 
 import EmailClipboard from '@components/EmailClipboard';
 
@@ -75,7 +76,10 @@ export function Footer() {
             © Copyright 2024. Todos os direitos reservados.
           </p>
           <div className='development body-sm'>
-            <p>Design and development por Paulo Janai</p>
+            <p>Construído por</p>
+            <a href=''>
+              <img src={PauloJanai} alt='Minha logo' />
+            </a>
           </div>
         </div>
       </GridContainer>
