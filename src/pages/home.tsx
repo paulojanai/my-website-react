@@ -1,4 +1,4 @@
-import { Code2, Layers, MoveUp } from 'lucide-react';
+import { Code2, ExternalLink, Layers, MoveUp } from 'lucide-react';
 
 import CardWork from '@components/card/CardWork';
 import GridContainer from '@components/Grid';
@@ -24,6 +24,7 @@ import ItemHowHelp from '@components/ItemHowHelp';
 import imageStars from '@assets/starts.svg';
 import MyProfile from '@assets/my_photo_hero.png';
 import MyStudio from '@assets/my_studio.png';
+import QuickPages from '@assets/products/quickpages.svg';
 
 const AllImages = () => {
   return (
@@ -127,6 +128,39 @@ function Home() {
       <section className='section-concept'>
         <GridContainer>
           <h2 data-aos='fade-up'>O que ando construindo</h2>
+
+          <div className='listview-products' data-aos='fade-up'>
+            <p className='body-xl'>Produtos</p>
+            <a
+              href='https://paulojanai.com/'
+              className='card-product'
+              target='_blank'
+            >
+              <div className='product-img-container'>
+                <img className='img-product' src={QuickPages} alt='' />
+                <ExternalLink
+                  className='external-link-mobile'
+                  color='#A1A6AA'
+                  size={24}
+                />
+              </div>
+              <div className='description'>
+                <p className='body-lg-strong'>Quickpages</p>
+                <p className='body-md paragraph-normal'>
+                  Desenhe e desenvolva sites de forma prática e rápida. Um
+                  produto por{' '}
+                  <a href='https://www.nocapstudio.com.br' target='_blank'>
+                    Nocap Studio
+                  </a>
+                </p>
+              </div>
+              <ExternalLink
+                className='external-link-desktop'
+                color='#A1A6AA'
+                size={32}
+              />
+            </a>
+          </div>
 
           <div className='listview-concepts'>
             {CasesConcept.map((item, index) => {

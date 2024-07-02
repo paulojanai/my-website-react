@@ -192,6 +192,66 @@
         margin-bottom: 8rem;
       }
 
+      .listview-products {
+        margin-bottom: 6.4rem;
+
+        p.body-xl {
+          color: $grayscale-300;
+          margin-bottom: 2.4rem;
+        }
+
+        .card-product {
+          @include flex(row, center, space-between);
+          gap: 3.2rem;
+          background-color: $grayscale-700;
+          border-radius: 1.6rem;
+          padding: 2.4rem 2.4rem;
+          transition: 0.3s all;
+
+          .product-img-container {
+            @include flex(row, center, center);
+
+            img.img-product {
+              height: 5.6rem;
+            }
+
+            svg.external-link-mobile {
+              display: none;
+            }
+          }
+
+          .description {
+            width: 100%;
+
+            p.body-lg-strong {
+              color: $grayscale-50;
+            }
+
+            p.body-md {
+              margin-top: 0.6rem;
+              color: $grayscale-300;
+
+              a {
+                color: $grayscale-50;
+              }
+            }
+          }
+
+          svg.external-link-desktop {
+            opacity: 0;
+            transition: 0.3s all;
+          }
+
+          &:hover {
+            background-color: $grayscale-600;
+
+            svg.external-link-desktop {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
       .listview-concepts {
         @include flex(row, flex-start, space-between);
         flex-wrap: wrap;
@@ -203,6 +263,32 @@
       @include responsive(768px) {
         h2 {
           margin-bottom: 4rem;
+        }
+
+        .listview-products {
+
+          .card-product {
+            @include flex(column, flex-start, flex-start);
+            gap: 2.4rem;
+            padding: 2rem 2rem;
+
+            .product-img-container {
+              width: 100%;
+              @include flex(row, center, space-between);
+
+              img.img-product {
+                height: 4rem;
+              }
+
+              svg.external-link-mobile {
+                display: block;
+              }
+            }
+
+            svg.external-link-desktop {
+              display: none;
+            }
+          }
         }
 
         .listview-concepts {
