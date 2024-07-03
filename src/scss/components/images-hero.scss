@@ -1,7 +1,7 @@
 .all-images {
   @include flex(row, center, center);
 
-  .box-image {
+  a.box-image {
     position: relative;
     @include flex(column, center, center);
 
@@ -29,9 +29,14 @@
       max-width: 10rem;
     }
 
+    .img-studio {
+      transition: all 0.4s ease-out;
+      filter: grayscale(1);
+    }
+
     &:nth-child(n):not(:last-child) {
       transition: all 0.4s ease-out;
-      margin-right: -4rem;
+      margin-right: -3.2rem;
     }
   }
 
@@ -39,6 +44,10 @@
     .box-image {
       &:nth-child(n):not(:last-child) {
         margin-right: 0.8rem;
+      }
+
+      .img-studio {
+        filter: grayscale(0);
       }
     }
   }

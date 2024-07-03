@@ -29,24 +29,29 @@ import QuickPages from '@assets/products/quickpages.svg';
 const AllImages = () => {
   return (
     <div className='all-images'>
-      <div className='box-image' data-aos='fade-left'>
+      <a href='' className='box-image' data-aos='fade-left'>
         <img
           className='image-hero'
           src={MyProfile}
           alt='Minha imagem de perfil'
         />
-      </div>
-      <div className='box-image' data-aos='fade-left'>
+      </a>
+      <a
+        href='https://www.nocapstudio.com.br'
+        className='box-image'
+        data-aos='fade-left'
+        target='_blank'
+      >
         <div className='description' data-aos='fade-up' data-aos-delay='600'>
           <p className='body-md'>Co-fundador do estúdio Nocap</p>
           <MoveUp color='#4E5256' size={24} />
         </div>
         <img
-          className='image-hero'
+          className='image-hero img-studio'
           src={MyStudio}
           alt='Meu estúdio de design e tecnologia'
         />
-      </div>
+      </a>
     </div>
   );
 };
@@ -62,7 +67,7 @@ function Home() {
           <div className='text'>
             <div className='header'>
               <div className='title' data-aos='fade-up'>
-                <p className='body-2xl'>Com +4 anos de experiência</p>
+                <p className='body-2xl'>Com mais de 4 anos de experiência</p>
                 <div className='text-product-designer'>
                   <h1 className='display-lg'>Product Designer</h1>
                   <AllImages />
