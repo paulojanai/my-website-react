@@ -42,33 +42,48 @@ const CardWork: React.FC<ICase> = ({
         </div>
       </div>
 
-      <a
-        href={href}
-        className='thumb'
-        data-aos='fade-up'
-        data-aos-duration='1500'
-      >
-        <img className='cursor-active' src={images[0]} alt='' />
-      </a>
+      {images[0] && (
+        <a
+          href={href}
+          className='thumb'
+          data-aos='fade-up'
+          data-aos-duration='1500'
+        >
+          <img className='cursor-active' src={images[0]} alt='' />
+        </a>
+      )}
 
-      <div className='row-images'>
+      {images[1] && images[2] && (
+        <div className='row-images'>
+          <a
+            href={href}
+            className='thumb'
+            data-aos='fade-up'
+            data-aos-duration='1500'
+          >
+            <img src={images[1]} alt='' />
+          </a>
+          <a
+            href={href}
+            className='thumb'
+            data-aos='fade-up'
+            data-aos-duration='1500'
+          >
+            <img src={images[2]} alt='' />
+          </a>
+        </div>
+      )}
+
+      {images[3] && (
         <a
           href={href}
           className='thumb'
           data-aos='fade-up'
           data-aos-duration='1500'
         >
-          <img src={images[1]} alt='' />
+          <img className='cursor-active' src={images[3]} alt='' />
         </a>
-        <a
-          href={href}
-          className='thumb'
-          data-aos='fade-up'
-          data-aos-duration='1500'
-        >
-          <img src={images[2]} alt='' />
-        </a>
-      </div>
+      )}
     </div>
   );
 };

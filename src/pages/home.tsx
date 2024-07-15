@@ -108,8 +108,6 @@ function Home() {
 
       <section className='section-works' id='section-works'>
         <GridContainer>
-          {/* <h2 data-aos='fade-up'>Trabalhos</h2> */}
-
           <div className='listview-works'>
             {CasesArray.map((item, index) => {
               return (
