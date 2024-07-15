@@ -1,6 +1,7 @@
 import ThumbMRO from '@assets/my-report-online/thumb.png';
 import BrandMRO from '@assets/my-report-online/brand.png';
 import AppMRO from '@assets/my-report-online/app.png';
+import ModalTypesMRO from '@assets/my-report-online/modal_reports_types.png';
 
 import ThumbEMW from '@assets/entregoume-client/thumb.png';
 import ModalsEMW from '@assets/entregoume-client/modals.png';
@@ -45,10 +46,10 @@ const EntregouMe: ICase = {
 const MyReport: ICase = {
   client: { name: 'Inspeção Ceará', logo: InspecaoCeara },
   date: '2023 - Presente',
-  images: [ThumbMRO, BrandMRO, AppMRO],
+  images: [ThumbMRO, ModalTypesMRO, BrandMRO, AppMRO],
   title: `Construindo uma ferramenta de produtividade completa do zero`,
   description:
-    'Meu relatório online é uma ferramenta que tem um aplicativo e possui um sistema com acesso através de navegadores. Essa ferramenta auxilia na geração e gerenciamento de relatórios prediais complexos.',
+    'Meu relatório online é uma ferramenta que tem um aplicativo android e possui um sistema com acesso através de navegadores. Essa ferramenta auxilia na geração e gerenciamento de relatórios prediais complexos.',
   // href: "cases/my-report-online",
   role: 'Product Designer',
   comingSoon: true,
