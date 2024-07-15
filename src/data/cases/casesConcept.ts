@@ -1,7 +1,7 @@
-import WeatherForecast from '@assets/personal/weather-forecast/weather_forecast.png';
-import GymLife from '@assets/personal/gymlife/gymlife.png';
-import PalleteClickUp from '@assets/personal/palette_colors_clickup.png';
-import ContaAzul from '@assets/personal/conta_azul_pro_home.png';
+import WeatherForecast from '@assets/personal/weather_forecast.webp';
+import GymLife from '@assets/personal/gymlife.webp';
+import PalleteClickUp from '@assets/personal/palette_colors_clickup.webp';
+import ContaAzul from '@assets/personal/conta_azul_pro_home.webp';
 
 export type ICaseConcept = {
   image: string;
