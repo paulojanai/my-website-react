@@ -12,9 +12,9 @@ const CardWork: React.FC<ICase> = ({
   comingSoon,
 }: ICase) => {
   return (
-    <div className='card-work' data-aos='fade-up'>
+    <div className='card-work'>
       <div className='container-header'>
-        <div className='client'>
+        <div className='client' data-aos='fade-up'>
           <img
             className='img-logo-client'
             src={client.logo}
@@ -23,6 +23,7 @@ const CardWork: React.FC<ICase> = ({
           <p className='body-lg-strong'>{client.name}</p>
           {comingSoon && (
             <img
+              data-aos='fade-left'
               className='tag-coming-soon'
               src={TagComingSoon}
               alt='Tag de em breve'
@@ -30,13 +31,13 @@ const CardWork: React.FC<ICase> = ({
           )}
         </div>
         <div className='descrition-work'>
-          <div className='title'>
+          <div className='title' data-aos='fade-up'>
             <h4>{title}</h4>
             <p className='body-lg-strong'>
               {role}, {date}
             </p>
           </div>
-          <div className='description '>
+          <div className='description' data-aos='fade-up'>
             <p className='body-lg paragraph-medium'>{description}</p>
           </div>
         </div>
