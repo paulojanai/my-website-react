@@ -79,7 +79,7 @@ function Home() {
               <p
                 className='body-lg paragraph-high'
                 data-aos='fade-up'
-                data-aos-delay='300'
+                data-aos-delay='100'
               >
                 Continuamente colaborando com negócio, designers e
                 desenvolvedores para aprimorar as experiências dos usuários
@@ -88,7 +88,7 @@ function Home() {
               </p>
             </div>
 
-            <div className='companies' data-aos='fade-up' data-aos-delay='600'>
+            <div className='companies' data-aos='fade-up' data-aos-delay='200'>
               <p className='span'>Trabalhou com</p>
               <div className='list'>
                 <a href='https://www.grupoboticario.com.br' target='_blank'>
@@ -205,7 +205,7 @@ function Home() {
 
           <div className='designer-developer' data-aos='fade-up'>
             <div className='card-help designer'>
-              <div className='card-header'>
+              <div className='card-header' data-aos='fade-up'>
                 <Layers size={isMobile ? 28 : 40} color='white' />
                 <h3>Designer</h3>
                 <p className='body-md paragraph-medium'>
@@ -216,7 +216,7 @@ function Home() {
 
               <Separator />
 
-              <div className='card-body'>
+              <div className='card-body' data-aos='fade-up'>
                 <div className='group'>
                   <p className='body-lg'>Habilidades</p>
                   <ul className='list'>
@@ -237,7 +237,7 @@ function Home() {
               </div>
             </div>
             <div className='card-help developer'>
-              <div className='card-header'>
+              <div className='card-header' data-aos='fade-up'>
                 <Code2 size={isMobile ? 28 : 40} color='white' />
                 <h3>Developer</h3>
                 <p className='body-md paragraph-medium'>
@@ -248,7 +248,7 @@ function Home() {
 
               <Separator />
 
-              <div className='card-body'>
+              <div className='card-body' data-aos='fade-up'>
                 <div className='group'>
                   <p className='body-lg'>Habilidades</p>
                   <ul className='list'>
