@@ -214,7 +214,7 @@ function Home() {
                 </p>
               </div>
 
-              <Separator />
+              <Separator animation='fade-up' />
 
               <div className='card-body' data-aos='fade-up'>
                 <div className='group'>
@@ -246,7 +246,7 @@ function Home() {
                 </p>
               </div>
 
-              <Separator />
+              <Separator animation='fade-up' />
 
               <div className='card-body' data-aos='fade-up'>
                 <div className='group'>

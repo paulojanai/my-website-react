@@ -319,10 +319,9 @@
     @include padding_section();
     @include flex(row, flex-start, space-between);
     position: relative;
+    gap: 6rem;
 
     .text-caption {
-      margin-bottom: 4.8rem;
-
       .body-md {
         color: $grayscale-300;
         margin-top: 1.2rem;
@@ -332,6 +331,10 @@
     .text-about {
       width: 100%;
       max-width: 88rem;
+
+      .text-caption {
+        margin-bottom: 4rem;
+      }
 
       .description {
         color: $grayscale-300;
@@ -346,6 +349,14 @@
       max-width: 32rem;
       top: 11rem;
       position: sticky;
+      @include flex(column, flex-start, flex-start);
+      gap: 4rem;
+
+      .signature {
+        img.img-signature {
+          height: 11rem;
+        }
+      }
 
       .group-social {
         @include flex(row, flex-start, flex-start);
