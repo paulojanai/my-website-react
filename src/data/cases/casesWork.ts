@@ -1,11 +1,11 @@
-import ThumbMRO from '@assets/my-report-online/thumb.png';
-import BrandMRO from '@assets/my-report-online/brand.png';
-import AppMRO from '@assets/my-report-online/app.png';
-import ModalTypesMRO from '@assets/my-report-online/modal_reports_types.png';
+import ThumbMRO from '@assets/my-report-online/thumb.webp';
+import BrandMRO from '@assets/my-report-online/brand.webp';
+import AppMRO from '@assets/my-report-online/app.webp';
+import ModalTypesMRO from '@assets/my-report-online/modal_reports_types.webp';
 
-import ThumbEMW from '@assets/entregoume-client/thumb.png';
-import ModalsEMW from '@assets/entregoume-client/modals.png';
-import CheckoutEMW from '@assets/entregoume-client/checkout.png';
+import ThumbEMW from '@assets/entregoume-client/thumb.webp';
+import ModalsEMW from '@assets/entregoume-client/modals.webp';
+import CheckoutEMW from '@assets/entregoume-client/checkout.webp';
 
 import AutomacaoCom from '@assets/companies/automacao.com.svg';
 import InspecaoCeara from '@assets/companies/inspecao_ceara.svg';

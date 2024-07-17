@@ -5,17 +5,18 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import GridContainer from '@components/Grid';
 import ButtonIcon from '@components/button/ButtonIcon';
 
-import imgProfile from '@assets/about/profile.png';
-import imgPaisagem from '@assets/about/paisagem.png';
+import imgProfile from '@assets/about/profile.webp';
+import imgPaisagem from '@assets/about/paisagem.webp';
 import imgLove from '@assets/about/love.webp';
-import imgKeyboard from '@assets/about/keyboard.png';
-import imgPC from '@assets/about/pc.png';
-import imgColors from '@assets/about/colors.png';
-import imgApp from '@assets/about/app.png';
-import imgVolleyAttack from '@assets/about/volleyball_attack.png';
-import imgVolleyBack from '@assets/about/volleyball_back.png';
+import imgKeyboard from '@assets/about/keyboard.webp';
+import imgPC from '@assets/about/pc.webp';
+import imgColors from '@assets/about/colors.webp';
+import imgApp from '@assets/about/app.webp';
+import imgVolleyAttack from '@assets/about/volleyball_attack.webp';
+import imgVolleyBack from '@assets/about/volleyball_back.webp';
 import imgFont1 from '@assets/about/font_sentient.svg';
 import imgFont2 from '@assets/about/font_sora.svg';
+import Signature from '@assets/about/signature.svg';
 
 function About() {
   const triggerRef: React.RefObject<HTMLDivElement> = useRef(null);
@@ -221,14 +222,17 @@ function About() {
             </div>
           </div>
 
-          <div className='plataforms' data-aos='fade-up'>
-            <div className='text-caption'>
+          <div className='plataforms'>
+            <div className='signature' data-aos='fade-up'>
+              <img className='img-signature' src={Signature} alt='' />
+            </div>
+            <div className='text-caption' data-aos='fade-up'>
               <p className='body-lg-strong'>Em plataformas</p>
               <p className='body-md paragraph-medium'>
                 As DMs estão abertos – fique à vontade para entrar em contato.
               </p>
             </div>
-            <div className='group-social'>
+            <div className='group-social' data-aos='fade-up'>
               <ButtonIcon
                 href='https://www.figma.com/@paulo_janai'
                 nameIcon='Figma'
