@@ -8,15 +8,15 @@ import { NavigationCase } from '@components/ui/NavigationCase';
 
 import { CasesObject, IItemNavigationCase } from '@data/cases/casesWork';
 
-import imageWirefameHigh from '@assets/entregoume-client/wireframe_high.png';
-import imageStyleguide from '@assets/entregoume-client/styleguide.png';
-import imageVisuals from '@assets/entregoume-client/visuals.png';
-import imageSignIn from '@assets/entregoume-client/auth_1.png';
-import imageSignUp from '@assets/entregoume-client/auth_2.png';
-import imageHome from '@assets/entregoume-client/home.png';
-import imagePreviewCheckout from '@assets/entregoume-client/preview_checkout.png';
-import imageProductDetails from '@assets/entregoume-client/details_product.png';
-import imageCheckout from '@assets/entregoume-client/checkout.png';
+import imageWirefameHigh from '@assets/entregoume-client/wireframe_high.webp';
+import imageStyleguide from '@assets/entregoume-client/styleguide.webp';
+import imageVisuals from '@assets/entregoume-client/visuals.webp';
+import imageSignIn from '@assets/entregoume-client/auth_1.webp';
+import imageSignUp from '@assets/entregoume-client/auth_2.webp';
+import imageHome from '@assets/entregoume-client/home.webp';
+import imagePreviewCheckout from '@assets/entregoume-client/preview_checkout.webp';
+import imageProductDetails from '@assets/entregoume-client/details_product.webp';
+import imageCheckout from '@assets/entregoume-client/checkout.webp';
 
 const CaseNavigationItems: IItemNavigationCase[] = [
   {

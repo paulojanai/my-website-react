@@ -7,9 +7,9 @@ import { CasesObject, IItemNavigationCase } from '@data/cases/casesWork';
 import { CaseSectionItem } from '@components/case/CaseSectionItem';
 import Button from '@components/button/Button';
 
-import screenLogin from '@assets/my-report-online/screen_login.png';
-import imageDefault from '@assets/image.png';
-import imageBranding from '@assets/my-report-online/brand.png';
+import screenLogin from '@assets/my-report-online/screen_login.webp';
+import imageDefault from '@assets/image.webp';
+import imageBranding from '@assets/my-report-online/brand.webp';
 
 const CaseNavigationItems: IItemNavigationCase[] = [
   {
