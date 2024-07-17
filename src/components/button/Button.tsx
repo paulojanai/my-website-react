@@ -23,6 +23,7 @@ const Button = ({
       className={`${className} btn-primary ${
         disabled ? 'disabled' : ''
       } btn-${size}`}
+      aria-label={`Link to ${href}`}
     >
       {children}
     </a>

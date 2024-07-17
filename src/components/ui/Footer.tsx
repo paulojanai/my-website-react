@@ -77,7 +77,7 @@ export function Footer() {
           </p>
           <div className='development body-sm'>
             <p>Construído por</p>
-            <a href=''>
+            <a href='https://paulojanai.com/' aria-label='Link to my website'>
               <img src={PauloJanai} alt='Minha logo' />
             </a>
           </div>

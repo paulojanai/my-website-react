@@ -63,6 +63,7 @@ export function Header() {
                     href='https://www.linkedin.com/in/paulojanai/'
                     target='_blank'
                     rel='noopener noreferrer'
+                    aria-label={`Link to my Linkedin}`}
                   >
                     <Linkedin size={20} />
                   </a>
@@ -72,6 +73,7 @@ export function Header() {
                     href='https://github.com/paulojanai'
                     target='_blank'
                     rel='noopener noreferrer'
+                    aria-label={`Link to my Github`}
                   >
                     <Github size={20} />
                   </a>
@@ -92,14 +94,21 @@ export function Header() {
             <ul>
               {navLinks.map((item, index) => (
                 <li className='nav-link' key={index}>
-                  <a onClick={() => handleClickNav(item.linkID)}>{item.name}</a>
+                  <a
+                    onClick={() => handleClickNav(item.linkID)}
+                    aria-label={`Link to ${item.name}`}
+                  >
+                    {item.name}
+                  </a>
                 </li>
               ))}
               <li className='nav-link'>
-                <a href='/about'>Sobre</a>
+                <a href='/about' aria-label={`Link to about`}>
+                  Sobre
+                </a>
               </li>
               <li className='nav-link'>
-                <a href={CVPDF} target='_blank'>
+                <a href={CVPDF} target='_blank' aria-label={`Link to my CV`}>
                   CV
                 </a>
               </li>

@@ -19,6 +19,7 @@ function Link({ text, link, nameIcon, download }: Link) {
         className='link'
         download={download}
         rel='noopener noreferrer'
+        aria-label={`Link to ${link}`}
       >
         {nameIcon === 'Twitter' ? (
           <div className='x-twitter'>
