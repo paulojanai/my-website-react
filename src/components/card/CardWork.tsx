@@ -49,6 +49,7 @@ const CardWork: React.FC<ICase> = ({
           className='thumb'
           data-aos='fade-up'
           data-aos-duration='1500'
+          aria-label={`Link to ${href}`}
         >
           <img className='cursor-active' src={images[0]} alt='' />
         </a>
@@ -61,6 +62,7 @@ const CardWork: React.FC<ICase> = ({
             className='thumb'
             data-aos='fade-up'
             data-aos-duration='1500'
+            aria-label={`Link to ${href}`}
           >
             <img src={images[1]} alt='' />
           </a>
@@ -69,6 +71,7 @@ const CardWork: React.FC<ICase> = ({
             className='thumb'
             data-aos='fade-up'
             data-aos-duration='1500'
+            aria-label={`Link to ${href}`}
           >
             <img src={images[2]} alt='' />
           </a>
@@ -81,6 +84,7 @@ const CardWork: React.FC<ICase> = ({
           className='thumb'
           data-aos='fade-up'
           data-aos-duration='1500'
+          aria-label={`Link to ${href}`}
         >
           <img className='cursor-active' src={images[3]} alt='' />
         </a>
