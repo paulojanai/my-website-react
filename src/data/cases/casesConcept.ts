@@ -1,6 +1,6 @@
 import PalleteClickUp from '@assets/personal/palette_colors_clickup.webp';
 import ContaAzul from '@assets/personal/conta_azul_pro_home.webp';
-import EleicaoAgil from '@assets/personal/eleicao_agil.webp';
+import JerseyEagles2025 from '@assets/personal/jersey_eagles_2025.webp';
 import WeatherForecast from '@assets/personal/weather_forecast.webp';
 
 export type ICaseConcept = {
@@ -22,9 +22,9 @@ const CasesConcept: ICaseConcept[] = [
     comingSoon: false,
   },
   {
-    image: EleicaoAgil,
-    descriptionRoles: 'WebApp, UX/UI Designer',
-    title: 'Eleição Ágil: tornando eficiente e prática a coleta de boletins',
+    image: JerseyEagles2025,
+    descriptionRoles: 'Graphic Design, Jersey, Volleyball Team',
+    title: 'Eagles: Jersey oficial Eagles Vôlei Canindé 2025',
     figmaURL: '',
     comingSoon: true,
   },
