@@ -9,9 +9,9 @@ import { CasesArray } from '@data/cases/casesWork';
 import CasesConcept from '@data/cases/casesConcept';
 
 //Logos
-import GrupoBoticario from '@assets/grupo_boticario.png';
-import CasaMagalhaes from '@assets/cm.png';
-import Automacaocom from '@assets/automacao_com.png';
+import GrupoBoticario from '@assets/companies/grupo_boticario.svg';
+import CasaMagalhaes from '@assets/companies/casamagalhaes.png';
+import Automacaocom from '@assets/companies/automacaocom.svg';
 
 import {
   AllDesignerExpertises,
