@@ -1,5 +1,4 @@
 import ThumbMRO from '@assets/my-report-online/thumb.webp';
-import BrandMRO from '@assets/my-report-online/brand.webp';
 import AppMRO from '@assets/my-report-online/app.webp';
 import ModalTypesMRO from '@assets/my-report-online/modal_reports_types.webp';
 
