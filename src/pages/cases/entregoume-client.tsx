@@ -8,16 +8,6 @@ import { NavigationCase } from '@components/ui/NavigationCase';
 
 import { CasesObject, IItemNavigationCase } from '@data/cases/casesWork';
 
-import imageWirefameHigh from '@assets/entregoume-client/wireframe_high.webp';
-import imageStyleguide from '@assets/entregoume-client/styleguide.webp';
-import imageVisuals from '@assets/entregoume-client/visuals.webp';
-import imageSignIn from '@assets/entregoume-client/auth_1.webp';
-import imageSignUp from '@assets/entregoume-client/auth_2.webp';
-import imageHome from '@assets/entregoume-client/home.webp';
-import imagePreviewCheckout from '@assets/entregoume-client/preview_checkout.webp';
-import imageProductDetails from '@assets/entregoume-client/details_product.webp';
-import imageCheckout from '@assets/entregoume-client/checkout.webp';
-
 const CaseNavigationItems: IItemNavigationCase[] = [
   {
     title: 'Visão geral',
@@ -146,11 +136,11 @@ function EntregouMeWeb() {
                     <ArrowUpRight size={24} />
                   </Button>
 
-                  <img
+                  {/* <img
                     className='img-case-section'
                     src={imageStyleguide}
                     alt='User Flow'
-                  />
+                  /> */}
                 </CaseSectionItem>
 
                 <CaseSectionItem title='Alta fidelidade'>
@@ -164,12 +154,6 @@ function EntregouMeWeb() {
                     <p>Ver completo</p>
                     <ArrowUpRight size={24} />
                   </Button>
-
-                  <img
-                    className='img-case-section'
-                    src={imageWirefameHigh}
-                    alt='User Flow'
-                  />
                 </CaseSectionItem>
               </div>
             </section>
@@ -177,11 +161,11 @@ function EntregouMeWeb() {
             <section className='section-case' id='section-visuals'>
               <div className='listview'>
                 <CaseSectionItem title='Uma jornada visual'>
-                  <img
+                  {/* <img
                     className='img-case-section'
                     src={imageVisuals}
                     alt='User Flow'
-                  />
+                  /> */}
                 </CaseSectionItem>
 
                 <CaseSectionItem title='Mais a fundo'>
@@ -192,18 +176,6 @@ function EntregouMeWeb() {
                       necessária quando os usuários vão finalizar o seu pedido.
                     </p>
                   </div>
-
-                  <img
-                    className='img-case-section'
-                    src={imageSignIn}
-                    alt='Sign in'
-                  />
-
-                  <img
-                    className='img-case-section'
-                    src={imageSignUp}
-                    alt='Sign up'
-                  />
                 </CaseSectionItem>
 
                 <CaseSectionItem title='Início e muito mais 🚀'>
@@ -215,18 +187,6 @@ function EntregouMeWeb() {
                       de forma rápida.
                     </p>
                   </div>
-
-                  <img
-                    className='img-case-section'
-                    src={imageHome}
-                    alt='Sign in'
-                  />
-
-                  <img
-                    className='img-case-section'
-                    src={imagePreviewCheckout}
-                    alt='Sign up'
-                  />
                 </CaseSectionItem>
 
                 <CaseSectionItem title='Detalhes do produto'>
@@ -236,12 +196,6 @@ function EntregouMeWeb() {
                       informações de um produto e produtos relacionados.
                     </p>
                   </div>
-
-                  <img
-                    className='img-case-section'
-                    src={imageProductDetails}
-                    alt='Sign in'
-                  />
                 </CaseSectionItem>
 
                 <CaseSectionItem title='Carrinho de compras'>
@@ -250,12 +204,6 @@ function EntregouMeWeb() {
                       [Brief description...]
                     </p>
                   </div>
-
-                  <img
-                    className='img-case-section'
-                    src={imageCheckout}
-                    alt='Sign in'
-                  />
                 </CaseSectionItem>
 
                 <CaseSectionItem title='Conclusão'>
