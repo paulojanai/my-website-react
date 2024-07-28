@@ -7,10 +7,6 @@ import { CasesObject, IItemNavigationCase } from '@data/cases/casesWork';
 import { CaseSectionItem } from '@components/case/CaseSectionItem';
 import Button from '@components/button/Button';
 
-import screenLogin from '@assets/my-report-online/screen_login.webp';
-import imageDefault from '@assets/image.webp';
-import imageBranding from '@assets/my-report-online/brand.webp';
-
 const CaseNavigationItems: IItemNavigationCase[] = [
   {
     title: 'Visão geral',
@@ -118,11 +114,11 @@ function MyReportOnline() {
                     </p>
                   </div>
 
-                  <img
+                  {/* <img
                     className='img-case-section'
                     src={imageBranding}
                     alt='User Flow'
-                  />
+                  /> */}
                 </CaseSectionItem>
                 <CaseSectionItem title='Jornada do usuário'>
                   <div className='text'>
@@ -139,11 +135,11 @@ function MyReportOnline() {
                     <ArrowUpRight size={24} />
                   </Button>
 
-                  <img
+                  {/* <img
                     className='img-case-section'
                     src={imageDefault}
                     alt='User Flow'
-                  />
+                  /> */}
                 </CaseSectionItem>
                 <CaseSectionItem title='Wireframe'>
                   <div className='text'>
@@ -163,11 +159,11 @@ function MyReportOnline() {
                     <ArrowUpRight size={24} />
                   </Button>
 
-                  <img
+                  {/* <img
                     className='img-case-section'
                     src={imageDefault}
                     alt='User Flow'
-                  />
+                  /> */}
                 </CaseSectionItem>
               </div>
             </section>
@@ -175,11 +171,11 @@ function MyReportOnline() {
             <section className='section-case' id='section-visuals'>
               <div className='listview'>
                 <CaseSectionItem title='Visuais'>
-                  <img
+                  {/* <img
                     className='img-case-section'
                     src={imageDefault}
                     alt='User Flow'
-                  />
+                  /> */}
                 </CaseSectionItem>
                 <CaseSectionItem title='Autenticação'>
                   <div className='text'>
@@ -194,11 +190,11 @@ function MyReportOnline() {
                       email e a senha que foi gerada.
                     </p>
                   </div>
-                  <img
+                  {/* <img
                     className='img-case-section'
                     src={screenLogin}
                     alt='User Flow'
-                  />
+                  /> */}
                 </CaseSectionItem>
                 <CaseSectionItem title='Title'>
                   <div className='text'>

@@ -34,7 +34,7 @@ const CardWork: React.FC<ICase> = ({
           <div className='title' data-aos='fade-up'>
             <h4>{title}</h4>
             <p className='body-lg-strong'>
-              {role}, {date}
+              {role} - {date}
             </p>
           </div>
           <div className='description' data-aos='fade-up'>

@@ -61,20 +61,16 @@
 
           .list {
             @include flex(row, center, flex-start);
-            gap: 3.2rem;
+            gap: 4rem;
 
             a {
               img {
                 max-height: 4rem;
+                filter: grayscale(1);
+                transition: filter 0.3s;
 
                 &:hover {
-                  filter: contrast(60);
-                }
-              }
-
-              &:last-child {
-                img {
-                  max-height: 3.2rem;
+                  filter: grayscale(0);
                 }
               }
             }
@@ -126,7 +122,6 @@
 
             .list {
               @include flex(row, center, center);
-              gap: 1.8rem;
             }
           }
         }
@@ -142,6 +137,19 @@
             .title {
               max-width: 100%;
               gap: 1rem;
+            }
+          }
+
+          .companies {
+            .list {
+              flex-wrap: wrap;
+              gap: 4rem;
+
+              a {
+                img {
+                  max-height: 3.2rem;
+                }
+              }
             }
           }
         }
