@@ -263,28 +263,24 @@ function About() {
               <p className='title'>EXPERIÊNCIAS PASSADAS</p>
               <ul>
                 <li className='experience'>
-                  <p className='body-md'>Product Designer</p>
-                  <p className='body-xl'>Grupo Boticário</p>
-                  <p className='body-md'>
-                    Jul 2022 - Mar 2023, Brasil (Remote)
-                  </p>
+                  <p className='body-md'>Jul 2022 - Mar 2023</p>
+                  <p className='body-xl'>Product Designer</p>
+                  <p className='body-md'>Grupo Boticário (Remote)</p>
                 </li>
                 <li className='experience'>
-                  <p className='body-md'>UX/UI Designer</p>
-                  <p className='body-xl'>Casa Magalhães</p>
-                  <p className='body-md'>
-                    Mar 2021 - Ago 2022, (Brasil) Remoto
-                  </p>
+                  <p className='body-md'>Mar 2021 - Ago 2022</p>
+                  <p className='body-xl'>UX/UI Designer</p>
+                  <p className='body-md'>Casa Magalhães (Remoto)</p>
                 </li>
                 <li className='experience'>
-                  <p className='body-md'>Mobile Developer & UI Designer</p>
-                  <p className='body-xl'>Automação.com</p>
-                  <p className='body-md'>Fev 2020 - Fev 2021, Canindé-CE</p>
+                  <p className='body-md'>Fev 2020 - Fev 2021</p>
+                  <p className='body-xl'>Mobile Developer e UI Designer</p>
+                  <p className='body-md'>Automação.com</p>
                 </li>
                 <li className='experience'>
-                  <p className='body-md'>UX/UI Designer & Frontend Developer</p>
-                  <p className='body-xl'>CET Tecnologia</p>
-                  <p className='body-md'>Mar 2019 - Nov 2019, Remoto</p>
+                  <p className='body-md'>Mar 2019 - Nov 2019</p>
+                  <p className='body-xl'>UI Designer e Frontend Developer</p>
+                  <p className='body-md'>CET Tecnologia (Remoto)</p>
                 </li>
               </ul>
             </div>
@@ -293,9 +289,9 @@ function About() {
               <p className='title'>PRESENTE</p>
               <ul>
                 <li className='experience'>
-                  <p className='body-md'>Partner & Product Designer</p>
-                  <p className='body-xl'>Nocap Studio</p>
-                  <p className='body-md'>Set 2023 - Present, (Brasil) Remoto</p>
+                  <p className='body-md'>2023 - Presente</p>
+                  <p className='body-xl'>Co-fundador e Product Designer</p>
+                  <p className='body-md'>Nocap Studio (Remoto)</p>
                 </li>
               </ul>
             </div>
